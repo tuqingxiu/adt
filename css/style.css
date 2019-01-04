@@ -35,6 +35,9 @@ font-family: 'Microsoft Yahei', sans-serif;*/
 ====================================================================
 
  ***/
+html{
+	font-size: 50px;
+}
 
 body {
 	font-family: 'Microsoft Yahei', sans-serif;
@@ -96,6 +99,11 @@ p{
 	max-width:1200px;
 	padding:0px 15px;
 	margin:0 auto;
+	/* position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; */
 }
 
 .medium-container{
@@ -107,6 +115,7 @@ p{
 	margin:0 auto;
 	width:100%;
 	min-width:300px;
+	/* padding-top: 86px; */
 }
 
 ul,li{
@@ -1497,6 +1506,9 @@ img{
 	.main-menu .navigation > li > a{
 		font-weight: 500;
 	}
+	.page-wrapper{
+		padding-top: 86px;
+	}
 }
 
 /*** 
@@ -1590,9 +1602,9 @@ img{
 .main-slider h3{
 	position:relative;
 	color:#ffffff;
-	font-size:30px;
+	font-size:0.84rem;
 	font-weight:400;
-	margin-bottom:120px;
+	/* margin-bottom:120px; */
 	display:inline-block;
 	opacity:0;
 	-webkit-transition: all 1000ms ease;
@@ -1609,14 +1621,14 @@ img{
 }
 
 .main-slider h3 span{
-	font-size:42px;
+	font-size:0.84rem;
 	font-weight: 500;
 	font-family: 'Microsoft Yahei', serif;
 }
 
 .main-slider h3.alternate{
 	color:#1f1f1f;
-	font-size: 48px;
+	font-size: 0.86rem;
 	font-weight: 700;
 	font-family: 'Microsoft Yahei', serif;
 }
@@ -1780,6 +1792,15 @@ img{
 .main-slider .owl-nav .owl-prev:hover,
 .main-slider .owl-nav .owl-next:hover{
 	color:#bed533;
+}
+
+@media only screen and (max-width: 767px){
+	.main-slider h3{
+		font-size: 0.32rem;
+	}
+	.main-slider h3 span{
+		font-size: 0.40rem;
+	}
 }
 
 /*** 
@@ -10630,4 +10651,13 @@ img{
     background-size: cover; width:100%}
 .bg-12{
     background:url(../images/background/bg-12.jpg) no-repeat center top;
-    background-size: cover; width:100%}
+	background-size: cover; width:100%}
+	
+/*-------------tu--------------*/
+.content-box{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

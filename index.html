@@ -14,6 +14,7 @@
 <link href="css/slick.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
+<link href="css/map.css" rel="stylesheet">
 
 
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
@@ -25,6 +26,17 @@
 
 <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+<style type="text/css">
+#index .content-box .content {
+	padding-top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+.china-map img{
+	width: 100%;
+}
+
+</style>
 </head>
 
 <body>
@@ -103,8 +115,8 @@
 	<!--End Sticky Header-->
 </header>
 <!--End Main Header -->
-
-<div class="page-wrapper">
+<div class="page-wrapper" id="index">
+	
  	
     <!-- Preloader -->
     <div class="preloader"></div>
@@ -115,7 +127,7 @@
     	
         <div class="main-slider-carousel owl-carousel owl-theme">
             
-            <div class="slide" style="background-image:url(images/main-slider/image-1.jpg)">
+            <!-- <div class="slide" style="background-image:url(images/main-slider/image-1.jpg)">
                 <div class="auto-container">
                 	<div class="content text-center">
 					   <h2>&nbsp;</h2>
@@ -125,8 +137,18 @@
 							&nbsp;				</div>
                     </div>
                 </div>
-            </div>
-            
+            </div> -->
+            <div class="slide">
+				<img src="images/main-slider/image-1.jpg">
+                <div class="content-box">
+						<div class="content text-center">
+								 <h3><span>提升机动化世界<font style="color:#bed533">的体验</font></span></h3>
+								 
+								 <div class="link-box">
+									 &nbsp;				</div>
+							 </div>
+                </div>
+			</div>
         </div>
     </section>
     <!--End Main Slider-->
@@ -260,58 +282,120 @@
 	</section>
     <!--End Welcome Section-->
     <section class="welcome-section bg-4">
-    	<div class="auto-container">
-    		<!--Sec Title-->
-    		<div class="sec-title">
-				<h2><span class="theme_color">业务概况</span></h2>
-			</div>
-			<div class="row clearfix">
-                
-                    <!--Column-->
-                    <div class="column counter-column col-lg-2 col-md-6 col-sm-12">
-                        <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        	<div class="count-outer count-box">
-                            	<span class="count-text" data-speed="6000" data-stop="10" style="color:#bed533; font-size:2rem">0</span>
-                                <h4 class="counter-title" style="color:#fff; font-size:1.0rem">全国工厂</h4>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <!--Column-->
-                    <div class="column counter-column col-lg-2 col-md-6 col-sm-12">
-                        <div class="inner wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
-                        	<div class="count-outer count-box">
-                            	<span class="count-text" data-speed="6000" data-stop="4300" style="color:#bed533; font-size:2rem">0+</span>
-                                <h4 class="counter-title" style="color:#fff; font-size:1.0rem">员工人数</h4>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <!--Column-->
-                    <div class="column counter-column col-lg-2 col-md-5 col-sm-12">
-                        <div class="inner wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="1500ms">
-                        	<div class="count-outer count-box">
-                            	<span class="count-text" data-speed="8000" data-stop="5000000000" style="color:#bed533; font-size:2rem">0</span>
-                                <h4 class="counter-title" style="color:#fff; font-size:1.0rem">2018年销售额</h4>
-                            </div>
-                        </div>
-                    </div>
-					<div class="column counter-column col-lg-6 col-md-5 col-sm-12">
-                       &nbsp;
-                    </div>
-					 <p>&nbsp;</p>
-                    <!--<p class="text-white" style="padding:50px 0 0 10px">数据更新时间为2018年12月</p>-->
-					<h2 style="margin-bottom:200px">&nbsp;</h2>
-				<!--Image Column-->
-				
-				
-				<!--Content Column-->
-				<div class="content-column col-lg-8 col-md-12 col-sm-12">
-					
+		<!--map-->
+		<div class="china-map">
+				<img src="images/background/map_black_bg.png">
+				<div class="region-list active postition-1 online-node">
+					<div class="area-box">
+						<span class="dot"></span>
+						<span class="pulse delay-06"></span>
+						<span class="pulse delay-01"></span>
+						<span class="pulse delay-02"></span>
+					</div>
+					<div class="show-regin"><span>成都</span></div>
 				</div>
-				
+				<div class="region-list active postition-2 online-node">
+					<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+						<span class="pulse delay-05"></span>
+						<span class="pulse delay-04"></span>
+					</div>
+					<div class="show-regin"><span>重庆</span></div>
+				</div>
+				<div class="region-list active postition-3 online-node">
+					<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+						<span class="pulse delay-05"></span>
+						<span class="pulse delay-04"></span>
+					</div>
+					<div class="show-regin"><span>南昌</span></div>
+				</div>
+				<div class="region-list waite postition-4 waite-node">
+					<div class="area-box"><span class="dot"></span>
+						<span class="pulse delay-01"></span>
+						<span class="pulse delay-02"></span>
+						</div>
+					<div class="show-regin"><span>东莞</span></div>
+				</div>
+				<div class="region-list waite postition-5 waite-node">
+					<div class="area-box"><span class="dot"></span><span class="pulse delay-01"></span>
+						<span class="pulse delay-02"></span>
+						</div>
+					<div class="show-regin"><span>台州</span></div>
+				</div>
+					<div class="region-list active postition-6 online-node">
+					<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+						<span class="pulse delay-05"></span>
+						<span class="pulse delay-04"></span></div>
+					<div class="show-regin"><span>杭州</span></div>
+				</div>
+				<div class="region-list active postition-7 online-node">
+					<div class="area-box"><span class="dot"></span><span class="pulse delay-04"></span>
+						<span class="pulse delay-05"></span>
+						<span class="pulse delay-03"></span></div>
+					<div class="show-regin"><span>哈尔滨</span></div>
+				</div>
+				<div class="region-list  active  postition-8 online-node">
+					<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+						<span class="pulse delay-05"></span>
+						<span class="pulse delay-04"></span></div>
+					<div class="show-regin"><span>大庆</span></div>
+				</div>
 			</div>
-		</div>
+    	
+			
+			<div class="content-box" style="display: none;">
+				<!--Sec Title-->
+				<div class="sec-title">
+						<h2><span class="theme_color">业务概况</span></h2>
+					</div>
+					<div class="row clearfix">
+						
+							<!--Column-->
+							<div class="column counter-column col-lg-2 col-md-6 col-sm-12">
+								<div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+									<div class="count-outer count-box">
+										<span class="count-text" data-speed="6000" data-stop="10" style="color:#bed533; font-size:2rem">0</span>
+										<h4 class="counter-title" style="color:#fff; font-size:1.0rem">全国工厂</h4>
+									</div>
+								</div>
+							</div>
+					
+							<!--Column-->
+							<div class="column counter-column col-lg-2 col-md-6 col-sm-12">
+								<div class="inner wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
+									<div class="count-outer count-box">
+										<span class="count-text" data-speed="6000" data-stop="4300" style="color:#bed533; font-size:2rem">0+</span>
+										<h4 class="counter-title" style="color:#fff; font-size:1.0rem">员工人数</h4>
+									</div>
+								</div>
+							</div>
+					
+							<!--Column-->
+							<div class="column counter-column col-lg-2 col-md-5 col-sm-12">
+								<div class="inner wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="1500ms">
+									<div class="count-outer count-box">
+										<span class="count-text" data-speed="8000" data-stop="5000000000" style="color:#bed533; font-size:2rem">0</span>
+										<h4 class="counter-title" style="color:#fff; font-size:1.0rem">2018年销售额</h4>
+									</div>
+								</div>
+							</div>
+							<div class="column counter-column col-lg-6 col-md-5 col-sm-12">
+							   &nbsp;
+							</div>
+							 <p>&nbsp;</p>
+							<!--<p class="text-white" style="padding:50px 0 0 10px">数据更新时间为2018年12月</p>-->
+							<h2 style="margin-bottom:200px">&nbsp;</h2>
+						<!--Image Column-->
+						
+						
+						<!--Content Column-->
+						<div class="content-column col-lg-8 col-md-12 col-sm-12">
+							
+						</div>
+						
+					</div>
+			</div>
+    		
+	
 	</section>
 	<section class="welcome-section" style=" padding:20px 0 20px">
     
