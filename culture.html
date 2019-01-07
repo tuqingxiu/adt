@@ -25,6 +25,29 @@
 
 <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+<style type="text/css">
+	#magazine .item-box{
+		position: absolute;
+		width: 13%;
+		height: 59%;
+		top: 19%
+	}
+	#magazine .box1{
+    	left: 13%;
+	}
+	#magazine .box2{
+    	left: 28%;
+	}
+	#magazine .box3{
+    	left: 43%;
+	}
+	#magazine .box4{
+    	left: 58.5%;
+	}
+	#magazine .box5{
+    	left: 74%;
+	}
+</style>
 </head>
 
 <body>
@@ -123,15 +146,13 @@
                 </div>
 			</div> -->
 			<div class="slide">
-					<img src="images/main-slider/image-5.jpg">
-                <div class="auto-container">
-                	<!-- <div class="content text-right">
-						<h2 style="font-size:38px;font-weight:normal; margin-top:90px"><span style="font-weight:bold; color:#bed533;padding:10px 100px">&nbsp;</span></h2>
-						<h3 style="color:#0a6c80; margin:30px 0">&nbsp;</h3>
-                    	<div class="text" style="font-size:14px; color:#333333">&nbsp;
-						</div>
-                    </div> -->
-                </div>
+				<img src="images/main-slider/image-5.jpg">
+				<!-- <div class="content-box">
+					<div class="content text-center">
+						<h3><span>提升机动化世界<font style="color:#bed533">的体验</font></span></h3>
+						<div class="link-box">&nbsp;</div>
+					</div>
+				</div> -->
 			</div>
         </div>
     </section>
@@ -179,7 +200,7 @@
 				<!--Image Column-->
 				<div class="col-lg-12 col-md-12 col-sm-12">
 					<div class="image text-center">
-							<img data-item="3" src="images/background/bg-29.jpg" alt="">
+						<img src="images/background/bg-29.jpg" alt="">
 					</div>
 				</div>
 				
@@ -187,6 +208,30 @@
 		</div>
 		
 	</section>
+	<section id="magazine" class="welcome-section" style=" padding:0px">
+
+			<div class="">
+				<!--Sec Title-->
+				<div class="row clearfix">
+					
+					<!--Image Column-->
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<div class="image text-center">
+							<img data-item="3" src="images/background/bg-30.jpg" alt="">
+						</div>
+						<div class="content-box">
+							<div class="item-box box1 isClick" data-url="file/bb.pdf"></div>
+							<div class="item-box box2 isClick" data-url="file/bb.pdf"></div>
+							<div class="item-box box3 isClick" data-url="file/bb.pdf"></div>
+							<div class="item-box box4 isClick" data-url="file/bb.pdf"></div>
+							<div class="item-box box5 isClick" data-url="file/bb.pdf"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+		</section>
 	
 	
 
@@ -208,8 +253,8 @@
 									<div class="column col-lg-2 col-md-3 col-sm-6">
 									<h2>产品中心</h2>
 										<ul class="footer-link">
-											<li><a href="product.html?item=1">乘用座椅</a></li>
-											<li><a href="product.html?item=2">商用座椅</a></li>
+											<li><a href="product.html?item=1">乘用车座椅</a></li>
+											<li><a href="product.html?item=2">商用车座椅</a></li>
 											<li><a href="product.html?item=3">骨架</a></li>
 											<li><a href="product.html?item=4">面套</a></li>
 											<li><a href="product.html?item=5">泡沫</a></li>
@@ -261,15 +306,6 @@
 								<h2>重庆延锋安道拓微天下</h2>
 								<div class="widget-content">
 									<div class="text"><img src="images/ewm.jpg"></div>
-									<br>
-									
-									<!--Social Icon One-->
-									<ul class="social-icon-one">
-										<li><a href="#"><span class="icon fa fa-facebook"></span></a></li>
-										<li><a href="#"><span class="icon fa fa-twitter"></span></a></li>
-										<li><a href="#"><span class="icon fa fa-linkedin"></span></a></li>
-										<li><a href="#"><span class="icon fa fa-google-plus"></span></a></li>
-									</ul>
 								</div>
 							</div>
 						</div>
@@ -322,7 +358,13 @@
 <!--End Master Slider -->
 
 <script src="js/script.js"></script>
-
+<script type="text/javascript">
+	$('.isClick').click(function(){
+		var url = $(this).attr('data-url');
+		window.open(url,"_system","location=no");
+	})
+		
+</script>
 
 
 </body>

@@ -59,7 +59,20 @@
 
 @media only screen and (min-width: 769px){
     .china-map{
-        width: 35%;
+        width: 30%;
         margin-left: 55%;
+        margin-top: 3%;
+        margin-bottom: 3%;
     }
+}
+.scale-c{
+	-webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    transform: scale(1.4);
+    -webkit-transform-origin: 74% 71%;
+    -moz-transform-origin: 74% 71%;
+    transform-origin: 74% 71%;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    animation-duration: 2s;
 }
