@@ -6,6 +6,7 @@ font-family: 'Microsoft Yahei', sans-serif;*/
 @import url('font-awesome.css');
 @import url('flaticon.css');
 @import url('animate.css');
+@import url('common.css');
 @import url('owl.css');
 @import url('jquery-ui.css');
 @import url('jquery.timepicker.min.css');
@@ -36,7 +37,7 @@ font-family: 'Microsoft Yahei', sans-serif;*/
 
  ***/
 html{
-	font-size: 50px;
+	/* font-size: 50px; */
 }
 
 body {
@@ -507,7 +508,7 @@ img{
 .sec-title h2{
 	position:relative;
 	color:#1e1e29;
-	font-size:0.6rem;
+	font-size:1.875rem;
 	font-weight:700;
 	line-height:1.4em;
 	display: inline-block;
@@ -1275,7 +1276,7 @@ img{
 	position:absolute;
 	left:0px;
 	top:100%;
-	width:230px;
+	/* width:230px; */
 	z-index:100;
 	display:none;
 	opacity: 0;
@@ -1314,7 +1315,7 @@ img{
 .main-menu .navigation > li > ul > li > a{
 	position:relative;
 	display:block;
-	padding:7px 30px;
+	padding:7px;
 	line-height:24px;
 	font-weight:400;
 	font-size:18px;
@@ -1615,7 +1616,7 @@ img{
 .main-slider h3{
 	position:relative;
 	color:#ffffff;
-	font-size:0.6rem;
+	font-size:1.875rem;
 	font-weight:400;
 	/* margin-bottom:120px; */
 	display:inline-block;
@@ -1634,14 +1635,14 @@ img{
 }
 
 .main-slider h3 span{
-	font-size:0.84rem;
+	font-size:2.6rem;
 	font-weight: 500;
 	font-family: 'Microsoft Yahei', serif;
 }
 
 .main-slider h3.alternate{
 	color:#1f1f1f;
-	font-size: 0.86rem;
+	font-size: 2.7rem;
 	font-weight: 700;
 	font-family: 'Microsoft Yahei', serif;
 }
@@ -1809,16 +1810,16 @@ img{
 
 @media only screen and (max-width: 767px){
 	.main-slider h3{
-		font-size: 0.32rem;
+		font-size: 1rem;
 	}
 	.main-slider h3 span{
-		font-size: 0.40rem;
+		font-size: 1.25rem;
 	}
 	.main-slider h2{
-		font-size: 0.40rem;
+		font-size: 1.25rem;
 	}
 	.main-slider h2 span{
-		font-size: 0.48rem;
+		font-size: 1.5rem;
 	}
 }
 
@@ -10692,4 +10693,28 @@ img{
 	-webkit-transform: translateY(-50%); 
     position: absolute;
     right: 3%;
+}
+
+/*-----------header下拉菜单样式----------*/
+header .main-menu .navigation > li > ul{
+	/* display:block !important;
+	opacity: 1 !important;
+	visibility: visible !important; */
+	background: rgba(4,69,87,0.8);
+	min-width: 8rem;
+}
+header .main-menu .navigation > li > ul>li>a{
+	position: relative;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 0px;
+    opacity: 1;
+    font-size: 16px;
+    transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+	font-family: 'Microsoft Yahei', serif;
 }
