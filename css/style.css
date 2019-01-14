@@ -37,7 +37,7 @@ font-family: 'Microsoft Yahei', sans-serif;*/
 
  ***/
 html{
-	/* font-size: 50px; */
+	font-size: 16px;
 }
 
 body {
@@ -516,7 +516,7 @@ img{
 }
 
 .sec-title h2:before{
-	position: absolute;
+	/* position: absolute;
 	content: '';
 	left: 20px;
 	top:-18px;
@@ -528,7 +528,7 @@ img{
 	-ms-transform: perspective(400px) rotateY(40deg);
 	-o-transform: perspective(400px) rotateY(40deg);
 	-moz-transform: perspective(400px) rotateY(40deg);
-	transform: perspective(400px) rotateY(40deg);
+	transform: perspective(400px) rotateY(40deg); */
 }
 
 .sec-title .text{
@@ -2727,6 +2727,7 @@ img{
 	width:100%;
 	margin:0 auto;
 	padding:90px 15px 70px 15px;
+	display: flex;
 }
 
 .fluid-section-one .content-column .inner-column .slick-list{
@@ -2794,28 +2795,24 @@ img{
 
 .key-block{
 	position: relative;
-	margin-bottom: 40px;
+	/* margin-bottom: 40px; */
 }
 
 .key-block .inner-box{
 	position: relative;
-	padding: 0px 30px 30px 70px;
+	/* padding: 20px 30px 10px 70px; */
+	padding: 0 30px 30px 70px;
 	border-left: 1px solid #d9dfd7;
 }
 
 .key-block .inner-box .icon-box{
 	position: absolute;
-	left: -27px;
-	top: 50%;
-	width: 50px;
-	height: 50px;
 	display: block;
 	color: #484848;
 	font-size: 26px;
 	line-height: 50px;
 	text-align: center;
-	margin-top: -50px;
-	border-radius: 50px;
+	border-radius: 5px;
 	background-color: #ffffff;
 	border-left: 1px solid #d9dfd7;
 	transition:all 0.3s ease;
@@ -2823,8 +2820,21 @@ img{
 	-webkit-transition:all 0.3s ease;
 	-ms-transition:all 0.3s ease;
 	-o-transition:all 0.3s ease;
+	/*----*/
+	width: 10px;
+    height: 10px;
+    left: 0;
+	transform: translateX(-50%);
+	top: 50%;
+	margin-top: -20px;
 }
-
+.key-block .inner-box .icon-box.big-icon-box{
+	width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background: #fff;
+    top: 0;
+}
 .key-block .inner-box:hover .icon-box{
 	color: #ffffff;
 	border-color:#bed533;
@@ -2850,13 +2860,16 @@ img{
 
 .key-block .inner-box .content{
 	position: relative;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .key-block .inner-box .content h3{
 	position: relative;
 	font-size: 22px;
 	font-weight: 500;
-	margin-bottom: 8px;
+	flex: 2;
 }
 
 .key-block .inner-box .content h3 a{
@@ -2878,6 +2891,8 @@ img{
 	color: #ffffff;
 	font-size: 14px;
 	line-height: 1.6em;
+	text-align: left;
+	flex: 8;
 }
 
 /*** 
