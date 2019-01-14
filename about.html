@@ -14,7 +14,7 @@
 <link href="css/slick.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
-
+<link href="css/map.css" rel="stylesheet">
 
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
@@ -25,7 +25,43 @@
 
 <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+<style>
+#map{
+	background-color: #044557;
+}
+.china-map{
+	margin-left: 40%;
+}
+#map .img-box{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#map .counter-img{
+	width: 90px;
+	height: 90px;
+}
+#map .counter-title{
+	color: #fff;
+}
+#map .content-box{
+	width: 20%;
+	left: 60%;
+}
+#map .row{
+	height: 100%;
+    padding: 90px 0;
+}
+.current-info{
+	position: absolute;
+    top: 30%;
+	left: 20%;
+	color: #fff;
+	display: none;
+}
+</style>
 </head>
+
 
 <body>
 
@@ -219,19 +255,109 @@
 		</div>
 		
 	</section> -->
-	<section data-item="3" class="welcome-section" style=" padding:0px">
+	<section id="map" data-item="3" class="welcome-section">
     		<!--Sec Title-->
-			<div class="row clearfix">
-				
-				<!--Image Column-->
+			<!-- <div class="row clearfix">
 				<div class="col-lg-12 col-md-12 col-sm-12">
 					<div class="image text-center">
-							<img src="images/background/bg-12.jpg" alt="">
+						<img src="images/background/bg-12.jpg" alt="">
 					</div>
 				</div>
-				
+			</div> -->
+			<div class="china-map">
+				<img class="img-map" src="images/background/map_black_bg.png">
+				<div class="region-list active postition-1 online-node" data-type="成都">
+					<div class="area-box">
+						<span class="dot"></span>
+						<span class="pulse delay-06"></span>
+						<span class="pulse delay-01"></span>
+						<span class="pulse delay-02"></span>
+					</div>
+					<div class="show-regin"><span>成都</span></div>
+				</div>
+				<div class="region-list colour1 postition-2 online-node" data-type="重庆">
+					<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+						<span class="pulse delay-05"></span>
+						<span class="pulse delay-04"></span>
+					</div>
+					<div class="show-regin"><span>重庆</span></div>
+				</div>
+				<div class="region-list active postition-3 online-node" data-type="南昌">
+					<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+						<span class="pulse delay-05"></span>
+						<span class="pulse delay-04"></span>
+					</div>
+					<div class="show-regin"><span>南昌</span></div>
+				</div>
+				<div class="region-list waite postition-4 waite-node" data-type="东莞">
+					<div class="area-box"><span class="dot"></span>
+						<span class="pulse delay-01"></span>
+						<span class="pulse delay-02"></span>
+						</div>
+					<div class="show-regin"><span>东莞</span></div>
+				</div>
+				<div class="region-list waite postition-5 waite-node" data-type="台州">
+					<div class="area-box"><span class="dot"></span><span class="pulse delay-01"></span>
+						<span class="pulse delay-02"></span>
+						</div>
+					<div class="show-regin"><span>台州</span></div>
+				</div>
+					<div class="region-list active postition-6 online-node" data-type="杭州">
+					<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+						<span class="pulse delay-05"></span>
+						<span class="pulse delay-04"></span></div>
+					<div class="show-regin"><span>杭州</span></div>
+				</div>
+				<div class="region-list active postition-7 online-node" data-type="哈尔滨">
+					<div class="area-box"><span class="dot"></span><span class="pulse delay-04"></span>
+						<span class="pulse delay-05"></span>
+						<span class="pulse delay-03"></span></div>
+					<div class="show-regin"><span>哈尔滨</span></div>
+				</div>
+				<div class="region-list  active  postition-8 online-node" data-type="大庆">
+					<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+						<span class="pulse delay-05"></span>
+						<span class="pulse delay-04"></span></div>
+					<div class="show-regin"><span>大庆</span></div>
+				</div>
 			</div>
-		
+			<div class="content-box business-box">
+					<div class="row clearfix">
+							<!--Column-->
+							<div class="columnn col-lg-12">
+								<div class="inner wow fadeInUp40" data-wow-delay="0ms" data-wow-duration="1500ms">
+									<div class="img-box">
+										<img class="counter-img" src="images/icons/round_01.png">
+										<h5 class="counter-title">1个JCI认证技术中心</h5>
+									</div>
+								</div>
+							</div>
+					
+							<!--Column-->
+							<div class="columnn col-lg-12">
+								<div class="inner wow fadeInUp40" data-wow-delay="600ms" data-wow-duration="1500ms">
+									<div class="img-box">
+											<img class="counter-img" src="images/icons/round_02.png">
+											<h5 class="counter-title">10家制造工厂</h5>
+									</div>
+								</div>
+							</div>
+					
+							<!--Column-->
+							<div class="columnn col-lg-12">
+								<div class="inner wow fadeInUp40" data-wow-delay="900ms" data-wow-duration="1500ms">
+									<div class="img-box">
+											<img class="counter-img" src="images/icons/round_03.png">
+											<h5 class="counter-title">4300+名员工</h5>
+									</div>
+								</div>
+							</div>
+					</div>
+			</div>
+			<div class="current-info">
+				<img class="counter-img" src="images/icons/round_01.png">
+				<h5 class="current-text">重庆工厂</h5>
+			</div>
 	</section>
 	<section data-item="4" class="welcome-section" style=" padding:20px 0 20px">
     
@@ -241,7 +367,7 @@
 				
 				<!--Image Column-->
 				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="image text-center">
+					<div class="image text-center wow bounceInUp">
 							<img src="images/main-link.jpg" alt="">
 					</div>
 				</div>
@@ -276,7 +402,15 @@
 <!--End Master Slider -->
 
 <script src="js/script.js"></script>
-
+<script type="text/javascript">
+	$('.show-regin').hover(function(){
+		var type = $(this).parents('.region-list').attr('data-type');
+		$('.current-info .current-text').text(type+'地区工厂');
+		$('.current-info').fadeIn(1000);
+	},function(){
+		$('.current-info').fadeOut();
+	})
+</script>
 
 
 

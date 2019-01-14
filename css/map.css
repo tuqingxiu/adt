@@ -38,8 +38,10 @@
 .region-list.active .area-box .pulse{border-color:#009fd9;top:-39px;left:-39px;height:88px;width:88px;-webkit-box-shadow:0 0 12px #0080d9,0 0 20px #0080d9 inset;-moz-box-shadow:0 0 12px #0080d9,0 0 20px #0080d9 inset;box-shadow:0 0 12px #0080d9,0 0 20px #0080d9 inset}
 .region-list.waite .area-box .dot{background:#fd7e14}
 .region-list.waite .area-box .pulse{border-color:#fd7e14}
+.region-list.colour1 .area-box .dot{background:red}
+.region-list.colour1 .area-box .pulse{border-color:red}
 .show-regin{position:absolute;left:2px;height:0;top:0;width:11px;opacity:0;-o-transition:all .5s ease-in-out;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;transition:all .5s ease-in-out}
-.online-node .show-regin,.region-list:hover .show-regin,.underline-node .show-regin,.waite-node .show-regin{height:127px;opacity:1}
+.online-node .show-regin,.region-list:hover .show-regin,.underline-node .show-regin,.waite-node .show-regin{height:10px;opacity:1}
 .show-regin span{width:80px;position:absolute;left:5px;top:-11px;padding:6px 10px;font-size:14px;color:#ccc;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;text-align:center;white-space:nowrap;}
 .postition-10 .show-regin span{left:0}
 .postition-6 .show-regin span{left:-72px}
