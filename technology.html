@@ -26,11 +26,27 @@
 <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 <style type="text/css">
-.content-box .text2{
-	font-size: 0.76rem;
-	margin-top: 0.7rem;
+#technology .img2{
+	position: absolute;
+    width: 30%;
+	left: 15%;
+	bottom: 1%;
+    /* top: 50%;
+    transform: translateY(-45%); */
 }
-.content-box .text3{
+#technology .main-slider .content.text-right{
+	right: unset;
+	left: 50%;
+}
+.main-slider .content-box{
+	margin-top: 5%;
+}
+.main-slider .content-box .text2{
+	font-size: 2.375rem;
+	margin-top: 70px;
+	text-align: right;
+}
+.main-slider .content-box .text3{
 	font-size: 0.28rem;
 	margin-bottom: 0;
 }
@@ -43,6 +59,42 @@
 	.content-box .text3{
 		font-size: 0.24rem;
 	}
+}
+.section2{
+	display: flex;
+}
+.section2>div{
+	position: relative;
+}
+.section2 .right-box{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.section2 .item-box{
+	position: relative;
+}
+.section2 .item-box .text{
+	display: none;
+}
+.section2 .left-box{
+	color: #bed533;
+}
+.section2 .left-box .content-box{
+	text-align: center;
+	margin-top: 20px;
+}
+.section2 .right-box .content-box{
+	background: rgb(190, 213, 51, 0.8);
+	color: #fff;
+	display: none;
+}
+.section2 .right-box .content-box span{
+	position: absolute;
+    bottom: 10px;
+    text-align: center;
+    left: 0;
+    width: 100%;
 }
 </style>
 </head>
@@ -74,14 +126,15 @@
                     </div>
                 </div>
 			</div> -->
-			<div class="slide">
-				<img src="images/main-slider/image-3.jpg">
+			<div class="slide" style="background-image:url(images/main-slider/image-3.jpg)">
+				<img class="img1" src="images/main-slider/image-3.jpg">
+				<img class="wow fadeInLeft img2" src="images/main-slider/zy1.png">
 				<div class="content-box">
 					<div class="content text-right">
 							<h3 class="text1">创新研发</h3>
 							<h2 class="text2">超级座椅<br><span style="font-weight:bold; color:#bed533">面向未来的座椅</span></h2>
-							<div class="text text3">Superseat是重庆延锋安道拓自主研发的一款多功能高端汽车商务座椅 。
-	<br>我们从用户需求出发 ，还原不同座舱场景 ，满足座舱休闲娱乐 、商务办公等<br>多种需求 ，带你感受智能 、便捷 、舒适的座椅新体验 。</div>
+							<!-- <div class="text text3">Superseat是重庆延锋安道拓自主研发的一款多功能高端汽车商务座椅 。
+	<br>我们从用户需求出发 ，还原不同座舱场景 ，满足座舱休闲娱乐 、商务办公等<br>多种需求 ，带你感受智能 、便捷 、舒适的座椅新体验 。</div> -->
 					</div>
 				</div>
 			</div>
@@ -89,19 +142,45 @@
         </div>
     </section>
     <!--End Main Slider-->
-	<section class="welcome-section" style=" padding:0px">
-    
-    	<div class="">
+	<section class="welcome-section section2" style=" padding:0px">
     		<!--Sec Title-->
-			<div class="row clearfix">
-				
-				<!--Image Column-->
+			<!-- <div class="row clearfix">
 				<div class="col-lg-12 col-md-12 col-sm-12">
 					<div class="image text-center">
-							<a href="video/cjzy.mp4" class="lightbox-image play-box"><img src="images/background/bg-5-2.jpg" alt=""></a>
+						<a href="video/cjzy.mp4" class="lightbox-image play-box"><img src="images/background/bg-5-2.jpg" alt=""></a>
+						<div class=""></div>
 					</div>
 				</div>
-				
+			</div> -->
+			<!-- <a href="video/cjzy.mp4" class="lightbox-image play-box"><img src="images/background/bg-5-2.jpg" alt=""></a>
+			<div class="content-box">
+					
+				<div class="content text-right">
+						<div class="text text3">Superseat是重庆延锋安道拓自主研发的一款多功能高端汽车商务座椅 。
+<br>我们从用户需求出发 ，还原不同座舱场景 ，满足座舱休闲娱乐 、商务办公等<br>多种需求 ，带你感受智能 、便捷 、舒适的座椅新体验 。</div>
+				</div>
+			</div> -->
+			<div class="left-box">
+				<a href="video/cjzy.mp4" class="lightbox-image play-box"><img src="images/background/bg-5-2.jpg" alt=""></a>
+				<div class="content-box">
+					<div>Superseat是重庆延锋安道拓自主研发的一款多功能高端汽车商务座椅 。</div>
+					<div>我们从用户需求出发 ，还原不同座舱场景 ，满足座舱休闲娱乐 、商务办公等</div>
+					<div>多种需求 ，带你感受智能 、便捷 、舒适的座椅新体验 。</div>
+				</div>
+			</div>
+			<div class="right-box">
+				<div class="item-box">
+					<img src="images/technology/2-1.jpg">
+					<div class="content-box"><span>科技感十足的外观设计</span></div>
+				</div>
+				<div class="item-box">
+					<img src="images/technology/2-2.jpg">
+					<div class="content-box"><span>流畅的智能APP控制</span></div>
+				</div>
+				<div class="item-box">
+					<img src="images/technology/2-3.jpg">
+					<div class="content-box"><span>便捷的手机无线充电</span></div>
+				</div>
 			</div>
 		</div>
 		
@@ -212,7 +291,12 @@
 
 <script src="js/script.js"></script>
 <script src="js/common.js"></script>
-
-
+<script type="text/javascript">
+	$('.section2 .right-box .item-box').hover(function(){
+		$(this).find('.content-box').fadeIn();
+	},function(){
+		$(this).find('.content-box').fadeOut();
+	})
+</script>
 </body>
 </html>
