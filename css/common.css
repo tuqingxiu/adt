@@ -1621,6 +1621,10 @@ footer.footer{
 	-webkit-animation-name: fadeInUp100;
     animation-name: fadeInUp100;
 }
+.fadeInDown100{
+    -webkit-animation-name: fadeInDown100;
+    animation-name: fadeInDown100;
+}
 .fadeInUp-seven{
 	-webkit-animation-name: fadeInUp-seven;
     animation-name: fadeInUp-seven;
@@ -1648,6 +1652,12 @@ footer.footer{
 .animated2 {
 	-webkit-animation-duration: 2s;
     animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.animated3 {
+	-webkit-animation-duration: 3s;
+    animation-duration: 3s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
@@ -1738,6 +1748,20 @@ footer.footer{
 	    -webkit-transform: translateY(100%);
 	    -ms-transform: translateY(100%);
 	    transform: translateY(100%);
+	}
+	100% {
+	    opacity: 1;
+	    -webkit-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	    transform: translateY(0);
+	}
+}
+@keyframes fadeInDown100{
+    0% {
+	    opacity: 0;
+	    -webkit-transform: translateY(-100%);
+	    -ms-transform: translateY(-100%);
+	    transform: translateY(-100%);
 	}
 	100% {
 	    opacity: 1;
