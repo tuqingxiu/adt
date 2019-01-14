@@ -35,6 +35,9 @@
 .text-color3{
 	color: #333;
 }
+.text-color4{
+	color: #fff;
+}
 #technology .img2{
 	position: absolute;
     width: 30%;
@@ -88,10 +91,19 @@
 }
 .section2 .left-box{
 	color: #bed533;
+	position: relative;
+}
+.section2 .left-box .img_play{
+	width: 80px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%)
 }
 .section2 .left-box .content-box{
 	text-align: center;
 	margin-top: 20px;
+	height: auto;
 }
 .section2 .right-box .content-box{
 	background: rgb(190, 213, 51, 0.8);
@@ -118,12 +130,14 @@
 .section3 .cont-title>img{
 	width: 30px;
 }
-.section3 .column-2,
-.section3 .column-4{
+.column-box{
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+}
+.section3 .column-4{
+	padding: 5px 0 10px;
 }
 .section3 .column-2 .item-box{
 	width: 50%;
@@ -167,7 +181,86 @@
 	width: 30px;
 	margin-top: 20px;
 }
-
+.section4 .content-box{
+	display: flex;
+    flex-direction: column;
+	/* justify-content: space-between; */
+	justify-content: space-around;
+	left: 25%;
+	padding: 15px 0;
+}
+.section4 .conts1-2{
+	display: flex;
+    flex-direction: column;
+	justify-content: space-around;
+	flex: 1;
+}
+.section4 .cont1,
+.section6 .cont1{
+	font-size: 28px;
+	font-weight: 600;
+}
+.section4 .cont1>span,
+.section6 .cont1>span{
+	display: inline-block;
+	border-bottom: 2px solid #bed533;
+	padding-bottom: 10px;
+}
+.section4 .cont2{
+	display: flex;
+	flex-direction: column;
+}
+.section4 .cont3{
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+	font-weight: 600;
+}
+.section4 .cont3>img{
+	width: 25px;
+	margin-top: 10px;
+}
+.section5 .column-5 .item-box{
+	width: 19.8%;
+}
+.section5 .box1{
+	background: rgb(190, 213, 51, 0.8);
+	color: #fff;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section5 .box1 .cont1{
+	font-size: 16px;
+	font-weight: 600;
+	border-bottom: 2px solid #bed533;
+}
+.section6>.content-box{
+	left: 5%;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.section6 .column-box{
+	padding: 5px;
+	background: #bed533;
+}
+.section6 .column-4 .item-box{
+	width: 25%;
+	padding: 3px;
+}
+.section6 .cont1{
+	margin-bottom: 5px;
+}
+.section6 .column-4 .content-box{
+	background: rgb(190, 213, 51, 0.8);
+	color: #093947;
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	font-size: 16px;
+}
 </style>
 </head>
 
@@ -187,17 +280,6 @@
     <section data-item="1" class="main-slider">
     	
         <div class="main-slider-carousel owl-carousel owl-theme">
-            
-            <!-- <div class="slide" style="background-image:url(images/main-slider/image-3.jpg)">
-                <div class="auto-container">
-                	<div class="content text-right">
-						<h3 style="margin-top:80px">创新研发</h3>
-						<h2 style="font-size:38px; font-weight:normal">超级座椅<br><span style="font-weight:bold; color:#bed533">面向未来的座椅</span></h2>
-                    	<div class="text" style="font-size:14px">Superseat是重庆延锋安道拓自主研发的一款多功能高端汽车商务座椅 。
-<br>我们从用户需求出发 ，还原不同座舱场景 ，满足座舱休闲娱乐 、商务办公等<br>多种需求 ，带你感受智能 、便捷 、舒适的座椅新体验 。</div>
-                    </div>
-                </div>
-			</div> -->
 			<div class="slide" style="background-image:url(images/main-slider/image-3.jpg)">
 				<img class="img1" src="images/main-slider/image-3.jpg">
 				<img class="wow fadeInLeft img2" src="images/main-slider/zy1.png">
@@ -205,8 +287,6 @@
 					<div class="content text-right">
 							<h3 class="text1">创新研发</h3>
 							<h2 class="text2">超级座椅<br><span style="font-weight:bold; color:#bed533">面向未来的座椅</span></h2>
-							<!-- <div class="text text3">Superseat是重庆延锋安道拓自主研发的一款多功能高端汽车商务座椅 。
-	<br>我们从用户需求出发 ，还原不同座舱场景 ，满足座舱休闲娱乐 、商务办公等<br>多种需求 ，带你感受智能 、便捷 、舒适的座椅新体验 。</div> -->
 					</div>
 				</div>
 			</div>
@@ -217,6 +297,7 @@
 	<section class="welcome-section section2" style=" padding:0px">
 			<div class="left-box">
 				<a href="video/cjzy.mp4" class="lightbox-image play-box"><img src="images/background/bg-5-2.jpg" alt=""></a>
+				<img class="img_play" src="images/icons/play.png">
 				<div class="content-box">
 					<div>Superseat是重庆延锋安道拓自主研发的一款多功能高端汽车商务座椅 。</div>
 					<div>我们从用户需求出发 ，还原不同座舱场景 ，满足座舱休闲娱乐 、商务办公等</div>
@@ -240,18 +321,11 @@
 		</div>
 	</section>
 	<section class="welcome-section section3" style=" padding:0px">
-			<!-- <div class="row clearfix">
-				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="image text-center">
-							<img src="images/background/bg-20.jpg" alt="">
-					</div>
-				</div>
-			</div> -->
 		<div class="cont-title text-color1 wow fadeInDown100">
 			<span>五大智能模块</span>
 			<img src="images/technology/icon1.jpg">
 		</div>
-		<div class="column-2">
+		<div class="column-box column-2">
 			<div class="item-box wow fadeInLeft">
 				<img src="images/technology/3-1.jpg">
 				<div class="content-box box1 wow fadeInLeft animated2">
@@ -289,14 +363,14 @@
 				<div class="content-box box6 wow fadeInDown100 animated2">
 					<div class="cont1 text-color1">空气净化</div>
 					<div class="cont2 text-color3">靠背安装空气净化器，实时监测车内空气，自动完成空气净化，在车内呼吸新鲜空气。</div>
-					<div class="cont3 text-color1">
+					<!-- <div class="cont3 text-color1">
 						<span>充满设计的惊喜</span>
 						<img src="images/technology/icon1.jpg">
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
-		<div class="column-4">
+		<div class="column-box column-4">
 			<div class="item-box wow fadeInDown100">
 				<img src="images/technology/3-6.jpg">
 			</div>
@@ -312,56 +386,101 @@
 		</div>
 
 	</section>
-	<section data-item="2" class="welcome-section" style=" padding:0px">
-		
-			<div class="">
-				<!--Sec Title-->
-				<div class="row clearfix">
-					
-					<!--Image Column-->
-					<div class="col-lg-12 col-md-12 col-sm-12">
-						<div class="image text-center">
-								<img src="images/background/bg-21.jpg" alt="">
-						</div>
+	<section data-item="2" class="welcome-section section4" style=" padding:0px">
+			<img src="images/background/bg-21.jpg" alt="">
+			<div class="content-box wow fadeInDown100">
+				<!-- <div class="conts1-2"> -->
+					<div class="cont1 text-color2"><span>技术</span>中心</div>
+					<div class="cont2 text-color4">
+						<span>>200+名工程师</span>
+						<span>>10位座椅设计专家</span>
+						<span>>10年平均工作经验</span>
+						<span>>5.8年平均座椅行业工作经验</span>
 					</div>
-					
-				</div>
+				<!-- </div> -->
+				
+				<!-- <div class="cont3 text-color2">
+					<span>人才储备</span>
+					<img src="images/technology/icon2.png">
+				</div> -->
 			</div>
-			
 		</section>
-    <section class="welcome-section" style=" padding:0px">
-    
-    	<div class="">
-    		<!--Sec Title-->
-			<div class="row clearfix">
-				
-				<!--Image Column-->
-				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="image text-center">
-							<img src="images/background/bg-22.jpg" alt="">
-					</div>
+    <section class="welcome-section section5" style=" padding:0px">
+		<div class="column-box column-5">
+			<div class="item-box wow fadeInLeft">
+				<img src="images/technology/4-1.jpg">
+				<div class="content-box box1 wow fadeInLeft animated2">
+					<div class="cont1 text-color4">对标室</div>
 				</div>
-				
+			</div>
+			<div class="item-box wow fadeInRight">
+				<img src="images/technology/4-2.jpg">
+			</div>
+			<div class="item-box wow fadeInUp100">
+				<img src="images/technology/4-3.jpg">
+			</div>
+			<div class="item-box wow fadeInUp100">
+				<img src="images/technology/4-4.jpg">
+			</div>
+			<div class="item-box wow fadeInLeft">
+				<img src="images/technology/4-5.jpg">
 			</div>
 		</div>
-		
+		<div class="column-box columnBox2">
+			<div class="item-box item1 wow fadeInUp100" style="width: 19.8%">
+				<img src="images/technology/4-6.jpg">
+			</div>
+			<div class="item-box item2 wow fadeInUp100" style="width: 39.8%">
+				<img src="images/technology/4-7.jpg">
+			</div>
+			<div class="item-box item3 wow fadeInLeft" style="width: 39.8%">
+				<img src="images/technology/4-8.jpg">
+			</div>
+		</div>
 	</section>
-	<section data-item="3" class="welcome-section" style=" padding:0px">
-    
-    	<div class="">
-    		<!--Sec Title-->
-			<div class="row clearfix">
-				
-				<!--Image Column-->
-				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="image text-center">
-							<img src="images/background/bg-23.jpg" alt="">
-					</div>
+	<section data-item="3" class="welcome-section section6" style=" padding:0px">
+		<img src="images/background/bg-23.jpg" alt="">
+		<div class="content-box">
+			<div class="conts">
+				<div class="cont1 text-color2"><span>制造</span>能力</div>
+				<div class="cont2 text-color4">我们拥有</div>
+				<div class="cont3 text-color2">从汽车座椅零部件到整椅的各部分的生产制造能力</div>
+			</div>
+			<div class="column-box column-4">
+				<div class="item-box wow fadeInLeft">
+					<img src="images/technology/6-1.jpg">
+					<div class="content-box box1">浇注（泡沫）</div>
 				</div>
-				
+				<div class="item-box wow fadeInRight">
+					<img src="images/technology/6-2.jpg">
+					<div class="content-box box1">自动裁剪</div>
+				</div>
+				<div class="item-box wow fadeInUp100">
+					<img src="images/technology/6-3.jpg">
+					<div class="content-box box1">自动拧紧</div>
+				</div>
+				<div class="item-box wow fadeInUp100">
+					<img src="images/technology/6-4.jpg">
+					<div class="content-box box1">工厂信息化</div>
+				</div>
+				<div class="item-box wow fadeInLeft">
+					<img src="images/technology/6-5.jpg">
+					<div class="content-box box1">激光焊接</div>
+				</div>
+				<div class="item-box wow fadeInUp100">
+					<img src="images/technology/6-6.jpg">
+					<div class="content-box box1">连续模</div>
+				</div>
+				<div class="item-box wow fadeInUp100">
+					<img src="images/technology/6-7.jpg">
+					<div class="content-box box1">冲压串联线</div>
+				</div>
+				<div class="item-box wow fadeInLeft">
+					<img src="images/technology/6-8.jpg">
+					<div class="content-box box1">滑轨在线检测</div>
+				</div>
 			</div>
 		</div>
-		
 	</section>
 	
 
