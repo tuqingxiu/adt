@@ -10,7 +10,7 @@
 <link href="css/masterslider/skins/default/style.css" rel="stylesheet">
 <link href="css/masterslider/style/ms-caro3d.css" rel="stylesheet">
 <!--End MasterSlider-->
-
+<link href="css/swiper.min.css" rel="stylesheet">
 <link href="css/slick.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
@@ -77,7 +77,18 @@
 		font-size: 0.28rem;
 	}
 }
-
+.news-center{
+	bottom: 20px;
+    border: 1px solid #fff;
+    height: 25px;
+    line-height: 24px;
+    border-radius: 15px;
+    padding: 0 10px;
+}
+.play{
+	width: 80px;
+	height: 80px;
+}
 </style>
 </head>
 
@@ -90,230 +101,210 @@
  	
     <!-- Preloader -->
     <div class="preloader"></div>
- 	
-
-    <!--Main Slider-->
-    <section class="main-slider">
-    	
-        <div class="main-slider-carousel owl-carousel owl-theme">
-            <div class="slide">
-				<img src="images/main-slider/image-1.jpg">
-                <div class="content-box">
-					<div class="content text-center">
-						<h3><div>提升机动化世界</div><font style="color:#bed533">的体验</font></h3>
-						<div class="link-box">&nbsp;</div>
-					</div>
-                </div>
-			</div>
-        </div>
-    </section>
-    <!--End Main Slider-->
-	<section class="welcome-section" style=" padding:0px">
-    
-    	<div class="">
-    		<!--Sec Title-->
-			<div class="row clearfix">
-				
-				<!--Image Column-->
-				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="image text-center">
-							<a href="video/adt4k.mp4" class="lightbox-image play-box"><img src="images/background/bg-1-2.jpg" alt=""></a>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-		
-	</section>      
-	<section class="welcome-section" style=" padding:0px">
-    
-    	<div class="">
-    		<!--Sec Title-->
-			<div class="row clearfix">
-				
-				<!--Image Column-->
-				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="image text-center">
-							<img src="images/background/bg-2-2.jpg" alt="">
-					</div>
-				</div>
-				
-			</div>
-		</div>
-		
-	</section>
-  	<!--End Window Tab Section-->
-	
-    <!--Welcome Section-->
-    <!--<section class="welcome-section bg-3" style="height:913px;">
-    
-    	<div class="auto-container">
-    		<div class="sec-title">
-				<h1 style="padding-top:300px; color:#044557">超级座椅<br><span style="font-weight:bold; color:#044557">面向未来的座椅</span></h1>
-			</div>
-			<div class="row clearfix">
-			</div>
-		</div>
-		
-	</section> -->
-	<section class="welcome-section" style=" padding:0px">
-    
-    	<div class="">
-    		<!--Sec Title-->
-			<div class="row clearfix">
-				
-				<!--Image Column-->
-				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="image text-center">
-							<img src="images/background/bg-3-2.jpg" alt="">
-					</div>
-				</div>
-				
-			</div>
-		</div>
-		
-	</section>
-    <!--End Welcome Section-->
-    <section class="welcome-section bg-4">
-		<!-- <img src="images/background/bg-4.jpg"> -->
-		<!--map-->
-		<div class="china-map">
-				<img class="img-map" src="images/background/map_black_bg.png">
-				<div class="region-list active postition-1 online-node">
-					<div class="area-box">
-						<span class="dot"></span>
-						<span class="pulse delay-06"></span>
-						<span class="pulse delay-01"></span>
-						<span class="pulse delay-02"></span>
-					</div>
-					<div class="show-regin"><span>成都</span></div>
-				</div>
-				<div class="region-list color1 active postition-2 online-node">
-					<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
-						<span class="pulse delay-05"></span>
-						<span class="pulse delay-04"></span>
-					</div>
-					<div class="show-regin"><span>重庆</span></div>
-				</div>
-				<div class="region-list active postition-3 online-node">
-					<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
-						<span class="pulse delay-05"></span>
-						<span class="pulse delay-04"></span>
-					</div>
-					<div class="show-regin"><span>南昌</span></div>
-				</div>
-				<div class="region-list waite postition-4 waite-node">
-					<div class="area-box"><span class="dot"></span>
-						<span class="pulse delay-01"></span>
-						<span class="pulse delay-02"></span>
+	<div id="index-swiper" class="swiper-container">
+		<div class="swiper-wrapper">
+			<!--第1屏-->
+			<div class="swiper-slide my-color1">
+				<div id="first-slide-swiper" class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img class="slide-bg" src="images/main-slider/image-1.jpg">
+							<div class="content-box">
+								<div class="content text-center">
+									<h3><div>提升机动化世界</div><font style="color:#bed533">的体验</font></h3>
+								</div>
+							</div>
 						</div>
-					<div class="show-regin"><span>东莞</span></div>
-				</div>
-				<div class="region-list waite postition-5 waite-node">
-					<div class="area-box"><span class="dot"></span><span class="pulse delay-01"></span>
-						<span class="pulse delay-02"></span>
+						<div class="swiper-slide">
+							<img class="slide-bg" src="images/main-slider/image-1.jpg">
+							<div class="content-box">
+								<div class="content text-center">
+									<h3><div>提升机动化世界</div><font class="my-color2">的体验</font></h3>
+								</div>
+								<div class="my-row-center news-center">新闻中心</div>
+							</div>
 						</div>
-					<div class="show-regin"><span>台州</span></div>
-				</div>
-					<div class="region-list active postition-6 online-node">
-					<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
-						<span class="pulse delay-05"></span>
-						<span class="pulse delay-04"></span></div>
-					<div class="show-regin"><span>杭州</span></div>
-				</div>
-				<div class="region-list active postition-7 online-node">
-					<div class="area-box"><span class="dot"></span><span class="pulse delay-04"></span>
-						<span class="pulse delay-05"></span>
-						<span class="pulse delay-03"></span></div>
-					<div class="show-regin"><span>哈尔滨</span></div>
-				</div>
-				<div class="region-list  active  postition-8 online-node">
-					<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
-						<span class="pulse delay-05"></span>
-						<span class="pulse delay-04"></span></div>
-					<div class="show-regin"><span>大庆</span></div>
-				</div>
-				<div class="region-list  active  postition-9 online-node" data-type="湘潭">
-					<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
-						<span class="pulse delay-05"></span>
-						<span class="pulse delay-04"></span></div>
-					<div class="show-regin"><span>湘潭</span></div>
+					</div>
 				</div>
 			</div>
-    	
-			
-			<div class="content-box business-box">
-				<!--Sec Title-->
-				<div class="sec-title">
-						<h2><span class="theme_color">业务概况</span></h2>
-					</div>
-					<div class="row clearfix">
-						
-							<!--Column-->
-							<div class="column counter-column col-lg-2">
-								<div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-									<div class="count-outer count-box">
-										<span class="count-text" data-speed="6000" data-stop="10" >0</span>
-										<h4 class="counter-title">全国工厂</h4>
-									</div>
+			<!--第2屏-->
+			<div class="swiper-slide">
+					<!-- <div class="">
+						<div class="row clearfix">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<div class="image text-center">
+										<a href="video/adt4k.mp4" class="lightbox-image play-box"><img src="images/background/bg-1-2.jpg" alt=""></a>
 								</div>
 							</div>
-					
-							<!--Column-->
-							<div class="column counter-column col-lg-2">
-								<div class="inner wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
-									<div class="count-outer count-box">
-										<span class="count-text" data-speed="6000" data-stop="4300" >0+</span>
-										<h4 class="counter-title" >员工人数</h4>
-									</div>
-								</div>
-							</div>
-					
-							<!--Column-->
-							<div class="column counter-column col-lg-2">
-								<div class="inner wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="1500ms">
-									<div class="count-outer count-box">
-										<span class="count-text" data-speed="8000" data-stop="5000000000" >0</span>
-										<h4 class="counter-title" >2018年销售额</h4>
-									</div>
-								</div>
-							</div>
-							<!--<p class="text-white" style="padding:50px 0 0 10px">数据更新时间为2018年12月</p>-->
-						<!--Image Column-->
-						
-						
-						<!--Content Column-->
-						<div class="content-column col-lg-8 col-md-12 col-sm-12">
 							
 						</div>
-						
-					</div>
+					</div> -->
+					<a href="video/adt4k.mp4" class="lightbox-image play-box">
+						<img src="images/background/bg-1-2.jpg" alt="">
+						<img class="my-all-center play" src="images/icons/play.png">
+					</a>
+					
 			</div>
-    		
-	
-	</section>
-	<section class="welcome-section" style=" padding:20px 0 20px">
-    
-    	<div class="auto-container">
-    		<!--Sec Title-->
-			<div class="row clearfix">
-				
-				<!--Image Column-->
-				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="image text-center">
-							<img src="images/main-img.jpg" alt="">
+			<!--第3屏-->
+			<div class="swiper-slide">
+				<section class="welcome-section" style=" padding:0px">
+					<div class="">
+						<div class="row clearfix">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<div class="image text-center">
+									<img src="images/background/bg-2-2.jpg" alt="">
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-				
+				</section>
+			</div>
+			<!--第4屏-->
+			<div class="swiper-slide">
+				<!-- <section class="welcome-section" style=" padding:0px">
+					<div class="">
+						<div class="row clearfix">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<div class="image text-center">
+										<img src="images/background/bg-3-2.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section> -->
+			</div>
+			<!--第5屏-->
+			<div class="swiper-slide">
+					<!-- <section class="welcome-section bg-4">
+							<div class="china-map">
+									<img class="img-map" src="images/background/map_black_bg.png">
+									<div class="region-list active postition-1 online-node">
+										<div class="area-box">
+											<span class="dot"></span>
+											<span class="pulse delay-06"></span>
+											<span class="pulse delay-01"></span>
+											<span class="pulse delay-02"></span>
+										</div>
+										<div class="show-regin"><span>成都</span></div>
+									</div>
+									<div class="region-list color1 active postition-2 online-node">
+										<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+											<span class="pulse delay-05"></span>
+											<span class="pulse delay-04"></span>
+										</div>
+										<div class="show-regin"><span>重庆</span></div>
+									</div>
+									<div class="region-list active postition-3 online-node">
+										<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+											<span class="pulse delay-05"></span>
+											<span class="pulse delay-04"></span>
+										</div>
+										<div class="show-regin"><span>南昌</span></div>
+									</div>
+									<div class="region-list waite postition-4 waite-node">
+										<div class="area-box"><span class="dot"></span>
+											<span class="pulse delay-01"></span>
+											<span class="pulse delay-02"></span>
+											</div>
+										<div class="show-regin"><span>东莞</span></div>
+									</div>
+									<div class="region-list waite postition-5 waite-node">
+										<div class="area-box"><span class="dot"></span><span class="pulse delay-01"></span>
+											<span class="pulse delay-02"></span>
+											</div>
+										<div class="show-regin"><span>台州</span></div>
+									</div>
+										<div class="region-list active postition-6 online-node">
+										<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+											<span class="pulse delay-05"></span>
+											<span class="pulse delay-04"></span></div>
+										<div class="show-regin"><span>杭州</span></div>
+									</div>
+									<div class="region-list active postition-7 online-node">
+										<div class="area-box"><span class="dot"></span><span class="pulse delay-04"></span>
+											<span class="pulse delay-05"></span>
+											<span class="pulse delay-03"></span></div>
+										<div class="show-regin"><span>哈尔滨</span></div>
+									</div>
+									<div class="region-list  active  postition-8 online-node">
+										<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+											<span class="pulse delay-05"></span>
+											<span class="pulse delay-04"></span></div>
+										<div class="show-regin"><span>大庆</span></div>
+									</div>
+									<div class="region-list  active  postition-9 online-node" data-type="湘潭">
+										<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+											<span class="pulse delay-05"></span>
+											<span class="pulse delay-04"></span></div>
+										<div class="show-regin"><span>湘潭</span></div>
+									</div>
+								</div>
+							
+								
+								<div class="content-box business-box">
+									<div class="sec-title">
+											<h2><span class="theme_color">业务概况</span></h2>
+										</div>
+										<div class="row clearfix">
+												<div class="column counter-column col-lg-2">
+													<div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+														<div class="count-outer count-box">
+															<span class="count-text" data-speed="6000" data-stop="10" >0</span>
+															<h4 class="counter-title">全国工厂</h4>
+														</div>
+													</div>
+												</div>
+												<div class="column counter-column col-lg-2">
+													<div class="inner wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
+														<div class="count-outer count-box">
+															<span class="count-text" data-speed="6000" data-stop="4300" >0+</span>
+															<h4 class="counter-title" >员工人数</h4>
+														</div>
+													</div>
+												</div>
+												<div class="column counter-column col-lg-2">
+													<div class="inner wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="1500ms">
+														<div class="count-outer count-box">
+															<span class="count-text" data-speed="8000" data-stop="5000000000" >0</span>
+															<h4 class="counter-title" >2018年销售额</h4>
+														</div>
+													</div>
+												</div>
+											<div class="content-column col-lg-8 col-md-12 col-sm-12">
+												
+											</div>
+											
+										</div>
+								</div>
+						</section> -->
+			</div>
+			<!--第6屏-->
+			<div class="swiper-slide">
+					<!-- <section class="welcome-section" style=" padding:20px 0 20px">
+    
+							<div class="auto-container">
+								<div class="row clearfix">
+									<div class="col-lg-12 col-md-12 col-sm-12">
+										<div class="image text-center">
+												<img src="images/main-img.jpg" alt="">
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							
+						</section> -->
+			</div>
+			<!--第7屏-->
+			<div class="swiper-slide">
+				<!-- <div id="footerBox"></div> -->
 			</div>
 		</div>
-		
-	</section>
+	</div>
+	
 	
 
-	<!--Main Footer-->
-	<div id="footerBox"></div>
-	<!--End Main Footer-->
+	
 	
 </div>
 <!--End pagewrapper-->
@@ -333,6 +324,8 @@
 <script src="js/masterslider/jquery.easing.min.js"></script>
 <script src="js/masterslider/masterslider.min.js"></script>
 <!--End Master Slider -->
+<script src="js/swiper.js"></script>
+
 
 <script src="js/script.js"></script>
 <script src="my-js/index.js"></script>
