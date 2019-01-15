@@ -302,7 +302,7 @@
 	display: none;
 }
 .section6 .column-4 .content-box.show{
-	display: flex;
+	display: flex !important;
 }
 </style>
 </head>
@@ -318,25 +318,27 @@
     <!-- Preloader -->
     <div class="preloader"></div>
  	
-
-    <!--Main Slider-->
-    <section data-item="1" class="main-slider">
+	<div class="swiper-slide">
+		<!--Main Slider-->
+		<section data-item="1" class="main-slider">
     	
-        <div class="main-slider-carousel owl-carousel owl-theme">
-			<div class="slide" style="background-image:url(images/main-slider/image-3.jpg)">
-				<img class="img1" src="images/main-slider/image-3.jpg">
-				<img class="wow fadeInLeft img2" src="images/main-slider/zy1.png">
-				<div class="content-box">
-					<div class="content text-right">
-							<h3 class="text1">创新研发</h3>
-							<h2 class="text2">超级座椅<br><span style="font-weight:bold; color:#bed533">面向未来的座椅</span></h2>
+				<div class="main-slider-carousel owl-carousel owl-theme">
+					<div class="slide" style="background-image:url(images/main-slider/image-3.jpg)">
+						<img class="img1" src="images/main-slider/image-3.jpg">
+						<img class="wow fadeInLeft img2" src="images/main-slider/zy1.png">
+						<div class="content-box">
+							<div class="content text-right">
+									<h3 class="text1">创新研发</h3>
+									<h2 class="text2">超级座椅<br><span style="font-weight:bold; color:#bed533">面向未来的座椅</span></h2>
+							</div>
+						</div>
 					</div>
+					
 				</div>
-			</div>
-            
-        </div>
-    </section>
-    <!--End Main Slider-->
+			</section>
+			<!--End Main Slider-->
+	</div>
+    
 	<section class="welcome-section section2" style=" padding:0px">
 			<div class="left-box">
 				<a href="video/cjzy.mp4" class="lightbox-image play-box">
