@@ -89,6 +89,46 @@
 	width: 80px;
 	height: 80px;
 }
+.slide3 .point{
+	position: absolute;
+}
+.slide3 .point>img{
+	width: 30px;
+	height: 30px;
+}
+.slide3 .point1{
+	top: 30%;
+    left: 50%;
+}
+.slide3 .point2{
+	top: 60%;
+    left: 35%;
+}
+.slide3 .point3{
+	top: 30%;
+    left: 80%;
+}
+.slide3 .point4{
+	top: 45%;
+    left: 65%;
+}
+.slide3 .point-text{
+	position: absolute;
+	width: 80px;
+    background: #bed533;
+    border-radius: 8px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.slide3 .point1 .point-text,
+.slide3 .point2 .point-text{
+	right: 140%;
+}
+.slide3 .point3 .point-text,
+.slide3 .point4 .point-text{
+	left: 140%;
+}
 </style>
 </head>
 
@@ -104,14 +144,14 @@
 	<div id="index-swiper" class="swiper-container">
 		<div class="swiper-wrapper">
 			<!--第1屏-->
-			<div class="swiper-slide my-color1">
+			<div class="swiper-slide my-color1 slide1">
 				<div id="first-slide-swiper" class="swiper-container">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<img class="slide-bg" src="images/main-slider/image-1.jpg">
 							<div class="content-box">
 								<div class="content text-center">
-									<h3><div>提升机动化世界</div><font style="color:#bed533">的体验</font></h3>
+										<h3><div>提升机动化世界</div><font class="my-color2">的体验</font></h3>
 								</div>
 							</div>
 						</div>
@@ -128,54 +168,52 @@
 				</div>
 			</div>
 			<!--第2屏-->
-			<div class="swiper-slide">
-					<!-- <div class="">
-						<div class="row clearfix">
-							<div class="col-lg-12 col-md-12 col-sm-12">
-								<div class="image text-center">
-										<a href="video/adt4k.mp4" class="lightbox-image play-box"><img src="images/background/bg-1-2.jpg" alt=""></a>
-								</div>
-							</div>
-							
-						</div>
-					</div> -->
-					<a href="video/adt4k.mp4" class="lightbox-image play-box">
-						<img src="images/background/bg-1-2.jpg" alt="">
-						<img class="my-all-center play" src="images/icons/play.png">
-					</a>
-					
+			<div class="swiper-slide slide2">
+				<a href="video/adt4k.mp4" class="lightbox-image play-box">
+					<img class="slide-bg" src="images/background/bg-1-2.jpg" alt="">
+					<img class="my-all-center play" src="images/icons/play.png">
+				</a>
 			</div>
 			<!--第3屏-->
-			<div class="swiper-slide">
-				<section class="welcome-section" style=" padding:0px">
-					<div class="">
-						<div class="row clearfix">
-							<div class="col-lg-12 col-md-12 col-sm-12">
-								<div class="image text-center">
-									<img src="images/background/bg-2-2.jpg" alt="">
-								</div>
-							</div>
+			<div class="swiper-slide slide3">
+				<img class="slide-bg" src="images/background/bg-2-2.jpg">
+				<div class="my-all-center">
+					<img class="zy-img" src="images/index/1.png">
+					<div class="content-box">
+						<div class="point point1">
+							<div class="point-text">整椅</div>
+							<img src="images/icons/point.png">
+						</div>
+						<div class="point point2">
+							<div class="point-text">面套</div>
+							<img src="images/icons/point.png">
+						</div>
+						<div class="point point3">
+								<div class="point-text">骨架</div>
+							<img src="images/icons/point.png">
+							
+						</div>
+						<div class="point point4">
+								<div class="point-text">泡沫</div>
+							<img src="images/icons/point.png">
+							
 						</div>
 					</div>
-				</section>
+				</div>
 			</div>
 			<!--第4屏-->
 			<div class="swiper-slide">
-				<!-- <section class="welcome-section" style=" padding:0px">
-					<div class="">
-						<div class="row clearfix">
-							<div class="col-lg-12 col-md-12 col-sm-12">
-								<div class="image text-center">
-										<img src="images/background/bg-3-2.jpg" alt="">
-								</div>
-							</div>
-						</div>
+				<img class="slide-bg" src="images/background/bg-3-2.jpg">
+				<div class="content-box">
+					<div class="content text-center">
+						<h3><div>超级座椅</div><font class="my-color2">面向未来的座椅</font></h3>
 					</div>
-				</section> -->
+				</div>
 			</div>
 			<!--第5屏-->
 			<div class="swiper-slide">
-					<!-- <section class="welcome-section bg-4">
+				<img class="slide-bg" src="images/background/bg-4.jpg">
+					<div class="content-box">
 							<div class="china-map">
 									<img class="img-map" src="images/background/map_black_bg.png">
 									<div class="region-list active postition-1 online-node">
@@ -276,7 +314,7 @@
 											
 										</div>
 								</div>
-						</section> -->
+							</div>
 			</div>
 			<!--第6屏-->
 			<div class="swiper-slide">
