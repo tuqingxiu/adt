@@ -38,26 +38,36 @@
 .region-list.active .area-box .pulse{border-color:#009fd9;top:-39px;left:-39px;height:88px;width:88px;-webkit-box-shadow:0 0 12px #0080d9,0 0 20px #0080d9 inset;-moz-box-shadow:0 0 12px #0080d9,0 0 20px #0080d9 inset;box-shadow:0 0 12px #0080d9,0 0 20px #0080d9 inset}
 .region-list.waite .area-box .dot{background:#fd7e14}
 .region-list.waite .area-box .pulse{border-color:#fd7e14}
-.region-list.colour1 .area-box .dot{background:red}
-.region-list.colour1 .area-box .pulse{border-color:red}
+.region-list.color1 .area-box .dot{background:red}
+.region-list.color1 .area-box .pulse{border-color:red}
 .show-regin{position:absolute;left:2px;height:0;top:0;width:11px;opacity:0;-o-transition:all .5s ease-in-out;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;transition:all .5s ease-in-out}
 .online-node .show-regin,.region-list:hover .show-regin,.underline-node .show-regin,.waite-node .show-regin{height:10px;opacity:1}
 .show-regin span{width:80px;position:absolute;left:5px;top:-11px;padding:6px 10px;font-size:14px;color:#ccc;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;text-align:center;white-space:nowrap;}
 .postition-10 .show-regin span{left:0}
-.postition-6 .show-regin span{left:-72px}
+.postition-1 .show-regin span{left:-45px;}
+.postition-2 .show-regin span{left:-10px;}
+.postition-6 .show-regin span{left:-42px}
 .area-box{z-index:77}
 .show-regin{z-index:66}
 .region-list.active .show-regin span{position:relative;color:#ccc}
 .region-list.waite .show-regin span{color:#ccc}
 .postition-1{left: 45%;top: 63%;}
 .postition-2{left: 51%;top: 68%;}
-.postition-3{left: 68%;top: 71%;}
+.postition-3{left: 68%;top: 64%;}
 .postition-4{left: 73%;top: 80%;}
 .postition-5{left: 83%;top: 65%;}
 .postition-6{left: 81%;top: 60%;}
 .postition-7{left: 88%;top: 18%;}
 .postition-8{left: 84%;top: 14%;}
+.postition-9{left: 58%;top: 76%;}
 .douhao{width:0}
+.postition-2 .dot{
+    width: 15px;
+    height: 15px;
+}
+.postition-2 .area-box .pulse{
+    border: 5px solid #b7b7b7;
+}
 
 @media only screen and (min-width: 769px){
     .china-map{

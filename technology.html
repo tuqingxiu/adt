@@ -26,6 +26,45 @@
 <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 <style type="text/css">
+.big-img-box{
+	/* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+	background: rgb(0,0,0,0.5); */
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	max-width: 60%;
+	z-index: 9999;
+	display: none;
+	/* position: absolute;
+    top: 0;
+    left: 50%;
+	transform: translateX(-50%);
+	max-width: 60%;
+	z-index: 9999; */
+	/* display: none; */
+}
+.big-img-box.show{
+	/* display: flex; */
+	display: block;
+}
+/* .big-img-box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	max-width: 60%;
+} */
+.big-img-box>.big-img{
+	/* max-width: 60%; */
+}
 .text-color1{
 	color: #093947;
 }
@@ -256,10 +295,14 @@
 .section6 .column-4 .content-box{
 	background: rgb(190, 213, 51, 0.8);
 	color: #093947;
-	display: flex;
+	/* display: flex; */
     justify-content: center;
 	align-items: center;
 	font-size: 16px;
+	display: none;
+}
+.section6 .column-4 .content-box.show{
+	display: flex;
 }
 </style>
 </head>
@@ -296,8 +339,11 @@
     <!--End Main Slider-->
 	<section class="welcome-section section2" style=" padding:0px">
 			<div class="left-box">
-				<a href="video/cjzy.mp4" class="lightbox-image play-box"><img src="images/background/bg-5-2.jpg" alt=""></a>
-				<img class="img_play" src="images/icons/play.png">
+				<a href="video/cjzy.mp4" class="lightbox-image play-box">
+					<img src="images/background/bg-5-2.jpg" alt="">
+					<img class="img_play" src="images/icons/play.png">
+				</a>
+				
 				<div class="content-box">
 					<div>Superseat是重庆延锋安道拓自主研发的一款多功能高端汽车商务座椅 。</div>
 					<div>我们从用户需求出发 ，还原不同座舱场景 ，满足座舱休闲娱乐 、商务办公等</div>
@@ -318,7 +364,6 @@
 					<div class="content-box"><span>便捷的手机无线充电</span></div>
 				</div>
 			</div>
-		</div>
 	</section>
 	<section class="welcome-section section3" style=" padding:0px">
 		<div class="cont-title text-color1 wow fadeInDown100">
@@ -406,35 +451,35 @@
 			</div>
 		</section>
     <section class="welcome-section section5" style=" padding:0px">
-		<div class="column-box column-5">
-			<div class="item-box wow fadeInLeft">
-				<img src="images/technology/4-1.jpg">
+		<div class="column-box column-5 wow fadeInLeft">
+			<div class="item-box 11" data-bigImg="5-1-big.png">
+				<img src="images/technology/5-1.jpg">
 				<div class="content-box box1 wow fadeInLeft animated2">
 					<div class="cont1 text-color4">对标室</div>
 				</div>
 			</div>
-			<div class="item-box wow fadeInRight">
-				<img src="images/technology/4-2.jpg">
+			<div class="item-box 22" data-bigImg="5-2-big.png">
+				<img src="images/technology/5-2.jpg">
 			</div>
-			<div class="item-box wow fadeInUp100">
-				<img src="images/technology/4-3.jpg">
+			<div class="item-box 33" data-bigImg="5-3-big.png">
+				<img src="images/technology/5-3.jpg">
 			</div>
-			<div class="item-box wow fadeInUp100">
-				<img src="images/technology/4-4.jpg">
+			<div class="item-box 44" data-bigImg="5-4-big.png">
+				<img src="images/technology/5-4.jpg">
 			</div>
-			<div class="item-box wow fadeInLeft">
-				<img src="images/technology/4-5.jpg">
+			<div class="item-box" data-bigImg="5-5-big.png">
+				<img src="images/technology/5-5.jpg">
 			</div>
 		</div>
-		<div class="column-box columnBox2">
-			<div class="item-box item1 wow fadeInUp100" style="width: 19.8%">
-				<img src="images/technology/4-6.jpg">
+		<div class="column-box columnBox2 wow fadeInRight">
+			<div class="item-box item1" style="width: 19.8%">
+				<img src="images/technology/5-6.jpg">
 			</div>
-			<div class="item-box item2 wow fadeInUp100" style="width: 39.8%">
-				<img src="images/technology/4-7.jpg">
+			<div class="item-box item2" data-bigImg="5-7-big.png" style="width: 39.8%">
+				<img src="images/technology/5-7.jpg">
 			</div>
-			<div class="item-box item3 wow fadeInLeft" style="width: 39.8%">
-				<img src="images/technology/4-8.jpg">
+			<div class="item-box item3" data-bigImg="5-8-big.png" style="width: 39.8%">
+				<img src="images/technology/5-8.jpg">
 			</div>
 		</div>
 	</section>
@@ -442,47 +487,49 @@
 		<img src="images/background/bg-23.jpg" alt="">
 		<div class="content-box">
 			<div class="conts">
-				<div class="cont1 text-color2"><span>制造</span>能力</div>
-				<div class="cont2 text-color4">我们拥有</div>
-				<div class="cont3 text-color2">从汽车座椅零部件到整椅的各部分的生产制造能力</div>
+				<div class="cont1 text-color2 wow fadeInLeft"><span>制造</span>能力</div>
+				<div class="cont2 text-color4 wow fadeInLeft animated2">我们拥有</div>
+				<div class="cont3 text-color2 wow fadeInLeft animated2">从汽车座椅零部件到整椅的各部分的生产制造能力</div>
 			</div>
 			<div class="column-box column-4">
 				<div class="item-box wow fadeInLeft">
 					<img src="images/technology/6-1.jpg">
 					<div class="content-box box1">浇注（泡沫）</div>
 				</div>
-				<div class="item-box wow fadeInRight">
+				<div class="item-box wow fadeInLeft">
 					<img src="images/technology/6-2.jpg">
 					<div class="content-box box1">自动裁剪</div>
 				</div>
-				<div class="item-box wow fadeInUp100">
+				<div class="item-box wow fadeInLeft">
 					<img src="images/technology/6-3.jpg">
 					<div class="content-box box1">自动拧紧</div>
 				</div>
-				<div class="item-box wow fadeInUp100">
+				<div class="item-box wow fadeInLeft">
 					<img src="images/technology/6-4.jpg">
 					<div class="content-box box1">工厂信息化</div>
 				</div>
-				<div class="item-box wow fadeInLeft">
+				<div class="item-box wow fadeInRight">
 					<img src="images/technology/6-5.jpg">
 					<div class="content-box box1">激光焊接</div>
 				</div>
-				<div class="item-box wow fadeInUp100">
+				<div class="item-box wow fadeInRight">
 					<img src="images/technology/6-6.jpg">
 					<div class="content-box box1">连续模</div>
 				</div>
-				<div class="item-box wow fadeInUp100">
+				<div class="item-box wow fadeInRight">
 					<img src="images/technology/6-7.jpg">
 					<div class="content-box box1">冲压串联线</div>
 				</div>
-				<div class="item-box wow fadeInLeft">
+				<div class="item-box wow fadeInRight">
 					<img src="images/technology/6-8.jpg">
 					<div class="content-box box1">滑轨在线检测</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	
+	<div class="big-img-box">
+		<img class="big-img" src="images/technology/6-8.jpg">
+	</div>
 
 	<!--Main Footer-->
     <div id="footerBox"></div>
@@ -514,6 +561,29 @@
 	},function(){
 		$(this).find('.content-box').fadeOut();
 	})
+	$('.section6 .item-box').hover(function(){
+		// $(this).find('.content-box').fadeIn();
+		$(this).find('.content-box').addClass('show');
+	},function(){
+		// $(this).find('.content-box').fadeOut();
+		$(this).find('.content-box').removeClass('show');
+	})
+	$('.big-img-box').hover(function(event){
+		$('.big-img-box').show();
+	},function(event){
+		$('.big-img-box').hide()
+	})
+	//显示大图
+	$('.section5 .item-box[data-bigImg]').hover(function(){
+		var current = $(this).attr('data-bigImg');
+		var currentSrc = 'images/technology/'+current;
+		$('.big-img-box .big-img').attr('src',currentSrc);
+		$('.big-img-box').fadeIn();
+	})
+	$('.section5').mouseleave(function(){
+		$('.big-img-box').hide();
+	})
+	
 </script>
 </body>
 </html>
