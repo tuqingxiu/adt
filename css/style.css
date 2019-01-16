@@ -10780,6 +10780,10 @@ header .main-menu .navigation > li > ul>li>a{
 .my-bg-color5{
 	background-color: rgba(4,69,87,0.5);
 }
+/*黄色透明*/
+.my-bg-color6{
+	background-color: rgba(174,195,64,0.5);
+}
 
 .my-font1{
 	font-size: 22px;
