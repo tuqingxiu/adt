@@ -884,11 +884,14 @@ footer.footer{
 	height: 100%;
 	transition: ease 1s;
 }
+.global-map{
+	transition: ease 1s;
+}
 .china-map {
 	position: absolute;
 	width: 23%;
-	right: 14.5%;
-	top: 36%;
+	right: 5%;
+	top: 30%;
 	transition: 1s ease-in-out;
 	z-index: 10;
 }
@@ -912,6 +915,9 @@ footer.footer{
 	transform-origin: 80% 60%;
 	-webkit-transform-origin: 80% 60%;
 	-moz-transform-origin: 80% 60%;
+	/* -webkit-animation-duration: 3s;
+	-moz-animation-duration: 3s;
+	animation-duration: 3s; */
 }
 
 .scale-c {
@@ -1422,9 +1428,9 @@ footer.footer{
 	.visible-pc{
 		display: none;
 	}
-	#index-swiper{
+	/* #index-swiper{
 		display: none;
-	}
+	} */
 	.mobile-header{
 		display: block;
 	}
@@ -1649,13 +1655,13 @@ footer.footer{
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
-.animated2 {
+.ani-time2 {
 	-webkit-animation-duration: 2s;
     animation-duration: 2s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
-.animated3 {
+.ani-time3 {
 	-webkit-animation-duration: 3s;
     animation-duration: 3s;
     -webkit-animation-fill-mode: both;

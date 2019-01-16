@@ -6,8 +6,10 @@ font-family: 'Microsoft Yahei', sans-serif;*/
 @import url('bootstrap4.css');
 @import url('font-awesome.css');
 @import url('flaticon.css');
+/* <link href="css/swiper.min.css" rel="stylesheet"> */
+@import url('swiper.min.css');
 @import url('animate.css');
-@import url('animate.min.css');
+/* @import url('animate.min.css'); */
 @import url('common.css');
 @import url('owl.css');
 @import url('jquery-ui.css');
@@ -1809,16 +1811,16 @@ img{
 }
 
 @media only screen and (max-width: 767px){
-	.main-slider h3{
+	.swiper-slide h3{
 		font-size: 1rem;
 	}
-	.main-slider h3 span{
+	.swiper-slide h3 span{
 		font-size: 1.25rem;
 	}
-	.main-slider h2{
+	.swiper-slide h2{
 		font-size: 1.25rem;
 	}
-	.main-slider h2 span{
+	.swiper-slide h2 span{
 		font-size: 1.5rem;
 	}
 }
@@ -3380,6 +3382,7 @@ img{
 .main-footer{
 	position:relative;
 	background-color: #1f1f1f;
+	height: 100%;
 }
 
 .main-footer .footer-widget{
@@ -10737,6 +10740,9 @@ header .main-menu .navigation > li > ul>li>a{
     -o-transition: all 500ms ease;
 	font-family: 'Microsoft Yahei', serif;
 }
+#footerBox{
+	height: 100%;
+}
 /*--------公共样式-------*/
 /*白色*/
 .my-color1{
@@ -10770,10 +10776,17 @@ header .main-menu .navigation > li > ul>li>a{
 .my-bg-color4{
 	background-color: #333;
 }
+/*蓝色透明*/
+.my-bg-color5{
+	background-color: rgba(4,69,87,0.5);
+}
 
 .my-font1{
 	font-size: 22px;
 	font-weight: 600;
+}
+.my-font2{
+	font-size: 16px;
 }
 /*行居中*/
 .my-row-center{
