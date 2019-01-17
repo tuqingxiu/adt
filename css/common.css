@@ -615,7 +615,7 @@ ul,ol{
     box-sizing: border-box;
     z-index: 99;
 }
-.text,.text2,.text3 {
+/* .text,.text2,.text3 {
 	text-align: center;
 	line-height: 39px;
 	font-size: 13px;
@@ -629,7 +629,7 @@ ul,ol{
 	text-align: center;
     line-height: 28px;
     font-size: 12px;
-}
+} */
 /*360座椅 end*/
 
 
