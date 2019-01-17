@@ -65,10 +65,16 @@
 }
 .current-info{
 	position: absolute;
-    top: 30%;
-	left: 20%;
+    top: 10%;
+	left: 5%;
 	color: #fff;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
 	display: none;
+}
+.current-info img{
+	width: 300px;
 }
 
 .slide2 .content{
@@ -288,7 +294,7 @@
 			<div id="map" class="swiper-slide slide4">
 				<div class="china-map">
 						<img class="img-map" src="images/background/map_black_bg.png">
-						<div class="region-list active postition-1 online-node" data-type="成都">
+						<div class="region-list active postition-1 online-node" data-type="成都" data-img="images/about/cq-yuzui.jpg">
 							<div class="area-box">
 								<span class="dot"></span>
 								<span class="pulse delay-06"></span>
@@ -297,7 +303,7 @@
 							</div>
 							<div class="show-regin"><span>成都</span></div>
 						</div>
-						<div class="region-list color1 postition-2 online-node" data-type="重庆">
+						<div class="region-list color1 postition-2 online-node" data-type="重庆" data-img="images/about/cq-yuzui.jpg">
 							<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
 								<span class="pulse delay-05"></span>
 								<span class="pulse delay-04"></span>
@@ -383,8 +389,8 @@
 							</div>
 					</div>
 					<div class="current-info">
-						<img class="counter-img" src="images/icons/round_01.png">
 						<h5 class="current-text">重庆工厂</h5>
+						<img class="current-img" src="images/about/cq-yuzui.jpg">
 					</div>
 			</div>
 			<!--第5屏-->
@@ -422,13 +428,7 @@
 <script src="my-js/about.js"></script>
 
 <script type="text/javascript">
-	$('.show-regin').hover(function(){
-		var type = $(this).parents('.region-list').attr('data-type');
-		$('.current-info .current-text').text(type+'地区工厂');
-		$('.current-info').fadeIn(1000);
-	},function(){
-		$('.current-info').fadeOut();
-	})
+	
 </script>
 
 

@@ -71,9 +71,21 @@ $(function() {
 		}
     });
     //-----------每屏动画效果----------
-    //第3屏效果
-    // animateSlide3();
+    //第4屏效果
+    animateSlide4();
 })
+
+function animateSlide4(){
+	$('.show-regin').hover(function(){
+		var type = $(this).parents('.region-list').attr('data-type');
+		var img = $(this).parents('.region-list').attr('data-img');
+		$('.current-info .current-img').attr('src',img);
+		$('.current-info .current-text').text(type+'地区工厂');
+		$('.current-info').fadeIn(1000);
+	},function(){
+		$('.current-info').fadeOut();
+	})
+}
 
 function jump(n) {
 	mySwiper.slideTo(n,1000,false);
