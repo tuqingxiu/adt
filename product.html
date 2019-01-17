@@ -25,6 +25,47 @@
 
 <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+<style type="text/css">
+.slide-cloumn3{
+	display: flex;
+}
+.slide-cloumn3 .column-box{
+	display: flex;
+}
+.slide-cloumn3 .column-box .item-box{
+	display: flex;
+	width: 33.33%;
+}
+.slide-cloumn3 .box1{
+	flex-direction: column;
+}
+.slide4 .box2{
+	flex-direction: column;
+}
+.slide-cloumn3 .box1 .content,
+.slide-cloumn3 .box2 .content{
+	height: 50%;
+	display: flex;
+	align-items: center;
+}
+.slide-cloumn3 .cont-text{
+	padding: 20px;
+}
+.cont1{
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.slide2 .content,
+.slide3 .content{
+	width: 30%;
+}
+.slide2 .content>div,
+.slide3 .content>div
+{
+	text-align: left;
+}
+</style>
 </head>
 
 <body>
@@ -37,350 +78,116 @@
  	
     <!-- Preloader -->
     <div class="preloader"></div>
- 	
-
-    <!--Main Slider-->
-    <section class="main-slider">
-    	
-        <div class="main-slider-carousel owl-carousel owl-theme">
-            <!-- <div class="slide" style="background-image:url(images/main-slider/image-2-2.jpg)">
-				<div class="auto-container">
-                	<div class="content text-center">
-                       	<div class="link-box" style=" margin-top:300px">
-							<a href="#" class="theme-btn btn-style-three"><span class="arrow flaticon-right-arrow-1"></span>我们的产品</a>						</div>
-                    </div>
-                </div>
-			</div> -->
-			<div class="slide">
-					<img src="images/main-slider/image-2-2.jpg">
-					<div class="auto-container">
+	<div id="index-swiper" class="swiper-container my-color1">
+		<div class="swiper-wrapper">
+			<!--第1屏-->
+			<div class="swiper-slide slide1 slide-zy">
+				<img class="slide-bg" src="images/background/bg-2-2.jpg">
+				<div class="my-all-center content">
+					<img class="zy-img" src="images/index/3.png">
+					<div class="content-box">
+						<div class="point point1">
+							<div class="point-text">整椅</div>
+							<img src="images/icons/point.png">
+						</div>
+						<div class="point point2">
+							<div class="point-text">面套</div>
+							<img src="images/icons/point.png">
+						</div>
+						<div class="point point3">
+								<div class="point-text">骨架</div>
+							<img src="images/icons/point.png">
+							
+						</div>
+						<div class="point point4">
+								<div class="point-text">泡沫</div>
+							<img src="images/icons/point.png">
+							
+						</div>
 					</div>
 				</div>
-            
-        </div>
-    </section>
-	
-	<!--Gallery Section Three-->
-	<!--<section class="gallery-section-three" style="padding:10px 0px 0px 0px">
-		<div class="">
-			<div class="row clearfix">
-				<div class="gallery-block-three col-lg-2 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<figure class="image-box">
-							<img src="images/gallery/8.jpg" alt="">
-							<div class="overlay-box">
-								<div class="overlay-inner">
-									<div class="content">
-										<a href="#" class="link"><span class="icon fa fa-link"></span></a>
-										<a href="images/gallery/8.jpg" data-fancybox="gallery-images-2" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
-									</div>
+			</div>
+			<!--第2屏-->
+			<div class="swiper-slide slide2">
+				<img class="slide-bg" src="images/product/2-1.jpg">
+				<div class="content-box animated" data-my-animate="fadeInLeft">
+					<div class="content text-center">
+						<div class="cont1 my-color2">乘用车座椅</div>
+						<div class="cont2 my-color1">出色的人机工程设计，将人、科技、艺术与座椅完美结合，
+							带来舒适的驾乘体验。
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--第3屏-->
+			<div class="swiper-slide slide3">
+				<img class="slide-bg" src="images/product/3-1.jpg">
+				<div class="content-box animated" data-my-animate="fadeInLeft">
+					<div class="content text-center">
+						<div class="cont1 my-color2">商用车座椅</div>
+						<div class="cont2 my-color1">安全可靠的性能，缓解不同环境和不同路况带来的疲劳，助您操控自如。
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--第4屏-->
+			<div class="swiper-slide slide4 slide-cloumn3">
+				<div class="column-box">
+					<div class="item-box box1 animated" data-my-animate="fadeInLeft">
+						<img class="content content1" src="images/product/4-1.jpg">
+						<div class="content content2 my-bg-color2">
+							<div class="cont-text animated ani-time2" data-my-animate="fadeInLeft">
+								<div class="cont1 my-color3">面套</div>
+								<div class="cont2 my-color1">从面料的设计，到面料的后处理精致工艺及领先的放版、
+									裁剪、缝制技术，使座椅呈现高品质的外观，为创意设计和凸显个性化提供更大的自由度。
 								</div>
 							</div>
-					  </figure>
+						</div>
+					</div>
+					<div class="item-box box2 animated" data-my-animate="fadeInDown100">
+						<div class="content content1 animated ani-time2" data-my-animate="fadeInDown100">
+							<div class="cont-text">
+									<div class="cont1 my-color3">骨架</div>
+									<div class="cont2 my-color4">更高的通用性能，更强的材料，更广的功能，更轻的重量，
+										为了满足客户多样性的需求。
+									</div>
+							</div>
+						</div>
+						<img class="content content2" src="images/product/4-2.jpg">
+					</div>
+					<div class="item-box box3 animated" data-my-animate="fadeInRight">
+						<img src="images/product/4-3.jpg">
 					</div>
 				</div>
-				
-
-				<div class="gallery-block-three col-lg-2 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<figure class="image-box">
-							<img src="images/gallery/9.jpg" alt="">
-
-							<div class="overlay-box">
-								<div class="overlay-inner">
-									<div class="content">
-										<a href="#" class="link"><span class="icon fa fa-link"></span></a>
-										<a href="images/gallery/9.jpg" data-fancybox="gallery-images-2" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
-									</div>
+			</div>
+			<!--第5屏-->
+			<div class="swiper-slide slide5 slide-cloumn3">
+				<div class="column-box">
+					<div class="item-box box1 animated" data-my-animate="fadeInLeft">
+						<img class="content content1" src="images/product/5-1.jpg">
+						<div class="content content2">
+							<div class="cont-text animated ani-time2" data-my-animate="fadeInLeft">
+								<div class="cont1 my-color3">泡沫</div>
+								<div class="cont2 my-color4">独有的配方经验，和领先的制造技术，能使产品在不同区域和不同层次表现出不同
+									的软硬度，带给驾乘者短期和长期舒适性能。
 								</div>
 							</div>
-					  </figure>
+						</div>
+					</div>
+					<div class="item-box box2 animated" data-my-animate="fadeInDown100">
+						<img src="images/product/5-2.jpg">
+					</div>
+					<div class="item-box box3 animated" data-my-animate="fadeInRight">
+						<img src="images/product/5-3.jpg">
 					</div>
 				</div>
-				
-
-				<div class="gallery-block-three col-lg-2 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<figure class="image-box">
-							<img src="images/gallery/10.jpg" alt="">
-
-							<div class="overlay-box">
-								<div class="overlay-inner">
-									<div class="content">
-										<a href="#" class="link"><span class="icon fa fa-link"></span></a>
-										<a href="images/gallery/10.jpg" data-fancybox="gallery-images-2" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
-									</div>
-								</div>
-							</div>
-					  </figure>
-					</div>
-				</div>
-				
-
-				<div class="gallery-block-three col-lg-2 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<figure class="image-box">
-							<img src="images/gallery/11.jpg" alt="">
-							<div class="overlay-box">
-								<div class="overlay-inner">
-									<div class="content">
-										<a href="#" class="link"><span class="icon fa fa-link"></span></a>
-										<a href="images/gallery/11.jpg" data-fancybox="gallery-images-2" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
-									</div>
-								</div>
-							</div>
-					  </figure>
-					</div>
-				</div>
-				
-
-				<div class="gallery-block-three col-lg-2 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<figure class="image-box">
-							<img src="images/gallery/12.jpg" alt="">
-
-							<div class="overlay-box">
-								<div class="overlay-inner">
-									<div class="content">
-										<a href="#" class="link"><span class="icon fa fa-link"></span></a>
-										<a href="images/gallery/12.jpg" data-fancybox="gallery-images-2" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
-									</div>
-								</div>
-							</div>
-					  </figure>
-					</div>
-				</div>
-				
-				<div class="gallery-block-three col-lg-2 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<figure class="image-box">
-							<img src="images/gallery/13.jpg" alt="">
-							<div class="overlay-box">
-								<div class="overlay-inner">
-									<div class="content">
-										<a href="#" class="link"><span class="icon fa fa-link"></span></a>
-										<a href="images/gallery/13.jpg" data-fancybox="gallery-images-2" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
-									</div>
-								</div>
-							</div>
-					  </figure>
-					</div>
-				</div>
-				
-				
+			</div>
+			<!--第6屏-->
+			<div class="swiper-slide slide6">
+				<div id="footerBox"></div>
 			</div>
 		</div>
-	</section> -->
-	<!--End Gallery Section Three-->
-	<!--Gallery Section Four-->
-	<section class="gallery-section-four" style="padding:0px">
-		<div class="items-container row clearfix">
-                    
-                    <!--Gallery Block Three-->
-                    <div class="gallery-block-three masonry-item repair all col-lg-4 col-md-6 col-sm-12" style="padding:0px">
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/18.jpg" alt="">
-								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="#" class="link"><span class="icon fa fa-link"></span></a>
-											<a href="images/gallery/18.jpg" data-fancybox="gallery-images-2" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
-										</div>
-									</div>
-								</div>
-						  </figure>
-						</div>
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/a19.jpg" alt="">
-								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="#" class="link"><span class="icon fa fa-link"></span></a>
-											<a href="images/gallery/a19.jpg" data-fancybox="gallery-images-2" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
-										</div>
-									</div>
-								</div>
-						  </figure>
-						</div>
-						<div class="inner-box">
-							<figure class="image-box">
-								<img data-item="3" src="images/gallery/a20.jpg" alt="">
-								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="#" class="link"><span class="icon fa fa-link"></span></a>
-											<a href="images/gallery/a20.jpg" data-fancybox="gallery-images-2" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
-										</div>
-									</div>
-								</div>
-						  </figure>
-						</div>
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/a21.jpg" alt="">
-								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="#" class="link"><span class="icon fa fa-link"></span></a>
-											<a href="images/gallery/a21.jpg" data-fancybox="gallery-images-2" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
-										</div>
-									</div>
-								</div>
-						  </figure>
-						</div>
-						<div class="inner-box">
-							<figure class="image-box">
-								<img data-item="5" src="images/gallery/a22.jpg" alt="">
-								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="#" class="link"><span class="icon fa fa-link"></span></a>
-											<a href="images/gallery/a22.jpg" data-fancybox="gallery-images-2" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
-										</div>
-									</div>
-								</div>
-						  </figure>
-						</div>
-					</div>
-					
-					<!--Gallery Block Three-->
-                    <div class="gallery-block-three masonry-item repair classic colors all col-lg-4 col-md-6 col-sm-12" style="padding:0px">
-					
-						<!--<div class="inner-column">
-						<h2>乘用车座椅</h2>
-						<div class="text">
-						出色的人工工程设计，将人、科技、艺术与座椅完美结合，带来舒适的驾乘体验。
-						<p></p>
-						</div>
-						<div class="row clearfix">
-							<div class="image-column col-lg-6 col-md-6 col-sm-6">
-								<div class="image">
-									<a href="images/resource/mission-1.jpg" class="overlay-box lightbox-image" data-fancybox="mission-gallery" data-caption=""><img src="images/resource/mission-1.jpg" alt=""></a>
-								</div>
-							</div>
-							<div class="image-column col-lg-6 col-md-6 col-sm-6">
-								<div class="image">
-									<a href="images/resource/mission-2.jpg" class="overlay-box lightbox-image" data-fancybox="mission-gallery" data-caption=""><img src="images/resource/mission-2.jpg" alt=""></a>
-								</div>
-							</div>
-						</div>
-					</div> -->
-						<div class="inner-box">
-							<figure class="image-box">
-								<img data-item="1" src="images/gallery/18-1.jpg" alt="">
-								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="#" class="link"><span class="icon fa fa-link"></span></a>
-											<a href="images/gallery/18-1.jpg" data-fancybox="gallery-images-2" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
-										</div>
-									</div>
-								</div>
-						  </figure>
-						</div>
-						<div class="inner-box">
-							<figure class="image-box">
-								<img data-item="2" src="images/gallery/19-1.jpg" alt="">
-								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="#" class="link"><span class="icon fa fa-link"></span></a>
-											<a href="images/gallery/19-1.jpg" data-fancybox="gallery-images-2" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
-										</div>
-									</div>
-								</div>
-						  </figure>
-						</div>
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/a20-1.jpg" alt="">
-								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="#" class="link"><span class="icon fa fa-link"></span></a>
-											<a href="images/gallery/a20-1.jpg" data-fancybox="gallery-images-2" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
-										</div>
-									</div>
-								</div>
-						  </figure>
-						</div>
-						<div class="inner-box">
-							<figure class="image-box">
-								<img data-item="4" src="images/gallery/a21-1.jpg" alt="">
-								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="#" class="link"><span class="icon fa fa-link"></span></a>
-											<a href="images/gallery/a21-1.jpg" data-fancybox="gallery-images-2" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
-										</div>
-									</div>
-								</div>
-						  </figure>
-						</div>
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/a22-1.jpg" alt="">
-								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="#" class="link"><span class="icon fa fa-link"></span></a>
-											<a href="images/gallery/a22-1.jpg" data-fancybox="gallery-images-2" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
-										</div>
-									</div>
-								</div>
-						  </figure>
-						</div>
-					</div>
-					
-					<!--Gallery Block Three-->
-                    <div class="gallery-block-three masonry-item colors classic all col-lg-4 col-md-6 col-sm-12" style="padding:0px">
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/19.jpg" alt="">
-								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="#" class="link"><span class="icon fa fa-link"></span></a>
-											<a href="images/gallery/19.jpg" data-fancybox="gallery-images-2" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
-										</div>
-									</div>
-								</div>
-						  </figure>
-						</div>
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/a29.jpg" alt="">
-								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="#" class="link"><span class="icon fa fa-link"></span></a>
-											<a href="images/gallery/a29.jpg" data-fancybox="gallery-images-2" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
-										</div>
-									</div>
-								</div>
-						  </figure>
-						</div>
-					</div>
-
-					
-
-				</div>
-	</section>
-	<!--End Gallery Section Four-->
+	</div>
 	
 
 	<!--Main Footer-->
@@ -391,6 +198,7 @@
 <!--End pagewrapper-->
 
 <script src="js/jquery.js"></script>
+<script src="js/common.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -398,15 +206,17 @@
 <script src="js/appear.js"></script>
 <script src="js/owl.js"></script>
 <script src="js/wow.js"></script>
+
 <script src="js/slick.js"></script>
 <script src="js/jquery-ui.js"></script>
 <!-- Master Slider -->
 <script src="js/masterslider/jquery.easing.min.js"></script>
 <script src="js/masterslider/masterslider.min.js"></script>
 <!--End Master Slider -->
+<script src="js/swiper.js"></script>
 
 <script src="js/script.js"></script>
-<script src="js/common.js"></script>
+<script src="my-js/product.js"></script>
 
 </body>
 </html>

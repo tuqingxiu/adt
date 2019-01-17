@@ -10812,3 +10812,49 @@ header .main-menu .navigation > li > ul>li>a{
 	width: 100%;
 	height: 100%;
 }
+
+/*-----------整椅板块样式-------------*/
+.slide-zy .content{
+	display: flex;
+}
+.slide-zy .point{
+	position: absolute;
+}
+.slide-zy .point>img{
+	width: 30px;
+	height: 30px;
+}
+.slide-zy .point1{
+	top: 30%;
+    left: 50%;
+}
+.slide-zy .point2{
+	top: 60%;
+    left: 35%;
+}
+.slide-zy .point3{
+	top: 30%;
+    left: 80%;
+}
+.slide-zy .point4{
+	top: 45%;
+    left: 65%;
+}
+.slide-zy .point-text{
+	position: absolute;
+	width: 80px;
+    background: #bed533;
+    border-radius: 8px;
+    height: 30px;
+    line-height: 30px;
+	text-align: center;
+	display: none;
+}
+.slide-zy .point1 .point-text,
+.slide-zy .point2 .point-text{
+	right: 140%;
+}
+.slide-zy .point3 .point-text,
+.slide-zy .point4 .point-text{
+	left: 140%;
+}

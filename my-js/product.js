@@ -62,18 +62,21 @@ $(function() {
 		onSlideChangeEnd: function(swiper) {
             // //加载动画样式
 			var num = swiper.activeIndex + 1;
-            if(num == 5){
-                $('slide5 .animated[data-my-animate]').each(function(){
-                    var aniName = $(this).attr('data-my-animate');
-                    $(this).addClass(aniName);
-                })
-            }
 		}
     });
     //-----------每屏动画效果----------
-    //第3屏效果
-    // animateSlide3();
+    //第1屏效果
+    animateSlide1();
 })
+
+//第3屏效果
+function animateSlide1() {
+    $('.slide1 .point').hover(function(){
+        $(this).find('.point-text').fadeIn(1000);
+    },function(){
+        $(this).find('.point-text').fadeOut(1000);
+    })
+}
 
 function jump(n) {
 	mySwiper.slideTo(n,1000,false);
