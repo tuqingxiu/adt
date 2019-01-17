@@ -30,7 +30,13 @@
 	background-color: #044557;
 }
 .china-map{
-	margin-left: 40%;
+	margin-left: 14%;
+    width: 40%;
+    top: 50%;
+    transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	-o-transform:translateY(-50%);
 }
 #map .img-box{
 	display: flex;
@@ -52,12 +58,51 @@
 	height: 100%;
     padding: 90px 0;
 }
+#map .columnn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .current-info{
 	position: absolute;
     top: 30%;
 	left: 20%;
 	color: #fff;
 	display: none;
+}
+
+.slide2 .content{
+	position: absolute;
+	width: 50%;
+	
+}
+.slide2 .content1{
+	left: 0;
+	top: 20px;
+	background-color: rgba(4,69,87,0.8);
+	padding: 20px 30px 20px 120px;
+	text-align: right;
+}
+.slide2 .content2{
+	right: 0;
+	bottom: 20px;
+	background-color: rgba(174,195,64,0.8);
+	padding: 20px 120px 20px 30px;
+}
+.slide2 .content .cont2{
+	font-size: 16px;
+	line-height: 25px;
+}
+.slide3 .content-column{
+	width: 70%;
+}
+.fluid-section-one .sec-title{
+	margin-bottom: 0;
+	margin-top: -20px;
+}
+.slide3 .content-box{
+	display: flex;
+	align-items: center;
 }
 </style>
 </head>
@@ -87,88 +132,264 @@
 					</div>
 				</div>
 			</div>
-			<!--Welcome Section-->
-			<!-- <section class="welcome-section bg-10" style="height:913px;">
-					<div class="row clearfix">
-								<div class="col-lg-6 col-md-6 col-sm-12">
-									<div class="wow fadeInLeft content" style="background:rgba(10,108,128,0.8);">
-										<h3 class="wow fadeInLeft text-white" style="padding:30px 0 30px 120px"><span>价值观<br><font class="text-white" style="font-size:14px; line-height:0.6rem">同创共享 /正确行事/追求成功/一次到位
-				加快步伐/“我们”大于“我”/任人唯贤</font></span></h3>
-									</div>
-								</div>
-								<div class="col-lg-6 col-md-6 col-sm-12">
-									<div class="wow fadeInRight content" style="background:rgba(190,213,51,0.8); position:relative; top:450px">
-											<h3 class="wow fadeInRight text-white" style="padding:30px 120px 30px 30px"><span>使命<br><font class="text-white" style="font-size:14px; line-height:0.6rem">为用户、供应商、员工、股东和社会创造
-					共赢的生态系统，成为受人尊敬的企业</font></span></h3>
-										</div>
-									</div>
-								</div>
-						
-						
-					</section> -->
 			<!--第2屏-->
 			<div class="swiper-slide slide2">
 				<img class="slide-bg" src="images/background/bg-10.jpg">
 				<div class="content-box">
-					<div class="content1 animated my-bg-color5" data-my-animate="fadeInLeft">
-						<h3><div>使命</div>
-							<div>为用户、供应商、员工、股东和社会创造
+					<div class="content content1 animated" data-my-animate="fadeInLeft">
+						<h3 class="animated ani-time2" data-my-animate="fadeInLeft">
+							<div class="cont1">使命</div>
+							<div class="cont2">为用户、供应商、员工、股东和社会创造
 								共赢的生态系统，成为受人尊敬的企业</div>
 						</h3>
 					</div>
-					<div class="content2 animated my-bg-color6" data-my-animate="fadeInRight">
-						<h3><div>价值观</div>
-							<div>同创共享 /正确行事/追求成功/一次到位
+					<div class="content content2 animated" data-my-animate="fadeInRight">
+						<h3 class="animated ani-time2" data-my-animate="fadeInRight">
+							<div class="cont1">价值观</div>
+							<div class="cont2">同创共享 /正确行事/追求成功/一次到位
 									加快步伐/“我们”大于“我”/任人唯贤</div>
 						</h3>
 					</div>
-					<!-- <div class="row clearfix">
-							<div class="col-lg-6 col-md-6 col-sm-12">
-								<div class="wow fadeInLeft content" style="background:rgba(10,108,128,0.8);">
-									<h3 class="wow fadeInLeft text-white" style="padding:30px 0 30px 120px"><span>价值观<br><font class="text-white" style="font-size:14px; line-height:0.6rem">同创共享 /正确行事/追求成功/一次到位
-			加快步伐/“我们”大于“我”/任人唯贤</font></span></h3>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6 col-sm-12">
-								<div class="wow fadeInRight content" style="background:rgba(190,213,51,0.8); position:relative; top:450px">
-										<h3 class="wow fadeInRight text-white" style="padding:30px 120px 30px 30px"><span>使命<br><font class="text-white" style="font-size:14px; line-height:0.6rem">为用户、供应商、员工、股东和社会创造
-				共赢的生态系统，成为受人尊敬的企业</font></span></h3>
-									</div>
-								</div>
-							</div> -->
 				</div>
 			</div>
 			<!--第3屏-->
-			<div class="swiper-slide slide3">
+			<div class="swiper-slide slide3 fluid-section-one">
 				<img class="slide-bg" src="images/background/bg-11.jpg">
 				<div class="content-box">
-					<div class="content text-center">
-						<h3><div class="animated" data-my-animate="fadeInLeft">超级座椅</div>
-							<div class="animated ani-time2 my-color2" data-my-animate="fadeInLeft">面向未来的座椅</div>
-						</h3>
-					</div>
+					<div class="content-column clearfix">
+							<div class="inner-column">
+								<div class="sec-title">
+									<h2 class="animated" data-my-animate="fadeInDown100"><span class="text-white">发展历程</span></h2>
+								</div>
+								<div class="single-vertical-carousel animated ani-time2" data-my-animate="fadeInDown100">
+									<div class="slide">
+										<div class="key-block" style="margin-bottom:0px;">
+											<div class="inner-box box1">
+												<!-- <div class="icon-box big-icon-box"></div> -->
+												<div class="icon-box"></div>
+												<div class="content">
+													<h3 style="color:#bed533">2003年</h3>
+													<div class="text">江森自控、延锋江森、博奥集团正式签定三方合资协议，成立合资公司重庆延锋江森。</div>
+												</div>
+											</div>
+										</div>
+										<div class="key-block" style="margin-bottom:0px">
+											<div class="inner-box">
+												<div class="icon-box"></div>
+												<div class="content">
+													<h3 style="color:#bed533">2004年</h3>
+													<div class="text">搬迁至渝北工厂，第一个项目福特CD132正式投产</div>
+												</div>
+											</div>
+										</div>
+										<div class="key-block" style="margin-bottom:0px">
+											<div class="inner-box">
+												<div class="icon-box"></div>
+												<div class="content">
+													<h3 style="color:#bed533">2006年</h3>
+													<div class="text">铃木工区正式投产，重庆延锋江森荣获“重庆市高新技术企业称号”</div>
+												</div>
+											</div>
+										</div>
+										<div class="key-block">
+											<div class="inner-box">
+												<div class="icon-box"></div>
+												<div class="content">
+													<h3 style="color:#bed533">2007年</h3>
+													<div class="text">举办第一届家属日活动，启动公益项目蓝天计划</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="slide">
+										<div class="key-block" style="margin-bottom:0px">
+											<div class="inner-box">
+												<div class="icon-box"></div>
+												<div class="content">
+													<h3 style="color:#bed533">2010年</h3>
+													<div class="text">公司年销售额首次突破10亿元，技术中心获得第一项技术专利</div>
+												</div>
+											</div>
+										</div>
+										<div class="key-block" style="margin-bottom:0px">
+											<div class="inner-box">
+												<div class="icon-box"></div>
+												<div class="content">
+													<h3 style="color:#bed533">2011年</h3>
+													<div class="text">公司完成第一次组织变革，建立以客户为中心的平台业务单元</div>
+												</div>
+											</div>
+										</div>
+										<div class="key-block" style="margin-bottom:0px">
+											<div class="inner-box">
+												<div class="icon-box"></div>
+												<div class="content">
+													<h3 style="color:#bed533">2012年</h3>
+													<div class="text">福特福克斯项目顺利投产，公司发展迎来里程碑事件</div>
+												</div>
+											</div>
+										</div>
+										<div class="key-block">
+											<div class="inner-box">
+												<div class="icon-box"></div>
+												<div class="content">
+													<h3 style="color:#bed533">2013年</h3>
+													<div class="text">成立深圳分公司、成都子公司，快速布局全国</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="slide">
+										<div class="key-block" style="margin-bottom:0px">
+											<div class="inner-box">
+												<div class="icon-box"></div>
+												<div class="content">
+													<h3 style="color:#bed533">2014年</h3>
+													<div class="text">为满足业务发展需要，成立大庆、南昌、杭州子公司，重庆总部新办公大楼及黄茅坪工厂正式启用</div>
+												</div>
+											</div>
+										</div>
+										<div class="key-block" style="margin-bottom:0px">
+											<div class="inner-box">
+												<div class="icon-box"></div>
+												<div class="content">
+													<h3 style="color:#bed533">2015年</h3>
+													<div class="text">成立锋奥子公司，柳州工厂正式投产，公司正式挂牌成为JCI全球认证的全功能技术研发中心</div>
+												</div>
+											</div>
+										</div>
+										<div class="key-block" style="margin-bottom:0px">
+											<div class="inner-box">
+												<div class="icon-box"></div>
+												<div class="content">
+													<h3 style="color:#bed533">2016年</h3>
+													<div class="text">年销售额突破40亿大关，财务表现取得重大突破，成立哈尔滨子公司，重庆延锋江森正式更名为重庆延锋安道拓汽车部件系统有限公司</div>
+												</div>
+											</div>
+										</div>
+										<div class="key-block" style="margin-bottom:0px">
+											<div class="inner-box">
+												<div class="icon-box"></div>
+												<div class="content">
+													<h3 style="color:#bed533">2017年</h3>
+													<div class="text">...</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 				</div>
 			</div>
 			<!--第4屏 背景图-->
-			<div class="swiper-slide slide4">
-				<div class="content-box">
-					<div class="content text-center">
-						<h3><div class="animated" data-my-animate="fadeInLeft">超级座椅</div>
-							<div class="animated ani-time2 my-color2" data-my-animate="fadeInLeft">面向未来的座椅</div>
-						</h3>
+			<div id="map" class="swiper-slide slide4">
+				<div class="china-map">
+						<img class="img-map" src="images/background/map_black_bg.png">
+						<div class="region-list active postition-1 online-node" data-type="成都">
+							<div class="area-box">
+								<span class="dot"></span>
+								<span class="pulse delay-06"></span>
+								<span class="pulse delay-01"></span>
+								<span class="pulse delay-02"></span>
+							</div>
+							<div class="show-regin"><span>成都</span></div>
+						</div>
+						<div class="region-list color1 postition-2 online-node" data-type="重庆">
+							<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+								<span class="pulse delay-05"></span>
+								<span class="pulse delay-04"></span>
+							</div>
+							<div class="show-regin"><span>重庆</span></div>
+						</div>
+						<div class="region-list active postition-3 online-node" data-type="南昌">
+							<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+								<span class="pulse delay-05"></span>
+								<span class="pulse delay-04"></span>
+							</div>
+							<div class="show-regin"><span>南昌</span></div>
+						</div>
+						<div class="region-list waite postition-4 waite-node" data-type="东莞">
+							<div class="area-box"><span class="dot"></span>
+								<span class="pulse delay-01"></span>
+								<span class="pulse delay-02"></span>
+								</div>
+							<div class="show-regin"><span>东莞</span></div>
+						</div>
+						<div class="region-list waite postition-5 waite-node" data-type="台州">
+							<div class="area-box"><span class="dot"></span><span class="pulse delay-01"></span>
+								<span class="pulse delay-02"></span>
+								</div>
+							<div class="show-regin"><span>台州</span></div>
+						</div>
+							<div class="region-list active postition-6 online-node" data-type="杭州">
+							<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+								<span class="pulse delay-05"></span>
+								<span class="pulse delay-04"></span></div>
+							<div class="show-regin"><span>杭州</span></div>
+						</div>
+						<div class="region-list active postition-7 online-node" data-type="哈尔滨">
+							<div class="area-box"><span class="dot"></span><span class="pulse delay-04"></span>
+								<span class="pulse delay-05"></span>
+								<span class="pulse delay-03"></span></div>
+							<div class="show-regin"><span>哈尔滨</span></div>
+						</div>
+						<div class="region-list  active  postition-8 online-node" data-type="大庆">
+							<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+								<span class="pulse delay-05"></span>
+								<span class="pulse delay-04"></span></div>
+							<div class="show-regin"><span>大庆</span></div>
+						</div>
+						<div class="region-list  active  postition-9 online-node" data-type="湘潭">
+							<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
+								<span class="pulse delay-05"></span>
+								<span class="pulse delay-04"></span></div>
+							<div class="show-regin"><span>湘潭</span></div>
+						</div>
 					</div>
-				</div>
+					<div class="content-box business-box">
+							<div class="row clearfix">
+									<!--Column-->
+									<div class="columnn col-lg-12 animated" data-my-animate="fadeInDown100">
+										<div class="inner" data-wow-delay="0ms" data-wow-duration="1500ms">
+											<div class="img-box animated" data-my-animate="fadeInDown100">
+												<img class="counter-img" src="images/icons/round_01.png">
+												<h5 class="counter-title">1个JCI认证技术中心</h5>
+											</div>
+										</div>
+									</div>
+							
+									<!--Column-->
+									<div class="columnn col-lg-12 animated ani-time2" data-my-animate="fadeInDown100">
+										<div class="inner" data-wow-delay="600ms" data-wow-duration="1500ms">
+											<div class="img-box">
+													<img class="counter-img" src="images/icons/round_02.png">
+													<h5 class="counter-title">10家制造工厂</h5>
+											</div>
+										</div>
+									</div>
+							
+									<!--Column-->
+									<div class="columnn col-lg-12 animated ani-time3" data-my-animate="fadeInDown100">
+										<div class="inner" data-wow-delay="900ms" data-wow-duration="1500ms">
+											<div class="img-box">
+													<img class="counter-img" src="images/icons/round_03.png">
+													<h5 class="counter-title">4300+名员工</h5>
+											</div>
+										</div>
+									</div>
+							</div>
+					</div>
+					<div class="current-info">
+						<img class="counter-img" src="images/icons/round_01.png">
+						<h5 class="current-text">重庆工厂</h5>
+					</div>
 			</div>
 			<!--第5屏-->
 			<div class="swiper-slide slide5">
-				<img class="slide-bg" src="images/main-link.jpg">
-				<div class="content-box">
-					<div class="content text-center">
-						<h3><div class="animated" data-my-animate="fadeInLeft">超级座椅</div>
-							<div class="animated ani-time2 my-color2" data-my-animate="fadeInLeft">面向未来的座椅</div>
-						</h3>
-					</div>
-				</div>
+				<img class="slide-bg animated ani-time2" data-my-animate="flipInY" src="images/main-link.jpg">
 			</div>
 			<!--第6屏-->
 			<div class="swiper-slide slide6">
@@ -176,287 +397,6 @@
 			</div>
 		</div>
 	</div>
-    
-	
-	 
-    <!--End Welcome Section-->
-	
-	  	<!--Window Tab Section-->
-  	<section data-item="2" class="fluid-section-one bg-11">
-  		<div class="outer-container clearfix">
-        	
-            <!--Content Column-->
-            <div class="content-column clearfix" style="width:70%">
-            	<div class="inner-column">
-            		<div class="sec-title">
-						<h2 class="wow fadeInUp100"><span class="text-white">发展历程</span></h2>
-					</div>
-					<div class="single-vertical-carousel wow fadeInUp100 ani-time2">
-						<div class="slide">
-							<div class="key-block" style="margin-bottom:0px;">
-								<div class="inner-box box1">
-									<!-- <div class="icon-box big-icon-box"></div> -->
-									<div class="icon-box"></div>
-									<div class="content">
-										<h3 style="color:#bed533">2003年</h3>
-										<div class="text">江森自控、延锋江森、博奥集团正式签定三方合资协议，成立合资公司重庆延锋江森。</div>
-									</div>
-								</div>
-							</div>
-							<div class="key-block" style="margin-bottom:0px">
-								<div class="inner-box">
-									<div class="icon-box"></div>
-									<div class="content">
-										<h3 style="color:#bed533">2004年</h3>
-										<div class="text">搬迁至渝北工厂，第一个项目福特CD132正式投产</div>
-									</div>
-								</div>
-							</div>
-							<div class="key-block" style="margin-bottom:0px">
-								<div class="inner-box">
-									<div class="icon-box"></div>
-									<div class="content">
-										<h3 style="color:#bed533">2006年</h3>
-										<div class="text">铃木工区正式投产，重庆延锋江森荣获“重庆市高新技术企业称号”</div>
-									</div>
-								</div>
-							</div>
-							<div class="key-block">
-								<div class="inner-box">
-									<div class="icon-box"></div>
-									<div class="content">
-										<h3 style="color:#bed533">2007年</h3>
-										<div class="text">举办第一届家属日活动，启动公益项目蓝天计划</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="slide">
-							<div class="key-block" style="margin-bottom:0px">
-								<div class="inner-box">
-									<div class="icon-box"></div>
-									<div class="content">
-										<h3 style="color:#bed533">2010年</h3>
-										<div class="text">公司年销售额首次突破10亿元，技术中心获得第一项技术专利</div>
-									</div>
-								</div>
-							</div>
-							<div class="key-block" style="margin-bottom:0px">
-								<div class="inner-box">
-									<div class="icon-box"></div>
-									<div class="content">
-										<h3 style="color:#bed533">2011年</h3>
-										<div class="text">公司完成第一次组织变革，建立以客户为中心的平台业务单元</div>
-									</div>
-								</div>
-							</div>
-							<div class="key-block" style="margin-bottom:0px">
-								<div class="inner-box">
-									<div class="icon-box"></div>
-									<div class="content">
-										<h3 style="color:#bed533">2012年</h3>
-										<div class="text">福特福克斯项目顺利投产，公司发展迎来里程碑事件</div>
-									</div>
-								</div>
-							</div>
-							<div class="key-block">
-								<div class="inner-box">
-									<div class="icon-box"></div>
-									<div class="content">
-										<h3 style="color:#bed533">2013年</h3>
-										<div class="text">成立深圳分公司、成都子公司，快速布局全国</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="slide">
-							<div class="key-block" style="margin-bottom:0px">
-								<div class="inner-box">
-									<div class="icon-box"></div>
-									<div class="content">
-										<h3 style="color:#bed533">2014年</h3>
-										<div class="text">为满足业务发展需要，成立大庆、南昌、杭州子公司，重庆总部新办公大楼及黄茅坪工厂正式启用</div>
-									</div>
-								</div>
-							</div>
-							<div class="key-block" style="margin-bottom:0px">
-								<div class="inner-box">
-									<div class="icon-box"></div>
-									<div class="content">
-										<h3 style="color:#bed533">2015年</h3>
-										<div class="text">成立锋奥子公司，柳州工厂正式投产，公司正式挂牌成为JCI全球认证的全功能技术研发中心</div>
-									</div>
-								</div>
-							</div>
-							<div class="key-block" style="margin-bottom:0px">
-								<div class="inner-box">
-									<div class="icon-box"></div>
-									<div class="content">
-										<h3 style="color:#bed533">2016年</h3>
-										<div class="text">年销售额突破40亿大关，财务表现取得重大突破，成立哈尔滨子公司，重庆延锋江森正式更名为重庆延锋安道拓汽车部件系统有限公司</div>
-									</div>
-								</div>
-							</div>
-					    	<div class="key-block" style="margin-bottom:0px">
-								<div class="inner-box">
-									<div class="icon-box"></div>
-									<div class="content">
-										<h3 style="color:#bed533">2017年</h3>
-										<div class="text">...</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-            	</div>
-			</div>
-		</div>
-	</section>
-  	<!--End Window Tab Section-->
-	
-   
-    <!--<section class="welcome-section bg-12" style=" height:918px;">
-    
-    	<div class="auto-container">
-    		&nbsp;
-		</div>
-		
-	</section> -->
-	<section id="map" data-item="3" class="welcome-section">
-    		<!--Sec Title-->
-			<!-- <div class="row clearfix">
-				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="image text-center">
-						<img src="images/background/bg-12.jpg" alt="">
-					</div>
-				</div>
-			</div> -->
-			<div class="china-map">
-				<img class="img-map" src="images/background/map_black_bg.png">
-				<div class="region-list active postition-1 online-node" data-type="成都">
-					<div class="area-box">
-						<span class="dot"></span>
-						<span class="pulse delay-06"></span>
-						<span class="pulse delay-01"></span>
-						<span class="pulse delay-02"></span>
-					</div>
-					<div class="show-regin"><span>成都</span></div>
-				</div>
-				<div class="region-list color1 postition-2 online-node" data-type="重庆">
-					<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
-						<span class="pulse delay-05"></span>
-						<span class="pulse delay-04"></span>
-					</div>
-					<div class="show-regin"><span>重庆</span></div>
-				</div>
-				<div class="region-list active postition-3 online-node" data-type="南昌">
-					<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
-						<span class="pulse delay-05"></span>
-						<span class="pulse delay-04"></span>
-					</div>
-					<div class="show-regin"><span>南昌</span></div>
-				</div>
-				<div class="region-list waite postition-4 waite-node" data-type="东莞">
-					<div class="area-box"><span class="dot"></span>
-						<span class="pulse delay-01"></span>
-						<span class="pulse delay-02"></span>
-						</div>
-					<div class="show-regin"><span>东莞</span></div>
-				</div>
-				<div class="region-list waite postition-5 waite-node" data-type="台州">
-					<div class="area-box"><span class="dot"></span><span class="pulse delay-01"></span>
-						<span class="pulse delay-02"></span>
-						</div>
-					<div class="show-regin"><span>台州</span></div>
-				</div>
-					<div class="region-list active postition-6 online-node" data-type="杭州">
-					<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
-						<span class="pulse delay-05"></span>
-						<span class="pulse delay-04"></span></div>
-					<div class="show-regin"><span>杭州</span></div>
-				</div>
-				<div class="region-list active postition-7 online-node" data-type="哈尔滨">
-					<div class="area-box"><span class="dot"></span><span class="pulse delay-04"></span>
-						<span class="pulse delay-05"></span>
-						<span class="pulse delay-03"></span></div>
-					<div class="show-regin"><span>哈尔滨</span></div>
-				</div>
-				<div class="region-list  active  postition-8 online-node" data-type="大庆">
-					<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
-						<span class="pulse delay-05"></span>
-						<span class="pulse delay-04"></span></div>
-					<div class="show-regin"><span>大庆</span></div>
-				</div>
-				<div class="region-list  active  postition-9 online-node" data-type="湘潭">
-					<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
-						<span class="pulse delay-05"></span>
-						<span class="pulse delay-04"></span></div>
-					<div class="show-regin"><span>湘潭</span></div>
-				</div>
-			</div>
-			<div class="content-box business-box">
-					<div class="row clearfix">
-							<!--Column-->
-							<div class="columnn col-lg-12">
-								<div class="inner wow fadeInUp40" data-wow-delay="0ms" data-wow-duration="1500ms">
-									<div class="img-box">
-										<img class="counter-img" src="images/icons/round_01.png">
-										<h5 class="counter-title">1个JCI认证技术中心</h5>
-									</div>
-								</div>
-							</div>
-					
-							<!--Column-->
-							<div class="columnn col-lg-12">
-								<div class="inner wow fadeInUp40" data-wow-delay="600ms" data-wow-duration="1500ms">
-									<div class="img-box">
-											<img class="counter-img" src="images/icons/round_02.png">
-											<h5 class="counter-title">10家制造工厂</h5>
-									</div>
-								</div>
-							</div>
-					
-							<!--Column-->
-							<div class="columnn col-lg-12">
-								<div class="inner wow fadeInUp40" data-wow-delay="900ms" data-wow-duration="1500ms">
-									<div class="img-box">
-											<img class="counter-img" src="images/icons/round_03.png">
-											<h5 class="counter-title">4300+名员工</h5>
-									</div>
-								</div>
-							</div>
-					</div>
-			</div>
-			<div class="current-info">
-				<img class="counter-img" src="images/icons/round_01.png">
-				<h5 class="current-text">重庆工厂</h5>
-			</div>
-	</section>
-	<section data-item="4" class="welcome-section" style=" padding:20px 0 20px">
-    
-    	<div class="auto-container">
-    		<!--Sec Title-->
-			<div class="row clearfix">
-				
-				<!--Image Column-->
-				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="image text-center wow bounceInDown">
-							<img src="images/main-link.jpg" alt="">
-					</div>
-				</div>
-				
-			</div>
-		</div>
-		
-	</section>
-	
-
-	<!--Main Footer-->
-    <div id="footerBox"></div>
-	<!--End Main Footer-->
-	
 </div>
 <!--End pagewrapper-->
 
