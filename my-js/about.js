@@ -80,7 +80,7 @@ function animateSlide4(){
 		var type = $(this).parents('.region-list').attr('data-type');
 		var img = $(this).parents('.region-list').attr('data-img');
 		$('.current-info .current-img').attr('src',img);
-		$('.current-info .current-text').text(type+'地区工厂');
+		$('.current-info .current-text').text(type);
 		$('.current-info').fadeIn(1000);
 	},function(){
 		$('.current-info').fadeOut();
