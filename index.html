@@ -21,7 +21,7 @@
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
 <!-- Responsive -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
 <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
@@ -78,48 +78,61 @@
 	}
 }
 .news-center{
-	bottom: 20px;
+	bottom: 40px;
     border: 1px solid #fff;
     height: 25px;
     line-height: 24px;
     border-radius: 15px;
-    padding: 0 10px;
+	padding: 0 10px;
+	font-size: 18px;
 }
 .play{
 	width: 80px;
 	height: 80px;
 }
-
+.slide6{
+	display: flex;
+	flex-direction: column;
+	background: #0c687f;
+}
 .slide6 .content{
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	width: 100%;
-	height: 100%;
+	height: 49.5%;
 	background: #0c687f;
+}
+.slide6 .content1{
+	align-items: flex-end;
+}
+.slide6 .content2{
+	align-items: flex-start;
+    padding-top: 0.5%;
 }
 .slide6 .content .item-box{
 	display: flex;
 	justify-content: space-between;
-	height: 49.5%;
+	/* height: 49.5%; */
 	position: relative;
 }
 .slide6 .img-box{
-	display: flex;
+	/* display: flex; */
 	position: relative;
 }
 .slide6 .item1{
-	width: 33%;
+	width: 35%;
+	display: block !important;
 }
 .slide6 .item2{
-	width: 33%;
+	width: 30.8%;
 	align-items: flex-end;
 	justify-content: space-around;
 }
 .slide6 .item2 .text-box{
 	position: absolute;
-	left: 50px;
-    top: 20px;
+    left: 30px;
+    top: -90%;
 }
 .slide6 .item2 .img1{
 	width: 36%;
@@ -131,7 +144,7 @@
 	width: 25%;
 }
 .slide6 .item3{
-	width: 22%;
+	width: 21.6%;
 	flex-direction: column;
 }
 .slide6 .item3 .img1{
@@ -141,7 +154,7 @@
 	height: 43.5%;
 }
 .slide6 .item4{
-	width: 11%;
+	width: 10%;
 	flex-direction: column;
 }
 .slide6 .item4 .img1{
@@ -151,17 +164,18 @@
 	height: 58%;
 }
 .slide6 .item5{
-	width: 15%;
+	width: 16.7%;
+	display: block !important;
 }
 .slide6 .item6{
-	width: 17.5%;
+	width: 17.76%;
 	flex-direction: column;
 }
 .slide6 .item6 .img-box{
 	height: 49%;
 }
 .slide6 .item7{
-	width: 24%;
+	width: 23.4%;
 	flex-direction: column;
 }
 .slide6 .item7 .img1{
@@ -170,6 +184,7 @@
 .slide6 .item7 .img-box2{
 	height: 32%;
 	display: flex;
+	justify-content: space-between;
 }
 .slide6 .item7 .img2{
 	width: 49%;
@@ -178,7 +193,8 @@
 	width: 50%;
 }
 .slide6 .item8{
-	width: 42%;
+	width: 40.88%;
+	display: block !important;
 }
 
 </style>
@@ -203,7 +219,7 @@
 							<img class="slide-bg" src="images/main-slider/image-1.jpg">
 							<div class="content-box animated" data-my-animate="fadeInLeft">
 								<div class="content text-center">
-									<h3><div>提升机动化世界</div><font class="my-color2">的体验</font></h3>
+									<h2><div class="my-color2">提升机动化世界</div><font>的体验</font></h2>
 								</div>
 							</div>
 						</div>
@@ -211,7 +227,7 @@
 							<img class="slide-bg" src="images/main-slider/image-1.jpg">
 							<div class="content-box">
 								<div class="content text-center">
-									<h3><div>提升机动化世界</div><font class="my-color2">的体验</font></h3>
+									<h2><div class="my-color2">提升机动化世界</div><font>的体验</font></h2>
 								</div>
 								<div class="my-row-center news-center">新闻中心</div>
 							</div>
@@ -258,9 +274,9 @@
 				<img class="slide-bg" src="images/background/bg-3-2.jpg">
 				<div class="content-box">
 					<div class="content text-center">
-						<h3><div class="animated" data-my-animate="fadeInLeft">超级座椅</div>
+						<h2><div class="animated" data-my-animate="fadeInLeft">超级座椅</div>
 							<div class="animated ani-time2 my-color2" data-my-animate="fadeInLeft">面向未来的座椅</div>
-						</h3>
+						</h2>
 					</div>
 				</div>
 			</div>
@@ -353,7 +369,7 @@
 							<div class="column counter-column col-lg-2">
 								<div class="inner animated" data-my-animate="fadeInLeft"  data-wow-delay="0ms" data-wow-duration="1500ms">
 									<div class="count-outer count-box">
-										<span class="count-text mytimer" data-speed="6000" data-stop="10" >0</span>
+										<span class="count-text mytimer" data-speed="6000" data-stop="11" >0</span>
 										<span class="my-font2">家</span>
 										<h4 class="counter-title">全国工厂</h4>
 									</div>
@@ -383,7 +399,7 @@
 			</div>
 			<!--第6屏-->
 			<div class="swiper-slide slide6">
-				<div class="content">
+				<div class="content content1">
 					<div class="item-box item1">
 						<div class="img-box">
 							<img src="images/index/6-1.jpg">
@@ -417,6 +433,8 @@
 						</div>
 						<div class="img-box img2"><img src="images/index/6-3d.jpg"></div>
 					</div>
+				</div>
+				<div class="content content2">
 					<div class="item-box item5">
 						<div class="img-box"><img src="images/index/6-4a.jpg"></div>
 					</div>
@@ -450,9 +468,9 @@
 				<img class="slide-bg" src="images/index/7.jpg">
 				<div class="content-box">
 					<div class="content text-center">
-						<h3><div class="animated" data-my-animate="fadeInLeft">雇主品牌</div>
+						<h2><div class="animated" data-my-animate="fadeInLeft">雇主品牌</div>
 							<div class="animated ani-time2 my-color2" data-my-animate="fadeInLeft">以卓越致敬初心</div>
-						</h3>
+						</h2>
 					</div>
 				</div>
 			</div>

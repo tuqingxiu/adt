@@ -20,8 +20,9 @@
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
 <!-- Responsive -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
 
 <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
@@ -54,7 +55,7 @@
 	bottom: 1%;
 }
 #technology .slide1 .content.text-right{
-	right: unset;
+	right: auto;
 	left: 50%;
 }
 .slide1 .content-box .text2{
@@ -118,18 +119,20 @@
 	text-align: center;
 	margin-top: 20px;
 	height: auto;
+	font-size: 16px;
 }
 .slide2 .right-box .content-box{
-	background: rgb(190, 213, 51, 0.8);
+	background: rgba(190, 213, 51, 0.8);
 	color: #fff;
 	display: none;
 }
 .slide2 .right-box .content-box span{
 	position: absolute;
-    bottom: 10px;
+    bottom: 40px;
     text-align: center;
     left: 0;
-    width: 100%;
+	width: 100%;
+	font-size: 18px;
 }
 .slide3{
 	display: flex;
@@ -155,16 +158,15 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	
 }
 .slide3 .column-2{
-	flex: 1;
+	/* flex: 1; */
 	padding: 0 9%;
 }
 .slide3 .column-2 .item-box{
-	display: flex;
+	/* display: flex; */
 	width: 50%;
-	height: 50%;
+	/* height: 50%; */
 	color: #fff;
 }
 .slide3 .column-2 .content-box{
@@ -180,17 +182,22 @@
 	padding: 0 20px;
 }
 .slide3 .content-box .cont1{
-	margin-top: 50%;
-	font-size: 18px;
+	margin-top: 35%;
+	font-size: 22px;
     font-weight: 600;
 }
 .slide4 .content-box.box6 .cont1{
-	margin-top: 15%;
-	font-size: 18px;
+	margin-top: 35%;
+	font-size: 24px;
     font-weight: 600;
 }
 .slide3 .content-box .cont2{
-	margin-top: 5px;
+	margin-top: 15px;
+	font-size: 16px;
+}
+.slide4 .content-box.box6 .cont2{
+	margin-top: 5%;
+	font-size: 16px;
 }
 .slide3 .content-box .cont3{
 	font-size: 28px;
@@ -268,15 +275,16 @@
 }
 .slide5 .content2 .column-box{
 	height: 50%;
+	align-items: center;
 }
 .slide5 .content2 .column-box .item-box{
-	display: flex;
+	/* display: flex; */
 }
 .slide5 .content2 .column-5 .item-box{
 	width: 19.8%;
 }
 .slide5 .content2 .box1{
-	background: rgb(190, 213, 51, 0.8);
+	background: rgba(190, 213, 51, 0.8);
 	color: #fff;
 	display: flex;
     justify-content: center;
@@ -288,7 +296,7 @@
 	border-bottom: 2px solid #bed533;
 }
 .slide6>.content-box{
-	display: flex;
+	/* display: flex; */
 	justify-content: center;
 	width: 90%;
 	left: 5%;
@@ -313,13 +321,18 @@
 .slide6 .cont1{
 	margin-bottom: 15px;
 }
+.slide6 .cont2,
+.slide6 .cont3{
+	font-size: 16px;
+}
 .slide6 .column-4 .content-box{
-	background: rgb(190, 213, 51, 0.8);
+	background: rgba(190, 213, 51, 0.8);
 	color: #093947;
 	/* display: flex; */
     justify-content: center;
 	align-items: center;
-	font-size: 16px;
+	font-size: 18px;
+	font-weight: 600;
 	display: none;
 }
 .slide6 .column-4 .content-box.show{
@@ -400,21 +413,21 @@
 					</div>
 					<div class="item-box animated" data-my-animate="fadeInRight">
 						<img src="images/technology/3-2.jpg">
-						<div class="content-box box2animated ani-time2" data-my-animate="fadeInRight">
+						<div class="content-box box2 animated ani-time2" data-my-animate="fadeInRight">
 							<div class="cont1 text-color2">多方位调节</div>
 							<div class="cont2">多向调节及座椅记忆功能，可实现45°及180°的双角度灵活旋转，在车内快速调节舒适位置。</div>
 						</div>
 					</div>
-					<div class="item-box animated" data-my-animate="fadeInUp100">
+					<div class="item-box animated ani-time2" data-my-animate="fadeInUp100">
 						<img src="images/technology/3-3.jpg">
-						<div class="content-box box3 animated ani-time2" data-my-animate="fadeInUp100">
+						<div class="content-box box3 animated ani-time3" data-my-animate="fadeInUp100">
 							<div class="cont1 text-color2">舒适模块</div>
 							<div class="cont2">搭在按摩、腰托、腿托、按摩、通风，根据身体情况自由调节，打造极致舒适</div>
 						</div>
 					</div>
-					<div class="item-box animated" data-my-animate="fadeInUp100">
+					<div class="item-box animated ani-time2" data-my-animate="fadeInUp100">
 						<img src="images/technology/3-4.jpg">
-						<div class="content-box box4 animated ani-time2" data-my-animate="fadeInUp100">
+						<div class="content-box box4 animated ani-time3" data-my-animate="fadeInUp100">
 							<div class="cont1 text-color1">储物模块</div>
 							<div class="cont2">多项巧妙的储物设计，充满惊喜，为你的娱乐与办公提供更大的支持。</div>
 						</div>
@@ -435,7 +448,7 @@
 							<div class="cont2 text-color3">靠背安装空气净化器，实时监测车内空气，自动完成空气净化，在车内呼吸新鲜空气。</div>
 						</div>
 					</div>
-					<div class="item-box animated" data-my-animate="rotateIn">
+					<!-- <div class="item-box animated" data-my-animate="rotateIn">
 						<img src="images/technology/3-6.jpg">
 					</div>
 					<div class="item-box animated" data-my-animate="rotateIn">
@@ -446,7 +459,7 @@
 					</div>
 					<div class="item-box animated" data-my-animate="rotateIn">
 						<img src="images/technology/3-9.jpg">
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<!--第5屏-->
