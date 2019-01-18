@@ -1130,8 +1130,10 @@ img{
 
 .sticky-header{
 	position:fixed;
-	opacity:0;
-	visibility:hidden;
+	/* opacity:0;
+	visibility:hidden; */
+	opacity:1;
+	visibility:visible;
 	left:0px;
 	top:0px;
 	width:100%;
