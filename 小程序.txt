@@ -1,0 +1,33 @@
+1.原型：https://pro.modao.cc/app/Dh6jZn7PfRv8lSe4oZwQbbcWatwL7ER
+2.https://cloud.tencent.com/document/product/454/12554
+3.https://github.com/TencentVideoCloudMLVBDev/MiniProgram
+
+
+
+
+需要：
+1.svn地址和对应权限
+2.设计图和对应布局标尺，图标等
+3.接口文档
+4.申请小程序账号，然后给前端开开发者权限
+
+svn 
+https://svn.feibiao.info/feibiao/applet  
+applet
+  app345
+
+
+
+小程序账号 
+feibiaoapplet@feicuibaba.com  
+feibiaoA@BC445#e
+
+
+商品接口
+http://test1.feibiao.info:18006/swagger-ui.html
+
+订单接口
+http://test1.feibiao.info:18007/swagger-ui.html
+
+微信号:
+tutuqqxiuxiu     wuyongqiong88
