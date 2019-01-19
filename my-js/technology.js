@@ -4,7 +4,10 @@ $(function() {
     var allSwiperCount = 7;//swiper总个数
     var preTranslateValue = -1;
 	var translateFlag = false;
-	var index=0;
+	//跳转到第几个slider
+	var item = getUrlParam('item');
+	var index=item?(item-1):0;
+	
     if(localStorage.getItem("index")){
         index=localStorage.getItem("index");
         localStorage.removeItem("index"); 
@@ -37,6 +40,9 @@ $(function() {
 			}
 		},
 		onKeyPress: function(swiper){
+			//设置header是否显示
+			setHeaderShow(swiper.activeIndex);
+			
 			if(swiper.activeIndex == allSwiperCount && preTranslateValue == -1) {
 				preTranslateValue = mySwiper.height - $(".all-footer").outerHeight() + mySwiper.translate;
 			}
@@ -60,6 +66,9 @@ $(function() {
             })
         },
 		onSlideChangeEnd: function(swiper) {
+			//设置header是否显示
+			setHeaderShow(swiper.activeIndex);
+			
             // //加载动画样式
             var num = swiper.activeIndex + 1;
             if(num != 5){
@@ -92,21 +101,38 @@ function animateSlide5(){
 		var current = $(this).attr('data-bigImg');
 		var currentSrc = 'images/technology/'+current;
         $('.big-img-box .big-img').attr('src',currentSrc);
-        $('.big-img-box').fadeIn();
+        $('.big-img-box').fadeIn(1000);
 	})
 	$('.slide5 .content2').mouseleave(function(){
         $('.big-img-box').hide();
     })
 }
-function hoverBig(){
-    // $('.big-img-box').addClass('flipInX');
-    // $('.big-img-box').removeClass('zoomOut');
-}
-function hoverSmall(){
-    // $('.big-img-box').addClass('zoomOut');
-    // $('.big-img-box').removeClass('flipInX');
-}
 
 function jump(n) {
 	mySwiper.slideTo(n,1000,false);
+}
+
+function getUrlParam(name){
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+
+//设置第一屏时显示header,其它屏幕不显示
+function setHeaderShow(index){
+	currentIndex = index;
+	if(index == 0){
+		$('.main-header').fadeIn();
+	}else{
+		$('.main-header').fadeOut();
+	}
+
+	$('.null-header').hover(function(){
+		$('.main-header').fadeIn();
+	})
+	$('.main-header').mouseleave(function(){
+		if(currentIndex !== 0){
+			$('.main-header').fadeOut();
+		}
+	})
 }

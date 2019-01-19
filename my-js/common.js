@@ -7,9 +7,8 @@
         $("#footerBox").load("common/footer.html");
         
     }
-
-
     $(window).on('load', function() {
-		loadHeader();
+        loadHeader();
+        
 	});	
 })(window.jQuery);

@@ -56,10 +56,8 @@ body {
 	-moz-font-smoothing: antialiased;
 }
 /*----------video--------------*/
-@media only screen and (max-width: 768px){
-	.fancybox-container video{
-		max-width: 100%;
-	}
+.fancybox-container video{
+	max-width: 100%;
 }
 
 .bordered-layout .page-wrapper{
@@ -105,11 +103,6 @@ p{
 	max-width:1200px;
 	padding:0px 15px;
 	margin:0 auto;
-	/* position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; */
 }
 
 .medium-container{
@@ -552,7 +545,13 @@ img{
 ====================================================================
 
 ***/
-
+.null-header{
+	position: absolute;
+	width: 100%;
+	height: 70px;
+	/* background:rgba(4,69,87,0.8); */
+	z-index:998;
+}
 .main-header{
 	position:absolute;
 	z-index:999;
@@ -3363,6 +3362,11 @@ img{
 	position:relative;
 	background-color: #1f1f1f;
 	height: 100%;
+	display: flex;
+    flex-direction: column;
+    width: 100%;
+	justify-content: space-around;
+	color: #fff;
 }
 
 .main-footer .footer-widget{
@@ -3384,6 +3388,19 @@ img{
 	margin-bottom:15px;
 	text-transform:capitalize;
 }
+.main-footer .footer-widget h5{
+	font-size: 14px;
+	text-align: center;
+	margin-top: 5px;
+}
+.main-footer .column2{
+	margin-left: 20px;
+}
+.main-footer .auto-containe{
+	width: 100%;
+}
+
+
 
 /*Footer Link*/
 
@@ -3398,7 +3415,8 @@ img{
 
 .footer-link li a{
 	position: relative;
-	color: #9f9e9e;
+	/* color: #9f9e9e; */
+	color: #fff;
 	font-size: 14px;
 	transition:all 0.3s ease;
 	-moz-transition:all 0.3s ease;
@@ -3584,17 +3602,14 @@ img{
 .main-footer .footer-bottom .copyright{
 	position: relative;
 	font-size: 12px;
-	padding-left: 30px;
 	line-height: 1.7em;
-	margin-left: 15px;
-	float:left;
-	border-left: 1px solid #dde4db;
+	margin-top: 20px;
 }
 
 /*Footer Nav*/
 
 .main-footer .footer-bottom .footer-nav{
-	margin-top: 20px;
+	margin-top: 40%;
 }
 
 .footer-nav{
@@ -3611,7 +3626,8 @@ img{
 
 .footer-nav li a{
 	position: relative;
-	color: #7c7b7b;
+	/* color: #7c7b7b; */
+	color: #fff;
 	font-size: 18px;
 	transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -3717,6 +3733,15 @@ img{
 	font-size:12px;
 	background:none;
 	cursor:pointer;
+}
+
+.main-footer .footer-bottom .footer-cont1{
+	display: flex;
+	flex-direction: column;
+	padding-right: 15%;
+}
+.main-footer .auto-container{
+	width:100%;
 }
 
 /*Feedback Section*/

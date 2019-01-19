@@ -269,10 +269,10 @@ ul,ol{
 .bgfff{
 	background: #FFFFFF;
 }
-.logo img{
+/* .logo img{
 	height: 40px;
 	width: auto;
-}
+} */
 .m-menu {
 	margin-top: 10px;
 }
@@ -635,7 +635,7 @@ ul,ol{
 
 
 /*footer*/
-footer.footer{
+/* footer.footer{
 	padding: 45px 0;
 	background-color: #032632;
 }
@@ -696,7 +696,6 @@ footer.footer{
 	display: block;
 }
 .org-link{
-	/*color: rgba(255,255,255,.7);*/
 	font-size: 14px;
 }
 .org-link i{
@@ -767,7 +766,7 @@ footer.footer{
 }
 .footer-bottom-a:hover{
 	color: #fff;
-}
+} */
 #page .swiper-pagination-bullet:nth-child(10){
 	display: none;
 }
@@ -1214,17 +1213,16 @@ footer.footer{
 .contact-li:last-child{
 	margin: 0;
 }
-.copyright{
+/* .copyright{
 	margin-left: -15px;
 	margin-right: -15px;
-    /*height: 36px;*/
     line-height: 22px;
     padding: 5px 0;
 	font-size: 12px;
 	text-align: center;
 	color: rgba(255,255,255,0.5);
 	background: #03202b;
-}
+} */
 @media (max-width:1825px) and (min-width: 1501px){
 	
 	.cultrue-row-col:hover .hover-txt{
@@ -1251,12 +1249,12 @@ footer.footer{
 	.topbar .item{
 		padding-right: 30px;
 	}
-	footer.footer {
+	/* footer.footer {
 	    padding: 45px 30px 45px 15px;
 	}
 	.footer-bottom{
 		padding: 0 30px;
-	}
+	} */
 	.performance-data{
 		width: 90%!important;
 		margin-left: auto;
