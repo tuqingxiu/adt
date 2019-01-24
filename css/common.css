@@ -248,8 +248,8 @@ ul,ol{
     cursor: pointer;
 }
 .language.active {
-    color: #bcd12b;
-    border: 1px solid rgba(155,176,48,.7);
+    color: rgba(191,215,50,1);
+    border: 1px solid rgba(191,215,50,.7);
 }
 
 /*手机菜单*/

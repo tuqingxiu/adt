@@ -102,7 +102,7 @@ p{
 .auto-container{
 	position:static;
 	max-width:1200px;
-	padding:0px 15px;
+	/* padding:0px 15px; */
 	margin:0 auto;
 }
 
@@ -546,6 +546,7 @@ img{
 ====================================================================
 
 ***/
+
 .null-header{
 	position: absolute;
 	width: 100%;
@@ -1067,9 +1068,18 @@ img{
 	margin-right:0px;
 }
 
+.sticky-header .main-menu .navigation > li > span{
+	color:#ffffff;
+}
+
+.sticky-header .main-menu .navigation > li > span.active{
+	color:rgba(191,215,50,1) !important;
+}
+
 .sticky-header .main-menu .navigation > li > a{
 	color:#ffffff !important;
 }
+
 
 .sticky-header .main-menu .navigation > li:hover > a,
 .sticky-header .main-menu .navigation > li.current > a{
@@ -1124,6 +1134,10 @@ img{
 	font-size: 14px;
 	font-weight: 700;
 	text-transform: uppercase;
+}
+/*--语言切换按钮--*/
+.main-menu .language-box{
+	padding: 19px 0;
 }
 
 /*Sticky Header*/
@@ -2873,7 +2887,8 @@ img{
 	position: relative;
 	color: #ffffff;
 	font-size: 16px;
-	line-height: 35px;
+	line-height: 25px;
+	margin-top: 3px;
 	text-align: left;
 	flex: 8;
 }
@@ -10889,7 +10904,9 @@ header .main-menu .navigation > li > ul>li>a{
 }
 .slide-zy .point-text{
 	position: absolute;
-	width: 80px;
+	min-width: 80px;
+	width: max-content;
+    padding: 0 10px;
     background: rgba(191,215,50,1);
     border-radius: 8px;
     height: 30px;
