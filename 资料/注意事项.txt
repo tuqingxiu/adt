@@ -1,3 +1,8 @@
 www.cqyfas.com
 https://www.yanfengadient.com
 http://222.180.148.10:8686/adient/
+
+待做事项：
+1.地图更换图标，去掉光圈效果。首页地图按顺序显示
+2.关于我们的合作伙伴改为图标
+3.英文版
