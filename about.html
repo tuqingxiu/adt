@@ -88,14 +88,14 @@
 	left: 0;
 	top: 20px;
 	background-color: rgba(4,69,87,0.8);
-	padding: 20px 30px 20px 120px;
+	padding: 20px 30px 20px 20%;
 	text-align: right;
 }
 .slide2 .content2{
 	right: 0;
 	bottom: 20px;
 	background-color: rgba(174,195,64,0.8);
-	padding: 20px 120px 20px 30px;
+	padding: 20px 20% 20px 30px;
 }
 .slide2 .content .cont2{
 	font-size: 16px;
@@ -106,16 +106,26 @@
 }
 .fluid-section-one .sec-title{
 	margin-bottom: 0;
-	margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	width: 30px;
+	margin-right: 10px;
 }
 .slide3 .content-box{
 	display: flex;
 	align-items: center;
 }
+.slide5{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .slide5 .logo-box{
 	display: flex;
     flex-direction: column;
-    position: relative;
+	position: relative;
 }
 .slide5 .logo-box .item-box{
 	height: 20%;
@@ -127,7 +137,19 @@
 	margin: 40px 0;
     font-size: 28px;
     text-align: center;
-    font-weight: 600;
+	font-weight: 600;
+	display: flex;
+    align-items: center;
+}
+.slide5 .title-text .line{
+	display: block;
+    height: 2px;
+    background: rgba(0,70,91,1);
+    width: 390px;
+}
+.slide5 .title-text .text{
+	margin: 0 10px;
+    background: #fff;
 }
 </style>
 </head>
@@ -337,82 +359,60 @@
 			<!--第4屏 背景图-->
 			<div id="map" class="swiper-slide slide4">
 				<div class="china-map">
-						<img class="img-map" src="images/background/map_black_bg.png">
-						<div class="region-list active postition-1 online-node" data-type="成都延锋安道拓汽车部件系统有限公司" data-img="images/about/cd.png">
-							<div class="area-box">
-								<span class="dot"></span>
-								<span class="pulse delay-06"></span>
-								<span class="pulse delay-01"></span>
-								<span class="pulse delay-02"></span>
-							</div>
-							<div class="show-regin"><span>成都</span></div>
+					<img class="img-map" src="images/background/map_black_bg.png">
+					<div class="region-list active postition-1 online-node" data-type="成都延锋安道拓汽车部件系统有限公司" data-img="images/about/cd.png">
+						<div class="area-box">
+							<span class="dot"><img src="images/icons/marker1.png"></span>
 						</div>
-						<div class="region-list color1 postition-2 online-node" data-type="重庆延锋安道拓大门" data-img="images/about/cq-yf.png">
-							<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
-								<span class="pulse delay-05"></span>
-								<span class="pulse delay-04"></span>
-							</div>
-							<div class="show-regin"><span>重庆</span></div>
-						</div>
-						<div class="region-list color1 postition-2-1 online-node" data-type="6.重庆延锋安道拓汽车部件系统有限公司江津分公司" data-img="images/about/cq-jj.png">
-							<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
-								<span class="pulse delay-05"></span>
-								<span class="pulse delay-04"></span>
-							</div>
-							<div class="show-regin"></div>
-						</div>
-						<div class="region-list color1 postition-2-2 online-node" data-type="重庆延锋安道拓锋奥汽车部件系统有限公司" data-img="images/about/cq-yj.png">
-							<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
-								<span class="pulse delay-05"></span>
-								<span class="pulse delay-04"></span>
-							</div>
-							<div class="show-regin"></div>
-						</div>
-						<div class="region-list active postition-3 online-node" data-type="5.南昌延锋安道拓汽车部件系统有限公司" data-img="images/about/nc.png">
-							<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
-								<span class="pulse delay-05"></span>
-								<span class="pulse delay-04"></span>
-							</div>
-							<div class="show-regin"><span>南昌</span></div>
-						</div>
-						<div class="region-list waite postition-4 waite-node" data-type="重庆延锋安道拓汽车部件系统有限公司东莞分公司" data-img="images/about/dg.png">
-							<div class="area-box"><span class="dot"></span>
-								<span class="pulse delay-01"></span>
-								<span class="pulse delay-02"></span>
-								</div>
-							<div class="show-regin"><span>东莞</span></div>
-						</div>
-						<div class="region-list waite postition-5 waite-node" data-type="台州延锋安道拓汽车部件系统有限公司" data-img="images/about/tz.png">
-							<div class="area-box"><span class="dot"></span><span class="pulse delay-01"></span>
-								<span class="pulse delay-02"></span>
-								</div>
-							<div class="show-regin"><span>台州</span></div>
-						</div>
-							<div class="region-list active postition-6 online-node" data-type="杭州延锋安道拓汽车部件系统有限公司" data-img="images/about/hz.png">
-							<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
-								<span class="pulse delay-05"></span>
-								<span class="pulse delay-04"></span></div>
-							<div class="show-regin"><span>杭州</span></div>
-						</div>
-						<div class="region-list active postition-7 online-node" data-type="哈尔滨延锋安道拓汽车部件系统有限公司" data-img="images/about/heb.png">
-							<div class="area-box"><span class="dot"></span><span class="pulse delay-04"></span>
-								<span class="pulse delay-05"></span>
-								<span class="pulse delay-03"></span></div>
-							<div class="show-regin"><span>哈尔滨</span></div>
-						</div>
-						<div class="region-list  active  postition-8 online-node" data-type="大庆延锋安道拓汽车部件系统有限公司" data-img="images/about/dq.png">
-							<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
-								<span class="pulse delay-05"></span>
-								<span class="pulse delay-04"></span></div>
-							<div class="show-regin"><span>大庆</span></div>
-						</div>
-						<div class="region-list  active  postition-9 online-node" data-type="湘潭延锋安道拓汽车部件系统有限公司" data-img="images/about/xt.png">
-							<div class="area-box"><span class="dot"></span><span class="pulse delay-06"></span>
-								<span class="pulse delay-05"></span>
-								<span class="pulse delay-04"></span></div>
-							<div class="show-regin"><span>湘潭</span></div>
-						</div>
+						<div class="show-regin"><span>成都</span></div>
 					</div>
+					<div class="region-list color1 active postition-2 online-node" data-type="重庆延锋安道拓汽车部件系统有限公司" data-img="images/about/cq-yf.png">
+						<div class="area-box"><span class="dot"><img src="images/icons/marker2.png"></span>
+						</div>
+						<div class="show-regin"><span>重庆</span></div>
+					</div>
+					<div class="region-list color1 postition-2-1 online-node" data-type="重庆延锋安道拓汽车部件系统有限公司江津分公司" data-img="images/about/cq-jj.png">
+						<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span>
+						</div>
+						<div class="show-regin"></div>
+					</div>
+					<div class="region-list color1 postition-2-2 online-node" data-type="重庆延锋安道拓锋奥汽车部件系统有限公司" data-img="images/about/cq-fa.png">
+						<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span>
+						</div>
+						<div class="show-regin"></div>
+					</div>
+					<div class="region-list active postition-3 online-node" data-type="南昌延锋安道拓汽车部件系统有限公司" data-img="images/about/nc.png">
+						<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span>
+						</div>
+						<div class="show-regin"><span>南昌</span></div>
+					</div>
+					<div class="region-list waite postition-4 waite-node" data-type="重庆延锋安道拓汽车部件系统有限公司东莞分公司" data-img="images/about/dg.png">
+						<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span>
+							</div>
+						<div class="show-regin"><span>东莞</span></div>
+					</div>
+					<div class="region-list waite postition-5 waite-node" data-type="台州延锋安道拓汽车部件系统有限公司" data-img="images/about/tz.png">
+						<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span>
+							</div>
+						<div class="show-regin"><span>台州</span></div>
+					</div>
+						<div class="region-list active postition-6 online-node" data-type="杭州延锋安道拓汽车部件系统有限公司" data-img="images/about/hz.png">
+						<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span></div>
+						<div class="show-regin"><span>杭州</span></div>
+					</div>
+					<div class="region-list active postition-7 online-node" data-type="哈尔滨延锋安道拓汽车部件系统有限公司" data-img="images/about/heb.png">
+						<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span></div>
+						<div class="show-regin"><span>哈尔滨</span></div>
+					</div>
+					<div class="region-list  active  postition-8 online-node" data-type="大庆延锋安道拓汽车部件系统有限公司" data-img="images/about/dq.png">
+						<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span></div>
+						<div class="show-regin"><span>大庆</span></div>
+					</div>
+					<div class="region-list  active  postition-9 online-node" data-type="湘潭延锋安道拓汽车部件系统有限公司" data-img="images/about/xt.png">
+						<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span></div>
+						<div class="show-regin"><span>湘潭</span></div>
+					</div>
+				</div>
 					<div class="content-box business-box">
 							<div class="row clearfix">
 									<!--Column-->
@@ -447,48 +447,53 @@
 							</div>
 					</div>
 					<div class="current-info">
+						<img class="current-img" src="images/about/cd.png">
 						<h5 class="current-text">重庆工厂</h5>
-						<img class="current-img" src="images/about/cq-yuzui.jpg">
 					</div>
 			</div>
 			<!--第5屏-->
 			<div class="swiper-slide slide5">
-				<div class="title-text my-color5">我们的客户</div>
+				<div class="title-text my-color5 animated" data-my-animate="fadeInDown100">
+					<span class='line'></span>
+					<span class="text">合作伙伴</span>
+					<span class='line'></span>
+				</div>
 				<div class="logo-box">
-					<div class="item-box">
-						<img src="images/about/logo1.png">
-						<img src="images/about/logo2.png">
-						<img src="images/about/logo3.png">
-						<img src="images/about/logo4.png">
-						<img src="images/about/logo5.png">
-						<img src="images/about/logo6.png">
-						<img src="images/about/logo7.png">
+					<div class="item-box animated" data-my-animate="fadeInLeft">
+						<img src="images/about/1.png">
+						<img src="images/about/2.png">
+						<img src="images/about/3.png">
+						<img src="images/about/4.png">
+						<img src="images/about/5.png">
+						<img src="images/about/6.png">
+						<img src="images/about/7.png">
 					</div>
-					<div class="item-box">
-						<img src="images/about/logo8.png">
-						<img src="images/about/logo9.png">
-						<img src="images/about/logo10.png">
-						<img src="images/about/logo11.png">
-						<img src="images/about/logo12.png">
-						<img src="images/about/logo13.png">
-						<img src="images/about/logo14.png">
+					<div class="item-box animated" data-my-animate="fadeInLeft">
+						<img src="images/about/8.png">
+						<img src="images/about/9.png">
+						<img src="images/about/10.png">
+						<img src="images/about/11.png">
+						<img src="images/about/12.png">
+						<img src="images/about/13.png">
+						<img src="images/about/14.png">
 					</div>
-					<div class="item-box">
-						<img src="images/about/logo15.png">
-						<img src="images/about/logo16.png">
-						<img src="images/about/logo17.png">
-						<img src="images/about/logo18.png">
-						<img src="images/about/logo19.png">
-						<img src="images/about/logo20.png">
-						<img src="images/about/logo21.png">
+					<div class="item-box animated" data-my-animate="fadeInRight">
+						<img src="images/about/15.png">
+						<img src="images/about/16.png">
+						<img src="images/about/17.png">
+						<img src="images/about/18.png">
+						<img src="images/about/19.png">
+						<img src="images/about/20.png">
+						<img src="images/about/21.png">
 					</div>
-					<div class="item-box">
-						<img src="images/about/logo22.png">
-						<img src="images/about/logo23.png">
-						<img src="images/about/logo24.png">
-						<img src="images/about/logo25.png">
-						<img src="images/about/logo26.png">
-						<img src="images/about/logo27.png">
+					<div class="item-box animated" data-my-animate="fadeInRight">
+						<img src="images/about/22.png">
+						<img src="images/about/23.png">
+						<img src="images/about/24.png">
+						<img src="images/about/25.png">
+						<img src="images/about/26.png">
+						<img src="images/about/27.png">
+						<img style="visibility: hidden;" src="images/about/27.png">
 					</div>
 				</div>
 			</div>
