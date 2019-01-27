@@ -10810,6 +10810,10 @@ header .main-menu .navigation > li > ul>li>a{
 .my-bg-color6{
 	background-color: rgba(174,195,64,0.5);
 }
+/*深蓝色*/
+.my-bg-color7{
+	background-color: rgba(0,70,91,1);
+}
 
 .my-font1{
 	font-size: 22px;
