@@ -76,22 +76,23 @@ $(function() {
             // //加载动画样式
 			var num = swiper.activeIndex + 1;
             if(num == 5){
-                $('slide5 .animated[data-my-animate]').each(function(){
-                    var aniName = $(this).attr('data-my-animate');
-                    $(this).addClass(aniName);
-                })
-                zoombig();
-                setTimeout(function(){
-                    zoomin();
-                },1000);
+                // $('slide5 .animated[data-my-animate]').each(function(){
+                //     var aniName = $(this).attr('data-my-animate');
+                //     $(this).addClass(aniName);
+                // })
+                // zoombig();
+                // setTimeout(function(){
+                //     zoomin();
+				// },1000);
+				//第5屏效果 地图动画
+				animateSlide5();
             }
 		}
     });
     //-----------每屏动画效果----------
     //第3屏效果
     animateSlide3();
-    //地图动画
-    // zoomMap();
+    
     //第6屏效果
     animateSlide6();
 })
@@ -103,25 +104,35 @@ function animateSlide3() {
         $(this).find('.point-text').fadeOut(1000);
     })
 }
+function animateSlide5() {
+	var num = 1;
+	var mapTimer = setInterval(function(){
+		if(num>11){
+			clearInterval(mapTimer);
+		}
+		$('.slide5 .region-list[data-num='+num+']').fadeIn(600);
+		num++;
+	},600);
+}
 //地图动画
-function zoomMap(){
-    $('.china-map').hover(function(){
-        zoombig()
-    },function(){
-        zoomin();
-    })
-}
-function zoombig() {
-	$('.global-map').addClass('scale-g');
-	$('.china-map').addClass('scale-c');
-	$('.thailand').addClass('scale-t');
-}
+// function zoomMap(){
+//     $('.china-map').hover(function(){
+//         zoombig()
+//     },function(){
+//         zoomin();
+//     })
+// }
+// function zoombig() {
+// 	$('.global-map').addClass('scale-g');
+// 	$('.china-map').addClass('scale-c');
+// 	$('.thailand').addClass('scale-t');
+// }
 
-function zoomin() {
-	$('.global-map').removeClass('scale-g');
-	$('.china-map').removeClass('scale-c');
-	$('.thailand').removeClass('scale-t');
-}
+// function zoomin() {
+// 	$('.global-map').removeClass('scale-g');
+// 	$('.china-map').removeClass('scale-c');
+// 	$('.thailand').removeClass('scale-t');
+// }
 //第6屏效果
 function animateSlide6(){
     $('.slide6 .img-box').hover(function(){

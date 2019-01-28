@@ -1333,7 +1333,7 @@ img{
 .main-menu .navigation > li > ul > li > a{
 	position:relative;
 	display:block;
-	padding:7px;
+	padding:7px 15px;
 	line-height:24px;
 	font-weight:400;
 	font-size:18px;
@@ -2749,7 +2749,7 @@ img{
 }
 
 .fluid-section-one .content-column .inner-column .slick-list{
-	padding-left: 25px;
+	padding-left: 40px;
 }
 
 .fluid-section-one .content-column .inner-column .slick-dots{
@@ -2793,13 +2793,16 @@ img{
 .key-block{
 	position: relative;
 	/* margin-bottom: 40px; */
+	border-left: 1px solid #d9dfd7;
 }
 
 .key-block .inner-box{
 	position: relative;
 	/* padding: 20px 30px 10px 70px; */
-	padding: 0 30px 30px 70px;
-	border-left: 1px solid #d9dfd7;
+	/* padding: 0 30px 30px 70px; */
+	/* padding: 0 30px 35px 70px; */
+	padding: 5px 30px 25px 70px;
+	/* border-left: 1px solid #d9dfd7; */
 }
 
 .key-block .inner-box .icon-box{
@@ -2823,7 +2826,7 @@ img{
     left: 0;
 	transform: translateX(-50%);
 	top: 50%;
-	margin-top: -20px;
+	margin-top: -25px;
 }
 .key-block .inner-box .icon-box.big-icon-box{
 	width: 16px;
@@ -2888,7 +2891,7 @@ img{
 	color: #ffffff;
 	font-size: 16px;
 	line-height: 25px;
-	margin-top: 3px;
+	margin: 3px;
 	text-align: left;
 	flex: 8;
 }
@@ -10745,13 +10748,14 @@ header .main-menu .navigation > li > ul{
 	opacity: 1 !important;
 	visibility: visible !important; */
 	background: rgba(4,69,87,0.8);
-	min-width: 8rem;
+	/* min-width: 8rem; */
+	min-width: auto;
 }
 header .main-menu .navigation > li > ul>li>a{
 	position: relative;
     display: block;
     color: #ffffff;
-    text-align: center;
+    text-align: left;
     letter-spacing: 0px;
     opacity: 1;
     font-size: 16px;
@@ -10821,6 +10825,9 @@ header .main-menu .navigation > li > ul>li>a{
 }
 .my-font2{
 	font-size: 16px;
+}
+.my-font3{
+	font-size: 18px;
 }
 /*行居中*/
 .my-row-center{

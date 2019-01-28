@@ -448,6 +448,35 @@
 			$(".slick-active").next().removeClass('prev-item').addClass('next-item');
 		});
 	}
+	//my-slider-carousel 多个slider，一个一个切换
+	if($('.my-slider-carousel').length){
+		$('.my-slider-carousel').owlCarousel({
+			autoHeight: true,
+			smartSpeed: 500,
+			autoplay: 6000,
+			items: 1,
+			loop: true,
+			margin: 5,
+			nav:true,
+			lazyLoad: true,
+			merge: true, 
+			video: true,
+			navText: [ '<span class="flaticon-left-arrow"></span>', '<span class="flaticon-right-arrow"></span>' ],
+			responsive:{	
+			  480:{
+				items:2
+			  },
+			  678:{
+				items:2
+			  },
+			  960:{
+				items:2
+			  }
+			}
+		  });
+	}
+	
+	  
 	
 	//Product Tabs
 	if($('.gallery-tab').length){
