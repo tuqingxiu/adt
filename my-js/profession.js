@@ -1,4 +1,8 @@
 $(function() {
+    setHeaderShow();
+    $(window).on('scroll', function() {
+		setHeaderShow();
+	});
     goDesignatedLocation();
     animate1();
     animate2();
@@ -37,4 +41,24 @@ function goDesignatedLocation(){
         // 	$(window).scrollTop(scroll);
         // },1000)
     }
+}
+
+//设置第一屏时显示header,其它屏幕不显示
+function setHeaderShow(index){
+	var windowpos = $(window).scrollTop();
+	if (windowpos >= 200) {
+		$('.main-header').fadeOut();
+	} else {
+		$('.main-header').fadeIn();
+	}
+
+    $('.null-header').css('position','fixed');
+	$('.null-header').hover(function(){
+		$('.main-header').fadeIn();
+	})
+	$('.main-header').mouseleave(function(){
+		if(windowpos >= 200){
+			$('.main-header').fadeOut();
+		}
+	})
 }
