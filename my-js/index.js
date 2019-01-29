@@ -135,10 +135,10 @@ function animateSlide5() {
 // }
 //第6屏效果
 function animateSlide6(){
-    $('.slide6 .img-box').hover(function(){
-        $(this).find('.content-box').fadeOut();
+    $('.slide6 .item-box').hover(function(){
+        $(this).find('.cont-box').fadeIn().removeClass('fadeOutDown').addClass('fadeInUp');
     },function(){
-        $(this).find('.content-box').fadeIn();
+        $(this).find('.cont-box').removeClass('fadeInUp').addClass('fadeOutDown').fadeOut();
     })
 }
 

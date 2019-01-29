@@ -6,6 +6,7 @@ $(function() {
     goDesignatedLocation();
     animate1();
     animate2();
+    animate3();
 })
 //鼠标放上，显示其它颜色图标
 function animate1(){
@@ -23,7 +24,14 @@ function animate2(){
         $(this).find('.content-box').fadeOut();
     })
 }
-
+//办公环境 遮罩层
+function animate3(){
+    $('.section8 .slide').hover(function(){
+        $(this).find('.cont-box').fadeIn().removeClass('fadeOutDown').addClass('fadeInUp');
+    },function(){
+        $(this).find('.cont-box').removeClass('fadeInUp').addClass('fadeOutDown').fadeOut();
+    })
+}
 //跳转到指定位置
 function getUrlParam(name){
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
