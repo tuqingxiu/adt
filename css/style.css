@@ -1267,7 +1267,7 @@ img{
 
 .sticky-header .main-menu .navigation > li{
 	position:relative;
-	margin-left:60px;
+	margin-left:40px;
 	margin-right:0px;
 }
 
@@ -2740,7 +2740,7 @@ img{
 
 .fluid-section-one .content-column .inner-column{
 	position:relative;
-	max-width:710px;
+	max-width:810px;
 	float:right;
 	width:100%;
 	margin:0 auto;
@@ -2790,10 +2790,14 @@ img{
 
 /*Key Block*/
 
+.slick-track{
+	border-left: 1px solid #d9dfd7;
+}
+
 .key-block{
 	position: relative;
 	/* margin-bottom: 40px; */
-	border-left: 1px solid #d9dfd7;
+	/* border-left: 1px solid #d9dfd7; */
 }
 
 .key-block .inner-box{
@@ -2801,8 +2805,9 @@ img{
 	/* padding: 20px 30px 10px 70px; */
 	/* padding: 0 30px 30px 70px; */
 	/* padding: 0 30px 35px 70px; */
-	padding: 5px 30px 25px 70px;
+	/* padding: 5px 30px 25px 70px; */
 	/* border-left: 1px solid #d9dfd7; */
+	padding: 20px 30px 10px 70px;
 }
 
 .key-block .inner-box .icon-box{
@@ -2823,10 +2828,10 @@ img{
 	/*----*/
 	width: 10px;
     height: 10px;
-    left: 0;
+    left: -1px;
 	transform: translateX(-50%);
-	top: 50%;
-	margin-top: -25px;
+	/* top: 50%; */
+	margin-top: 12px;
 }
 .key-block .inner-box .icon-box.big-icon-box{
 	width: 16px;
@@ -2862,7 +2867,8 @@ img{
 	position: relative;
 	display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+	align-items: flex-start;
+	min-height: 56px;
 }
 
 .key-block .inner-box .content h3{
@@ -3610,13 +3616,14 @@ img{
 
 .main-footer .footer-bottom{
 	position: relative;
-	padding: 18px 0px;
+	padding: 18px 0px 50px;
 	background-color: #1f1f1f;
 }
 
 .main-footer .footer-bottom .logo{
 	position: relative;
 	float:left;
+	display: flex;
 }
 
 .main-footer .footer-bottom .copyright{
@@ -3624,6 +3631,7 @@ img{
 	font-size: 12px;
 	line-height: 1.7em;
 	margin-top: 20px;
+	width: 75%;
 }
 
 /*Footer Nav*/
@@ -3758,7 +3766,17 @@ img{
 .main-footer .footer-bottom .footer-cont1{
 	display: flex;
 	flex-direction: column;
-	padding-right: 15%;
+	width: 70%;
+}
+.main-footer .footer-bottom .footer-right{
+	display: flex;
+    align-items: center;
+}
+.main-footer .footer-bottom .clause{
+	margin-left: 50px;
+}
+.main-footer .footer-bottom .clause a{
+	color: #fff;
 }
 .main-footer .auto-container{
 	width:100%;

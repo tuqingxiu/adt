@@ -4,11 +4,22 @@ $(function() {
 		setHeaderShow();
 	});
     goDesignatedLocation();
+    //文化的力量居中
+    textCenter();
     animate1();
     animate2();
     animate3();
 })
-
+//文化的力量居中
+function textCenter(){
+    var h1 = $('.section4 .item1').height();
+    var h2 = $('.section4 .item2 .cont2>div').height();
+    var h = (h1-h2)/2;
+    if(isIE()){
+        h = h/2;
+    }
+    $('.section4 .item2 .cont2>div').css('margin-top',h);
+}
 //第三屏遮罩层显示，文化项目
 function animate1(){
     $('.section3 .boxs').hover(function(){
@@ -88,8 +99,16 @@ function setHeaderShow(index){
 		$('.main-header').fadeIn();
 	})
 	$('.main-header').mouseleave(function(){
-		if(windowpos >= 200){
+		if($(window).scrollTop() >= 200){
 			$('.main-header').fadeOut();
 		}
 	})
+}
+
+
+function isIE() { //ie?
+    if (!!window.ActiveXObject || "ActiveXObject" in window)
+           { return true; }
+    else
+           { return false; }
 }

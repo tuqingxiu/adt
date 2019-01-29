@@ -20,7 +20,7 @@
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
 <!-- Responsive -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
 <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
@@ -150,10 +150,10 @@
 	position: relative;
 }
 .section4 .item2{
-	display: flex;
+	/* display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-left: 5px;
+	padding-left: 5px; */
 }
 .section4 .item2 .cont1{
 	position: relative;
@@ -165,9 +165,17 @@
 	width: 100%;
 }
 .section4 .item2 .cont2{
-	width: 60%;
-	padding: 0 15px;
+	width: 100%;
+	height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+	font-size: 14px;
 	transition: 1s ease-in-out;
+}
+.section4 .item2 .cont2>div{
+	width: 100%;
+	padding-left: 45%;
 }
 .section4 .icon-play{
 	width: 50px;
@@ -465,39 +473,22 @@
 						<img class="my-all-center icon-play" src="images/icons/play.png">
 					</a>
 				</div>
-				<div class="item-box item2 my-bg-color3">
-					<div class="cont1">
-						<img src="images/culture/4-3.jpg">
-						<!-- <div>此书献给正在为梦想而奋斗的您！</div>-->
-					</div>
+				<div class="item-box item2">
+					<img src="images/culture/4-3.jpg">
 					<div class="animated-text cont2 text-box animated wow fadeInRight">
-						 <div>《文化的力量》献给亲爱的伙伴，学习传承，奔向未来；</div>
-						<div>《文化的力量》献给出色的同行，交流分享，一路向前；</div>
-						<div>《文化的力量》献给尊敬的朋友，投砾引珠，广征博引；</div>
-						<div>《文化的力量》献给我们的下一代，回馈社会，助力公益。</div>
-						<div style="margin-top: 10px">此书由重庆延锋安道拓公司所有同仁，用血浓于水的感情共同写就。
-							这是一个企业对自己的锤炼，更是一群骨子里永远都热血的人，
-							为共同走过的时光、彼此见证的过往，亲手打造的一份弥足珍贵的成长纪念。
-							第一版印刷的4000册将进行爱心认购，所得款项全部进入蓝天基金。
-							用来支持环境的可持续发展，社会服务，教育事业等公益之举！
-						</div> 
-						<!--
-						<div>《文化的力量》于2018年6月28日正式发行。</div>
-						<div style="text-indent:25px;margin:5px 0;">此书由重庆延锋安道拓公司所有同仁，用血浓于水的感情共同写就。
-							这是一个企业对自己的锤炼，更是一群骨子里永远都热血的人，
-							为共同走过的时光、彼此见证的过往，亲手打造的一份弥足珍贵的成长纪念。</div>
-						<div>《文化的力量》献给亲爱的伙伴，学习传承，奔向未来；
-							</div>
-						<div>《文化的力量》献给出色的同行，交流分享，一路向前；</div>
-						<div>《文化的力量》献给尊敬的朋友，投砾引珠，广征博引；
-							</div>
-						<div>《文化的力量》献给我们的下一代，回馈社会，助力公益。
-							</div>
-						<div style="margin-top:5px">《文化的力量》第一版印刷的4000册将进行爱心认购，所得款项全部进入蓝天基金。用来支持环境的可持续发展，
-								社会服务，教育事业等公益之举！
-								</div>
-						-->
-				</div>
+						<div>
+							<div>《文化的力量》献给亲爱的伙伴，学习传承，奔向未来；</div>
+							<div>《文化的力量》献给出色的同行，交流分享，一路向前；</div>
+							<div>《文化的力量》献给尊敬的朋友，投砾引珠，广征博引；</div>
+							<div>《文化的力量》献给我们的下一代，回馈社会，助力公益。</div>
+							<div style="margin-top: 10px">此书由重庆延锋安道拓公司所有同仁，用血浓于水的感情共同写就。
+								这是一个企业对自己的锤炼，更是一群骨子里永远都热血的人，
+								为共同走过的时光、彼此见证的过往，亲手打造的一份弥足珍贵的成长纪念。
+								第一版印刷的4000册将进行爱心认购，所得款项全部进入蓝天基金。
+								用来支持环境的可持续发展，社会服务，教育事业等公益之举！
+							</div> 
+						</div>
+					</div>
 			</div>
 		</div>
 	</section>

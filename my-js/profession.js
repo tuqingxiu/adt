@@ -65,7 +65,7 @@ function setHeaderShow(index){
 		$('.main-header').fadeIn();
 	})
 	$('.main-header').mouseleave(function(){
-		if(windowpos >= 200){
+		if($(window).scrollTop() >= 200){
 			$('.main-header').fadeOut();
 		}
 	})
