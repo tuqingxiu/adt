@@ -1,13 +1,13 @@
 var mySwiper;
 $(function() {
     //第一个swiper
-    // var slideSwiper = new Swiper('#first-slide-swiper', {
-	// 	loop: true,
-	// 	speed: 800,
-	// 	autoplay : 3000
-	// 	// pagination: '#slide-swiper',
-	// 	// paginationClickable: true
-	// });
+    var slideSwiper = new Swiper('#first-slide-swiper', {
+		loop: true,
+		speed: 800,
+		autoplay : 3000
+		// pagination: '#slide-swiper',
+		// paginationClickable: true
+	});
     var allSwiperCount = 8;//swiper总个数
     var preTranslateValue = -1;
 	var translateFlag = false;

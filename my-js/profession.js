@@ -6,7 +6,7 @@ $(function() {
     goDesignatedLocation();
     animate1();
     animate2();
-    animate3();
+    // animate3();
 })
 //鼠标放上，显示其它颜色图标
 function animate1(){
