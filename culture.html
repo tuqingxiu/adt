@@ -57,10 +57,14 @@
 }
 .section2 .cont2{
 	font-size: 22px;
+	margin-top: 5px;
 }
 .section2 .content1,
 .section2 .content2{
 	width: 50%;
+}
+.section2 .content2 {
+	text-align: right;
 }
 .section2 .content3{
 	position: absolute;
@@ -136,7 +140,7 @@
 	display: flex;
     flex-direction: column;
 	justify-content: center;
-	padding: 0 30px;
+	padding: 0 20px;
 }
 .section4 .content{
 	position: relative;
@@ -148,6 +152,9 @@
 .section4 .item-box{
 	width: 49.8%;
 	position: relative;
+}
+.section4 .item-box .bg-img{
+	width: 100%;
 }
 .section4 .item2{
 	/* display: flex;
@@ -165,17 +172,17 @@
 	width: 100%;
 }
 .section4 .item2 .cont2{
-	width: 100%;
+	width: 55%;
 	height: 100%;
     position: absolute;
-    left: 0;
+    left: 44.5%;
     top: 0;
 	font-size: 14px;
 	transition: 1s ease-in-out;
 }
 .section4 .item2 .cont2>div{
 	width: 100%;
-	padding-left: 45%;
+	/* padding-left: 45%; */
 }
 .section4 .icon-play{
 	width: 50px;
@@ -353,7 +360,7 @@
 				<div class="my-all-center">
 					<div class="wow fadeInRight">
 						<span class="cont1 font1"><font>幸福家文化</font></span>
-						<span class="cont2">/ 土壤</span>
+						<div class="cont2">土壤</div>
 					</div>
 				</div>
 			</div>
@@ -362,7 +369,7 @@
 				<div class="my-all-center" style="margin-left: 30px">
 					<div class=" wow fadeInRight ani-time3">
 						<span class="cont1">同创共享的<font class="font1">奋斗者文化</font></span>
-						<span class="cont2">/ 根基</span>
+						<div class="cont2">根基</div>
 					</div>
 				</div>
 			</div>
@@ -474,7 +481,7 @@
 					</a>
 				</div>
 				<div class="item-box item2">
-					<img src="images/culture/4-3.jpg">
+					<img class="bg-img" src="images/culture/4-3.jpg">
 					<div class="animated-text cont2 text-box animated wow fadeInRight">
 						<div>
 							<div>《文化的力量》献给亲爱的伙伴，学习传承，奔向未来；</div>
