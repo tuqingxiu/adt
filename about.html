@@ -38,6 +38,9 @@
 	-ms-transform:translateY(-50%);
 	-o-transform:translateY(-50%);
 }
+.china-map .img-map{
+	width: 100%;
+}
 #map .img-box{
 	display: flex;
     flex-direction: column;
@@ -74,10 +77,12 @@
 	text-align: center;
 	z-index: 100;
 	display: block;
-	width: 350px;
+	width: 25%;
+	max-width: 510px;
 }
 .current-info img{
 	width: 100%;
+	margin-bottom: 15px;
 }
 
 .slide2 .content{
@@ -101,6 +106,10 @@
 .slide2 .content .cont2{
 	font-size: 16px;
 	line-height: 25px;
+}
+.slide2 .content2 .cont2{
+	display: flex;
+    align-items: center;
 }
 .slide2 .split{
 	display: inline-block;
@@ -456,7 +465,7 @@
 									</div>
 							</div>
 					</div>
-					<div class="current-info">
+					<div class="current-info animated ani-time2">
 						<img class="current-img" src="images/about/cq-yf.png">
 						<h5 class="current-text">重庆延锋安道拓汽车部件系统有限公司</h5>
 					</div>

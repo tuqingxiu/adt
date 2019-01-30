@@ -5,13 +5,25 @@ $(function() {
 	});
     goDesignatedLocation();
     //文化的力量居中
-    textCenter();
+    $(document).ready(function () {
+        textCenter();
+     });
+    
     animate1();
     animate2();
     animate3();
 })
 //文化的力量居中
 function textCenter(){
+    // $('.section4 .item1 .bg-img').load(function(){
+    //     var h1 = $('.section4 .item1').height();
+    //     var h2 = $('.section4 .item2 .cont2>div').height();
+    //     var h = (h1-h2)/2;
+    //     if(isIE()){
+    //         h = h/2;
+    //     }
+    //     $('.section4 .item2 .cont2>div').css('margin-top',h);
+    // })
     var h1 = $('.section4 .item1').height();
     var h2 = $('.section4 .item2 .cont2>div').height();
     var h = (h1-h2)/2;
@@ -19,6 +31,7 @@ function textCenter(){
         h = h/2;
     }
     $('.section4 .item2 .cont2>div').css('margin-top',h);
+    
 }
 //第三屏遮罩层显示，文化项目
 function animate1(){

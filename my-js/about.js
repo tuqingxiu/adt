@@ -90,9 +90,11 @@ function animateSlide4(){
 		var img = $(this).parents('.region-list').attr('data-img');
 		$('.current-info .current-img').attr('src',img);
 		$('.current-info .current-text').text(type);
-		$('.current-info').fadeIn(1000);
+		$('.current-info').addClass('fadeInUp');
+		// $('.current-info').fadeIn();
 	},function(){
-		$('.current-info').fadeOut();
+		// $('.current-info').fadeOut();
+		$('.current-info').removeClass('fadeInUp');
 	})
 }
 
