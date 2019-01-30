@@ -1,4 +1,7 @@
 $(function() {
+    //回到顶部
+    goTop();
+
     setHeaderShow();
     $(window).on('scroll', function() {
 		setHeaderShow();
@@ -51,6 +54,13 @@ function goDesignatedLocation(){
     }
 }
 
+//回到顶部
+function goTop(){
+	$('.go-top').click(function(){
+        $('body,html').animate({ scrollTop: 0 }, 800);
+		setHeaderShow(0);
+	})
+}
 //设置第一屏时显示header,其它屏幕不显示
 function setHeaderShow(index){
 	var windowpos = $(window).scrollTop();
@@ -58,7 +68,12 @@ function setHeaderShow(index){
 		$('.main-header').fadeOut();
 	} else {
 		$('.main-header').fadeIn();
-	}
+    }
+    if(windowpos >= 600){
+        $('.go-top').fadeIn();
+    }else{
+        $('.go-top').fadeOut();
+    }
 
     $('.null-header').css('position','fixed');
 	$('.null-header').hover(function(){

@@ -33,6 +33,5 @@
     }
     $(window).on('load', function() {
         loadHeader();
-        
 	});	
 })(window.jQuery);

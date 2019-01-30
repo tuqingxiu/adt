@@ -88,7 +88,10 @@ $(function() {
 				animateSlide5();
             }
 		}
-    });
+	});
+	
+	//回到顶部
+	goTop();
     //-----------每屏动画效果----------
     //第3屏效果
     animateSlide3();
@@ -158,14 +161,22 @@ function getUrlParam(name){
 	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
 	if (r != null) return unescape(r[2]); return null; //返回参数值
 }
-
+//回到顶部
+function goTop(){
+	$('.go-top').click(function(){
+		jump(0);
+		setHeaderShow(0);
+	})
+}
 //设置第一屏时显示header,其它屏幕不显示
 function setHeaderShow(index){
 	currentIndex = index;
 	if(index == 0){
 		$('.main-header').fadeIn();
+		$('.go-top').fadeOut();
 	}else{
 		$('.main-header').fadeOut();
+		$('.go-top').fadeIn();
 	}
 
 	$('.null-header').hover(function(){

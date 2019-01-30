@@ -78,7 +78,9 @@ $(function() {
                 })
             }
 		}
-    });
+	});
+	//回到顶部
+	goTop();
     //-----------每屏动画效果----------
     //第4屏效果
     animateSlide4();
@@ -108,13 +110,22 @@ function getUrlParam(name){
 	if (r != null) return unescape(r[2]); return null; //返回参数值
 }
 
+//回到顶部
+function goTop(){
+	$('.go-top').click(function(){
+		jump(0);
+		setHeaderShow(0);
+	})
+}
 //设置第一屏时显示header,其它屏幕不显示
 function setHeaderShow(index){
 	currentIndex = index;
 	if(index == 0){
 		$('.main-header').fadeIn();
+		$('.go-top').fadeOut();
 	}else{
 		$('.main-header').fadeOut();
+		$('.go-top').fadeIn();
 	}
 
 	$('.null-header').hover(function(){

@@ -10951,3 +10951,16 @@ header .main-menu .navigation > li > ul>li>a{
 .slide-zy .point4 .point-text{
 	left: 140%;
 }
+
+/*------回到顶部------*/
+.go-top{
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	background: #fff;
+	right: 40px;
+	bottom: 100px;
+	z-index: 1000;
+	display: none;
+}
