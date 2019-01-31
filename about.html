@@ -30,7 +30,7 @@
 	background-color: #044557;
 }
 .china-map{
-	margin-left: 35%;
+	margin-left: 48%;
     width: 40%;
     top: 50%;
     transform:translateY(-50%);
@@ -54,31 +54,37 @@
 	color: #fff;
 }
 #map .content-box{
-	width: 20%;
-	left: 75%;
+	width: 35%;
+	left: 10%;
+
+	display: flex;
+    flex-direction: column;
+    height: 80%;
+    top: 10%;
+	justify-content: space-around;
+	align-items: center;
 }
-#map .row{
-	height: 100%;
-    padding: 90px 0;
+#map .content-box h5{
+	font-size: 16px;
+}
+#map .content1{
+	position: relative;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
 }
 #map .columnn{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 33%;
 }
 .current-info{
-	position: absolute;
-    top: 10%;
-	left: 5%;
-	color: #fff;
-	display: flex;
-    flex-direction: column;
-	align-items: center;
-	text-align: center;
-	z-index: 100;
-	display: block;
-	width: 25%;
+    width: 65%;
 	max-width: 510px;
+	text-align: center;
+	height: 50%;
 }
 .current-info img{
 	width: 100%;
@@ -433,9 +439,9 @@
 					</div>
 				</div>
 					<div class="content-box business-box">
-							<div class="row clearfix">
+							<div class="content1">
 									<!--Column-->
-									<div class="columnn col-lg-12 animated" data-my-animate="fadeInDown100">
+									<div class="columnn animated" data-my-animate="fadeInDown100">
 										<div class="inner" data-wow-delay="0ms" data-wow-duration="1500ms">
 											<div class="img-box animated" data-my-animate="fadeInDown100">
 												<img class="counter-img" src="images/icons/round_01.png">
@@ -445,7 +451,7 @@
 									</div>
 							
 									<!--Column-->
-									<div class="columnn col-lg-12 animated ani-time2" data-my-animate="fadeInDown100">
+									<div class="columnn animated ani-time2" data-my-animate="fadeInDown100">
 										<div class="inner" data-wow-delay="600ms" data-wow-duration="1500ms">
 											<div class="img-box">
 													<img class="counter-img" src="images/icons/round_02.png">
@@ -455,7 +461,7 @@
 									</div>
 							
 									<!--Column-->
-									<div class="columnn col-lg-12 animated ani-time3" data-my-animate="fadeInDown100">
+									<div class="columnn animated ani-time3" data-my-animate="fadeInDown100">
 										<div class="inner" data-wow-delay="900ms" data-wow-duration="1500ms">
 											<div class="img-box">
 													<img class="counter-img" src="images/icons/round_03.png">
@@ -464,11 +470,12 @@
 										</div>
 									</div>
 							</div>
+							<div class="current-info animated ani-time2">
+								<img class="current-img" src="images/about/cq-yf.png">
+								<h5 class="current-text">重庆延锋安道拓汽车部件系统有限公司</h5>
+							</div>
 					</div>
-					<div class="current-info animated ani-time2">
-						<img class="current-img" src="images/about/cq-yf.png">
-						<h5 class="current-text">重庆延锋安道拓汽车部件系统有限公司</h5>
-					</div>
+					
 			</div>
 			<!--第5屏-->
 			<div class="swiper-slide slide5">
