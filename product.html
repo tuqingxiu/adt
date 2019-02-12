@@ -48,6 +48,7 @@
 	display: flex;
 	align-items: center;
 }
+
 .slide-cloumn3 .cont-text{
 	padding: 20px;
 }
@@ -59,14 +60,52 @@
 .cont2{
 	font-size: 16px;
 }
-.slide2 .content,
-.slide3 .content{
-	width: 30%;
+.slide2 .column-box,
+.slide3 .column-box{
+	display: flex;
+	height: 100%;
 }
-.slide2 .content>div,
-.slide3 .content>div
-{
-	text-align: left;
+.slide2 .column-box .item-box,
+.slide3 .column-box .item-box{
+	position: relative;
+}
+.slide2 .cont-box,
+.slide3 .cont-box{
+	padding: 0 10% 0 7%;
+}
+.slide2 .column-box .box1{
+	width: 67%;
+}
+.slide2 .column-box .box2{
+	width: 33%;
+}
+.slide2 .column-box .content{
+	position:absolute;
+	width: 50%;
+    left: 50%;
+    top: 0;
+    height: 100%;
+}
+.slide3 .column-box .box1{
+	width: 33%;
+}
+.slide3 .column-box .box2{
+	width: 67%;
+}
+.slide3 .column-box .content{
+	position:absolute;
+	width: 50%;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+.slide5 .box3 .content{
+	height: 50%;
+	display: flex;
+	align-items: center;
+}
+.slide5 .item-box{
+	flex-direction: column;
 }
 </style>
 </head>
@@ -112,23 +151,47 @@
 			</div>
 			<!--第2屏-->
 			<div class="swiper-slide slide2">
-				<img class="slide-bg" src="images/product/2-1.jpg">
-				<div class="content-box animated" data-my-animate="fadeInLeft">
-					<div class="content text-center">
-						<div class="cont1 my-color2">乘用车座椅</div>
-						<div class="cont2 my-color1">出色的人机工程设计，将人、科技、艺术与座椅完美结合，
-							带来舒适的驾乘体验。
+				<div class="column-box">
+					<div class="item-box box1">
+						<img class="slide-bg" src="images/product/2-1.jpg">
+						<div class="content my-bg-color5 animated" data-my-animate="fadeInLeft" >
+							<div class="my-column-center cont-box">
+								<div class="cont1 my-color2">乘用车座椅</div>
+								<div class="cont2 my-color1">出色的人机工程设计，将人、科技、艺术与座椅完美结合，
+									带来舒适的驾乘体验。
+								</div>
+							</div>
 						</div>
+					</div>
+					<div class="item-box box2">
+						<img class="slide-bg" src="images/product/2-2.jpg">
+						<div class="content"></div>
 					</div>
 				</div>
 			</div>
 			<!--第3屏-->
 			<div class="swiper-slide slide3">
-				<img class="slide-bg" src="images/product/3-1.jpg">
+				<!-- <img class="slide-bg" src="images/product/3-1.jpg">
 				<div class="content-box animated" data-my-animate="fadeInLeft">
 					<div class="content text-center">
 						<div class="cont1 my-color2">商用车座椅</div>
 						<div class="cont2 my-color1">安全可靠的性能，缓解不同环境和不同路况带来的疲劳，助您操控自如。
+						</div>
+					</div>
+				</div> -->
+				<div class="column-box">
+					<div class="item-box box1">
+						<img class="slide-bg" src="images/product/3-1.jpg">
+						<div class="content"></div>
+					</div>
+					<div class="item-box box2">
+						<img class="slide-bg" src="images/product/3-2.jpg">
+						<div class="content my-bg-color5 animated" data-my-animate="fadeInRight" >
+							<div class="my-column-center cont-box">
+								<div class="cont1 my-color2">商用车座椅</div>
+								<div class="cont2 my-color1">安全可靠的性能，缓解不同环境和不同路况带来的疲劳，助您操控自如。
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -138,28 +201,21 @@
 				<div class="column-box">
 					<div class="item-box box1 animated" data-my-animate="fadeInLeft">
 						<img class="content content1" src="images/product/4-1.jpg">
-						<div class="content content2 my-bg-color2">
-							<div class="cont-text animated ani-time2" data-my-animate="fadeInLeft">
-								<div class="cont1 my-color3">面套</div>
-								<div class="cont2 my-color1">从面料的设计，到面料的后处理精致工艺及领先的放版、
-									裁剪、缝制技术，使座椅呈现高品质的外观，为创意设计和凸显个性化提供更大的自由度。
-								</div>
-							</div>
-						</div>
+						<img class="content content2" src="images/product/4-2.jpg">
 					</div>
 					<div class="item-box box2 animated" data-my-animate="fadeInDown100">
 						<div class="content content1 animated ani-time2" data-my-animate="fadeInDown100">
 							<div class="cont-text">
-									<div class="cont1 my-color3">骨架</div>
-									<div class="cont2 my-color4">更高的通用性能，更强的材料，更广的功能，更轻的重量，
-										为了满足客户多样性的需求。
+									<div class="cont1 my-color3">骨架与零部件</div>
+									<div class="cont2 my-color4">通过运行先进材料和先进工艺，达到产品性能提升，实现模块化和平台化
+										策略，提升产品轻量化，致力超越客户多样化的需求。
 									</div>
 							</div>
 						</div>
-						<img class="content content2" src="images/product/4-2.jpg">
+						<img class="content content2" src="images/product/4-3.jpg">
 					</div>
 					<div class="item-box box3 animated" data-my-animate="fadeInRight">
-						<img src="images/product/4-3.jpg">
+						<img src="images/product/4-4.jpg">
 					</div>
 				</div>
 			</div>
@@ -168,6 +224,21 @@
 				<div class="column-box">
 					<div class="item-box box1 animated" data-my-animate="fadeInLeft">
 						<img class="content content1" src="images/product/5-1.jpg">
+						<img class="content content2" src="images/product/5-2.jpg">
+					</div>
+					<div class="item-box box2 animated" data-my-animate="fadeInDown100">
+						<div class="content content1 my-bg-color2">
+							<div class="cont-text animated ani-time2" data-my-animate="fadeInLeft">
+								<div class="cont1 my-color3">面套</div>
+								<div class="cont2 my-color1">从面料的设计，到面料的后处理精致工艺及领先的放版、
+									裁剪、缝制技术，使座椅呈现高品质的外观，为创意设计和凸显个性化提供更大的自由度。
+								</div>
+							</div>
+						</div>
+						<img class="content content2" src="images/product/5-3.jpg">
+					</div>
+					<div class="item-box box3 animated" data-my-animate="fadeInRight">
+						<img class="content content1" src="images/product/5-4.jpg">
 						<div class="content content2">
 							<div class="cont-text animated ani-time2" data-my-animate="fadeInLeft">
 								<div class="cont1 my-color3">泡沫</div>
@@ -176,12 +247,6 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="item-box box2 animated" data-my-animate="fadeInDown100">
-						<img src="images/product/5-2.jpg">
-					</div>
-					<div class="item-box box3 animated" data-my-animate="fadeInRight">
-						<img src="images/product/5-3.jpg">
 					</div>
 				</div>
 			</div>

@@ -116,25 +116,32 @@
 	transform: translate(-50%,-50%)
 }
 .slide2 .left-box .content-box{
-	text-align: center;
-	margin-top: 20px;
 	height: auto;
 	font-size: 16px;
+	left: 4%;
+    bottom: 6%;
+    top: auto;
 }
 .slide2 .right-box .content-box{
 	background: rgba(190, 213, 51, 0.8);
 	color: #fff;
 	display: none;
-	height: 17%;
-	top: 85%;
+	/* height: 17%;
+	top: 83%; */
+	height: 40px;
+	line-height: 40px;
+	top: auto;
+	bottom: 0;
+	padding-left: 20px;
+	font-size: 18px;
 }
 .slide2 .right-box .content-box span{
-	position: absolute;
+	/* position: absolute;
     bottom: 10px;
-    text-align: center;
-    left: 0;
+	text-align: left;
+	left: 20px;
 	width: 100%;
-	font-size: 18px;
+	font-size: 18px; */
 }
 .slide3{
 	display: flex;
@@ -146,11 +153,15 @@
     display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 15%;
+	height: 11%;
 	justify-content: space-between;
 }
 .slide3 .cont-title>span{
 	padding: 20px 0 10px;
+}
+.slide3 .cont-title font{
+	border-bottom: 4px solid rgba(191,215,50,1);
+    padding-bottom: 5px;
 }
 .slide3 .cont-title>img{
 	width: 30px;
@@ -161,57 +172,57 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-.slide3 .column-2{
+.slide3 .column-box{
+	height: 88%;
+}
+.slide3 .column-5{
 	/* flex: 1; */
-	padding: 0 9%;
+	padding: 0 2%;
 }
-.slide3 .column-2 .item-box{
-	/* display: flex; */
-	width: 50%;
-	/* height: 50%; */
-	color: #fff;
+.slide3 .column-5 .item-box{
+	display: flex;
+    width: 19.9%;
+    flex-direction: column;
 }
-.slide3 .column-2 .content-box{
-	width: 50%;
-	padding: 0 20px;
+.slide3 .content1,
+.slide3 .content3{
+	height: 14%;
+	padding: 0 20px 0 10px;
 }
-.slide3 .content-box.box1,
-.slide3 .content-box.box4{
-	left: 50%;
+.slide3 .content2{
+	height: 72%;
+}
+.slide3 .content2>img{
+	height: 100%;
+}
+.slide3 .content .cont1{
+	font-size: 18px;
+	font-weight: 600;
+}
+.slide3 .content .cont2{
+	line-height: 18px;
+}
+.slide3 .text-box{
+	border-left: 3px solid rgba(0,70,91,1);
+}
+.slide3 .content3.text-box{
+	display: flex;
+    flex-direction: column;
+	justify-content: flex-end;
+	padding-bottom: 3px;
 }
 .slide4 .content-box.box6{
 	width: 100%;
 	padding: 0 20px;
-}
-.slide3 .content-box .cont1{
-	margin-top: 35%;
-	font-size: 22px;
-    font-weight: 600;
 }
 .slide4 .content-box.box6 .cont1{
 	margin-top: 35%;
 	font-size: 24px;
     font-weight: 600;
 }
-.slide3 .content-box .cont2{
-	margin-top: 15px;
-	font-size: 16px;
-}
 .slide4 .content-box.box6 .cont2{
 	margin-top: 5%;
 	font-size: 16px;
-}
-.slide3 .content-box .cont3{
-	font-size: 28px;
-	font-weight: 600;
-	display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 0;
-}
-.slide3 .content-box .cont3>img{
-	width: 30px;
-	margin-top: 20px;
 }
 .slide4{
 	display: flex;
@@ -239,7 +250,6 @@
 .slide5 .content1 .content-box{
 	display: flex;
     flex-direction: column;
-	/* justify-content: space-between; */
 	justify-content: space-around;
 	left: 25%;
 	padding: 15px 0;
@@ -278,9 +288,6 @@
 .slide5 .content2 .column-box{
 	height: 50%;
 	align-items: center;
-}
-.slide5 .content2 .column-box .item-box{
-	/* display: flex; */
 }
 .slide5 .content2 .column-5 .item-box{
 	width: 19.8%;
@@ -378,9 +385,12 @@
 					</a>
 					
 					<div class="content-box">
-						<div>Superseat是重庆延锋安道拓自主研发的一款多功能高端汽车商务座椅 。</div>
-						<div>我们从用户需求出发 ，还原不同座舱场景 ，满足座舱休闲娱乐 、商务办公等</div>
-						<div>多种需求 ，带你感受智能 、便捷 、舒适的座椅新体验 。</div>
+						<div class="my-font1">Super seat</div>
+						<div style="margin-top:5px;">是重庆延锋安道拓自主研发的一款多功能</div>
+						<div>高端汽车商务座椅 。</div>
+						<div style="margin-top:10px;">我们从用户需求出发 ，还原不同座舱场景 ，</div>
+						<div>满足座舱休闲娱乐 、商务办公等多种需求 ，</div>
+						<div>带你感受智能 、便捷 、舒适的座椅新体验 。</div>
 					</div>
 				</div>
 				<div class="right-box">
@@ -401,42 +411,65 @@
 			<!--第3屏-->
 			<div class="swiper-slide slide3">
 				<div class="cont-title text-color1 animated" data-my-animate="fadeInDown">
-					<span>五大智能模块</span>
-					<img src="images/technology/icon1.jpg">
+					<span>五大<font>智能</font>模块</span>
+					<!-- <img src="images/technology/icon1.jpg"> -->
 				</div>
-				<div class="column-box column-2">
+				<div class="column-box column-5 my-color4">
 					<div class="item-box animated" data-my-animate="fadeInLeft">
-						<img src="images/technology/3-1.jpg">
-						<div class="content-box box1 animated ani-time2" data-my-animate="fadeInLeft">
+						<div class="content content1 text-box">
 							<div class="cont1 text-color1">迎宾模块</div>
-							<div class="cont2">当车门打开时，自动旋转45°，调整方便进出的方向</div>
+							<div class="cont2">当车门打开时，自动旋转45°，调整方便进出的方向。</div>
 						</div>
+						<div class="content content2">
+							<img src="images/technology/3-1.jpg">
+						</div>
+						<!-- <img class="content content2" src="images/technology/3-1.jpg"> -->
+						<div class="content content3"></div>
 					</div>
 					<div class="item-box animated" data-my-animate="fadeInRight">
-						<img src="images/technology/3-2.jpg">
-						<div class="content-box box2 animated ani-time2" data-my-animate="fadeInRight">
-							<div class="cont1 text-color2">多方位调节</div>
-							<div class="cont2">多向调节及座椅记忆功能，可实现45°及180°的双角度灵活旋转，在车内快速调节舒适位置。</div>
-						</div>
-					</div>
-					<div class="item-box animated ani-time2" data-my-animate="fadeInUp100">
-						<img src="images/technology/3-3.jpg">
-						<div class="content-box box3 animated ani-time3" data-my-animate="fadeInUp100">
-							<div class="cont1 text-color2">舒适模块</div>
-							<div class="cont2">搭在按摩、腰托、腿托、按摩、通风，根据身体情况自由调节，打造极致舒适</div>
-						</div>
-					</div>
-					<div class="item-box animated ani-time2" data-my-animate="fadeInUp100">
-						<img src="images/technology/3-4.jpg">
-						<div class="content-box box4 animated ani-time3" data-my-animate="fadeInUp100">
+						<div class="content content1"></div>
+						<div class="content content2">
+								<img src="images/technology/3-2.jpg">
+							</div>
+						<div class="content content3 text-box">
 							<div class="cont1 text-color1">储物模块</div>
 							<div class="cont2">多项巧妙的储物设计，充满惊喜，为你的娱乐与办公提供更大的支持。</div>
 						</div>
 					</div>
+					<div class="item-box animated ani-time2" data-my-animate="fadeInUp100">
+						<div class="content content1 text-box">
+							<div class="cont1 text-color1">舒适模块</div>
+							<div class="cont2">搭在按摩、腰托、腿托、按摩、通风，根据身体情况自由调节，打造极致舒适。</div>
+						</div>
+						<div class="content content2">
+								<img src="images/technology/3-3.jpg">
+							</div>
+						<div class="content content3"></div>
+					</div>
+					<div class="item-box animated ani-time2" data-my-animate="fadeInUp100">
+						<div class="content content1"></div>
+						<div class="content content2">
+								<img src="images/technology/3-4.jpg">
+							</div>
+						<div class="content content3 text-box">
+							<div class="cont1 text-color1">多方位调节</div>
+							<div class="cont2">多向调节及座椅记忆功能，可实现45°及180°的双角度灵活旋转，在车内快速调节舒适位置。</div>
+						</div>
+					</div>
+					<div class="item-box animated ani-time2" data-my-animate="fadeInUp100">
+						<div class="content content1 text-box">
+							<div class="cont1 text-color1">空气净化</div>
+							<div class="cont2">靠背安装空气净化器，实时监测车内空气，自动完成空气净化，在车内呼吸新鲜空气。</div>
+						</div>
+						<div class="content content2">
+								<img src="images/technology/3-5.jpg">
+							</div>
+						<div class="content content3"></div>
+					</div>
 				</div>
 			</div>
 				<!--第4屏-->
-			<div class="swiper-slide slide4">
+			<!-- <div class="swiper-slide slide4">
 				<div class="column-box">
 					<div class="item-box animated" data-my-animate="fadeInLeft" style="width: 50%;">
 						<img src="images/technology/3-5.jpg">
@@ -449,20 +482,8 @@
 							<div class="cont2 text-color3">靠背安装空气净化器，实时监测车内空气，自动完成空气净化，在车内呼吸新鲜空气。</div>
 						</div>
 					</div>
-					<!-- <div class="item-box animated" data-my-animate="rotateIn">
-						<img src="images/technology/3-6.jpg">
-					</div>
-					<div class="item-box animated" data-my-animate="rotateIn">
-						<img src="images/technology/3-7.jpg">
-					</div>
-					<div class="item-box animated" data-my-animate="rotateIn">
-						<img src="images/technology/3-8.jpg">
-					</div>
-					<div class="item-box animated" data-my-animate="rotateIn">
-						<img src="images/technology/3-9.jpg">
-					</div> -->
 				</div>
-			</div>
+			</div> -->
 			<!--第5屏-->
 			<div class="swiper-slide slide5">
 				<div class="content1">
