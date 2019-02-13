@@ -82,7 +82,11 @@ $(function() {
     //第2屏效果
     animateSlide2();
     //第5屏效果
-    animateSlide5();
+	animateSlide5();
+	//第6屏效果
+	animateSlide6();
+	//初始化第四屏左右滚动
+	initSlide4();
 })
 
 function animateSlide2(){
@@ -99,16 +103,71 @@ function animateSlide5(){
         $('.big-img-box').hide();
 	})
 	//显示大图
-	$('.slide5 .content2 .item-box[data-bigImg]').hover(function(){
+	$('.slide4 .content2 .item-box[data-bigImg]').hover(function(){
 		var current = $(this).attr('data-bigImg');
 		var currentSrc = 'images/technology/'+current;
         $('.big-img-box .big-img').attr('src',currentSrc);
         $('.big-img-box').fadeIn(1000);
 	})
-	$('.slide5 .content2').mouseleave(function(){
+	$('.slide4 .content2').mouseleave(function(){
         $('.big-img-box').hide();
     })
 }
+function animateSlide6(){
+	$('.slide5 .item-box').hover(function(){
+		$(this).find('.content-box').fadeIn();
+	},function(){
+		$(this).find('.content-box').fadeOut();
+	})
+}
+function initSlide4(){
+	if ($('.tech-slider-carousel').length) {
+		$('.tech-slider-carousel').owlCarousel({
+			animateOut: 'fadeOut',
+    		animateIn: 'fadeIn',
+			loop:true,
+			margin:0,
+			nav:true,
+			autoHeight: true,
+			smartSpeed: 500,
+			// autoplay: 6000,
+			URLhashListener:true,
+			startPosition: 'URLHash',
+			navText: [ '<span class="flaticon-left-arrow"></span>', '<span class="flaticon-right-arrow"></span>' ],
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:1
+				},
+				800:{
+					items:1
+				},
+				1024:{
+					items:1
+				},
+				1200:{
+					items:1
+				}
+			}
+		});    		
+	}
+	//监听hash
+	var hash = location.hash;
+	if(hash && $(".nav-url a[href='"+hash+"']").length){
+		$(".nav-url a.active").removeClass("active");
+		$(".nav-url a[href='"+hash+"']").addClass("active");
+	}
+	window.onhashchange = function(){
+		var currentHash = location.hash;
+		$(".nav-url a.active").removeClass("active");
+		$(".nav-url a[href='"+currentHash+"']").addClass("active");
+	}
+}
+
+
+
 
 function jump(n) {
 	mySwiper.slideTo(n,1000,false);

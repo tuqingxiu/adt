@@ -10848,6 +10848,10 @@ header .main-menu .navigation > li > ul>li>a{
 .my-font3{
 	font-size: 18px;
 }
+.my-font4{
+	font-size: 16px;
+	font-weight: 600;
+}
 /*行居中*/
 .my-row-center{
 	position: absolute;
