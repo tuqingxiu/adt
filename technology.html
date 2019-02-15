@@ -232,7 +232,8 @@
 /*slide样式*/
 .slide4 .nav-url{
 	display: flex;
-	height: 50px;
+	/* height: 50px; */
+	height: 10%;
 	font-size: 18px;
     align-items: center;
 }
@@ -246,8 +247,15 @@
 	color: rgba(191,215,50,1);
 	border-bottom: 2px solid rgba(191,215,50,1);
 }
+.slide4 .tech-slider-carousel{
+	height: 90%;
+}
+.slide4 .owl-carousel .owl-stage-outer{
+	min-height: 100%;
+}
 .slide4 .slide{
 	display: flex;
+	height: 100%;
 }
 .slide4 .slide .cont1{
 	width: 60%;
@@ -493,7 +501,7 @@
 					</div>
 				</div>
 			</div>
-			<!--第5屏-->
+			<!--第4屏-->
 			<div class="swiper-slide slide4">
 				<div class="content1">
 					<img src="images/background/bg-21.jpg" alt="">
@@ -524,7 +532,7 @@
 					</div>
 					<div class="tech-slider-carousel owl-carousel owl-theme">
 						<div class="slide" data-hash="tech-item1">
-							<div class="cont1"><img src="images/technology/5-1.jpg"></div>
+							<div class="cont1"><img class="tech-slide-img" src="images/technology/5-1.jpg"></div>
 							<div class="cont2">
 								<div class="title">对标</div>
 								<div class="content">

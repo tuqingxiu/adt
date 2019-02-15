@@ -121,6 +121,25 @@ function animateSlide6(){
 	})
 }
 function initSlide4(){
+	// var h1 = $('.tech-slider-carousel .tech-slide-img').height();
+	// console.log('imgh========'+h1);
+	// if(h1<=0){
+    //     if(window.technologyTimer){
+    //         clearTimeout(window.technologyTimer);
+    //     }
+    //     window.technologyTimer = setTimeout(function(){
+    //         initSlide4();
+    //     },500)
+    // }else{
+    //     if(window.technologyTimer){
+    //         clearTimeout(window.technologyTimer);
+    //     }
+    //     initTechCarousel();
+	// }
+	initTechCarousel();
+}
+
+function initTechCarousel(){
 	if ($('.tech-slider-carousel').length) {
 		$('.tech-slider-carousel').owlCarousel({
 			animateOut: 'fadeOut',
@@ -165,8 +184,6 @@ function initSlide4(){
 		$(".nav-url a[href='"+currentHash+"']").addClass("active");
 	}
 }
-
-
 
 
 function jump(n) {

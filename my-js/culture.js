@@ -27,7 +27,7 @@ function textCenter(){
     //     }
     //     $('.section4 .item2 .cont2>div').css('margin-top',h);
     // })
-    var h1 = $('.section4 .item1').height();
+    var h1 = $('.section4 .item1 .bg-img').height();
     console.log('imgh========'+h1);
     var h2 = $('.section4 .item2 .cont2>div').height();
     var h = (h1-h2)/2;
