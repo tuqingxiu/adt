@@ -88,16 +88,55 @@ $(function() {
 
 function animateSlide4(){
 	$('.show-regin').hover(function(){
-		var type = $(this).parents('.region-list').attr('data-type');
-		var img = $(this).parents('.region-list').attr('data-img');
+		// var type = $(this).parents('.region-list').attr('data-type');
+		// var img = $(this).parents('.region-list').attr('data-img');
+		// $('.current-info .current-img').attr('src',img);
+		// $('.current-info .current-text').text(type);
+		// $('.current-info').addClass('fadeInUp');
+		showBigImg($(this));
+	},function(){
+		// $('.current-info').removeClass('fadeInUp');
+	})
+}
+//动态显示图片
+function showBigImg(el){
+	var type = el.parents('.region-list').attr('data-type');
+	var img = el.parents('.region-list').attr('data-img');
+	//如果图片相等则不开始动画
+	if(img == $('.current-img').attr('src')){
+		return;
+	}
+	//如果上个动画还未结束则不开始动画
+	if(window.bigImgState){
+		return;
+	}
+	//动画开始标识
+	window.bigImgState = true;
+
+	var targetLocation = $('.current-img').offset();//目标位置
+	var targetW = $('.current-img').width();//目标宽
+	var targetH = $('.current-img').height();//目标高
+	var currentLocation = el.offset();
+	//最新图片的初始位置
+	$('.new-img').css({
+		left: currentLocation.left,
+		top: currentLocation.top
+	})
+	$('.new-img').attr('src',img);
+	$('.new-img').animate({
+		left: targetLocation.left,
+		top: targetLocation.top,
+		width: targetW,
+		height: targetH
+	  },2000,function(){
 		$('.current-info .current-img').attr('src',img);
 		$('.current-info .current-text').text(type);
-		$('.current-info').addClass('fadeInUp');
-		// $('.current-info').fadeIn();
-	},function(){
-		// $('.current-info').fadeOut();
-		$('.current-info').removeClass('fadeInUp');
-	})
+		$('.new-img').css({
+			width: 0,
+			height: 0
+		})
+		window.bigImgState = false;
+	  });
 }
 
 function jump(n) {
