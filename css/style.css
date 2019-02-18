@@ -3624,7 +3624,11 @@ img{
 	position: relative;
 	float:left;
 	display: flex;
-	width: 50%;
+	width: 60%;
+	align-items: center;
+}
+.main-footer .footer-bottom .logo .logo-lable{
+	width: 30%;
 }
 
 .main-footer .footer-bottom .copyright{

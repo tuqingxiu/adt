@@ -76,7 +76,10 @@ $(function() {
                     var aniName = $(this).attr('data-my-animate');
                     $(this).addClass(aniName);
                 })
-            }
+			}
+			if(num == 4){
+				showBigImg();
+			}
 		}
 	});
 	//回到顶部
@@ -98,12 +101,17 @@ function animateSlide4(){
 		// $('.current-info').removeClass('fadeInUp');
 	})
 }
-//动态显示图片
-function showBigImg(el){
+//动态显示图片,el不存在则默认弹出重庆
+function showBigImg(param){
+	var el = param;
+	if(!el){
+		if($('.current-info').css("visibility") == "visible") return;
+		el = $('.allRegin');
+	}
 	var type = el.parents('.region-list').attr('data-type');
 	var img = el.parents('.region-list').attr('data-img');
 	//如果图片相等则不开始动画
-	if(img == $('.current-img').attr('src')){
+	if(param && (img == $('.current-img').attr('src'))){
 		return;
 	}
 	//如果上个动画还未结束则不开始动画
@@ -131,6 +139,9 @@ function showBigImg(el){
 	  },2000,function(){
 		$('.current-info .current-img').attr('src',img);
 		$('.current-info .current-text').text(type);
+		if($('.current-info').css("visibility") == "hidden"){
+			$('.current-info').css('visibility','visible');
+		}
 		$('.new-img').css({
 			width: 0,
 			height: 0
