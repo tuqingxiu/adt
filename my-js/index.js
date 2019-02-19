@@ -2,9 +2,9 @@ var mySwiper;
 $(function() {
     //第一个swiper
     var slideSwiper = new Swiper('#first-slide-swiper', {
-		// loop: true,
-		// speed: 800,
-		// autoplay : 3000
+		loop: true,
+		speed: 800,
+		autoplay : 3000
 		// pagination: '#slide-swiper',
 		// paginationClickable: true
 	});
