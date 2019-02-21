@@ -10922,46 +10922,71 @@ header .main-menu .navigation > li > ul>li>a{
 }
 .slide-zy .point{
 	position: absolute;
+	display: flex;
+	align-items: center;
+	width: 60%;
+	/* background: red; */
 }
 .slide-zy .point>img{
-	width: 30px;
-	height: 30px;
+	width: 25px;
+	height: 25px;
+}
+
+.slide-zy .point .line{
+	display: flex;
+	align-items: center;
+	width:70%;
+}
+.slide-zy .point1 .line{
+	width: 55%;
+}
+.slide-zy .line .small-point{
+	display: inline-block;
+	width:98%;
+	border-bottom: 1px dashed #fff;
+    height: 3px;
 }
 .slide-zy .point1{
-	top: 30%;
-    left: 50%;
+	top: 25%;
+    left: -15%;
 }
+
 .slide-zy .point2{
-	top: 60%;
-    left: 35%;
+	top: 53%;
+    left: -38%;
 }
 .slide-zy .point3{
 	top: 30%;
-    left: 80%;
+	/* left: 62%; */
+	right: -22%;
 }
 .slide-zy .point4{
 	top: 45%;
-    left: 65%;
+	/* left: 52%; */
+	right:-12%;
 }
 .slide-zy .point-text{
-	position: absolute;
-	min-width: 80px;
-	width: max-content;
-    padding: 0 10px;
-    background: rgba(191,215,50,1);
-    border-radius: 8px;
-    height: 30px;
-    line-height: 30px;
-	text-align: center;
-	display: none;
+	min-width: 60px;
+	padding: 0 10px;
+	font-size: 16px;
+}
+.slide-zy .point1,
+.slide-zy .point2{
+	justify-content: flex-end;
+}
+.slide-zy .point3,
+.slide-zy .point4{
+	justify-content: flex-start;
 }
 .slide-zy .point1 .point-text,
 .slide-zy .point2 .point-text{
-	right: 140%;
+	
+	text-align: right;
 }
 .slide-zy .point3 .point-text,
 .slide-zy .point4 .point-text{
-	left: 140%;
+	
+	text-align: left;
 }
 
 /*------回到顶部------*/

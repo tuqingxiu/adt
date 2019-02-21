@@ -94,7 +94,7 @@ $(function() {
 	goTop();
     //-----------每屏动画效果----------
     //第3屏效果
-    animateSlide3();
+    // animateSlide3();
     
     //第6屏效果
     animateSlide6();

@@ -78,7 +78,7 @@ $(function() {
 	goTop();
     //-----------每屏动画效果----------
     //第1屏效果
-    animateSlide1();
+    // animateSlide1();
 })
 
 //第3屏效果
