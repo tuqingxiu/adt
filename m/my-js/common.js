@@ -40,25 +40,30 @@
 
     //根据屏幕尺寸切换pc端和移动端
     function toggleTerminal(){
-        $(window).resize(function() {
-            var window_width = $(window).width();//获取浏览器窗口宽度
-            var isMobile = location.pathname.indexOf('/m/')>=0; //来源为移动端链接
+        var window_width = $(window).width();//获取浏览器窗口宽度
+        var isMobile = location.pathname.indexOf('/m/')>=0; //来源为移动端链接
 
-            if(window_width > 1024){//pc终端
-                if(isMobile){
-                    var href = location.href.replace('/m/','/');
-                    location.href = href;
-                }
-            }else{//移动终端
-                if(!isMobile){
-                    var str = location.pathname.split('.html')[0];//.html前的字符串
-                    var index = str.lastIndexOf("\/");//最后一个斜杠的位置
-                    var name = str.substring(index,str.length);//文件夹名称："/index"
-                    var href = location.href.replace(name,'/m'+name);
-                    location.href = href;
-                }
+        if(window_width > 1024){//pc终端
+            if(isMobile){
+                var href = location.href.replace('/m/','/');
+                location.href = href;
             }
-        });
+        }else{//移动终端
+            if(!isMobile){
+                var str = location.pathname.split('.html')[0];//.html前的字符串
+                var index = str.lastIndexOf("\/");//最后一个斜杠的位置
+                var name = str.substring(index,str.length);//文件夹名称："/index"
+                var href = location.href.replace(name,'/m'+name);
+                location.href = href;
+            }
+        }
+    }
+    //监听窗口变化,//根据屏幕尺寸切换pc端和移动端
+    function windowSize(){
+        toggleTerminal();
+        $(window).resize(function() {
+            toggleTerminal();
+        })
     }
 
     //切换语言
@@ -76,7 +81,7 @@
     }
     
     $(window).on('load', function() {
-        toggleTerminal()
+        windowSize()
         loadHeader();
 	});	
 })(window.jQuery);
