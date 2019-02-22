@@ -1,0 +1,95 @@
+.region-list{position:absolute;left:0;top:0}
+
+@-webkit-keyframes warn{
+0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}
+100%{-webkit-transform:scale(1);transform:scale(1);opacity:0}
+}
+@-moz-keyframes warn{
+0%{-moz-transform:scale(0);transform:scale(0);opacity:1}
+100%{-moz-transform:scale(1);transform:scale(1);opacity:0}
+}
+@-o-keyframes warn{
+0%{-o-transform:scale(0);transform:scale(0);opacity:1}
+100%{-o-transform:scale(1);transform:scale(1);opacity:0}
+}
+@keyframes warn{
+0%{-webkit-transform:scale(0);-moz-transform:scale(0);-o-transform:scale(0);transform:scale(0);opacity:1}
+100%{-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1);transform:scale(1);opacity:0}
+}
+.area-box .dot{position:absolute;left:0;width:14px;height:14px;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;opacity:1;filter:alpha(opacity=100)}
+.area-box .pulse{position:absolute;top:-28px;left:-28px;height:66px;width:66px;border:2px solid #b7b7b7;-webkit-border-radius:48px;-moz-border-radius:48px;border-radius:48px;-webkit-box-shadow:0 0 4px #82878f,0 0 10px #82878f inset;-moz-box-shadow:0 0 4px #82878f,0 0 10px #82878f inset;box-shadow:0 0 4px #82878f,0 0 10px #82878f inset;opacity:.12;filter:alpha(opacity=0);-webkit-animation:warn 2s ease-out both;-moz-animation:warn 2s ease-out both;-o-animation:warn 2s ease-out both;animation:warn 2s ease-out both;-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;animation-iteration-count:infinite;background:0 0}
+.area-box .delay-01{-webkit-animation-delay:0;-moz-animation-delay:0;-o-animation-delay:0;animation-delay:0}
+.area-box .delay-02{-webkit-animation-delay:.4s;-moz-animation-delay:.4s;-o-animation-delay:.4s;animation-delay:.4s}
+.area-box .delay-03{-webkit-animation-delay:.8s;-moz-animation-delay:.8s;-o-animation-delay:.8s;animation-delay:.8s}
+.area-box .delay-04{-webkit-animation-delay:1.2s;-moz-animation-delay:1.2s;-o-animation-delay:1.2s;animation-delay:1.2s}
+.area-box .delay-05{-webkit-animation-delay:1.6s;-moz-animation-delay:1.6s;-o-animation-delay:1.6s;animation-delay:1.6s}
+.area-box .delay-06{-webkit-animation-delay:2s;-moz-animation-delay:2s;-o-animation-delay:2s;animation-delay:2s}
+.area-box .delay-07{-webkit-animation-delay:2.4s;-moz-animation-delay:2.4s;-o-animation-delay:2.4s;animation-delay:2.4s}
+.area-box .delay-08{-webkit-animation-delay:-.4s;-moz-animation-delay:-.4s;-o-animation-delay:-.4s;animation-delay:-.4s}
+.area-box .delay-09{-webkit-animation-delay:-.8s;-moz-animation-delay:-.8s;-o-animation-delay:-.8s;animation-delay:-.8s}
+.area-box .delay-10{-webkit-animation-delay:-1.2s;-moz-animation-delay:-1.2s;-o-animation-delay:-1.2s;animation-delay:-1.2s}
+.area-box .delay-11{-webkit-animation-delay:4s;-moz-animation-delay:4s;-o-animation-delay:4s;animation-delay:4s}
+/* .region-list.active .area-box .dot{background:#009fd9} */
+.region-list.active .area-box .pulse{border-color:#009fd9;top:-39px;left:-39px;height:88px;width:88px;-webkit-box-shadow:0 0 12px #0080d9,0 0 20px #0080d9 inset;-moz-box-shadow:0 0 12px #0080d9,0 0 20px #0080d9 inset;box-shadow:0 0 12px #0080d9,0 0 20px #0080d9 inset}
+/* .region-list.waite .area-box .dot{background:#fd7e14} */
+.region-list.waite .area-box .pulse{border-color:#fd7e14}
+/* .region-list.color1 .area-box .dot{background:red} */
+.region-list .area-box .dot{
+    /* background: url('../images/icons/marker1.png') 100% 100% no-repeat; */
+}
+.region-list.color1 .area-box .dot{
+    /* background: url('../images/icons/marker2.png'); */
+}
+.region-list.color1 .area-box .pulse{border-color:red}
+.show-regin{position:absolute;left:2px;height:0;top:0;width:11px;opacity:0;-o-transition:all .5s ease-in-out;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;transition:all .5s ease-in-out}
+.online-node .show-regin,.region-list:hover .show-regin,.underline-node .show-regin,.waite-node .show-regin{height:10px;opacity:1}
+.show-regin span{position:absolute;left:5px;top:-11px;padding:6px 5px;font-size:0.75rem;color:#fff;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;text-align:center;white-space:nowrap;}
+.postition-10 .show-regin span{left:0}
+.postition-1 .show-regin span{left:-45px;}
+.postition-2 .show-regin span{left: -30px;top: 20px;}
+/* .postition-6 .show-regin span{left:-42px} */
+.area-box{z-index:77}
+.show-regin{z-index:66}
+.region-list.active .show-regin span{position:relative;color:#fff}
+.region-list .allRegin span{
+    color: red !important;
+}
+.postition-1{left: 45%;top: 63%;}
+.postition-2{left: 51%;top: 68%;}
+.postition-2-1{left: 50%;top: 65%;}
+.postition-2-2{left: 56%;top: 65%;}
+.postition-3{left: 68%;top: 64%;}
+.postition-4{left: 73%;top: 80%;}
+.postition-5{left: 83%;top: 65%;}
+.postition-6{left: 81%;top: 60%;}
+.postition-7{left: 88%;top: 18%;}
+.postition-8{left: 84%;top: 14%;}
+.postition-9{left: 58%;top: 76%;}
+.douhao{width:0}
+.postition-2 .dot{
+    width: 17px;
+    height: 17px;
+}
+.postition-2 .area-box .pulse{
+    border: 5px solid #b7b7b7;
+}
+
+@media only screen and (min-width: 769px){
+    .china-map{
+        width: 30%;
+        margin-left: 45%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+}
+.scale-c{
+	-webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    transform: scale(1.4);
+    -webkit-transform-origin: 74% 71%;
+    -moz-transform-origin: 74% 71%;
+    transform-origin: 74% 71%;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    animation-duration: 2s;
+}

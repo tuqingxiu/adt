@@ -1,0 +1,597 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>重庆延锋安道拓</title>
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<!--MasterSlider-->
+<link rel="stylesheet" href="css/masterslider/style/masterslider.css" />
+<link href="css/masterslider/skins/default/style.css" rel="stylesheet">
+<link href="css/masterslider/style/ms-caro3d.css" rel="stylesheet">
+<!--End MasterSlider-->
+
+<link href="css/slick.css" rel="stylesheet">
+<!-- <link href="css/responsive.css" rel="stylesheet"> -->
+<link href="css/style.css" rel="stylesheet">
+
+
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+<style type="text/css">
+.font1{
+	font-size: 2rem;
+}
+.section1 .content{
+	position: absolute;
+    bottom: 0;
+	padding: 20px;
+	width: 100%;
+}
+.section1 .cont2{
+	margin: 5px 0;
+}
+.section1 .cont3 .text-box{
+	display: flex;
+}
+.section1 .cont3 .text1{
+	flex: none;
+	font-weight: 600;
+}
+.section2 .content{
+	position: absolute;
+	top: 100px;
+	padding: 0 20px;
+}
+.section2 .cont1>span{
+	border-bottom: 2px solid rgba(174,195,64,1);
+	padding: 5px 0;
+}
+.section2 .cont2{
+	margin: 20px 0 5px;
+}
+.section2 .cont4{
+	margin-top: 5px;
+}
+.section2 .cont5{
+	font-size: 1.375rem;
+	margin-top: 15px;
+}
+.section3{
+	margin: 5px 0;
+}
+.section3 .cont1 span,
+.section4 .cont1 span{
+	height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    padding: 0 20px;
+    border-radius: 15px;
+}
+.section3 .content,
+.section4 .content{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section3 .content .cont2,
+.section4 .content .cont2{
+	margin: 20px 0 10px;
+}
+.section3 .content .cont4,
+.section4 .content .cont4{
+	margin-top: 5px;
+}
+.section5 .content{
+	position: absolute;
+	width: 80%;
+	bottom: 40px;
+	right: 0;
+}
+.section5 .title{
+	padding: 5px 0 5px 10px;
+}
+.section5 .cont-box{
+	padding: 10px;
+}
+.section5 .cont-box .cont2{
+	margin: 5px 0;
+}
+.section6 .content1{
+	margin: 30px 40px 20px 30px;
+	border-left: 2px solid rgba(0,70,91,1);
+    padding-left: 10px;
+}
+.section6 .content1 .cont2{
+	margin: 10px 0 25px;
+}
+.section6 .content1 .cont4{
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+}
+.section6 .content1 .cont4 img{
+	width: 12px;
+    margin-left: 5px;
+}
+.section6 .content2 .text{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	padding: 5px;
+	text-align: center;
+	font-size: 1rem;
+}
+.section7{
+	padding-bottom: 4%;
+    background: #f5f5f5;
+}
+.section7 .content{
+	position: absolute;
+	left: 4%;
+    top: 4%;
+    right: 0;
+	bottom: 3.5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0 20px;
+}
+.section7 .content1 .cont2{
+	margin-top: 5px;
+}
+.section7 .content2{
+	width: 80%;
+}
+.section7 .content3{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	text-align: center;
+}
+.section7 .content3 img{
+	width: 60px;
+}
+.section7 .line span{
+	display: block;
+    width: 100px;
+    height: 2px;
+    margin-top: 5px;
+}
+.section8 .content{
+	padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+	align-items: center;
+	position: absolute;
+	left: 0;
+	right: 2%;
+	top: 0;
+	bottom: 0;
+}
+.section8 .content1{
+	width: 90%;
+}
+.section8 .content2 .cont2{
+	margin: 5px 0 3px;
+}
+.section9 .content{
+	padding: 0 7%;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section9 .content1 .cont1{
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+.section9 .content2,
+.section9 .content3{
+	width: 95%;
+}
+.section10 .content{
+	padding: 0 7%;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.section10 .content1 .cont1{
+	margin: 15px 0 5px;
+}
+.section10 .content2{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.section10 .content2 .item-box{
+	position: relative;
+	width: 25%;
+	padding: 1px;
+}
+.section10 .content2 .item-box>.content-box{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section10 .content2 .img-a{
+	width: 60%;
+}
+.section11 .title{
+	margin-top:10px;
+	text-align: center;
+	padding: 5px 0;
+}
+.section11 .content{
+	margin: 10px 0;
+}
+#swiper2 .swiper-slide{
+	padding-left: 8px;
+}
+</style>
+</head>
+
+<body>
+<div id="root">
+<!-- Main Header-->
+<div id="headerBox" data-type="profession"></div>
+<!--End Main Header -->
+
+<div class="page-wrapper" id="profession">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+	
+	<section class="section1">
+		<img src="images/profession/1-1.jpg" />
+		<div class="content my-bg-color5">
+			<div class="cont1 my-color2 my-font5">雇主品牌</div>
+			<div class="cont2 my-color2 my-font6">志存高远<span>|</span>永不止步<span>|</span>凝心聚力</div>
+			<div class="cont3 my-color1">
+				<div class="text-box">
+					<span class="text1">笃行：</span>
+					<span>因为有初心，所以我们愿意砥砺进取，精益求精，不断进取。</span>
+				</div>
+				<div class="text-box">
+					<span class="text1">初心：</span>
+					<span>每一个加入这里的人，都是有信念，有态度，有追求的人，我们志同道合。</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section2">
+		<img src="images/profession/2-1.jpg" />
+		<div class="content my-color1">
+			<div class="cont1 my-color2 my-font5"><span>面向校园</span>及社会招聘</div>
+			<div class="cont2 my-color2 my-font6">这是一个追求卓越的组织；</div>
+			<div class="cont3">每一个加入这里的人，都是有信念，有态度，有追求的人，我们志同道合，不忘初心；</div>
+			<div class="cont4">每个人在这里变得更好，至臻尽善。</div>
+			<div class="cont5">我们，以卓越致敬初心</div>
+		</div>
+	</section>
+	<section class="section3">
+		<img src="images/profession/3-1.jpg" />
+		<div class="content content-box my-color1">
+			<div class="cont1 my-font4">
+				<a href="http://www.hotjob.cn/wt/CQYFAS/web/index/campus">
+					<span class="my-bg-color2 my-color1">校园招聘</span>
+				</a>
+			</div>
+			<div class="cont2 my-font6">座拥青春 椅靠未来</div>
+			<div class="cont3">我们每年持续开展校园招聘，</div>
+			<div>校园人才成为五分之一的组织血液；</div>
+			<div class="cont4">我们为您提供高速成长的土壤，</div>
+			<div>为您的初心创造平台，</div>
+			<div>成就您的职业梦想。</div>
+		</div>
+	</section>
+	<section class="section4">
+		<img src="images/profession/4-1.jpg" />
+		<div class="content content-box my-color1">
+			<div class="cont1 my-font4">
+				<a href="http://www.hotjob.cn/wt/CQYFAS/web/index/social">
+					<span class="my-bg-color2 my-color1">社会招聘</span>
+				</a>
+			</div>
+			<div class="cont2 my-font6">因为有你 卓越未来</div>
+			<div class="cont3">我们一直秉承任人唯贤的价值观，寻求敢于</div>
+			<div>创新、追求卓越、不断突破的优质人才；</div>
+			<div class="cont4">我们倡导同创共享的奋斗者文化，</div>
+			<div>我们是爱学习、爱奋斗、爱创新、</div>
+			<div>爱生活的艾小渝；</div>
+		</div>
+	</section>
+	<section class="section5">
+		<img src="images/profession/5-1.jpg" />
+		<div class="content">
+			<div class="title my-bg-color7 my-color2 my-font5">员工发展</div>
+			<div class="cont-box my-bg-color8">
+				<div class="cont1 my-color5 my-font6">打造一个没有天花板的舞台</div>
+				<div class="cont2">我们期望为人才的成长与发展提供良好的土壤和广阔的平台，在注重企业自身
+						不断发展的同时，我们重视每一位员工以及用于培养他们的资源投入。我们倡导：</div>
+				<div class="cont3">员工是自己职业发展的主导者，直接主管是员工的教练，人力资源工作者是支持者和内部顾问。</div>
+				<div class="cont4">让每一个独特的灵魂在没有天花板的成长空间尽情闪耀！</div>
+			</div>
+		</div>
+	</section>
+	<section class="section6">
+		<div class="content1">
+			<div class="cont1 my-color5 my-font6">学习与发展原则</div>
+			<div class="cont2">员工发展的表现来源于个人在职业生涯中的改变、适应以及成长能力。
+				重庆延锋安道拓注重实时地在现实生活中学习的价值，从而使个人能满足充满挑战和变化的工作要求。
+			</div>
+			<div class="cont3 my-color5">公司对于员工个人学习和发展遵从</div>
+			<div class="cont4 my-color5">
+				<span>三个基本原则</span>
+				<img class="icon icon2" src="images/icons/icon-triangle.png">
+			</div>
+		</div>
+		<div id="swiper1" class="content2 swiper-container">
+			<div class="swiper-wrapper my-color5">
+				<div class="swiper-slide">
+					<img src="images/profession/6-1.jpg" />
+					<div class="text my-bg-color6">干中学</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/profession/6-2.jpg" />
+					<div class="text my-bg-color6">承担责任</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/profession/6-3.jpg" />
+					<div class="text my-bg-color6">寻求支持</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section7">
+		<img src="images/profession/7-1.jpg" />
+		<div class="content my-color1">
+			<div class="content1">
+				<div class="cont1 my-font6 my-color2">多样化学习资源</div>
+				<div class="cont2">在三个基本原则的指导下，公司对员工的学习发展体系建设中也遵循10-20-70的发展原则，
+					让培养与发展的资源更有助于转化为员工的能力。</div>
+				<div class="line">
+					<span class="my-bg-color2"></span>
+				</div>
+			</div>
+			<div class="content2">
+				<img src="images/profession/icon7-1.png">
+				<!-- <div class="cont-text cont-text1">课程培训/Workshop/E-learning/在职学历教育</div>
+				<div class="cont-text cont-text2">一对一辅导/360度评估反馈/导师机制</div>
+				<div class="cont-text cont-text3">岗位锻炼 授权/转换职能/负责新业务等</div> -->
+			</div>
+			<div class="content3 my-font3">
+				<div class="item-box">
+					<img src="images/profession/icon7-2.png">
+					<div class="cont-text">200+ 面授课程</div>
+				</div>
+				<div class="item-box">
+					<img src="images/profession/icon7-3.png">
+					<div class="cont-text">100+ 在线课程</div>
+				</div>
+				<div class="item-box">
+					<img src="images/profession/icon7-4.png">
+					<div class="cont-text">200+ 认证讲师</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section8">
+		<img src="images/profession/8-1.jpg" />
+		<div class="content">
+			<div class="content1">
+				<img src="images/profession/icon8-1.png" />
+			</div>
+			<div class="content2">
+				<div class="cont1 my-font6 my-color5">员工发展通路</div>
+				<div class="cont2">在重庆延锋安道拓，员工的职业发展主要通过三条通路实现：
+					管理通路、专业通路和轮岗通路。</div>
+				<div class="cont3">公司倡导员工澄清自己的职业发展目标，选择合适自己的职业发展方向。
+						同时公司为员工设置了不同发展方向的通路。</div>
+			</div>
+		</div>
+	</section>
+	<section class="section9">
+		<img src="images/profession/9-1.jpg" />
+		<div class="content content-box">
+			<div class="content1">
+				<div class="cont1 my-font6 my-color5">CQYFAS领导力学院</div>
+				<div class="cont2">CQYFAS领导力学院培养训练有素的管理者及后备梯队人才。
+					在这里我们传承和打造CQYFAS的管理文化，旨在为每一位管理者或有潜力成为管理者的员工提供领导力成长的有序路径。
+				</div>
+			</div>
+			<div class="content2">
+				<img src="images/profession/9-2.jpg">
+				<div class="block1"></div>
+				<div class="block2"></div>
+			</div>
+			<div class="content3">
+				<img src="images/profession/9-3.png">
+			</div>
+		</div>
+	</section>
+	<section class="section10">
+		<img src="images/profession/10-1.jpg" />
+		<div class="content content-box">
+			<div class="content1 my-color1">
+				<div class="cont1 my-font6 my-color2">CQYFAS专业学院</div>
+				<div class="cont2">重庆延锋安道拓专业学院于2015年成立，旨在系统化的提升员工的专业能力，
+					在建立技术人才梯队的同时，激励和发挥高级专业人才的带头引领作用。
+				</div>
+				<div class="cont3">目前设13大专业学院：</div>
+			</div>
+			<div class="content2 my-color5 my-font3">
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+						<div class="img-a"><img src="images/profession/icon10-1.png"></div>
+						<div class="cont-text">采购学院</div>
+						
+					</div>
+				</div>
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+							<div class="img-a"><img src="images/profession/icon10-2.png"></div>
+						<div class="cont-text">质量学院</div>
+						
+					</div>
+				</div>
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+							<div class="img-a"><img src="images/profession/icon10-3.png"></div>
+						<div class="cont-text">财务学院</div>
+						
+					</div>
+				</div>
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+							<div class="img-a"><img src="images/profession/icon10-4.png"></div>
+						<div class="cont-text">商务学院</div>
+						
+					</div>
+				</div>
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+						<div class="img-a"><img src="images/profession/icon10-5.png"></div>
+						<div class="cont-text">物料学院</div>
+						
+					</div>
+				</div>
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+						<div class="img-a"><img src="images/profession/icon10-6.png"></div>
+						<div class="cont-text">制造运营学院</div>
+						
+					</div>
+				</div>
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+							<div class="img-a"><img src="images/profession/icon10-7.png"></div>
+						<div class="cont-text">工程学院</div>
+						
+					</div>
+				</div>
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+							<div class="img-a"><img src="images/profession/icon10-8.png"></div>
+						<div class="cont-text">HSE学院</div>
+						
+					</div>
+				</div>
+				<div class="item-box"></div>
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+							<div class="img-a"><img src="images/profession/icon10-9.png"></div>
+						<div class="cont-text">CI学院</div>
+						
+					</div>
+				</div>
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+							<div class="img-a"><img src="images/profession/icon10-10.png"></div>
+						<div class="cont-text">HR学院</div>
+						
+					</div>
+				</div>
+				<div class="item-box"></div>
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+							<div class="img-a"><img src="images/profession/icon10-11.png"></div>
+						<div class="cont-text">工艺学院</div>
+						
+					</div>
+				</div>
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+							<div class="img-a"><img src="images/profession/icon10-12.png"></div>
+						<div class="cont-text">设备学院</div>
+						
+					</div>
+				</div>
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+							<div class="img-a"><img src="images/profession/icon10-13.png"></div>
+						<div class="cont-text">项目学院</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section11">
+		<!-- <img src="images/profession/11-1.jpg" /> -->
+		<div class="title my-bg-color7 my-color2 my-font5">工作体验</div>
+		<div id="swiper2" class="content swiper-container">
+			<div class="swiper-wrapper my-color5">
+				<div class="swiper-slide">
+					<img src="images/profession/11-1.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="images/profession/11-2.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="images/profession/11-3.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="images/profession/11-4.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="images/profession/11-5.jpg" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--Main Footer-->
+    <div id="footerBox"></div>
+	<!--End Main Footer-->
+	
+</div>
+<!--End pagewrapper-->
+</div>
+<script src="js/jquery.js"></script>
+<script src="my-js/common.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/wow.js"></script>
+
+<script src="js/slick.js"></script>
+<script src="js/jquery-ui.js"></script>
+<!-- Master Slider -->
+<script src="js/masterslider/jquery.easing.min.js"></script>
+<script src="js/masterslider/masterslider.min.js"></script>
+<!--End Master Slider -->
+<script src="js/swiper.js"></script>
+
+<script src="js/script.js"></script>
+<script src="my-js/profession.js"></script>
+
+</body>
+</html>
