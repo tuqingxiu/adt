@@ -1,179 +1,93 @@
-var mySwiper;
 $(function() {
-    //第一个swiper
-    // var slideSwiper = new Swiper('#first-slide-swiper', {
-	// 	loop: true,
-	// 	speed: 800,
-	// 	autoplay : 3000
-	// 	// pagination: '#slide-swiper',
-	// 	// paginationClickable: true
-	// });
-    var allSwiperCount = 8;//swiper总个数
-    var preTranslateValue = -1;
-	var translateFlag = false;
-	//跳转到第几个slider
-	var item = getUrlParam('item');
-	var index=item?(item-1):0;
-
-    if(localStorage.getItem("index")){
-        index=localStorage.getItem("index");
-        localStorage.removeItem("index"); 
-    }
-    //初始化第一个slide的动画
-    $('.slide1 .animated[data-my-animate]').each(function(){
-        var aniName = $(this).attr('data-my-animate');
-        $(this).addClass(aniName);
-    })
-	mySwiper = new Swiper('#index-swiper', {
-		direction: 'vertical',
-		speed: 600,
-		initialSlide: index,//设定初始化时slide的索引
-		pagination: '#page',
-		paginationClickable: true,
-		mousewheelControl: true,
-        keyboardControl : true,
-		onScroll: function(swiper) {
-			if(swiper.activeIndex == allSwiperCount && preTranslateValue == -1) {
-				preTranslateValue = mySwiper.height - $(".all-footer").outerHeight() + mySwiper.translate;
-			}
-			if(swiper.activeIndex == allSwiperCount && translateFlag == false) {
-				translateFlag = true;
-				swiper.setWrapperTranslate(preTranslateValue);
-				mySwiper.lockSwipeToNext()
-			}
-			if(swiper.activeIndex != allSwiperCount) {
-				mySwiper.unlockSwipes()
-				translateFlag = false;
-			}
-		},
-		onKeyPress: function(swiper){
-			setHeaderShow(swiper.activeIndex);
-
-			if(swiper.activeIndex == allSwiperCount && preTranslateValue == -1) {
-				preTranslateValue = mySwiper.height - $(".all-footer").outerHeight() + mySwiper.translate;
-			}
-			if(swiper.activeIndex == allSwiperCount && translateFlag == false) {
-				translateFlag = true;
-				swiper.setWrapperTranslate(preTranslateValue);
-				mySwiper.lockSwipeToNext()
-			}
-			if(swiper.activeIndex != allSwiperCount) {
-				mySwiper.unlockSwipes()
-				translateFlag = false;
-			}
-		},
-		onSlideChangeStart: function(swiper) {
-            //加载动画样式
-			var num = swiper.activeIndex + 1;
-            var activeSlideName = '.slide'+num;
-            $(activeSlideName+' .animated[data-my-animate]').each(function(){
-                var aniName = $(this).attr('data-my-animate');
-                $(this).addClass(aniName);
-            })
-        },
-		onSlideChangeEnd: function(swiper) {
-			setHeaderShow(swiper.activeIndex);
-            // //加载动画样式
-			var num = swiper.activeIndex + 1;
-            if(num == 5){
-                // $('slide5 .animated[data-my-animate]').each(function(){
-                //     var aniName = $(this).attr('data-my-animate');
-                //     $(this).addClass(aniName);
-                // })
-                // zoombig();
-                // setTimeout(function(){
-                //     zoomin();
-				// },1000);
-				//第5屏效果 地图动画
-				animateSlide5();
-            }
-		}
-    });
-    //-----------每屏动画效果----------
-    //第3屏效果
-    animateSlide3();
-    
-    //第6屏效果
-    animateSlide6();
+    // setHeaderShow();
+    $(window).on('scroll', function() {
+		// setHeaderShow();
+	});
+	goDesignatedLocation();
+	animateMap();
 })
-//第3屏效果
-function animateSlide3() {
-    $('.slide3 .point').hover(function(){
-        $(this).find('.point-text').fadeIn(1000);
-    },function(){
-        $(this).find('.point-text').fadeOut(1000);
-    })
-}
-function animateSlide5() {
-	var num = 1;
-	var mapTimer = setInterval(function(){
-		if(num>11){
-			clearInterval(mapTimer);
+
+//首页地图动画
+function animateMap() {
+	//var $page = $('#root');
+	var $page = $(window);
+	var itemOffsetTop = $('.china-map').offset().top;
+	var itemOuterHeight = $('.china-map').outerHeight();
+	var winHeight = $page.height();
+	window.mapNum = 1;
+	//初始化一遍
+	//china-map处于可见区域
+	var winScrollTop = $page.scrollTop();
+	if(!(winScrollTop > itemOffsetTop+itemOuterHeight) && !(winScrollTop < itemOffsetTop-winHeight)) {
+		if(!window.mapTimer){
+			window.mapTimer = setInterval(function(){
+				if(window.mapNum>11){
+					clearInterval(window.mapTimer);
+				}
+				$('.china-map .region-list[data-num='+window.mapNum+']').fadeIn(600);
+				window.mapNum++;
+			},600);
 		}
-		$('.slide5 .region-list[data-num='+num+']').fadeIn(600);
-		num++;
-	},600);
-}
-//地图动画
-// function zoomMap(){
-//     $('.china-map').hover(function(){
-//         zoombig()
-//     },function(){
-//         zoomin();
-//     })
-// }
-// function zoombig() {
-// 	$('.global-map').addClass('scale-g');
-// 	$('.china-map').addClass('scale-c');
-// 	$('.thailand').addClass('scale-t');
-// }
-
-// function zoomin() {
-// 	$('.global-map').removeClass('scale-g');
-// 	$('.china-map').removeClass('scale-c');
-// 	$('.thailand').removeClass('scale-t');
-// }
-//第6屏效果
-function animateSlide6(){
-    $('.slide6 .item-box').hover(function(){
-        $(this).find('.cont-box').fadeIn().removeClass('fadeOutDown').addClass('fadeInUp');
-    },function(){
-        $(this).find('.cont-box').removeClass('fadeInUp').addClass('fadeOutDown').fadeOut();
-    })
+	}
+	
+	$page.scroll(function () {
+		//china-map处于可见区域
+		var winScrollTop = $page.scrollTop();
+		if(!(winScrollTop > itemOffsetTop+itemOuterHeight) && !(winScrollTop < itemOffsetTop-winHeight)) {
+			if(!window.mapTimer){
+				window.mapTimer = setInterval(function(){
+					if(window.mapNum>11){
+						clearInterval(window.mapTimer);
+					}
+					$('.china-map .region-list[data-num='+window.mapNum+']').fadeIn(600);
+					window.mapNum++;
+				},600);
+			}
+		}
+	})
 }
 
-function jump(n) {
-	mySwiper.slideTo(n,1000,false);
-}
-
-  //数字动画
-var countNumber = function() {
-	var countNumberId = $('.mytimer');
-	countNumberId.each(count);
-	scrollTrue = false;
-}
-
+//跳转到指定位置
 function getUrlParam(name){
-	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
-	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
-	if (r != null) return unescape(r[2]); return null; //返回参数值
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+    var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+    if (r != null) return unescape(r[2]); return null; //返回参数值
 }
+//go designated location
+function goDesignatedLocation(){
+    var item = getUrlParam('item');
+    var el = $('[data-item='+item+']');
+    if(item && el.length){
+        var scroll = el.offset().top;
+        $(window).scrollTop(scroll);
+    }
+}
+
 
 //设置第一屏时显示header,其它屏幕不显示
 function setHeaderShow(index){
-	currentIndex = index;
-	if(index == 0){
-		$('.main-header').fadeIn();
-	}else{
+	var windowpos = $(window).scrollTop();
+	if (windowpos >= 200) {
 		$('.main-header').fadeOut();
+	} else {
+		$('.main-header').fadeIn();
 	}
 
+    $('.null-header').css('position','fixed');
 	$('.null-header').hover(function(){
 		$('.main-header').fadeIn();
 	})
 	$('.main-header').mouseleave(function(){
-		if(currentIndex !== 0){
+		if($(window).scrollTop() >= 200){
 			$('.main-header').fadeOut();
 		}
 	})
+}
+
+
+function isIE() { //ie?
+    if (!!window.ActiveXObject || "ActiveXObject" in window)
+           { return true; }
+    else
+           { return false; }
 }
