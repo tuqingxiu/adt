@@ -1,7 +1,7 @@
 $(function() {
-    setHeaderShow();
+    // setHeaderShow();
     $(window).on('scroll', function() {
-		setHeaderShow();
+		// setHeaderShow();
 	});
     goDesignatedLocation();
     initSwiper1();

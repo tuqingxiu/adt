@@ -77,15 +77,22 @@
 }
 .section4 .current-info{
 	position: absolute;
-    top: 30%;
+    top: 25%;
     width: 45%;
     left: 20px;
     text-align: center;
-    color: #fff;
+	color: #fff;
+	visibility: hidden;
 }
 .section4 .current-text{
 	margin-top: 5px;
 }
+.section4 .new-img{
+	position:absolute;
+	width: 0;
+	z-index: 10;
+}
+
 .section5{
 	margin: 20px 20px 30px;
 }
@@ -182,28 +189,33 @@
 	
 	<section class="section1">
 		<img src="images/about/1-1.jpg" />
-		<div class="content my-column-center font1">
+		<div class="content my-column-center font1 wow fadeInUp">
 			<div class="animated my-color1" data-my-animate="fadeInLeft">成为绿色、舒适、智能</div>
 			<div class="animated ani-time2 my-color2" data-my-animate="fadeInLeft">生活方式的引领者</div>
 		</div>
 	</section>
 	<section class="section2 my-color1">
 		<img src="images/about/2-1.jpg" />
-		<div class="content content1 my-bg-color5">
-			<div class="cont1 my-font1">使命</div>
-			<div class="cont2">为用户、供应商、员工、股东和社会创造</div>
-			<div class="cont2">共赢的生态系统，成为受人尊敬的企业</div>
+		<div class="content content1 my-bg-color5 wow fadeInLeft">
+			<div class="wow fadeInLeft ani-time2">
+				<div class="cont1 my-font1">使命</div>
+				<div class="cont2">为用户、供应商、员工、股东和社会创造</div>
+				<div class="cont2">共赢的生态系统，成为受人尊敬的企业</div>
+			</div>
+			
 		</div>
-		<div class="content content2 my-bg-color6">
-			<div class="cont1 my-font1">价值观</div>
-			<div class="cont2"><span>同创共享</span><span class="split"></span><span>正确行事</span><span class="split"></span>
-				<span>追求成功</span><span class="split"></span><span>一次到位</span></div>
-			<div class="cont2"><span>加快步伐</span><span class="split"></span><span>"我们"大于"我"</span><span class="split"></span><span>任人唯贤</span></div>
+		<div class="content content2 my-bg-color6 wow fadeInRight">
+			<div class="wow fadeInRight ani-time2">
+				<div class="cont1 my-font1">价值观</div>
+				<div class="cont2"><span>同创共享</span><span class="split"></span><span>正确行事</span><span class="split"></span>
+					<span>追求成功</span><span class="split"></span><span>一次到位</span></div>
+				<div class="cont2"><span>加快步伐</span><span class="split"></span><span>"我们"大于"我"</span><span class="split"></span><span>任人唯贤</span></div>
+			</div>
 		</div>
 	</section>
 	<section class="section3">
 		<img src="images/about/3-1.jpg" />
-		<div class="content-box my-color1">
+		<div class="content-box my-color1 wow fadeInUp">
 			<div class="title my-font5">发展历程</div>
 			<div class="content">
 				<div id="swiper1" class="swiper-container swiper-no-swiping">
@@ -381,7 +393,7 @@
 	<section class="section4">
 		<img src="images/about/4-1.jpg" />
 		<div class="content-box">
-			<div class="content1">
+			<div class="content1 wow fadeInDown">
 				<div class="item-box">
 					<img src="images/icons/round_01.png" />
 					<div class="text">1个JCI认证技术中心</div>
@@ -399,57 +411,58 @@
 				<img class="current-img" src="images/about/cq-yf.png">
 				<div class="current-text">重庆延锋安道拓汽车部件系统有限公司</div>
 			</div>
+			<img class="new-img" src="" />
 			<div class="china-map">
 				<img class="img-map" src="images/icons/map_black_bg.png" />
-				<div class="region-list active postition-1 online-node" data-type="成都延锋安道拓汽车部件系统有限公司" data-img="images/about/cd.png">
+				<div class="region-list active postition-1 online-node" data-type="成都延锋安道拓汽车部件系统有限公司"  data-num="9" data-img="images/about/cd.png">
 					<div class="area-box">
 						<span class="dot"><img src="images/icons/marker1.png"></span>
 					</div>
 					<div class="show-regin"><span>成都</span></div>
 				</div>
-				<div class="region-list color1 active postition-2 online-node" data-type="重庆延锋安道拓汽车部件系统有限公司" data-img="images/about/cq-yf.png">
+				<div class="region-list color1 active postition-2 online-node" data-type="重庆延锋安道拓汽车部件系统有限公司"  data-num="1" data-img="images/about/cq-yf.png">
 					<div class="area-box"><span class="dot"><img src="images/icons/marker2.png"></span>
 					</div>
 					<div class="show-regin allRegin"><span>重庆</span></div>
 				</div>
-				<div class="region-list color1 postition-2-1 online-node" data-type="重庆延锋安道拓汽车部件系统有限公司江津分公司" data-img="images/about/cq-jj.png">
+				<div class="region-list color1 postition-2-1 online-node" data-type="重庆延锋安道拓汽车部件系统有限公司江津分公司"  data-num="6" data-img="images/about/cq-jj.png">
 					<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span>
 					</div>
 					<div class="show-regin"></div>
 				</div>
-				<div class="region-list color1 postition-2-2 online-node" data-type="重庆延锋安道拓锋奥汽车部件系统有限公司" data-img="images/about/cq-fa.png">
+				<div class="region-list color1 postition-2-2 online-node" data-type="重庆延锋安道拓锋奥汽车部件系统有限公司"  data-num="7" data-img="images/about/cq-fa.png">
 					<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span>
 					</div>
 					<div class="show-regin"></div>
 				</div>
-				<div class="region-list active postition-3 online-node" data-type="南昌延锋安道拓汽车部件系统有限公司" data-img="images/about/nc.png">
+				<div class="region-list active postition-3 online-node" data-type="南昌延锋安道拓汽车部件系统有限公司"  data-num="5" data-img="images/about/nc.png">
 					<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span>
 					</div>
 					<div class="show-regin"><span>南昌</span></div>
 				</div>
-				<div class="region-list waite postition-4 waite-node" data-type="重庆延锋安道拓汽车部件系统有限公司东莞分公司" data-img="images/about/dg.png">
+				<div class="region-list waite postition-4 waite-node" data-type="重庆延锋安道拓汽车部件系统有限公司东莞分公司"  data-num="3" data-img="images/about/dg.png">
 					<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span>
 						</div>
 					<div class="show-regin"><span>东莞</span></div>
 				</div>
-				<div class="region-list waite postition-5 waite-node" data-type="台州延锋安道拓汽车部件系统有限公司" data-img="images/about/tz.png">
+				<div class="region-list waite postition-5 waite-node" data-type="台州延锋安道拓汽车部件系统有限公司"  data-num="11" data-img="images/about/tz.png">
 					<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span>
 						</div>
 					<div class="show-regin"><span>台州</span></div>
 				</div>
-					<div class="region-list active postition-6 online-node" data-type="杭州延锋安道拓汽车部件系统有限公司" data-img="images/about/hz.png">
+					<div class="region-list active postition-6 online-node" data-type="杭州延锋安道拓汽车部件系统有限公司"  data-num="4" data-img="images/about/hz.png">
 					<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span></div>
 					<div class="show-regin"><span>杭州</span></div>
 				</div>
-				<div class="region-list active postition-7 online-node" data-type="哈尔滨延锋安道拓汽车部件系统有限公司" data-img="images/about/heb.png">
+				<div class="region-list active postition-7 online-node" data-type="哈尔滨延锋安道拓汽车部件系统有限公司"  data-num="8" data-img="images/about/heb.png">
 					<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span></div>
 					<div class="show-regin"><span>哈尔滨</span></div>
 				</div>
-				<div class="region-list  active  postition-8 online-node" data-type="大庆延锋安道拓汽车部件系统有限公司" data-img="images/about/dq.png">
+				<div class="region-list  active  postition-8 online-node" data-type="大庆延锋安道拓汽车部件系统有限公司"  data-num="2" data-img="images/about/dq.png">
 					<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span></div>
 					<div class="show-regin"><span>大庆</span></div>
 				</div>
-				<div class="region-list  active  postition-9 online-node" data-type="湘潭延锋安道拓汽车部件系统有限公司" data-img="images/about/xt.png">
+				<div class="region-list  active  postition-9 online-node" data-type="湘潭延锋安道拓汽车部件系统有限公司"  data-num="10" data-img="images/about/xt.png">
 					<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span></div>
 					<div class="show-regin"><span>湘潭</span></div>
 				</div>
@@ -457,6 +470,7 @@
 		</div>
 		
 	</section>
+	
 	<section class="section5">
 		<!-- <img src="images/about/5-1.jpg" /> -->
 		<div class="title">
