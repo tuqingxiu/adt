@@ -29,43 +29,404 @@
 .page-wrapper{
     height: auto;
 }
-.content-box .text1{
-	font-size: 0.76rem;
-	
+.font1{
+	font-size: 22px;
+	font-weight: 600;
 }
-.content-box .text1 span{
-	font-weight: bold;
-    color: rgba(191,215,50,1);
-    background: rgba(4,69,87,0.8);
-    padding: 0.2rem 0.8rem;
+.font2{
+	font-size: 20px;
+	font-weight: 600;
 }
-.content-box .text2{
-	color: #0a6c80;
-    margin: 0.6rem 0;
+.font3{
+	font-size: 18px;
+	font-weight: 600;
 }
-.content-box .text3{
-	font-size: 0.28rem;
-	margin-bottom: 0;
-    color: #333333;
+.font4{
+	font-size: 30px;
 }
-@media only screen and (max-width: 767px){
-	.content-box .text1{
-		margin-bottom: 0;
-	}
-	.content-box .text1 span{
-		padding: 0.1rem 0.4rem;
-		margin-top: 0.1rem;
-		font-size: 0.36rem;
-	}
-	.content-box .text2{
-		font-size: 0.32rem;
-		margin-top: 0.1rem;
-		margin-bottom: 0.1rem;
-	}
-	.content-box .text3{
-		font-size: 0.24rem;
-	}
+.font5{
+	font-size: 24px;
+	font-weight: 600;
 }
+.font6{
+	font-size: 20px;
+	font-weight: 600;
+}
+.font7{
+	font-size: 28px;
+	font-weight: 600;
+}
+.section1 .content{
+	position: absolute;
+    width: 45%;
+    right: 0;
+    bottom: 20px;
+    background-color: rgba(4,69,87,0.8);
+    padding: 20px 0 20px 30px;
+}
+.section1 .cont2{
+	margin: 20px 0 15px;
+}
+.section1 .cont2>span{
+	margin: 0 3px;
+}
+.section1 .cont3>span{
+	font-weight: 600;
+}
+.section2 .content{
+	left: 15%;
+	width: 30%;
+}
+.section2 .cont1>span{
+	display: inline-block;
+    height: 40px;
+	border-bottom: 2px solid rgba(191,215,50,1);
+}
+.section2 .cont2{
+	margin: 30px 0 10px;
+}
+.section2 .cont3{
+	margin-bottom: 20px;
+}
+.section3{
+	overflow: hidden;
+}
+.section3 .bg{
+	position:absolute;
+	width: 60.8%;
+	height: 200%;
+}
+.section3>.content-box{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 15%;
+}
+.section3 .content{
+	width: 35%;
+    padding: 40px 0;
+    position: relative;
+	text-align: center;
+	font-size: 16px;
+}
+.section3 .cont1 a{
+	color: #fff;
+}
+.section3 .cont1 span{
+	padding: 0 20px;
+    display: inline-block;
+    font-size: 24px;
+    height: 40px;
+    line-height: 35px;
+	border-radius: 20px;
+	margin-top: -50px;
+}
+.section3 .cont2{
+	font-size: 22px;
+    letter-spacing: 10px;
+    margin: 50px 0 30px;
+}
+.section3 .bg1{
+	background-color: rgba(4,69,87,0.5);
+	transform: rotate(-10deg);
+	top: -60%;
+    left: -10%;
+}
+.section3 .bg2{
+	background-color: rgba(0,70,91,0.5);
+    transform: rotate(-10deg);
+    top: -60%;
+    right: -13%;
+}
+.section4 .content{
+	position: absolute;
+	width: 30%;
+	right: 15%;
+	bottom: 20%;
+	font-size: 16px;
+}
+.section4 .cont1{
+	height: 45px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+.section4 .cont2{
+	margin: 10px 0;
+}
+.section4 .cont4{
+	margin: 5px 0;
+}
+.section5 .icon.icon1{
+	position: absolute;
+    top: -70px;
+    height: 70px;
+    left: 50%;
+}
+.section5 .icon.icon2{
+	width: 10px;
+}
+.section5 .content{
+	position: relative;
+	display: flex;
+}
+.section5 .content1{
+	position: relative;
+	width: 40%;
+}
+.section5 .content1>div{
+	border-left: 2px solid;
+    border-left-color: rgba(0,70,91,1);
+	padding: 5px 0 10px 10px;
+	width: 65%;
+}
+.section5 .content1 .cont2{
+	margin: 20px 0 50px 0;
+}
+.section5 .content1 .cont3{
+	margin-bottom: 5px;
+}
+.section5 .content2{
+	position: relative;
+	width: 60%;
+}
+.section5 .content2 .cont1{
+	position: absolute;
+	top: 20px;
+	left: 15px;
+	width: 20px;
+	font-size: 22px;
+}
+.section6{
+	position: relative;
+	padding: 20px 0;
+    margin-top: 20px;
+    background: #f5f5f5;
+}
+.section6 .icon1{
+	position: absolute;
+	height: 70px;
+	top: -70px;
+	left: 55%;
+}
+.section6 .content{
+	position: absolute;
+}
+.section6 .content1{
+	width: 50%;
+    height: 96%;
+    top: 0;
+    left: 2%;
+}
+.section6 .content1 .cont-box{
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	margin-left: 15%;
+	width: 70%;
+	height: 100%;
+	align-items: center;
+}
+.section6 .content1 .cont1{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.section6 .content1 .cont2{
+	width: 100%;
+}
+.section6 .content1 .line{
+	width: 100%;
+	margin-top: 10px;
+}
+.section6 .content1 .line>span{
+	display: block;
+	width: 200px;
+	height: 2px;
+	background-color: rgba(191,215,50,1);
+}
+.section6 .content1 .cont3{
+	position: relative;
+	font-size: 12px;
+}
+.section6 .content1 .cont3>img{
+	width: 350px;
+}
+.section6 .content1 .cont-text{
+	position: absolute;
+}
+.section6 .content1 .cont-text1{
+	top: 40%;
+	left: -16%;
+    transform: rotate(-60deg);
+}
+.section6 .content1 .cont-text2{
+	bottom: 3%;
+    left: 18%;
+}
+.section6 .content1 .cont-text3{
+	top: 38%;
+	right: -9%;
+    transform: rotate(60deg);
+}
+.section6 .content1 .cont4{
+	position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.section6 .content1 .cont4 .item-box .img-b{
+	display: none;
+}
+.section6 .content1 .cont4 .item-box.active .img-a{
+	display: none;
+}
+.section6 .content1 .cont4 .item-box.active .img-b{
+	display: block;
+}
+.section6 .content1 .cont4 .item-box.active .cont-text{
+	color: rgba(191,215,50,1);
+}
+
+.section6 .content2{
+	width: 47%;
+    height: 93%;
+    top: 7%;
+    left: 52%;
+}
+.section6 .content2 .cont1{
+	position: absolute;
+	width: 60%;
+    top: 20px;
+    left: 40px;
+}
+.section6 .content2 .cont2{
+	position: absolute;
+    width: 50%;
+    bottom: 40px;
+    right: 50px;
+}
+.section6 .content2 .cont2 .cont-text2{
+	margin: 10px 0 5px;
+}
+.section7 .icon.icon1{
+	position: absolute;
+    height: 110px;
+    top: -110px;
+    left: 20%;
+}
+.section7 .content1{
+	position: absolute;
+    width: 50%;
+    height: 84%;
+    top: 7%;
+}
+.section7 .content1 .cont1{
+	position: absolute;
+    width: 40%;
+    top: 15%;
+    left: 10%;
+}
+.section7 .content1 .cont1 .cont-text2{
+	margin: 10px 0 15px;
+}
+.section7 .content1 .cont2{
+	position: absolute;
+    width: 50%;
+    bottom: 26%;
+    right: 5%;
+}
+.section7 .content2{
+	position: absolute;
+    top: 4%;
+    right: 0px;
+    width: 52%;
+    height: 92%;
+}
+.section7 .content2 .cont-box{
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15%;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+}
+.section7 .content2 .cont-box>div{
+	width: 100%;
+}
+.section7 .content2 .cont2{
+	margin: 10px 0;
+}
+.section7 .content2 .cont4{
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	justify-content: center;
+}
+.section7 .content2 .cont4 img{
+	display: block;
+}
+#college-box{
+	font-size: 13px;
+}
+#college-box .item-box{
+	width: 20%;
+	position: relative;
+	padding: 1px;
+}
+#college-box .img-a{
+	width: 60%;
+	height: 60%;
+}
+#college-box .item-box>.content-box{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#college-box .item-box>.content-box>.content-box{
+	background-color: rgba(174,195,64,0.5);
+	border-radius: 15px;
+	display: none;
+}
+#college-box .item-box .cont-text{
+	margin-top: -10px;
+	display: inline-block;
+}
+
+.section8{
+	position: relative;
+	margin-bottom: 10px;
+}
+.section8 .slide{
+	/* display: flex;
+	justify-content: space-between; */
+	/* width: 50%; */
+	position: relative;
+}
+.section8 .content{
+	/* width: 49.9%; */
+	position: relative;
+}
+.section8 .cont-box{
+	position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+	/* display: none; */
+}
+.section8 .title{
+	height: 45px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
 </style>
 </head>
 
@@ -76,96 +437,330 @@
 <!--End Main Header -->
 
 <div class="page-wrapper" id="profession">
- 	
+	<div class="go-top"><img src="images/icons/go-top.png" /></div>
     <!-- Preloader -->
     <div class="preloader"></div>
- 	
-
-    <!--Main Slider-->
-    <section class="main-slider">
-    	
-        <div class="main-slider-carousel owl-carousel owl-theme">
-            
-            <!-- <div class="slide" style="background-image:url(images/main-slider/image-4.jpg)">
-                <div class="auto-container">
-                	<div class="content text-right">
-						<h2 style="font-size:38px;font-weight:normal; margin-top:90px"><span style="font-weight:bold; color:rgba(191,215,50,1); background:rgba(4,69,87,0.8);  padding:10px 40px">员工发展</span></h2>
-						<h3 style="color:#0a6c80; margin:30px 0">打造一个没有天花板的舞台</h3>
-                    	<div class="text" style="font-size:14px; color:#333333">我们期望为人才的成长与发展提供良好的土壤和广阔的平台，在注重企业<br>自身不断发展的同时，我们重视每一位员工以及用于培养他们的资源投入。<br>我们倡导：
-员工是自己职业发展的主导者，直接主管是员工的教练，人力资源工作者<br>是支持者和内部顾问。
-让每一个独特的灵魂在没有天花板的成长空间尽情闪耀！</div>
-                    </div>
-                </div>
-			</div> -->
+	<section class="welcome-section section1 my-color1" data-item="1" style="padding:0">
+		<img src="images/profession/1-1.jpg">
+		<div class="content wow fadeInRight">
+			<div class="cont1 my-color2 font7">雇主品牌</div>
+			<div class="cont2 my-color2 font2">志存高远<span>|</span>永不止步<span>|</span>凝心聚力</div>
+			<div class="cont3">
+				<span>笃行：</span>因为有初心，所以我们愿意砥砺进取，精益求精，不断进取。<br>
+				<span>初心：</span>每一个加入这里的人，都是有信念，有态度，有追求的人，我们志同道合。
+			</div>
+		</div>
+	</section>
+	<section class="welcome-section section2 my-color1" data-item="2" style="padding:0">
+		<img src="images/profession/2-1.jpg">
+		<div class="content my-column-center">
+			<div class="wow fadeInLeft">
+				<div class="cont1 font7 my-color2"><span>面向校园</span>及社会招聘</div>
+				<div class="cont2 font2 my-color2">这是一个追求卓越的组织；</div>
+				<div class="cont3">每一个加入这里的人，都是有信念，有态度，有追求的人，我们志同道合，不忘初心；<br>
+				每个人在这里变得更好，至臻尽善。</div>
+				<div class="cont4 font2">我们，以卓越致敬初心</div>
+			</div>
+		</div>
+	</section>
+	<section class="welcome-section section3 my-color1" data-item="3" style="padding:0">
+		<img src="images/profession/3-1.jpg">
+		<div class="bg bg1 wow fadeInLeftRotate1 ani-time2"></div>
+		<div class="bg bg2 wow fadeInRightRotate1 ani-time2"></div>
+		<div class="content-box">
+			<div class="content content1 wow fadeInLeft ani-time2">
+				<div class="my-column-center">
+					<div class="cont1">
+						<a href="http://www.hotjob.cn/wt/CQYFAS/web/index/campus" target="_blank">
+							<span class="my-bg-color2">校园招聘</span>
+						</a>
+					</div>
+					<div class="cont2">座拥青春 椅靠未来</div>
+					<div class="cont3">我们每年持续开展校园招聘，</div>
+					<div class="cont3">校园人才成为五分之一的组织血液；</div>
+					<div class="cont4">我们为您提供高速成长的土壤，</div>
+					<div class="cont4">为您的初心创造平台，</div>
+					<div class="cont4">成就您的职业梦想。</div>
+				</div>
+			</div>
+			<div class="content content2  wow fadeInRight ani-time2">
+				<div class="my-column-center">
+					<div class="cont1">
+						<a href="http://www.hotjob.cn/wt/CQYFAS/web/index/social" target="_blank">
+							<span class="my-bg-color2">社会招聘</span>
+						</a>
+					</div>
+					<div class="cont2">因为有你 卓越未来</div>
+					<div class="cont3">我们一直秉承任人唯贤的价值观，寻求敢于</div>
+					<div class="cont3">创新、追求卓越、不断突破的优质人才；</div>
+					<div class="cont4">我们倡导同创共享的奋斗者文化，</div>
+					<div class="cont4">我们是爱学习、爱奋斗、爱创新、</div>
+					<div class="cont4">爱生活的艾小渝；</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="welcome-section section4" data-item="4" style="padding:0">
+		<img src="images/profession/4-1.jpg">
+		<div class="content">
+			<div class="cont1 my-bg-color7 my-color2 font7 wow fadeInRight">员工发展</div>
+			<div class="cont2 my-color5 font2 wow fadeInRight ani-time2">打造一个没有天花板的舞台</div>
+			<div class="cont3 wow fadeInRight ani-time3">我们期望为人才的成长与发展提供良好的土壤和广阔的平台，在注重企业自身
+				不断发展的同时，我们重视每一位员工以及用于培养他们的资源投入。我们倡导：
+			</div>
+			<div class="cont4 wow fadeInRight ani-time3">员工是自己职业发展的主导者，直接主管是员工的教练，人力资源工作者是支持者和内部顾问。</div>
+			<div class="cont5 wow fadeInRight ani-time3">让每一个独特的灵魂在没有天花板的成长空间尽情闪耀！</div>
+		</div>
+	</section>
+	<section class="main-slider welcome-section section5 my-font2" data-item="5" style="padding:0;margin-top:30px">
+		<div class="content">
+			<div class="content1 wow fadeInDown100">
+				<div class="my-all-center">
+					<div class="cont1 font5 my-color5">学习与发展原则</div>
+					<div class="cont2">员工发展的表现来源于个人在职业生涯中的改变、适应以及成长能力。
+						重庆延锋安道拓注重实时地在现实生活中学习的价值，从而使个人能满足充满挑战和变化的工作要求。
+					</div>
+					<div class="cont3 my-color5">公司对于员工个人学习和发展遵从</div>
+					<div class="cont4 font4 my-color5">
+						<span>三个基本原则</span>
+						<img class="icon icon2" src="images/icons/icon-triangle.png">
+					</div>
+				</div>
+			</div>
+			<div class="content2 wow fadeInUp100 ani-time3">
+				<div class="main-slider-carousel owl-carousel owl-theme">
+					<div class="slide">
+						<img src="images/profession/5-1.jpg">
+						<div class="cont1 my-color5">干中学</div>
+					</div>
+					<div class="slide">
+						<img src="images/profession/5-2.jpg">
+						<div class="cont1 my-color5">承担责任</div>
+					</div>
+					<div class="slide">
+						<img src="images/profession/5-3.jpg">
+						<div class="cont1 my-color5">寻求支持</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img class="icon icon1" src="images/icons/icon-connect.png">
+	</section>
+	<section class="welcome-section section6" data-item="6">
+		<img src="images/profession/6-1.jpg">
+		<div class="content content1 my-color1 wow fadeInLeft">
+			<div class="cont-box">
+				<div class="cont1 font5 my-color2">多样化学习资源</div>
+				<div class="cont2">在三个基本原则的指导下，公司对员工的学习发展体系建设中也遵循10-20-70的发展原则，
+					让培养与发展的资源更有助于转化为员工的能力。</div>
+				<div class="line">
+					<span></span>
+				</div>
+				<div class="cont3">
+					<img src="images/profession/icon6-1.png">
+					<div class="cont-text cont-text1">课程培训/Workshop/E-learning/在职学历教育</div>
+					<div class="cont-text cont-text2">一对一辅导/360度评估反馈/导师机制</div>
+					<div class="cont-text cont-text3">岗位锻炼 授权/转换职能/负责新业务等</div>
+				</div>
+				<div class="cont4">
+					<div class="item-box item1">
+						<img class="img-a" src="images/profession/icon6-2a.png">
+						<img class="img-b" src="images/profession/icon6-2b.png">
+						<div class="cont-text">200+ 面授课程</div>
+					</div>
+					<div class="item-box item2">
+						<img class="img-a" src="images/profession/icon6-3a.png">
+						<img class="img-b" src="images/profession/icon6-3b.png">
+						<div class="cont-text">100+ 在线课程</div>
+					</div>
+					<div class="item-box item3">
+						<img class="img-a" src="images/profession/icon6-4a.png">
+						<img class="img-b" src="images/profession/icon6-4b.png">
+						<div class="cont-text">200+ 认证讲师</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content content2">
+			<div class="cont cont1 wow fadeInUp ani-time3"><img src="images/profession/icon6-5.png"></div>
+			<div class="cont cont2 wow fadeInRight ani-time3">
+				<div class="cont-text1 font5 my-color5">员工发展通路</div>
+				<div class="cont-text2">在重庆延锋安道拓，员工的职业发展主要通过三条通路实现：
+					管理通路、专业通路和轮岗通路。</div>
+				<div class="cont-text3">公司倡导员工澄清自己的职业发展目标，选择合适自己的职业发展方向。
+					同时公司为员工设置了不同发展方向的通路。</div>
+			</div>
+		</div>
+		<img class="icon icon1" src="images/icons/icon-connect.png">
+	</section>
+	<section class="welcome-section section7" data-item="7" style="padding:0">
+		<img src="images/profession/7-1.jpg">
+		<div class="content1">
+			<img class="icon icon1" src="images/icons/icon-connect.png">
+			<div class="cont1 wow fadeInDown100">
+				<div class="cont-text1 font5 my-color5">CQYFAS领导力学院</div>
+				<div class="cont-text2">CQYFAS领导力学院培养训练有素的管理者及后备梯队人才。
+					在这里我们传承和打造CQYFAS的管理文化，旨在为每一位管理者或有潜力成为管理者的员工提供领导力成长的有序路径。
+				</div>
+				<div class="cont-text3">
+					<img src="images/profession/7-2.jpg">
+					<div class="block1"></div>
+					<div class="block2"></div>
+				</div>
+			</div>
+			<div class="cont2 wow fadeInUp100"><img src="images/profession/7-3.png"></div>
+		</div>
+		<div class="content2 my-color1">
+			<div class="cont-box wow fadeInRight ani-time2">
+				<div class="cont1 font5 my-color2">CQYFAS专业学院</div>
+				<div class="cont2">重庆延锋安道拓专业学院于2015年成立，旨在系统化的提升员工的专业能力，
+					在建立技术人才梯队的同时，激励和发挥高级专业人才的带头引领作用。
+				</div>
+				<div class="cont3">目前设13大专业学院：</div>
+				<div id="college-box" class="cont4 my-color5">
+					<div class="item-box">
+						<img class="bg1" src="images/profession/bg1.png">
+						<div class="content-box">
+							<div class="img-a"><img src="images/profession/icon7-1.png"></div>
+							<div class="cont-text">采购学院</div>
+							<div class="content-box"></div>
+						</div>
+					</div>
+					<div class="item-box">
+						<img class="bg1" src="images/profession/bg1.png">
+						<div class="content-box">
+								<div class="img-a"><img src="images/profession/icon7-2.png"></div>
+							<div class="cont-text">质量学院</div>
+							<div class="content-box"></div>
+						</div>
+					</div>
+					<div class="item-box">
+						<img class="bg1" src="images/profession/bg1.png">
+						<div class="content-box">
+								<div class="img-a"><img src="images/profession/icon7-3.png"></div>
+							<div class="cont-text">财务学院</div>
+							<div class="content-box"></div>
+						</div>
+					</div>
+					<div class="item-box">
+						<img class="bg1" src="images/profession/bg1.png">
+						<div class="content-box">
+								<div class="img-a"><img src="images/profession/icon7-4.png"></div>
+							<div class="cont-text">商务学院</div>
+							<div class="content-box"></div>
+						</div>
+					</div>
+					<div class="item-box">
+						<img class="bg1" src="images/profession/bg1.png">
+						<div class="content-box">
+							<div class="img-a"><img src="images/profession/icon7-5.png"></div>
+							<div class="cont-text">物料学院</div>
+							<div class="content-box"></div>
+						</div>
+					</div>
+					<div class="item-box">
+						<img class="bg1" src="images/profession/bg1.png">
+						<div class="content-box">
+							<div class="img-a"><img src="images/profession/icon7-6.png"></div>
+							<div class="cont-text">制造运营学院</div>
+							<div class="content-box"></div>
+						</div>
+					</div>
+					<div class="item-box">
+						<img class="bg1" src="images/profession/bg1.png">
+						<div class="content-box">
+								<div class="img-a"><img src="images/profession/icon7-7.png"></div>
+							<div class="cont-text">工程学院</div>
+							<div class="content-box"></div>
+						</div>
+					</div>
+					<div class="item-box">
+						<img class="bg1" src="images/profession/bg1.png">
+						<div class="content-box">
+								<div class="img-a"><img src="images/profession/icon7-8.png"></div>
+							<div class="cont-text">HSE学院</div>
+							<div class="content-box"></div>
+						</div>
+					</div>
+					<div class="item-box">
+						<img class="bg1" src="images/profession/bg1.png">
+						<div class="content-box">
+								<div class="img-a"><img src="images/profession/icon7-9.png"></div>
+							<div class="cont-text">CI学院</div>
+							<div class="content-box"></div>
+						</div>
+					</div>
+					<div class="item-box">
+						<img class="bg1" src="images/profession/bg1.png">
+						<div class="content-box">
+								<div class="img-a"><img src="images/profession/icon7-10.png"></div>
+							<div class="cont-text">HR学院</div>
+							<div class="content-box"></div>
+						</div>
+					</div>
+					<div class="item-box">
+						<img class="bg1" src="images/profession/bg1.png">
+						<div class="content-box">
+								<div class="img-a"><img src="images/profession/icon7-11.png"></div>
+							<div class="cont-text">工艺学院</div>
+							<div class="content-box"></div>
+						</div>
+					</div>
+					<div class="item-box">
+						<img class="bg1" src="images/profession/bg1.png">
+						<div class="content-box">
+								<div class="img-a"><img src="images/profession/icon7-12.png"></div>
+							<div class="cont-text">设备学院</div>
+							<div class="content-box"></div>
+						</div>
+					</div>
+					<div class="item-box">
+						<img class="bg1" src="images/profession/bg1.png">
+						<div class="content-box">
+								<div class="img-a"><img src="images/profession/icon7-13.png"></div>
+							<div class="cont-text">项目学院</div>
+							<div class="content-box"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="main-slider welcome-section section8 my-color1" data-item="8" style="padding:0">
+		<div class="title my-bg-color7 my-color2 font7">工作体验</div>
+		<div class="my-slider-carousel owl-carousel owl-theme">
 			<div class="slide">
-				<img src="images/main-slider/image-4.jpg">
-				<div class="content-box">
-						<div class="content text-right">
-								<h2 class="text1"><span>员工发展</span></h2>
-								<h3 class="text2">打造一个没有天花板的舞台</h3>
-								<div class="text text3">我们期望为人才的成长与发展提供良好的土壤和广阔的平台，在注重企业<br>自身不断发展的同时，我们重视每一位员工以及用于培养他们的资源投入。<br>我们倡导：
-		员工是自己职业发展的主导者，直接主管是员工的教练，人力资源工作者<br>是支持者和内部顾问。
-		让每一个独特的灵魂在没有天花板的成长空间尽情闪耀！</div>
-						</div>
-					</div>
-			</div>
-            
-        </div>
-    </section>
-    <!--End Main Slider-->
-	<section class="welcome-section" style=" padding:0px">
-    
-    	<div class="">
-    		<!--Sec Title-->
-			<div class="row clearfix">
-				
-				<!--Image Column-->
-				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="image text-center">
-							<img src="images/background/bg-24.jpg" alt="">
-					</div>
+				<div class="content wow fadeInUp100">
+					<img src="images/profession/8-1.jpg">
+					<div class="cont-box my-bg-color5 animated">办公一角</div>
 				</div>
-				
+			</div>
+			<div class="slide">
+				<div class="content wow fadeInUp100">
+					<img src="images/profession/8-2.jpg">
+					<div class="cont-box my-bg-color5 animated">休闲区</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="content wow fadeInUp100">
+					<img src="images/profession/8-3.jpg">
+					<div class="cont-box my-bg-color5 animated">健身房</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="content wow fadeInUp100">
+					<img src="images/profession/8-4.jpg">
+					<div class="cont-box my-bg-color5 animated">咖啡吧</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="content wow fadeInUp100">
+					<img src="images/profession/8-5.jpg">
+					<div class="cont-box my-bg-color5 animated">餐厅</div>
+				</div>
 			</div>
 		</div>
-		
 	</section>
-	<section class="welcome-section" style=" padding:0px">
-		
-			<div class="">
-				<!--Sec Title-->
-				<div class="row clearfix">
-					
-					<!--Image Column-->
-					<div class="col-lg-12 col-md-12 col-sm-12">
-						<div class="image text-center">
-								<img src="images/background/bg-25.jpg" alt="">
-						</div>
-					</div>
-					
-				</div>
-			</div>
-			
-		</section>
-    <section data-item="3" class="welcome-section" style=" padding:0px">
-    
-    	<div class="">
-    		<!--Sec Title-->
-			<div class="row clearfix">
-				
-				<!--Image Column-->
-				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="image text-center">
-							<a href="http://www.hotjob.cn/wt/CQYFAS/web/index/social" target="_blank"><img src="images/background/bg-26.jpg" alt=""></a>
-					</div>
-				</div>
-				
-				
-			</div>
-		</div>
-		
-	</section>
-	
 	
 
 	<!--Main Footer-->
@@ -192,6 +787,7 @@
 
 <script src="js/script.js"></script>
 <script src="my-js/common.js"></script>
+<script src="my-js/profession.js"></script>
 
 
 </body>
