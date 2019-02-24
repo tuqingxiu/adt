@@ -86,7 +86,11 @@
 	text-align: center;
 }
 .section3 .content1 .title{
-	margin: 20px 0 10px;
+	margin: 30px 0 20px;
+}
+.section3 .content1 .title>span{
+	padding-bottom: 3px;
+    border-bottom: 2px solid rgba(174,195,64,1);
 }
 .section3 .content1 .icon1{
     width: 30px;
@@ -94,10 +98,20 @@
 }
 .section3 .content2{
 	position: relative;
-	display: flex;
-	flex-wrap: wrap;
 }
-.section3 .content2 .cont-box{
+.section3 .item-box{
+	display: flex;
+	margin-top: 2px;
+}
+.section3 .item-box .cont-box1{
+	width: 70%;
+}
+.section3 .item-box .cont-box2{
+	width: 30%;
+	border-top: 2px solid rgba(0,70,91,1);
+	padding: 10px;
+}
+/* .section3 .content2 .cont-box{
 	width: 50%;
 	position: relative;
 }
@@ -110,7 +124,7 @@
 }
 .section3 .content2 .text-box .cont1{
 	margin-bottom: 5px;
-}
+} */
 .section4{
 	margin: 10px 0 5px;
 }
@@ -230,34 +244,44 @@
 	</section>
 	<section class="section3">
 		<div class="content1 wow fadeInDown">
-			<div class="title my-font5 my-color5">五大智能模块</div>
-			<img class="icon1" src="images/icons/icon1.jpg" />
+			<div class="title my-font5 my-color5">五大<span>智能</span>模块</div>
+			<!-- <img class="icon1" src="images/icons/icon1.jpg" /> -->
 		</div>
 		<div class="content2">
-			<div class="cont-box"><img src="images/technology/3-1.jpg" /></div>
-			<div class="cont-box text-box my-bg-color2 wow fadeInRight">
-				<div class="cont1 my-color5 my-font1">迎宾模块</div>
-				<div class="cont2">当车门打开时，自动旋转45°，调整方便进出的方向。</div>
+			<div class="item-box">
+				<div class="cont-box1 wow fadeInLeft"><img src="images/technology/3-1.jpg" /></div>
+				<div class="cont-box2 wow fadeInRight">
+					<div class="cont1 my-color5 my-font1">迎宾模块</div>
+					<div class="cont2 my-font3">当车门打开时，自动旋转45°，调整方便进出的方向。</div>
+				</div>
 			</div>
-			<div class="cont-box text-box my-bg-color7 wow fadeInLeft">
-				<div class="cont1 my-color2 my-font1">多方位调节</div>
-				<div class="cont2">多向调节及座椅记忆功能，可实现45°及180°的双角度灵活旋转，在车内快速调节舒适位置。</div>
+			<div class="item-box">
+				<div class="cont-box1 wow fadeInLeft"><img src="images/technology/3-2.jpg" /></div>
+				<div class="cont-box2 wow fadeInRight">
+					<div class="cont1 my-color5 my-font1">储物模块</div>
+					<div class="cont2 my-font3">多项巧妙的储物设计，充满惊喜，为你的娱乐与办公提供更大的支持。</div>
+				</div>
 			</div>
-			<div class="cont-box"><img src="images/technology/3-2.jpg" /></div>
-			<div class="cont-box"><img src="images/technology/3-3.jpg" /></div>
-			<div class="cont-box text-box my-bg-color2 wow fadeInRight">
-				<div class="cont1 my-color5 my-font1">舒适模块</div>
-				<div class="cont2">搭载按摩、腰托、腿托、通风，根据身体情况自由调节，打造极致舒适。</div>
+			<div class="item-box">
+				<div class="cont-box1 wow fadeInLeft"><img src="images/technology/3-3.jpg" /></div>
+				<div class="cont-box2 wow fadeInRight">
+					<div class="cont1 my-color5 my-font1">舒适模块</div>
+					<div class="cont2 my-font3">搭载按摩、腰托、腿托、通风，根据身体情况自由调节，打造极致舒适。</div>
+				</div>
 			</div>
-			<div class="cont-box text-box my-bg-color7 wow fadeInLeft">
-				<div class="cont1 my-color2 my-font1">储物模块</div>
-				<div class="cont2">多项巧妙的储物设计，充满惊喜，为你的娱乐与办公提供更大的支持。</div>
+			<div class="item-box">
+				<div class="cont-box1 wow fadeInLeft"><img src="images/technology/3-4.jpg" /></div>
+				<div class="cont-box2 wow fadeInRight">
+					<div class="cont1 my-color5 my-font1">多方位调节</div>
+					<div class="cont2 my-font3">多向调节及座椅记忆功能，可实现45°及180°的双角度灵活旋转，在车内快速调节舒适位置。</div>
+				</div>
 			</div>
-			<div class="cont-box"><img src="images/technology/3-4.jpg" /></div>
-			<div class="cont-box"><img src="images/technology/3-5.jpg" /></div>
-			<div class="cont-box text-box my-bg-color2 wow fadeInRight">
-				<div class="cont1 my-color5 my-font1">空气净化</div>
-				<div class="cont2">靠背安装空气净化器，实时监测车内空气，自动完成空气净化，在车内呼吸新鲜空气。</div>
+			<div class="item-box">
+				<div class="cont-box1 wow fadeInLeft"><img src="images/technology/3-5.jpg" /></div>
+				<div class="cont-box2 wow fadeInRight">
+					<div class="cont1 my-color5 my-font1">空气净化</div>
+					<div class="cont2 my-font3">靠背安装空气净化器，实时监测车内空气，自动完成空气净化，在车内呼吸新鲜空气。</div>
+				</div>
 			</div>
 		</div>
 	</section>
