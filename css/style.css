@@ -1091,6 +1091,14 @@ img{
 	margin-top:26px;
 }
 
+/*英文版header*/
+.sticky-header.en .main-menu .navigation > li{
+	margin-left: 30px;
+}
+.sticky-header.en .auto-container{
+	max-width: 1400px;
+}
+
 .main-header .header-upper .upper-right{
 	padding-top:32px;
 }
@@ -3640,6 +3648,23 @@ img{
 	line-height: 1.7em;
 	margin-top: 20px;
 	width: 75%;
+}
+/*英文版footer*/
+.main-footer.en .footer-bottom .logo{
+	width: 70%;
+}
+.main-footer.en .footer-bottom .logo .logo-lable{
+	width: 22%;
+}
+.main-footer.en .footer-bottom .logo>a{
+	width: 35%;
+}
+.main-footer.en .footer-column .column{
+	flex: 0 0 20%;
+	max-width: 20%;
+}
+.main-footer.en .auto-container{
+	max-width: 1300px;
 }
 
 /*Footer Nav*/
