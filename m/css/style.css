@@ -286,6 +286,15 @@ img{
 	display: flex;
 	justify-content: space-around;
 	margin-top: 20px;
+	align-items: center;
+}
+.main-footer .logo-box .logo-lable{
+	width: 24%;
+	font-size: 0.75rem;
+	text-align: right;
+}
+.main-footer .logo-box a{
+	width: 38%;
 }
 .main-footer a{
 	color: #fff;
@@ -764,4 +773,18 @@ section{
 	text-align: center;
 	margin-top: 5px;
 	color: #fff;
+}
+
+/*回到顶部样式*/
+.go-top{
+	position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background: #fff;
+    right: 20px;
+    bottom: 40px;
+    z-index: 1000;
+    padding: 5px;
+    display: none;
 }

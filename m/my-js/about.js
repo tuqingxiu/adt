@@ -1,7 +1,10 @@
 $(function() {
-    // setHeaderShow();
+	//回到顶部
+	goTop();
+
+    setHeaderShow();
     $(window).on('scroll', function() {
-		// setHeaderShow();
+		setHeaderShow();
 	});
 	goDesignatedLocation();
 	initSwiper1();
@@ -13,7 +16,7 @@ function initSwiper1(){
     //初始化swiper
     var slideSwiper = new Swiper('#swiper1', {
 		direction: 'vertical',
-        loop: true,
+        // loop: true,
 		speed: 800,
 		autoplay :1000,
 		slidesPerView: 5,
@@ -142,12 +145,16 @@ function goDesignatedLocation(){
     if(item && el.length){
         var scroll = el.offset().top;
         $(window).scrollTop(scroll);
-        // setTimeout(function(){
-        // 	$(window).scrollTop(scroll);
-        // },1000)
     }
 }
 
+//回到顶部
+function goTop(){
+	$('.go-top').click(function(){
+        $('body,html').animate({ scrollTop: 0 }, 800);
+		setHeaderShow(0);
+	})
+}
 //设置第一屏时显示header,其它屏幕不显示
 function setHeaderShow(index){
 	var windowpos = $(window).scrollTop();
@@ -155,7 +162,12 @@ function setHeaderShow(index){
 		$('.main-header').fadeOut();
 	} else {
 		$('.main-header').fadeIn();
-	}
+    }
+    if(windowpos >= 200){
+        $('.go-top').fadeIn();
+    }else{
+        $('.go-top').fadeOut();
+    }
 
     $('.null-header').css('position','fixed');
 	$('.null-header').hover(function(){
