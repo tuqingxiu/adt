@@ -11013,6 +11013,12 @@ header .main-menu .navigation > li > ul>li>a{
 	
 	text-align: left;
 }
+.slide-zy a{
+	color: #fff;
+}
+.slide-zy a:hover{
+	color: rgba(191,215,50,1);
+}
 
 /*------回到顶部------*/
 .go-top{

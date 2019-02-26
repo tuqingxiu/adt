@@ -22,6 +22,10 @@ function goDesignatedLocation(){
     if(item && el.length){
         var scroll = el.offset().top;
         $(window).scrollTop(scroll);
+        setTimeout(function(){
+            setHeaderShow();
+        },300)
+        
     }
 }
 

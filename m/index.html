@@ -68,6 +68,14 @@
 .section6 .content1>div{
 	width: 100%;
 }
+.section6 .content2 .text{
+	position: absolute;
+	width: 100%;
+	padding: 5px;
+	bottom: 0;
+	text-align: center;
+	font-size: 1rem;
+}
 .section7 .content{
 	position: absolute;
     top: 70px;
@@ -91,8 +99,13 @@
     <div class="preloader"></div>
 	
 	<section class="section1">
-		<img src="images/index/1-1.jpg" />
-		<div class="content-box wow fadeInLeft">
+		<div id="swiper1" class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="images/index/1-1.jpg" /></div>
+				<div class="swiper-slide"><img src="images/index/1-2.jpg" /></div>
+			</div>
+		</div>
+		<div class="content-box wow fadeInLeft" style="z-index:2">
 			<div class="content text-center">
 				<div class="my-color2 font1">
 					<div>提升</div>
@@ -111,23 +124,39 @@
 	<section class="section3 slide-zy">
 		<img src="images/index/3-1.jpg" />
 		<div class="content">
-			<img class="zy-img" src="images/index/3-2.png">
+			<img class="zy-img" src="images/index/yz.gif">
 			<div class="content-box">
-				<div class="point point1">
+				<div class="point point1 animated ani-time2" data-my-animate="fadeInLeft">
+					<a href="product.html"><div class="point-text">整椅</div></a>
 					<img src="images/icons/point.png">
-					<div class="point-text">整椅</div>
+					<div class="line">
+						<span class="small-point"></span>
+						<span>></span>
+					</div>
 				</div>
-				<div class="point point2">
+				<div class="point point2 animated ani-time3" data-my-animate="fadeInLeft">
+					<a href="product.html"><div class="point-text">面套</div></a>
 					<img src="images/icons/point.png">
-					<div class="point-text">面套</div>
+					<div class="line">
+							<span class="small-point"></span>
+							<span>></span>
+						</div>
 				</div>
-				<div class="point point3">
+				<div class="point point3 animated ani-time3" data-my-animate="fadeInRight">
+					<div class="line">
+						<span><</span>
+						<span class="small-point"></span>
+					</div>
 					<img src="images/icons/point.png">
-					<div class="point-text">骨架</div>
+					<a href="product.html"><div class="point-text">骨架</div></a>
 				</div>
-				<div class="point point4">
+				<div class="point point4 animated ani-time2" data-my-animate="fadeInRight">
+					<div class="line">
+						<span><</span>
+						<span class="small-point"></span>
+					</div>
 					<img src="images/icons/point.png">
-					<div class="point-text">泡沫</div>
+					<a href="product.html"><div class="point-text">泡沫</div></a>
 				</div>
 			</div>
 		</div>
@@ -224,7 +253,30 @@
 				<div class="my-color2 wow fadeInLeft">是奋斗出来的</div>
 			</div>
 		</div>
-		<img src="images/index/6-2.jpg" />
+		<div class="content2 swiper-container my-color1" id="swiper2">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="images/index/6-2.jpg" />
+					<div class="text my-bg-color5">为爱奔跑</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/index/6-3.jpg" />
+					<div class="text my-bg-color5">关爱助学</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/index/6-4.jpg" />
+					<div class="text my-bg-color5">15周年庆</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/index/6-5.jpg" />
+					<div class="text my-bg-color5">家属日</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/index/6-6.jpg" />
+					<div class="text my-bg-color5">春晚</div>
+				</div>
+			</div>
+		</div>
 	</section>
 	<section class="section7">
 		<img src="images/index/7-1.jpg" />

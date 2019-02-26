@@ -8,7 +8,26 @@ $(function() {
 	});
 	goDesignatedLocation();
 	animateMap();
+	//初始化swiper
+	initSwiper1();
+	initSwiper2();
 })
+function initSwiper1(){
+	//初始化swiper
+    var slideSwiper = new Swiper('#swiper1', {
+		loop: true,
+		speed: 800,
+		autoplay:3000
+	});
+}
+function initSwiper2(){
+	//初始化swiper
+    var slideSwiper = new Swiper('#swiper2', {
+		loop: true,
+		speed: 800,
+		autoplay:3000
+	});
+}
 
 //首页地图动画
 function animateMap() {
