@@ -12,8 +12,9 @@
 <!--End MasterSlider-->
 
 <link href="css/slick.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet">
+<!-- <link href="css/responsive.css" rel="stylesheet"> -->
 <link href="css/style.css" rel="stylesheet">
+<link href="css/map.css" rel="stylesheet">
 
 
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
@@ -26,146 +27,359 @@
 <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 <style type="text/css">
-.page-wrapper{
-    height: auto;
+.font1{
+	font-size: 1.625rem;
 }
-	#magazine .item-box{
-		position: absolute;
-		width: 13%;
-		height: 59%;
-		top: 19%
-	}
-	#magazine .box1{
-    	left: 13%;
-	}
-	#magazine .box2{
-    	left: 28%;
-	}
-	#magazine .box3{
-    	left: 43%;
-	}
-	#magazine .box4{
-    	left: 58.5%;
-	}
-	#magazine .box5{
-    	left: 74%;
-	}
+.section1 .content{
+	position: absolute;
+    bottom: 60px;
+    right: 40px;
+    text-align: right;
+}
+.section2 .content{
+	font-size: 1rem;
+}
+.section2 .content1{
+	position: absolute;
+    top: 12%;
+    text-align: center;
+    width: 100%;
+}
+.section2 .content2{
+	width: 70%;
+}
+.section2 .content3{
+	position: absolute;
+    bottom: 2%;
+    text-align: center;
+    width: 100%;
+}
+.section2 .split{
+	margin: 0 5px;
+}
+.section3 .title{
+	height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+.section3 .content{
+	position: relative;
+	margin-top: 5px;
+}
+.section3 .content1{
+	margin-top: 0;
+}
+.section3 .cont-box{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 10px;
+}
+.section3 .cont-box .cont2{
+	font-size: 0.75rem;
+}
+.section4{
+	margin-top: 10px;
+}
+.section4 .title{
+	height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.section4 .content{
+	margin: 0px 15px;
+	padding-bottom: 10px;
+	position: relative;
+}
+.section4 .text{
+	position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+}
+.section4 .icon-play{
+	width:50px;
+}
+.section5{
+	margin-top: 5px;
+}
+.section5 .content{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	padding: 0 10px;
+	min-width: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.section5 .cont2{
+	width: 60%;
+	margin: 5% 0;
+}
+.section6{
+	margin-top: 10px;
+}
+.section6 .content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	padding: 10%;
+}
+.section6 .content1{
+	width: 90%;
+}
+.section6 .cont1{
+	margin-bottom: 5px;
+}
+.section7{
+	margin-top: 5px;
+}
+.section7 .content1 .cont-box1{
+	position: relative;
+}
+.section7 .content1 .cont-box1 .content{
+	position: absolute;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.section7 .content1 .title{
+	margin-bottom: 5px;
+}
+.section7 .content1 .cont-box2 {
+	margin-top: 5px;
+	padding: 30px 20px 50px;
+	position: relative;
+}
+.section7 .content1 .box1{
+	padding-bottom: 20px;
+	margin-bottom: 12px;
+    border-bottom: 1px solid rgba(174,195,64,1);
+}
+.section7 .content1 .box3{
+	position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 15px;
+}
+.section7 .content1 .cont-box3{
+	padding: 15px 20px 5px;
+}
+.section7 .item-box{
+	position: relative;
+	margin-top: 5px;
+}
+.section7 .item-box .content{
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+	padding: 10px;
+	color: #fff;
+}
+.section7 .item-box .content .cont1{
+	margin-bottom: 5px;
+}
+.section8 .title{
+	height: 35px;
+    line-height: 35px;
+    margin-top: 10px;
+    text-align: center;
+}
+.section8 .content{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	justify-content:space-around;
+}
+.section8 .item-box{
+	width: 50%;
+	padding: 5px;
+}
 </style>
 </head>
 
 <body>
+<div id="root">
 <!-- Main Header-->
 <div id="headerBox" data-type="culture"></div>
 <!--End Main Header -->
 
-
 <div class="page-wrapper" id="culture">
- 	
+	<div class="go-top"><img src="images/icons/go-top.png"></div>
     <!-- Preloader -->
     <div class="preloader"></div>
-
-    <!--Main Slider-->
-    <section class="main-slider">
-        <div class="main-slider-carousel owl-carousel owl-theme">
-            <!-- <div class="slide" style="background-image:url(images/main-slider/image-5.jpg);">
-                <div class="auto-container">
-                	<div class="content text-right">
-						<h2 style="font-size:38px;font-weight:normal; margin-top:90px"><span style="font-weight:bold; color:rgba(191,215,50,1);padding:10px 100px">&nbsp;</span></h2>
-						<h3 style="color:#0a6c80; margin:30px 0">&nbsp;</h3>
-                    	<div class="text" style="font-size:14px; color:#333333">&nbsp;
-						</div>
-                    </div>
-                </div>
+	
+	<section class="section1"> 
+		<img src="images/culture/1-1.jpg" />
+		<div class="content font1 wow fadeInRight">
+			<div class="my-color1">Happiness</div>
+			<strong class="my-color2">comes from struggle</strong>
+		</div>
+	</section>
+	<section class="section2">
+		<img src="images/culture/2-1.jpg" />
+		<div class="content content-box my-color1">
+			<div class="content1 wow fadeInDown"><strong class="my-font4">Happy Family Culture</strong><div>Soil</div></div>
+			<div class="content2 my-all-center"><img class="" src="images/culture/icon1.png" /></div>
+			<div class="content3 wow fadeInUp"><span>create and share</span><strong class="my-font4"> together-striver culture</strong><div>Foundation</div></div>
+		</div>
+	</section>
+	<section class="section3 my-color1">
+		<div class="title my-bg-color7 my-font5">Cultural project</div>
+		<div class="content content1">
+			<img src="images/culture/3-1.jpg" />
+			<div class="cont-box my-bg-color9 wow fadeInUp ani-time2">
+				<div class="cont1 my-font1">Spring Festival Gala Evening</div>
+				<div class="cont2">At Chongqing Yanfeng Adient ，the Spring Festival is an annual event .It’s the stage that belongs to “Aixiaoyu,”every year, the theme of the Spring Festival gala all goes according to the occasion , all the programs are produced by Chongqing Yanfeng Adient group according to the popular elements and make uo the audio-visual feast.</div>
+			</div>
+		</div>
+		<div class="content content2">
+			<img src="images/culture/3-2.jpg" />
+			<div class="cont-box my-bg-color9 wow fadeInUp ani-time2">
+				<div class="cont1 my-font1">Family Week</div>
+				<div class="cont2">We invite the family member of employees to participate in the special activities on November 1st of each year, so as to feel the happy family culture that Chongqing Yanfeng Adient always advocates. Therefore, we call it “family day”. In the traditional sense, (1+1)+1 represents, 1+1 represents the two main members of the family, and the remaining 1 represents the child. So we set November 1st  as parents’ day every year.</div>
+			</div>
+		</div>
+		<div class="content content3">
+			<img src="images/culture/3-3.jpg" />
+			<div class="cont-box my-bg-color9 wow fadeInUp ani-time2">
+				<div class="cont1 my-font1">Award Ceremony</div>
+				<div class="cont2">Since 2015, Chongqing Yanfeng Adient has been holding an independent annual award ceremony in Chongqing. We encourage everyone and the team to actively select candidates for the awards ,and call on Aixiaoyu to continuously explore knowledge and pursue excellence. </div>
+			</div>
+		</div>
+		<div class="content content4">
+			<img src="images/culture/3-4.jpg" />
+			<div class="cont-box my-bg-color9 wow fadeInUp ani-time2">
+				<div class="cont1 my-font1">Team Rally</div>
+				<div class="cont2">Since 1996, Chongqing Yanfeng Adient factories have organized teams of employees to participate in the competition, and the latest continuous improvement results of Chongqing Yanfeng Adient are presented through performances, dances and other forms on the stage of team gatherings. This activity will be held in July every year in Chongqing Yanfeng Adient plant internal competition, the second half of the year will be held in China and the Asia-pacific region competition. </div>
+			</div>
+		</div>
+	</section>
+	<section class="section4 my-bg-color7">
+		<div class="title my-color1 my-font5 wow fadeInDown">The Power of Culture</div>
+		<div class="content">
+			<a href="video/whll.mp4" class="lightbox-image play-box">
+				<img src="images/culture/4-1.jpg">
+				<div class="text my-color2 wow fadeInUp ani-time">This video is dedicated to you who are fighting for your dream. </div>
+				<img class="my-all-center icon-play" src="images/icons/play.png">
+			</a>
+		</div>
+	</section>
+	<section class="section5">
+		<img src="images/culture/5-1.jpg" />
+		<div class="content my-color1 my-font3 my-bg-color9">
+			<div class="cont1 my-font7 wow fadeInUp ani-time2">To be an enterprise<strong class="my-color2"> is to be a culture.</strong></div>
+			<div class="cont2 wow fadeInUp ani-time3"><img src="images/culture/5-2.jpg" /></div>
+			<div class="cont3 wow fadeInUp ani-time2">
+				<div>The power of culture is dedicated to our dear friends,learning and inheriting, and heading for the future.</div>
+				<div>The power of culture is dedicated to outstanding peers,sharing and moving foward.</div>
+				<div>The power of culture is dedicated to our esteemed friends,cast gravel led pearl, quote and prove fully.</div>
+				<div>The power of culture is dedicated to our next generation,to give back to society and to help the public good.</div>
+				<!-- <div style="margin-top: 5px">此书由重庆延锋安道拓公司所有同仁,用血浓于水的感情</div>
+				<div>共同写就。这是一个企业对自己的锤炼,更是一群骨子里</div>
+				<div>永远都热血的人,为共同走过的时光、彼此见证的过往,</div>
+				<div>亲手打造的一份弥足珍贵的成长纪念。第一版印刷的</div>
+				<div>4000册将进行爱心认购,所得款项全部进入蓝天基金。</div>
+				<div>用来支持环境的可持续发展,社会服务,教育事业等公益</div>
+				<div>之举!</div> -->
+				<div>This book by Chongqing Yanfeng Adient company all colleagues with the feelings of blood is thicker than water . This is the temper of an enterprise on itself, but also a group of people who will always have blood in their bones, and the past they have witnessed , a precious memorial for growth created by themselves. The 4,000 copies of the first volume will be donated to the blue sky fund to support environmental sustainability, social services, and education</div>
+			</div>
+			<!-- <div class="cont4">此书由重庆延锋安道拓公司所有同仁,用血浓于水的感情共同写就。
+					这是一个企业对自己的锤炼,更是一群骨子里永远都热血的人,
+					为共同走过的时光、彼此见证的过往,亲手打造的一份弥足珍贵的成长纪念。
+					第一版印刷的4000册将进行爱心认购,所得款项全部进入蓝天基金。
+					用来支持环境的可持续发展,社会服务,教育事业等公益之举!
 			</div> -->
-			<div class="slide">
-				<img src="images/main-slider/image-5.jpg">
-				<!-- <div class="content-box">
-					<div class="content text-center">
-						<h3><span>提升机动化世界<font style="color:rgba(191,215,50,1)">的体验</font></span></h3>
-						<div class="link-box">&nbsp;</div>
-					</div>
-				</div> -->
+		</div>
+	</section>
+	<section class="section6">
+		<img src="images/culture/6-1.jpg" />
+		<div class="content content-box">
+			<div class="content1 wow fadeInUp ani-time3">
+				<img src="images/culture/icon2.png" />
 			</div>
-        </div>
-    </section>
-    <!--End Main Slider-->
-	<section class="welcome-section" style=" padding:0px">
-    
-    	<div class="">
-    		<!--Sec Title-->
-			<div class="row clearfix">
-				
-				<!--Image Column-->
-				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="image text-center">
-							<img data-item="1" src="images/background/bg-27.jpg" alt="">
-					</div>
-				</div>
-				
+			<div class="content2 my-color1 wow fadeInUp">
+				<div class="cont1 my-font5">Social responsibility</div>
+				<div class="cont2 my-font3">At Chongqing Yanfeng Adient , our definition of success is not limited to financial success, we care more about environmental protection and social responsibility. Therefore, the blue sky plan based on the triple bottom line of environmental protection, community responsibility and employee leadership came into being.</div>
 			</div>
 		</div>
-		
 	</section>
-	<section class="welcome-section" style=" padding:0px">
-		
-			<div class="">
-				<!--Sec Title-->
-				<div class="row clearfix">
-					
-					<!--Image Column-->
-					<div class="col-lg-12 col-md-12 col-sm-12">
-						<div class="image text-center">
-								<img data-item="2" src="images/background/bg-28.jpg" alt="">
-						</div>
-					</div>
-					
+	<section class="section7">
+		<div class="content1 my-font3">
+			<div class="cont-box1 my-color1">
+				<img src="images/culture/7-1.jpg" />
+				<div class="content content-box wow fadeInUp">
+					<div class="title my-font6 my-color2">The blue sky fund</div>
+					<div class="text">The company officially established the blue sky fund in 2014, and for the first time in that year’s Spring Festival gala to inject 131,400 yuan into the blue sky fund. The blue sky fund will be used to support the blue sky project every year, to provide financial support for the activities of the blue sky project, as well as to help employees in need within the enterprise. As of October 2018, the blue sky fund has helped more than 900,000 yuan.</div>
 				</div>
 			</div>
-			
-		</section>
-    <section class="welcome-section" style=" padding:0px">
-    
-    	<div class="">
-    		<!--Sec Title-->
-			<div class="row clearfix">
-				
-				<!--Image Column-->
-				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="image text-center">
-						<img src="images/background/bg-29.jpg" alt="">
-					</div>
+			<div class="cont-box2 my-color1 my-bg-color7">
+				<div class="box1 wow fadeInUp">
+					<div class="title my-font6 my-color2">The blue sky project</div>
+					<div class="text">The blue sky project is a global employee incentive plan, designed to encourage Chongqing Yanfeng Adient to form volunteer teams, cooperation with local public welfare organization or school to support the sustainable development of environment , social services, education career, the company employees of volunteers from 3 to 100 people in the project team, and with the selected project of the volunteer public welfare organization or school.</div>
 				</div>
-				
+				<div class="box2 wow fadeInUp">
+					<div class="title my-font1 my-color2">The significance of the blue sky project</div>
+					<div class="text">The local community benefits from volunteer participation, and we can benefit from improved leadership and team building. CQYFAS ’s social responsibility project shows the company’s commitment to achieving the highest standards of performance , teamwork, inclusiveness, leadership and growth. The company supports its employees’ participation in voluntary global initiatives and values the important contributions they make to the company. </div>
+				</div>
+				<img class="box3 wow fadeInUp" src="images/culture/icon3.png" />
+			</div>
+			<div class="cont-box3 wow fadeInDown">
+				<div class="title my-font1 my-color5">Series featured blue sky project activities</div>
+				<div class="text">Chongqing Yanfeng Adient has been continuously practicing the blue sky project, many fine blue sky projects have been precipitated over the years.</div>
+			</div>
+			
+		</div>
+		<div class="content2 item-box">
+			<img src="images/culture/7-2.jpg" />
+			<div class="content my-bg-color9 wow fadeInUp ani-time2">
+				<div class="cont1 my-font1">College leadership challenge</div>
+				<div class="cont2">The blue sky project takes the school as the target community to carry out a series of campus activities with the theme of environmental projection and college students’ leadership .Through a series of high-quality and demanding team challenges , the leadership ability of contemporary college students is exercised, the sense of social responsibility is cultivated , and the environmental protection concept is publicized.</div>
 			</div>
 		</div>
-		
-	</section>
-	<section id="magazine" class="welcome-section" style=" padding:0px">
-
-			<div class="">
-				<!--Sec Title-->
-				<div class="row clearfix">
-					
-					<!--Image Column-->
-					<div class="col-lg-12 col-md-12 col-sm-12">
-						<div class="image text-center">
-							<img data-item="3" src="images/background/bg-30.jpg" alt="">
-						</div>
-						<div class="content-box">
-							<div class="item-box box1 isClick" data-url="file/bb.pdf"></div>
-							<div class="item-box box2 isClick" data-url="file/bb.pdf"></div>
-							<div class="item-box box3 isClick" data-url="file/bb.pdf"></div>
-							<div class="item-box box4 isClick" data-url="file/bb.pdf"></div>
-							<div class="item-box box5 isClick" data-url="file/bb.pdf"></div>
-						</div>
-					</div>
-					
-				</div>
+		<div class="content3 item-box">
+			<img src="images/culture/7-3.jpg" />
+			<div class="content my-bg-color9 wow fadeInUp ani-time2">
+				<div class="cont1 my-font1">School and enterprise Open day</div>
+				<div class="cont2">We invite all the winning teams of the “college student leadership challenge”to go to Chongqing Yanfeng Adient , Chongqing to display their winning works ,visit the company and local factories, and conduct in-depth visits between the university and enterprises. </div>
 			</div>
-			
-		</section>
-	
-	
+		</div>
+		<div class="content4 item-box">
+			<img src="images/culture/7-4.jpg" />
+			<div class="content my-bg-color9 wow fadeInUp ani-time2">
+				<div class="cont1 my-font1">Run for love</div>
+				<div class="cont2">”Run for love”8-hour relay public welfare race originated in 2014, it is an event that USES” public welfare, self-help and environmental protection” throughout the preliminary training , activity preparation and competition. This activity adheres to the principle of voluntary donation. In the end, every step you make and every sponsorship fund donated by the company will be used to fund the construction of schools and help poor children in the later stage.</div>
+			</div>
+		</div>
+		<div class="content5 item-box">
+			<img src="images/culture/7-5.jpg" />
+			<div class="content my-bg-color9 wow fadeInUp ani-time2">
+				<div class="cont1 my-font1">Youyang no.2 middle school cares for students</div>
+				<div class="cont2">Shanshu public welfare and Chongqing Yanfeng Adient blue sky development fund jointly set us “shanshu class”
+						In Chongqing Youyang no.2 middle school. Since 2017, Chongqing Yanfeng Adient has set up a volunteer team of 30 people every year to help 80”shuangte”(especially poor and excellent)students one on one, and has raised 9,000yuan for each student’s living expenses for three years, a total of 720,000yuan has been raised.</div>
+			</div>
+		</div>
+		<div class="content6 item-box">
+			<img src="images/culture/7-6.jpg" />
+			<div class="content my-bg-color9 wow fadeInUp ani-time2">
+				<div class="cont1 my-font1">Factory blue sky project</div>
+				<div class="cont2">Every year, each branch company of Chongqing Yanfeng Adient road in Chongqing organizes volunteers to participate in the blue sky project by themselves and actively participates in social environmental protection, student aid and other public welfare projects. </div>
+			</div>
+		</div>
+	</section>
+	<section class="section8">
+		<div class="title my-bg-color7 my-font5 my-color1">Magazine Cognition</div>
+		<div class="content  wow fadeInUp">
+			<div class="item-box isClick" data-url="file/79.pdf"><img src="images/culture/8-1.jpg" /></div>
+			<div class="item-box isClick" data-url="file/80.pdf"><img src="images/culture/8-2.jpg" /></div>
+			<div class="item-box isClick" data-url="file/83.pdf"><img src="images/culture/8-3.jpg" /></div>
+			<div class="item-box isClick" data-url="file/82.pdf"><img src="images/culture/8-4.jpg" /></div>
+		</div>
+	</section>
 
 	<!--Main Footer-->
     <div id="footerBox"></div>
@@ -173,8 +387,9 @@
 	
 </div>
 <!--End pagewrapper-->
-
+</div>
 <script src="js/jquery.js"></script>
+<script src="my-js/common.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -182,23 +397,17 @@
 <script src="js/appear.js"></script>
 <script src="js/owl.js"></script>
 <script src="js/wow.js"></script>
+
 <script src="js/slick.js"></script>
 <script src="js/jquery-ui.js"></script>
 <!-- Master Slider -->
 <script src="js/masterslider/jquery.easing.min.js"></script>
 <script src="js/masterslider/masterslider.min.js"></script>
 <!--End Master Slider -->
+<script src="js/swiper.js"></script>
 
 <script src="js/script.js"></script>
-<script src="my-js/common.js"></script>
-<script type="text/javascript">
-	$('.isClick').click(function(){
-		var url = $(this).attr('data-url');
-		window.open(url,"_system","location=no");
-	})
-		
-</script>
-
+<script src="my-js/culture.js"></script>
 
 </body>
 </html>

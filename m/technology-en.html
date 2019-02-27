@@ -12,7 +12,7 @@
 <!--End MasterSlider-->
 
 <link href="css/slick.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet">
+<!-- <link href="css/responsive.css" rel="stylesheet"> -->
 <link href="css/style.css" rel="stylesheet">
 
 
@@ -20,560 +20,429 @@
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
 <!-- Responsive -->
-<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
 
 <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 <style type="text/css">
-.big-img-box{
+.section1 .content1{
 	position: absolute;
+	width: 70%;
+	left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.section1 .content2{
+	position: absolute;
+	top: 85px;
+    right: 20px;
+}
+.section1 .content3{
+	position: absolute;
+	bottom: 40px;
+    right: 20px;
+    text-align: right;
+}
+.section1 .content3 .text1{
+	font-size: 1.75rem;
+}
+.section1 .content3 .text2{
+	font-size: 1.625rem;
+	font-weight: 600;
+}
+.section2 .text{
+	padding: 20px;
+    text-align: center;
+}
+.section2 .content2{
+	position: relative;
+}
+.section2 .play{
+	position: absolute;
+	width: 50px;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	max-width: 60%;
-	z-index: 9999;
-	display: none;
+	-webkit-transform: translate(-50%,-50%);
 }
-.text-color1{
-	color: rgba(0,70,91,1);
-}
-.text-color2{
-	color: rgba(191,215,50,1);
-}
-.text-color3{
-	color: #333;
-}
-.text-color4{
-	color: #fff;
-}
-#technology .img2{
-	position: absolute;
-    width: 30%;
-	left: 15%;
-	bottom: 1%;
-}
-#technology .slide1 .content.text-right{
-	right: auto;
-	left: 50%;
-}
-.slide1 .content-box .text2{
-	font-size: 2.375rem;
-	margin-top: 70px;
-	text-align: right;
-}
-.slide1 .content-box .text3{
-	font-size: 0.28rem;
-	margin-bottom: 0;
-}
-.slide1 .content1{
+.section2 .content3{
 	position: relative;
-	height: 80%;
-    top: 17%;
-    left: 10%;
+	margin-top: 5px;
 }
-@media only screen and (max-width: 767px){
-	.content-box .text2{
-		font-size: 0.36rem;
-		margin-top: 0.1rem;
-		margin-bottom: 0.1rem;
-	}
-	.content-box .text3{
-		font-size: 0.24rem;
-	}
-}
-.slide2{
-	display: flex;
-}
-.slide2>div{
-	position: relative;
-}
-.slide2 .right-box{
+.section2 .content3 .cont-box{
 	display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
-.slide2 .right-box .item-box{
-	display: flex;
-	height: 33.2%;
-}
-.item-box{
-	position: relative;
-}
-.slide2 .item-box .text{
-	display: none;
-}
-.slide2 .left-box{
-	color: rgba(191,215,50,1);
-	position: relative;
-}
-.slide2 .left-box .img_play{
-	width: 80px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%)
-}
-.slide2 .left-box .content-box{
-	text-align: center;
-	margin-top: 20px;
-	height: auto;
-	font-size: 16px;
-}
-.slide2 .right-box .content-box{
-	background: rgba(190, 213, 51, 0.8);
-	color: #fff;
-	display: none;
-}
-.slide2 .right-box .content-box span{
-	position: absolute;
-    bottom: 40px;
-    text-align: center;
-    left: 0;
+.section2 .content3 .cont-box .cont{
 	width: 100%;
-	font-size: 18px;
-}
-.slide3{
-	display: flex;
-	flex-direction: column;
-}
-.slide3 .cont-title{
-	font-size: 28px;
-    font-weight: 600;
+    height: 33.33%;
     display: flex;
-	flex-direction: column;
-	align-items: center;
-	height: 15%;
-	justify-content: space-between;
-}
-.slide3 .cont-title>span{
-	padding: 20px 0 10px;
-}
-.slide3 .cont-title>img{
-	width: 30px;
-}
-.column-box{
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-.slide3 .column-2{
-	/* flex: 1; */
-	padding: 0 9%;
-}
-.slide3 .column-2 .item-box{
-	/* display: flex; */
-	width: 50%;
-	/* height: 50%; */
-	color: #fff;
-}
-.slide3 .column-2 .content-box{
-	width: 50%;
-	padding: 0 20px;
-}
-.slide3 .content-box.box1,
-.slide3 .content-box.box4{
-	left: 50%;
-}
-.slide4 .content-box.box6{
-	width: 100%;
-	padding: 0 20px;
-}
-.slide3 .content-box .cont1{
-	margin-top: 35%;
-	font-size: 22px;
-    font-weight: 600;
-}
-.slide4 .content-box.box6 .cont1{
-	margin-top: 35%;
-	font-size: 24px;
-    font-weight: 600;
-}
-.slide3 .content-box .cont2{
-	margin-top: 15px;
-	font-size: 16px;
-}
-.slide4 .content-box.box6 .cont2{
-	margin-top: 5%;
-	font-size: 16px;
-}
-.slide3 .content-box .cont3{
-	font-size: 28px;
-	font-weight: 600;
-	display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 0;
-}
-.slide3 .content-box .cont3>img{
-	width: 30px;
-	margin-top: 20px;
-}
-.slide4{
-	display: flex;
     align-items: center;
-}
-.slide4 .item-box{
-	width: 24.8%;
-}
-
-.slide5{
-	display: flex;
-	flex-direction: column;
-}
-.slide5 .content1{
-	height: 40%;
-	display: flex;
-	position: relative;
-}
-.slide5 .content2{
-	height: 60%;
-	display: flex;
-	flex-direction: column;
-	position: relative;
-}
-.slide5 .content1 .content-box{
-	display: flex;
-    flex-direction: column;
-	/* justify-content: space-between; */
-	justify-content: space-around;
-	left: 25%;
-	padding: 15px 0;
-}
-.slide5 .content1 .conts1-2{
-	display: flex;
-    flex-direction: column;
-	justify-content: space-around;
-	flex: 1;
-}
-.slide5 .content1 .cont1,
-.slide6 .cont1{
-	font-size: 28px;
-	font-weight: 600;
-}
-.slide5 .content1 .cont1>span,
-.slide6 .cont1>span{
-	display: inline-block;
-	border-bottom: 2px solid rgba(191,215,50,1);
-	padding-bottom: 10px;
-}
-.slide5 .content1 .cont2{
-	display: flex;
-	flex-direction: column;
-}
-.slide5 .content1 .cont3{
-	display: flex;
-	flex-direction: column;
-	font-size: 16px;
-	font-weight: 600;
-}
-.slide5 .content1 .cont3>img{
-	width: 25px;
-	margin-top: 10px;
-}
-.slide5 .content2 .column-box{
-	height: 50%;
-	align-items: center;
-}
-.slide5 .content2 .column-box .item-box{
-	/* display: flex; */
-}
-.slide5 .content2 .column-5 .item-box{
-	width: 19.8%;
-}
-.slide5 .content2 .box1{
-	background: rgba(190, 213, 51, 0.8);
-	color: #fff;
-	display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.slide5 .content2 .box1 .cont1{
-	font-size: 16px;
-	font-weight: 600;
-	border-bottom: 2px solid rgba(191,215,50,1);
-}
-.slide6>.content-box{
-	/* display: flex; */
-	justify-content: center;
-	width: 90%;
-	left: 5%;
-}
-.slide6>.content-box>div{
-	position: relative;
-	display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-}
-.slide6 .column-box{
-	padding: 5px;
-	background: rgba(191,215,50,1);
-	max-width: 1530px;
-	margin-top: 25px;
-}
-.slide6 .column-4 .item-box{
-	width: 25%;
-	padding: 3px;
-}
-.slide6 .cont1{
+    /* margin-left: 30px; */
 	margin-bottom: 15px;
 }
-.slide6 .cont2,
-.slide6 .cont3{
-	font-size: 16px;
+.section2 .content3 .cont-box .cont>span{
+	padding: 0 10px;
+	background-color: rgba(190, 213, 51, 0.8);
 }
-.slide6 .column-4 .content-box{
-	background: rgba(190, 213, 51, 0.8);
-	color: rgba(0,70,91,1);
+.section3 .content1{
+	text-align: center;
+}
+.section3 .content1 .title{
+	margin: 30px 0 20px;
+}
+.section3 .content1 .title>span{
+	padding-bottom: 3px;
+    border-bottom: 2px solid rgba(174,195,64,1);
+}
+.section3 .content1 .icon1{
+    width: 30px;
+    margin-bottom: -2px;
+}
+.section3 .content2{
+	position: relative;
+}
+.section3 .item-box{
+	display: flex;
+	margin-top: 2px;
+}
+.section3 .item-box .cont-box1{
+	width: 70%;
+}
+.section3 .item-box .cont-box2{
+	width: 30%;
+	border-top: 2px solid rgba(0,70,91,1);
+	padding: 10px;
+}
+/* .section3 .content2 .cont-box{
+	width: 50%;
+	position: relative;
+}
+.section3 .content2 .text-box{
+	display: flex;
+    flex-direction: column;
     justify-content: center;
-	align-items: center;
-	font-size: 18px;
-	font-weight: 600;
-	display: none;
+	padding: 10px;
+	color: #fff;
 }
-.slide6 .column-4 .content-box.show{
-	display: flex !important;
+.section3 .content2 .text-box .cont1{
+	margin-bottom: 5px;
+} */
+.section4{
+	margin: 10px 0 5px;
+}
+.section4 .content-box{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+.section4 .cont1>span{
+	border-bottom: 2px solid rgba(191,215,50,1);
+}
+.section4 .cont2{
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+}
+.section4 .cont2>span{
+	line-height: 1.5rem;
+}
+.section5{
+	overflow: visible;
+}
+.section5 .content{
+	position: absolute;
+	right: 20px;
+    bottom: 0;
+	transform: translateY(50%);
+	-webkit-transform: translateY(50%);
+	color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+}
+.section5 .content .cont1{
+	margin-bottom: 5px;
+	border-bottom: 1px solid;
+}
+.section5 .content .cont2>div{
+	line-height: 1.5rem;
+}
+.section6 .content1{
+	padding: 40px 40px 30px;
+}
+.section6 .content1 .cont1{
+	margin-bottom: 10px;
+}
+.section6 .content1 .cont1>span{
+	border-bottom: 2px solid;
+}
+.section6 .content2{
+	position: relative;
+	
+}
+.section6 .content2>.content-box{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+	align-items: center;
+	padding: 5%;
+}
+.section6 .content2 .item-box{
+	width: 49%;
+	position: relative;
+}
+.section6 .item-box .box1{
+	background-color: rgba(174,195,64,0.8);
+    color: rgba(0,70,91,1);
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    bottom: 0;
+    top: auto;
 }
 </style>
 </head>
 
 <body>
-
+<div id="root">
 <!-- Main Header-->
 <div id="headerBox" data-type="technology"></div>
 <!--End Main Header -->
 
 <div class="page-wrapper" id="technology">
- 	
+	<div class="go-top"><img src="images/icons/go-top.png"></div>
     <!-- Preloader -->
     <div class="preloader"></div>
-	<!--全屏滚动部分-->
-	<div id="index-swiper" class="swiper-container my-color1">
-		<div class="swiper-wrapper">
-			<!--第1屏-->
-			<div class="swiper-slide slide1">
-				<img class="slide-bg" src="images/main-slider/image-3.jpg">
-				<div class="content-box">
-					<img class="content1 animated" data-my-animate="rollIn" src="images/main-slider/zy1.png">
-					<div class="content text-right">
-							<h3 class="text1 animated ani-time2" data-my-animate="fadeInRight">创新研发</h3>
-							<h3 class="text2 animated ani-time3" data-my-animate="fadeInRight">
-								<span>超级座椅</span><br>
-								<span style="font-weight:bold; color:rgba(191,215,50,1)">面向未来的座椅</span>
-							</h2>
-					</div>
-				</div>
+	
+	<section class="section1">
+		<img src="images/technology/1-1.jpg" />
+		<img class="content1" src="images/technology/1-2.png">
+		<div class="content2 my-color1 my-font5 wow fadeInRight">Innovation and development</div>
+		<div class="content3 wow fadeInRight">
+			<div class="text1 my-color1">Super Seat</div>
+			<div class="text2 my-color2">Future-oriented seats</div>
+		</div>
+	</section>
+	<section class="section2">
+		<div class="text my-color5 my-font2 wow fadeInUp">
+			<div>Super Super seat is a multifunctional high-end car seat independently developed by Chongqing Yanfeng Adient.</div>
+			<div>Starting from the users’ needs and the application scenario, 
+					we aim to meet customer’s different needs of entertainment and work,
+					so as to bring you a new experience of smart, convenient and comfortable seats.</div>
+		</div>
+		<a href="video/cjzy.mp4" class="lightbox-image play-box">
+			<div class="content2">
+				<img src="images/technology/2-1.jpg" alt="">
+				<img class="play" src="images/icons/play.png">
 			</div>
-			<!--第2屏-->
-			<div class="swiper-slide slide2">
-				<div class="left-box">
-					<a href="video/cjzy.mp4" class="lightbox-image play-box">
-						<img class="slide-bg" src="images/background/bg-5-2.jpg" alt="">
-						<img class="img_play" src="images/icons/play.png">
-					</a>
-					
-					<div class="content-box">
-						<div>Superseat是重庆延锋安道拓自主研发的一款多功能高端汽车商务座椅 。</div>
-						<div>我们从用户需求出发 ，还原不同座舱场景 ，满足座舱休闲娱乐 、商务办公等</div>
-						<div>多种需求 ，带你感受智能 、便捷 、舒适的座椅新体验 。</div>
-					</div>
-				</div>
-				<div class="right-box">
-					<div class="item-box">
-						<img src="images/technology/2-1.jpg">
-						<div class="content-box"><span>科技感十足的外观设计</span></div>
-					</div>
-					<div class="item-box">
-						<img src="images/technology/2-2.jpg">
-						<div class="content-box"><span>流畅的智能APP控制</span></div>
-					</div>
-					<div class="item-box">
-						<img src="images/technology/2-3.jpg">
-						<div class="content-box"><span>便捷的手机无线充电</span></div>
-					</div>
-				</div>
-			</div>
-			<!--第3屏-->
-			<div class="swiper-slide slide3">
-				<div class="cont-title text-color1 animated" data-my-animate="fadeInDown">
-					<span>五大智能模块</span>
-					<img src="images/technology/icon1.jpg">
-				</div>
-				<div class="column-box column-2">
-					<div class="item-box animated" data-my-animate="fadeInLeft">
-						<img src="images/technology/3-1.jpg">
-						<div class="content-box box1 animated ani-time2" data-my-animate="fadeInLeft">
-							<div class="cont1 text-color1">迎宾模块</div>
-							<div class="cont2">当车门打开时，自动旋转45°，调整方便进出的方向</div>
-						</div>
-					</div>
-					<div class="item-box animated" data-my-animate="fadeInRight">
-						<img src="images/technology/3-2.jpg">
-						<div class="content-box box2 animated ani-time2" data-my-animate="fadeInRight">
-							<div class="cont1 text-color2">多方位调节</div>
-							<div class="cont2">多向调节及座椅记忆功能，可实现45°及180°的双角度灵活旋转，在车内快速调节舒适位置。</div>
-						</div>
-					</div>
-					<div class="item-box animated ani-time2" data-my-animate="fadeInUp100">
-						<img src="images/technology/3-3.jpg">
-						<div class="content-box box3 animated ani-time3" data-my-animate="fadeInUp100">
-							<div class="cont1 text-color2">舒适模块</div>
-							<div class="cont2">搭在按摩、腰托、腿托、按摩、通风，根据身体情况自由调节，打造极致舒适</div>
-						</div>
-					</div>
-					<div class="item-box animated ani-time2" data-my-animate="fadeInUp100">
-						<img src="images/technology/3-4.jpg">
-						<div class="content-box box4 animated ani-time3" data-my-animate="fadeInUp100">
-							<div class="cont1 text-color1">储物模块</div>
-							<div class="cont2">多项巧妙的储物设计，充满惊喜，为你的娱乐与办公提供更大的支持。</div>
-						</div>
-					</div>
-				</div>
-			</div>
-				<!--第4屏-->
-			<div class="swiper-slide slide4">
-				<div class="column-box">
-					<div class="item-box animated" data-my-animate="fadeInLeft" style="width: 50%;">
-						<img src="images/technology/3-5.jpg">
-						<div class="content-box box5"></div>
-					</div>
-					<div class="item-box animated ani-time2" data-my-animate="fadeInDown100" style="width: 50%;">
-						<img style="visibility: hidden;" src="images/technology/3-5.jpg">
-						<div class="content-box box6 animated">
-							<div class="cont1 text-color1">空气净化</div>
-							<div class="cont2 text-color3">靠背安装空气净化器，实时监测车内空气，自动完成空气净化，在车内呼吸新鲜空气。</div>
-						</div>
-					</div>
-					<!-- <div class="item-box animated" data-my-animate="rotateIn">
-						<img src="images/technology/3-6.jpg">
-					</div>
-					<div class="item-box animated" data-my-animate="rotateIn">
-						<img src="images/technology/3-7.jpg">
-					</div>
-					<div class="item-box animated" data-my-animate="rotateIn">
-						<img src="images/technology/3-8.jpg">
-					</div>
-					<div class="item-box animated" data-my-animate="rotateIn">
-						<img src="images/technology/3-9.jpg">
-					</div> -->
-				</div>
-			</div>
-			<!--第5屏-->
-			<div class="swiper-slide slide5">
-				<div class="content1">
-					<img src="images/background/bg-21.jpg" alt="">
-					<div class="content-box animated" data-my-animate="fadeInDown100">
-						<div class="cont1 text-color2"><span>技术</span>中心</div>
-						<div class="cont2 text-color4">
-							<span>>200+名工程师</span>
-							<span>>10位座椅设计专家</span>
-							<span>>10年平均工作经验</span>
-							<span>>5.8年平均座椅行业工作经验</span>
-							<span>>我们拥有完整的座椅设计开发能力，以技术创新支持业务运营</span>
-						</div>
-						
-						<!-- <div class="cont3 text-color2">
-							<span>人才储备</span>
-							<img src="images/technology/icon2.png">
-						</div> -->
-					</div>
-				</div>
-				<div class="content2">
-					<div class="column-box column-5 animated" data-my-animate="fadeInLeft">
-						<div class="item-box 11" data-bigImg="5-1-big.png">
-							<img src="images/technology/5-1.jpg">
-							<!-- <div class="content-box box1">
-								<div class="cont1 text-color4">对标室</div>
-							</div> -->
-						</div>
-						<div class="item-box 22" data-bigImg="5-2-big.png">
-							<img src="images/technology/5-2.jpg">
-						</div>
-						<div class="item-box 33" data-bigImg="5-3-big.png">
-							<img src="images/technology/5-3.jpg">
-						</div>
-						<div class="item-box 44" data-bigImg="5-4-big.png">
-							<img src="images/technology/5-4.jpg">
-						</div>
-						<div class="item-box" data-bigImg="5-5-big.png">
-							<img src="images/technology/5-5.jpg">
-						</div>
-					</div>
-					<div class="column-box columnBox2 animated" data-my-animate="fadeInRight">
-						<div class="item-box item1" style="width: 19.8%">
-							<img src="images/technology/5-6.jpg">
-						</div>
-						<div class="item-box item2" data-bigImg="5-7-big.png" style="width: 39.8%">
-							<img src="images/technology/5-7.jpg">
-						</div>
-						<div class="item-box item3" data-bigImg="5-8-big.png" style="width: 39.8%">
-							<img src="images/technology/5-8.jpg">
-						</div>
-					</div>
-				</div>
-				<div class="big-img-box">
-					<img class="big-img" src="images/technology/6-8.jpg">
-				</div>
-			</div>
-			<!--第6屏-->
-			<div class="swiper-slide slide6">
-				<img class="slide-bg" src="images/background/bg-23.jpg" alt="">
-				<div class="content-box">
-					<div>
-						<div class="conts">
-							<div class="cont1 text-color2 animated" data-my-animate="fadeInLeft"><span>制造</span>能力</div>
-							<div class="cont2 text-color4 animated ani-time2" data-my-animate="fadeInLeft">我们拥有</div>
-							<div class="cont3 text-color2 animated ani-time2" data-my-animate="fadeInLeft">从汽车座椅零部件到整椅的各部分的生产制造能力</div>
-						</div>
-						<div class="column-box column-4">
-							<div class="item-box animated" data-my-animate="fadeInLeft">
-								<img src="images/technology/6-1.jpg">
-								<div class="content-box box1">浇注（泡沫）</div>
-							</div>
-							<div class="item-box animated" data-my-animate="fadeInLeft">
-								<img src="images/technology/6-2.jpg">
-								<div class="content-box box1">自动裁剪</div>
-							</div>
-							<div class="item-box animated" data-my-animate="fadeInLeft">
-								<img src="images/technology/6-3.jpg">
-								<div class="content-box box1">自动拧紧</div>
-							</div>
-							<div class="item-box animated" data-my-animate="fadeInLeft">
-								<img src="images/technology/6-4.jpg">
-								<div class="content-box box1">工厂信息化</div>
-							</div>
-							<div class="item-box animated" data-my-animate="fadeInRight">
-								<img src="images/technology/6-5.jpg">
-								<div class="content-box box1">激光焊接</div>
-							</div>
-							<div class="item-box animated" data-my-animate="fadeInRight">
-								<img src="images/technology/6-6.jpg">
-								<div class="content-box box1">连续模</div>
-							</div>
-							<div class="item-box animated" data-my-animate="fadeInRight">
-								<img src="images/technology/6-7.jpg">
-								<div class="content-box box1">冲压串联线</div>
-							</div>
-							<div class="item-box animated" data-my-animate="fadeInRight">
-								<img src="images/technology/6-8.jpg">
-								<div class="content-box box1">滑轨在线检测</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--第7屏-->
-			<div class="swiper-slide slide7">
-				<div id="footerBox"></div>
+		</a>
+		<div class="content3">
+			<img src="images/technology/2-2.jpg" alt="">
+			<div class="cont-box content-box my-font1 my-color1 wow fadeInLeft">
+				<div class="cont"><span>Technologically sleek design</span></div>
+				<div class="cont"><span>Smooth smart APP control</span></div>
+				<div class="cont"><span>Convenient wireless phone charging</span></div>
 			</div>
 		</div>
-	</div>
+	</section>
+	<section class="section3">
+		<div class="content1 wow fadeInDown">  
+			<div class="title my-font5 my-color5">Five<span> intelligent</span> modules</div>
+			<!-- <img class="icon1" src="images/icons/icon1.jpg" /> -->
+		</div>
+		<div class="content2">
+			<div class="item-box">
+				<div class="cont-box1 wow fadeInLeft"><img src="images/technology/3-1.jpg" /></div>
+				<div class="cont-box2 wow fadeInRight">
+					<div class="cont1 my-color5 my-font1">Welcome module</div>
+					<div class="cont2 my-font3">When the door is opened, it will automatically rotate 45° for easy entry.</div>
+				</div>
+			</div>
+			<div class="item-box">
+				<div class="cont-box1 wow fadeInLeft"><img src="images/technology/3-2.jpg" /></div>
+				<div class="cont-box2 wow fadeInRight">
+					<div class="cont1 my-color5 my-font1">Storage Modules</div>
+					<div class="cont2 my-font3">A number of ingenious storage designs provide greater support for your entertainment and mobile work.</div>
+				</div>
+			</div>
+			<div class="item-box">
+				<div class="cont-box1 wow fadeInLeft"><img src="images/technology/3-3.jpg" /></div>
+				<div class="cont-box2 wow fadeInRight">
+					<div class="cont1 my-color5 my-font1">Comfort module</div>
+					<div class="cont2 my-font3">With massage, lumbar support, leg rest, ventilation, flexible to adjust to provide ultimate comfort.</div>
+				</div>
+			</div>
+			<div class="item-box">
+				<div class="cont-box1 wow fadeInLeft"><img src="images/technology/3-4.jpg" /></div>
+				<div class="cont-box2 wow fadeInRight">
+					<div class="cont1 my-color5 my-font1">Multi-directional adjustment</div>
+					<div class="cont2 my-font3">Multi-directional adjustment and seat memory function, can realize 45° and 180° double-angle flexible rotation, and quickly adjust the comfortable position in the car.</div>
+				</div>
+			</div>
+			<div class="item-box">
+				<div class="cont-box1 wow fadeInLeft"><img src="images/technology/3-5.jpg" /></div>
+				<div class="cont-box2 wow fadeInRight">
+					<div class="cont1 my-color5 my-font1">Air Purification</div>
+					<div class="cont2 my-font3">The air purifier is installed on the backrest to monitor the real-time air inside the vehicle, automatically purify the air, so you can breathe fresh air in the car.</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section4">
+		<img src="images/technology/4-1.jpg" />
+		<div class="content-box wow fadeInDown"> 
+			<div class="cont1 my-font5 my-color2"><span>Technical</span>center</div>
+			<div class="cont2 my-color1">
+				<span>>200+ engineers</span>
+				<span>>10 seat design experts</span>
+				<span>>10 years of average work experience</span>
+				<span>>5.8 years average seat industry work experience</span>
+			</div>
+		</div>
+	</section>
+	<section class="section5 swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="images/technology/5-1.jpg" />
+				<div class="content my-bg-color5">
+					<div class="cont1 my-font1">Benchmarking</div>
+					<div class="cont2">
+						<div>Link Global Data System</div>
+						<div>Special Analysis</div>
+						<div>BBP</div>
+						<div>Innovation Technology Benchmarking</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img src="images/technology/5-2.jpg" />
+				<div class="content my-bg-color5">
+					<div class="cont1 my-font1">Industrial Design</div>
+					<div class="cont2">
+						<div>Creative Design</div>
+						<div>Surface Design</div>
+						<div>Design Engineering</div>
+						<div>Color Materials</div>
+						<div>Craftsmanship</div>
+						<div>Trend</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img src="images/technology/5-3.jpg" />
+				<div class="content my-bg-color5">
+					<div class="cont1 my-font1">FEA</div>
+					<div class="cont2">
+						<div>Data Model</div>
+						<div>Special Study</div>
+						<div>Simulation Analysis</div>
+					</div>       
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img src="images/technology/5-4.jpg" />
+				<div class="content my-bg-color5">
+					<div class="cont1 my-font1">Prototype</div>
+					<div class="cont2">
+						<div>Prototype Product Delivery</div>
+						<div> Design Verification</div>
+						<div>精致工艺验证</div>
+						<div>Manufacturing Feasibility Verification</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img src="images/technology/5-5.jpg" />
+				<div class="content my-bg-color5">
+					<div class="cont1 my-font1">Experiment</div>
+					<div class="cont2">
+						<div>Verification</div>
+						<div>Experimental Design</div>
+						<div>Data Analysis</div>
+					</div>       
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img src="images/technology/5-6.jpg" />
+				<div class="content my-bg-color5">
+					<div class="cont1 my-font1">Technological innovation</div>
+					<div class="cont2">
+						<div>Integrated product development process</div>
+						<div>User experience research</div>
+						<div>Technology strategy and path map</div>
+						<div>Innovation culture</div>
+					</div>           
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img src="images/technology/5-7.jpg" />
+				<div class="content my-bg-color5">
+					<div class="cont1 my-font1">Engineering operation</div>
+					<div class="cont2">
+						<div>Intelligent Conference System</div>
+						<div>Global Product Lifecycle Management System</div>
+						<div>Global Engineering Quality Management System</div>
+						<div>Engineering Knowledge Management System</div>
+					</div>         
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section6">
+		<div class="content1 my-color5"> 
+			<div class="cont1 my-font5 wow fadeInLeft"><span>Manufacturing</span>capacity</div>
+			<div class="cont2 my-font4 wow fadeInLeft ani-time2">We have</div>
+			<div class="cont3 my-font6 wow fadeInLeft ani-time2">manufacturing capabilities from parts to complete seats</div>
+		</div>
+		<div class="content2">
+			<img src="images/technology/6-a.jpg" />
+			<div class="content-box">
+				<div class="item-box">
+					<img src="images/technology/6-1.jpg">
+					<div class="content-box box1 wow fadeInUp ani-time2">Laser Welding</div>
+				</div>
+				<div class="item-box">
+					<img src="images/technology/6-2.jpg">
+					<div class="content-box box1 wow fadeInUp ani-time2">Progressive Die</div>
+				</div>
+				<div class="item-box">
+					<img src="images/technology/6-3.jpg">
+					<div class="content-box box1 wow fadeInUp ani-time2">Pouring (foam)</div>
+				</div>
+				<div class="item-box">
+					<img src="images/technology/6-4.jpg">
+					<div class="content-box box1 wow fadeInUp ani-time2">Automatic Cutting</div>
+				</div>
+				<div class="item-box">
+					<img src="images/technology/6-5.jpg">
+					<div class="content-box box1 wow fadeInUp ani-time2">Stamping Line</div>
+				</div>
+				<div class="item-box">
+					<img src="images/technology/6-6.jpg">
+					<div class="content-box box1 wow fadeInUp ani-time2">Track Online Test</div>
+				</div>
+				<div class="item-box">
+					<img src="images/technology/6-7.jpg">
+					<div class="content-box box1 wow fadeInUp ani-time2">Automatic Screwing</div>
+				</div>
+				<div class="item-box">
+					<img src="images/technology/6-8.jpg">
+					<div class="content-box box1 wow fadeInUp ani-time2">Factory informationization</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--Main Footer-->
+    <div id="footerBox"></div>
+	<!--End Main Footer-->
 	
 </div>
 <!--End pagewrapper-->
+</div>
 <script src="js/jquery.js"></script>
 <script src="my-js/common.js"></script>
 <script src="js/popper.min.js"></script>
@@ -582,7 +451,7 @@
 <script src="js/jquery.fancybox.js"></script>
 <script src="js/appear.js"></script>
 <script src="js/owl.js"></script>
-<script src="js/animated.js"></script>
+<script src="js/wow.js"></script>
 
 <script src="js/slick.js"></script>
 <script src="js/jquery-ui.js"></script>

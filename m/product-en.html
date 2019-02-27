@@ -12,7 +12,7 @@
 <!--End MasterSlider-->
 
 <link href="css/slick.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet">
+<!-- <link href="css/responsive.css" rel="stylesheet"> -->
 <link href="css/style.css" rel="stylesheet">
 
 
@@ -26,167 +26,137 @@
 <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 <style type="text/css">
-.slide-cloumn3{
-	display: flex;
+.section2 .content1,
+.section3 .content1{
+	position: absolute;
+    top: 20%;
+    left: 5%;
+	width: 60%;
+	z-index: 2;
 }
-.slide-cloumn3 .column-box{
-	display: flex;
+.section2 .content2,
+.section3 .content2{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px 0;
 }
-.slide-cloumn3 .column-box .item-box{
-	display: flex;
-	width: 33.33%;
+.section2 .title,
+.section3 .title{
+	margin-bottom: 5px;
 }
-.slide-cloumn3 .box1{
-	flex-direction: column;
+.section4 .content,
+.section5 .content,
+.section6 .content{
+	position: absolute;
+	top: 30px;
+	
 }
-.slide4 .box2{
-	flex-direction: column;
+.section4 .content .title,
+.section5 .content .title,
+.section6 .content .title{
+	padding: 0 30px;
 }
-.slide-cloumn3 .box1 .content,
-.slide-cloumn3 .box2 .content{
-	height: 50%;
-	display: flex;
-	align-items: center;
-}
-.slide-cloumn3 .cont-text{
-	padding: 20px;
-}
-.cont1{
-	font-size: 32px;
-	font-weight: 600;
-	margin-bottom: 20px;
-}
-.cont2{
-	font-size: 16px;
-}
-.slide2 .content,
-.slide3 .content{
-	width: 30%;
-}
-.slide2 .content>div,
-.slide3 .content>div
-{
-	text-align: left;
+.section4 .content .text,
+.section5 .content .text,
+.section6 .content .text{
+	padding: 10px 30px;
+    margin-top: 10px;
 }
 </style>
 </head>
 
 <body>
-
+<div id="root" class="en">
 <!-- Main Header-->
 <div id="headerBox" data-type="product"></div>
 <!--End Main Header -->
 
 <div class="page-wrapper" id="product">
- 	
+	<div class="go-top"><img src="images/icons/go-top.png"></div> 	
     <!-- Preloader -->
     <div class="preloader"></div>
-	<div id="index-swiper" class="swiper-container my-color1">
-		<div class="swiper-wrapper">
-			<!--第1屏-->
-			<div class="swiper-slide slide1 slide-zy">
-				<img class="slide-bg" src="images/background/bg-2-2.jpg">
-				<div class="content">
-					<img class="zy-img" src="images/index/3.png">
-					<div class="content-box">
-						<div class="point point1">
-							<div class="point-text">Complete seat</div>
-							<img src="images/icons/point.png">
-						</div>
-						<div class="point point2">
-							<div class="point-text">Trim</div>
-							<img src="images/icons/point.png">
-						</div>
-						<div class="point point3">
-								<div class="point-text">Frame</div>
-							<img src="images/icons/point.png">
-							
-						</div>
-						<div class="point point4">
-								<div class="point-text">Foam</div>
-							<img src="images/icons/point.png">
-							
-						</div>
+	
+	<section class="section1 slide-zy">
+		<img src="images/product/1-1.jpg" />
+		<div class="content">
+			<img class="zy-img" src="images/index/yz.gif">
+			<div class="content-box">
+				<div class="point point1 animated ani-time2" data-my-animate="fadeInLeft">
+					<a href="product-en.html?item=2"><div class="point-text">Seats</div></a>
+					<img src="images/icons/point.png">
+					<div class="line">
+						<span class="small-point"></span>
+						<span>></span>
 					</div>
 				</div>
-			</div>
-			<!--第2屏-->
-			<div class="swiper-slide slide2">
-				<img class="slide-bg" src="images/product/2-1.jpg">
-				<div class="content-box animated" data-my-animate="fadeInLeft">
-					<div class="content text-center">
-						<div class="cont1 my-color2">Passenger Car Seat</div>
-						<div class="cont2 my-color1">Excellent ergonomic design with perfect integration of people, technology, art and seats provides comfortable driving experience.</div>
-					</div>
-				</div>
-			</div>
-			<!--第3屏-->
-			<div class="swiper-slide slide3">
-				<img class="slide-bg" src="images/product/3-1.jpg">
-				<div class="content-box animated" data-my-animate="fadeInLeft">
-					<div class="content text-center">
-						<div class="cont1 my-color2">Commercial Car Seat</div>
-						<div class="cont2 my-color1">Safe and reliable performance alleviates the fatigue caused by different environments and traffic and improves steerability.
+				<div class="point point2 animated ani-time3" data-my-animate="fadeInLeft">
+					<a href="product-en.html?item=5"><div class="point-text">Trim</div></a>
+					<img src="images/icons/point.png">
+					<div class="line">
+							<span class="small-point"></span>
+							<span>></span>
 						</div>
-					</div>
 				</div>
-			</div>
-			<!--第4屏-->
-			<div class="swiper-slide slide4 slide-cloumn3">
-				<div class="column-box">
-					<div class="item-box box1 animated" data-my-animate="fadeInLeft">
-						<img class="content content1" src="images/product/4-1.jpg">
-						<div class="content content2 my-bg-color2">
-							<div class="cont-text animated ani-time2" data-my-animate="fadeInLeft">
-								<div class="cont1 my-color3">Trim</div>
-								<div class="cont2 my-color1">Our trim cover design in early stage and post-processing craftsmanship and the leading techniques of pattern design, cutting and sewing at large presents high-quality appearance and provides more flexibility for creative and individualized design.
-								</div>
-							</div>
-						</div>
+				<div class="point point3 animated ani-time3" data-my-animate="fadeInRight">
+					<div class="line">
+						<span><</span>
+						<span class="small-point"></span>
 					</div>
-					<div class="item-box box2 animated" data-my-animate="fadeInDown100">
-						<div class="content content1 animated ani-time2" data-my-animate="fadeInDown100">
-							<div class="cont-text">
-									<div class="cont1 my-color3">Frame</div>
-									<div class="cont2 my-color4">Higher performance, stronger materials, wider functions and lighter material meet customers’ diverse needs.
-									</div>
-							</div>
-						</div>
-						<img class="content content2" src="images/product/4-2.jpg">
-					</div>
-					<div class="item-box box3 animated" data-my-animate="fadeInRight">
-						<img src="images/product/4-3.jpg">
-					</div>
+					<img src="images/icons/point.png">
+					<a href="product-en.html?item=4"><div class="point-text">Frame</div></a>
 				</div>
-			</div>
-			<!--第5屏-->
-			<div class="swiper-slide slide5 slide-cloumn3">
-				<div class="column-box">
-					<div class="item-box box1 animated" data-my-animate="fadeInLeft">
-						<img class="content content1" src="images/product/5-1.jpg">
-						<div class="content content2">
-							<div class="cont-text animated ani-time2" data-my-animate="fadeInLeft">
-								<div class="cont1 my-color3">Foam</div>
-								<div class="cont2 my-color4">Unique formula and leading manufacturing technology enable our products to realize different level of hardness in different parts, thus bringing comfort to the driver.
-								</div>
-							</div>
-						</div>
+				<div class="point point4 animated ani-time2" data-my-animate="fadeInRight">
+					<div class="line">
+						<span><</span>
+						<span class="small-point"></span>
 					</div>
-					<div class="item-box box2 animated" data-my-animate="fadeInDown100">
-						<img src="images/product/5-2.jpg">
-					</div>
-					<div class="item-box box3 animated" data-my-animate="fadeInRight">
-						<img src="images/product/5-3.jpg">
-					</div>
+					<img src="images/icons/point.png">
+					<a href="product-en.html?item=6"><div class="point-text">Foam</div></a>
 				</div>
-			</div>
-			<!--第6屏-->
-			<div class="swiper-slide slide6">
-				<div id="footerBox"></div>
 			</div>
 		</div>
-	</div>
-	
+	</section>
+	<section class="section2" data-item="2">
+		<img src="images/product/2-1.jpg" />
+		<div class="content1 wow fadeInLeft">
+			<div class="title my-color2 my-font5">Passenger Car Seat</div>
+			<div class="text my-color1 my-font2">Excellent ergonomic design with perfect integration of people, technology, art and seats provides comfortable driving experience.</div>
+		</div>
+		<img class="content2" src="images/product/2-2.png" />
+	</section>
+	<section class="section3" data-item="3">
+		<img src="images/product/3-1.jpg" />
+		<div class="content1 wow fadeInLeft">
+			<div class="title my-color5 my-font5">Commercial Car Seat</div>
+			<div class="text my-color1 my-font2">Safe and reliable performance alleviates the fatigue caused by different environments and traffic and improves steerability.</div>
+		</div>
+		<img class="content2" src="images/product/3-2.png" />
+	</section>
+	<section class="section4" data-item="4">
+		<img src="images/product/4-1.jpg" />
+		<div class="content wow fadeInUp100">
+			<div class="title my-color2 my-font5">Frame and Components</div>
+			<div class="text my-color1 my-font2 my-bg-color5">By applying advanced materials and processes, we can improve product performance, realize modularization, platform,
+				 lightweight so as to exceed the diversified needs of customers.</div>
+		</div>
+	</section>
+	<section class="section5" data-item="5">
+		<img src="images/product/5-1.jpg" />
+		<div class="content wow fadeInUp100">
+			<div class="title my-color2 my-font5">Trim</div>
+			<div class="text my-color1 my-font2 my-bg-color5">Our trim cover design in early stage and post-processing craftsmanship and the leading techniques of pattern design,
+				 cutting and sewing at large presents high-quality appearance and provides more flexibility for creative and individualized design.</div>
+		</div>
+	</section>
+	<section class="section6" data-item="6">
+		<img src="images/product/6-1.jpg" />
+		<div class="content wow fadeInUp100">
+			<div class="title my-color5 my-font5">Foam</div>
+			<div class="text my-color1 my-font2 my-bg-color5">Unique formula and leading manufacturing technology enable our products to realize different level of hardness in different parts,
+				 thus bringing comfort to the driver.</div>
+		</div>
+	</section>
 
 	<!--Main Footer-->
     <div id="footerBox"></div>
@@ -194,7 +164,7 @@
 	
 </div>
 <!--End pagewrapper-->
-
+</div>
 <script src="js/jquery.js"></script>
 <script src="my-js/common.js"></script>
 <script src="js/popper.min.js"></script>

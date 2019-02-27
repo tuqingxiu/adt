@@ -12,7 +12,7 @@
 <!--End MasterSlider-->
 
 <link href="css/slick.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet">
+<!-- <link href="css/responsive.css" rel="stylesheet"> -->
 <link href="css/style.css" rel="stylesheet">
 
 
@@ -26,147 +26,561 @@
 <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 <style type="text/css">
-.page-wrapper{
-    height: auto;
+.font1{
+	font-size: 2rem;
 }
-.content-box .text1{
-	font-size: 0.76rem;
-	
+.section1 .content{
+	position: absolute;
+    bottom: 0;
+	padding: 20px;
+	width: 100%;
 }
-.content-box .text1 span{
-	font-weight: bold;
-    color: rgba(191,215,50,1);
-    background: rgba(4,69,87,0.8);
-    padding: 0.2rem 0.8rem;
+.section1 .cont2{
+	margin: 5px 0;
 }
-.content-box .text2{
-	color: #0a6c80;
-    margin: 0.6rem 0;
+.section1 .cont3 .text-box{
+	display: flex;
 }
-.content-box .text3{
-	font-size: 0.28rem;
-	margin-bottom: 0;
-    color: #333333;
+.section1 .cont3 .text1{
+	flex: none;
+	font-weight: 600;
 }
-@media only screen and (max-width: 767px){
-	.content-box .text1{
-		margin-bottom: 0;
-	}
-	.content-box .text1 span{
-		padding: 0.1rem 0.4rem;
-		margin-top: 0.1rem;
-		font-size: 0.36rem;
-	}
-	.content-box .text2{
-		font-size: 0.32rem;
-		margin-top: 0.1rem;
-		margin-bottom: 0.1rem;
-	}
-	.content-box .text3{
-		font-size: 0.24rem;
-	}
+.section2 .content{
+	position: absolute;
+	top: 100px;
+	padding: 0 20px;
+}
+.section2 .cont1>span{
+	border-bottom: 2px solid rgba(174,195,64,1);
+	padding: 5px 0;
+}
+.section2 .cont2{
+	margin: 20px 0 5px;
+}
+.section2 .cont4{
+	margin-top: 5px;
+}
+.section2 .cont5{
+	font-size: 1.375rem;
+	margin-top: 15px;
+}
+.section3{
+	margin: 5px 0;
+}
+.section3 .cont1 span,
+.section4 .cont1 span{
+	height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    padding: 0 20px;
+    border-radius: 15px;
+}
+.section3 .content,
+.section4 .content{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.section3 .content .cont2,
+.section4 .content .cont2{
+	margin: 20px 0 10px;
+	font-size: 1rem;
+}
+.section3 .content .cont4,
+.section4 .content .cont4{
+	margin-top: 5px;
+}
+.section5 .content{
+	position: absolute;
+	width: 80%;
+	bottom: 40px;
+	right: 0;
+}
+.section5 .title{
+	padding: 5px 0 5px 10px;
+}
+.section5 .cont-box{
+	padding: 10px;
+}
+.section5 .cont-box .cont2{
+	margin: 5px 0;
+}
+.section6 .content1{
+	margin: 30px 40px 20px 30px;
+	border-left: 2px solid rgba(0,70,91,1);
+    padding-left: 10px;
+}
+.section6 .content1 .cont2{
+	margin: 10px 0 25px;
+}
+.section6 .content1 .cont4{
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+}
+.section6 .content1 .cont4 img{
+	width: 12px;
+    margin-left: 5px;
+}
+.section6 .content2 .text{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	padding: 5px;
+	text-align: center;
+	font-size: 1rem;
+}
+.section7{
+	padding-bottom: 4%;
+    background: #f5f5f5;
+}
+.section7 .content{
+	position: absolute;
+	left: 4%;
+    top: 4%;
+    right: 0;
+	bottom: 3.5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0 20px;
+}
+.section7 .content1 .cont2{
+	margin-top: 5px;
+}
+.section7 .content2{
+	width: 80%;
+}
+.section7 .content3{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	text-align: center;
+}
+.section7 .content3 img{
+	width: 60px;
+}
+.section7 .line span{
+	display: block;
+    width: 100px;
+    height: 2px;
+    margin-top: 5px;
+}
+.section8 .content{
+	padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+	align-items: center;
+	position: absolute;
+	left: 0;
+	right: 2%;
+	top: 0;
+	bottom: 0;
+}
+.section8 .content1{
+	width: 90%;
+}
+.section8 .content2 .cont2{
+	margin: 5px 0 3px;
+}
+.section9 .content{
+	padding: 0 7%;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section9 .content1 .cont1{
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+.section9 .content2,
+.section9 .content3{
+	width: 95%;
+}
+.section10 .content{
+	padding: 0 7%;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.section10 .content1 .cont1{
+	margin: 15px 0 5px;
+}
+.section10 .content2{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.section10 .content2 .item-box{
+	position: relative;
+	width: 25%;
+	padding: 1px;
+}
+.section10 .content2 .item-box>.content-box{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.section10 .content2 .img-a{
+	width: 60%;
+}
+.section11 .title{
+	margin-top:10px;
+	text-align: center;
+	padding: 5px 0;
+}
+.section11 .content{
+	margin: 10px 0;
+}
+.section11 .content .text{
+	padding: 5px;
+	position: absolute;
+	left: 8px;
+	right: 0;
+	bottom: 0;
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+}
+#swiper2 .swiper-slide{
+	padding-left: 8px;
 }
 </style>
 </head>
 
 <body>
-
+<div id="root">
 <!-- Main Header-->
 <div id="headerBox" data-type="profession"></div>
 <!--End Main Header -->
 
 <div class="page-wrapper" id="profession">
- 	
+	<div class="go-top"><img src="images/icons/go-top.png"></div>	
     <!-- Preloader -->
     <div class="preloader"></div>
- 	
-
-    <!--Main Slider-->
-    <section class="main-slider">
-    	
-        <div class="main-slider-carousel owl-carousel owl-theme">
-            
-            <!-- <div class="slide" style="background-image:url(images/main-slider/image-4.jpg)">
-                <div class="auto-container">
-                	<div class="content text-right">
-						<h2 style="font-size:38px;font-weight:normal; margin-top:90px"><span style="font-weight:bold; color:rgba(191,215,50,1); background:rgba(4,69,87,0.8);  padding:10px 40px">员工发展</span></h2>
-						<h3 style="color:#0a6c80; margin:30px 0">打造一个没有天花板的舞台</h3>
-                    	<div class="text" style="font-size:14px; color:#333333">我们期望为人才的成长与发展提供良好的土壤和广阔的平台，在注重企业<br>自身不断发展的同时，我们重视每一位员工以及用于培养他们的资源投入。<br>我们倡导：
-员工是自己职业发展的主导者，直接主管是员工的教练，人力资源工作者<br>是支持者和内部顾问。
-让每一个独特的灵魂在没有天花板的成长空间尽情闪耀！</div>
-                    </div>
-                </div>
-			</div> -->
-			<div class="slide">
-				<img src="images/main-slider/image-4.jpg">
-				<div class="content-box">
-						<div class="content text-right">
-								<h2 class="text1"><span>员工发展</span></h2>
-								<h3 class="text2">打造一个没有天花板的舞台</h3>
-								<div class="text text3">我们期望为人才的成长与发展提供良好的土壤和广阔的平台，在注重企业<br>自身不断发展的同时，我们重视每一位员工以及用于培养他们的资源投入。<br>我们倡导：
-		员工是自己职业发展的主导者，直接主管是员工的教练，人力资源工作者<br>是支持者和内部顾问。
-		让每一个独特的灵魂在没有天花板的成长空间尽情闪耀！</div>
-						</div>
-					</div>
-			</div>
-            
-        </div>
-    </section>
-    <!--End Main Slider-->
-	<section class="welcome-section" style=" padding:0px">
-    
-    	<div class="">
-    		<!--Sec Title-->
-			<div class="row clearfix">
-				
-				<!--Image Column-->
-				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="image text-center">
-							<img src="images/background/bg-24.jpg" alt="">
-					</div>
+	
+	<section class="section1">
+		<img src="images/profession/1-1.jpg" />
+		<div class="content my-bg-color5 wow fadeInUp">
+			<div class="cont1 my-color2 my-font5">Employer brand</div>
+			<div class="cont2 my-color2 my-font6">Ambitiousness<span>|</span>Never Stop<span>|</span>Work Together</div>
+			<div class="cont3 my-color1">
+				<div class="text-box">
+					<span class="text1">Practice:</span>
+					<span>For initiative，we strive to make breakthroughs and keep progress.</span>
 				</div>
-				
+				<div class="text-box">
+					<span class="text1">Initiative:</span>
+					<span>We are like-minded group ,for everyone joining here with the sane faith ,attitude and pursuit .</span>
+				</div>
 			</div>
 		</div>
-		
 	</section>
-	<section class="welcome-section" style=" padding:0px">
-		
-			<div class="">
-				<!--Sec Title-->
-				<div class="row clearfix">
-					
-					<!--Image Column-->
-					<div class="col-lg-12 col-md-12 col-sm-12">
-						<div class="image text-center">
-								<img src="images/background/bg-25.jpg" alt="">
-						</div>
-					</div>
-					
-				</div>
+	<section class="section2">
+		<img src="images/profession/2-1.jpg" />
+		<div class="content my-color1 wow fadeInDown">
+			<div class="cont1 my-color2 my-font5"><span>Campus recruitment</span> and social recruitment</div>
+			<div class="cont2 my-color2 my-font6">This is an organization pursuing excellence.</div>
+			<div class="cont3">Every partner of us is alike with attitude, faith, pursuit and stay true to our original aspiration.</div>
+			<div class="cont4">Here, we everyone become a better self and does utmost </div>
+			<div class="cont5">We, strive for excellence, stay true to our original aspiration</div>
+		</div>
+	</section>
+	<section class="section3">
+		<img src="images/profession/3-1.jpg" />
+		<div class="content content-box my-color1 wow fadeInLeft">
+			<div class="cont1 my-font4">
+				<a href="http://www.hotjob.cn/wt/CQYFAS/web/index/campus" target="_blank">
+					<span class="my-bg-color2 my-color1">Campus recruitment</span>
+				</a>
 			</div>
-			
-		</section>
-    <section data-item="3" class="welcome-section" style=" padding:0px">
-    
-    	<div class="">
-    		<!--Sec Title-->
-			<div class="row clearfix">
-				
-				<!--Image Column-->
-				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="image text-center">
-							<a href="http://www.hotjob.cn/wt/CQYFAS/web/index/social" target="_blank"><img src="images/background/bg-26.jpg" alt=""></a>
-					</div>
-				</div>
-				
-				
+			<div class="cont2 my-font6">Seating of the mission   Lean on future</div>
+			<div class="cont3">We continuously launch campus recruitment, </div>
+			<div>and newly-recruited graduates accounts</div>
+			<div>for one-fifth of our organization;</div>
+			<div class="cont4">We provide fertile soil and great platform</div>
+			<div>to achieve your career goal.</div>
+		</div>
+	</section>
+	<section class="section4">
+		<img src="images/profession/4-1.jpg" />
+		<div class="content content-box my-color1 wow fadeInRight">
+			<div class="cont1 my-font4">
+				<a href="http://www.hotjob.cn/wt/CQYFAS/web/index/social" target="_blank">
+					<span class="my-bg-color2 my-color1">Social recruitment</span>
+				</a>
+			</div>
+			<div class="cont2 my-font6">With you, We'll create an excellent future</div>
+			<div class="cont3">We have been sticking to meritocracy and</div>
+			<div>seeking high quality talents with innovative thinking,</div>
+			<div>excellence-oriented and breakthrough;</div>
+			<div class="cont4">We advocate to create and share together-striver culture,</div>
+			<div>we are "Ai Xiaoyu" who is fond of study, struggle,</div>
+			<div>innovation and life;</div>
+		</div>  
+	</section>
+	<section class="section5">
+		<img src="images/profession/5-1.jpg" />
+		<div class="content wow fadeInRight">
+			<div class="title my-bg-color7 my-color2 my-font5">Staff Development</div>
+			<div class="cont-box my-bg-color8">
+				<div class="cont1 my-color5 my-font6">A platform with no ceiling</div>
+				<div class="cont2">We aim to provide a good environment and wide platform for staff growth and development.
+					  We attach great importance to develop our business as well as our employees. We propose:</div>
+				<div class="cont3">Every employee is his/her leader of their career development; direct supervisor is the coach,
+					 and HR staffs are supporters and internal consultants.</div>
+				<div class="cont4">Let each unique soul shine on the platform with no ceiling!</div>
 			</div>
 		</div>
-		
 	</section>
-	
-	
+	<section class="section6">
+		<div class="content1 wow fadeInLeft">
+			<div class="cont1 my-color5 my-font6">Principles of learning and development</div>
+			<div class="cont2">The performance of employee’s development comes from the individual's ability to change, adapt and grow in his career.
+				 We emphasize the value of learning in working environment, so that individuals can meet the requirements full of challenges and changes in work.
+			</div>
+			<div class="cont3 my-color5">employees' personal development</div>
+			<div class="cont4 my-color5">
+				<span>Three basic principles</span>
+				<img class="icon icon2" src="images/icons/icon-triangle.png">
+			</div>
+		</div>
+		<div id="swiper1" class="content2 swiper-container">
+			<div class="swiper-wrapper my-color5">
+				<div class="swiper-slide">
+					<img src="images/profession/6-1.jpg" />
+					<div class="text my-bg-color6">learn by doing</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/profession/6-2.jpg" />
+					<div class="text my-bg-color6">take responsibility</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/profession/6-3.jpg" />
+					<div class="text my-bg-color6">seek support</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section7">
+		<img src="images/profession/7-1.jpg" />
+		<div class="content my-color1">
+			<div class="content1 wow fadeInUp ani-time2">
+				<div class="cont1 my-font6 my-color2">Diversified learning resources</div>
+				<div class="cont2">Besides the three basic principles, we apply 10-20-70 development principles in building the employee’s learning and development system,
+					 so that these learning resources are more conducive to improve employees’ ability.</div>
+				<div class="line">
+					<span class="my-bg-color2"></span>
+				</div>
+			</div>
+			<div class="content2 wow fadeInUp ani-time2">
+				<img src="images/profession/icon7-1.png">
+				<!-- <div class="cont-text cont-text1">课程培训/Workshop/E-learning/在职学历教育</div>
+				<div class="cont-text cont-text2">一对一辅导/360度评估反馈/导师机制</div>
+				<div class="cont-text cont-text3">岗位锻炼 授权/转换职能/负责新业务等</div> -->
+			</div>
+			<div class="content3 my-font3 wow fadeInUp ani-time2">
+				<div class="item-box">
+					<img src="images/profession/icon7-2.png">
+					<div class="cont-text">200+ Face-to-face lecture</div>
+				</div>
+				<div class="item-box">
+					<img src="images/profession/icon7-3.png">
+					<div class="cont-text">100+ Face-to-face lecture</div>
+				</div>
+				<div class="item-box">
+					<img src="images/profession/icon7-4.png">
+					<div class="cont-text">200+ Certified trainer</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section8">
+		<img src="images/profession/8-1.jpg" />
+		<div class="content">
+			<div class="content1 wow fadeInUp ani-time2">
+				<img src="images/profession/icon8-1.png" />
+			</div>
+			<div class="content2 wow fadeInUp ani-time2">
+				<div class="cont1 my-font6 my-color5">Development Route for Employee</div>
+				<div class="cont2">Here employees could achieve their career goal mainly through three routes: management, profession and job rotation.</div>
+				<div class="cont3">We encourage employees to clarify their career goal and choose the fitted career path.</div>
+			</div>
+		</div>
+	</section>
+	<section class="section9">
+		<img src="images/profession/9-1.jpg" />
+		<div class="content content-box">
+			<div class="content1 wow fadeInUp ani-time2">
+				<div class="cont1 my-font6 my-color5">CQYFAS Leadership Academy</div>
+				<div class="cont2">CQYFAS Leadership Mechanics Institute trains well-trained leaders and reserve talents. Here we inherit and create the management culture of CHONGQING YANFENG ADIENT ,
+					 aiming at providing an orderly path for every manager or employee who has potential to become a manager.
+				</div>
+			</div>
+			<div class="content2 wow fadeInUp ani-time2">
+				<img src="images/profession/9-2.jpg">
+				<div class="block1"></div>
+				<div class="block2"></div>
+			</div>
+			<div class="content3 wow fadeInUp ani-time2">
+				<img src="images/profession/9-3.png">
+			</div>
+		</div>
+	</section>
+	<section class="section10">
+		<img src="images/profession/10-1.jpg" />
+		<div class="content content-box">
+			<div class="content1 my-color1 wow fadeInUp ani-time2">
+				<div class="cont1 my-font6 my-color2">CQYFAS Professional Academy</div>
+				<div class="cont2">Professional Academy is established in 2015, Our aim is to improve the professional competence in fields and raise a talent team motivated and led by senior experts.
+				</div>
+				<div class="cont3">As a result, we have 13 professional academies as following:</div>
+			</div>
+			<div class="content2 my-color5 my-font3 wow fadeInUp ani-time2">
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+						<div class="img-a"><img src="images/profession/icon10-1.png"></div>
+						<div class="cont-text">Purchasing Academy</div>
+						
+					</div>
+				</div>
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+							<div class="img-a"><img src="images/profession/icon10-2.png"></div>
+						<div class="cont-text">Quality Academy</div>
+						
+					</div>
+				</div>
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+							<div class="img-a"><img src="images/profession/icon10-3.png"></div>
+						<div class="cont-text">Finance Academy</div>
+						
+					</div>
+				</div>
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+							<div class="img-a"><img src="images/profession/icon10-4.png"></div>
+						<div class="cont-text">Commerce Academy</div>
+						
+					</div>
+				</div>
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+						<div class="img-a"><img src="images/profession/icon10-5.png"></div>
+						<div class="cont-text">Materials Academy</div>
+						
+					</div>
+				</div>
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+						<div class="img-a"><img src="images/profession/icon10-6.png"></div>
+						<div class="cont-text">MMC Academy</div>
+						
+					</div>
+				</div>
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+							<div class="img-a"><img src="images/profession/icon10-7.png"></div>
+						<div class="cont-text">工程学院</div>
+						
+					</div>
+				</div>
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+							<div class="img-a"><img src="images/profession/icon10-8.png"></div>
+						<div class="cont-text">HSE Academy</div>
+						
+					</div>
+				</div>
+				<div class="item-box"></div>
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+							<div class="img-a"><img src="images/profession/icon10-9.png"></div>
+						<div class="cont-text">CI Academy</div>
+						
+					</div>
+				</div>
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+							<div class="img-a"><img src="images/profession/icon10-10.png"></div>
+						<div class="cont-text">HR Academy</div>
+						
+					</div>
+				</div>
+				<div class="item-box"></div>
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+							<div class="img-a"><img src="images/profession/icon10-11.png"></div>
+						<div class="cont-text">Craftsmanship Academy</div>
+						
+					</div>
+				</div>
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+							<div class="img-a"><img src="images/profession/icon10-12.png"></div>
+						<div class="cont-text">Equipment Academy</div>
+						
+					</div>
+				</div>
+				<div class="item-box">
+					<img class="bg1" src="images/profession/bg1.png">
+					<div class="content-box">
+							<div class="img-a"><img src="images/profession/icon10-13.png"></div>
+						<div class="cont-text">PMO Academy</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section11">
+		<!-- <img src="images/profession/11-1.jpg" /> -->
+		<div class="title my-bg-color7 my-color2 my-font5">Work experience</div>
+		<div id="swiper2" class="content swiper-container">
+			<div class="swiper-wrapper my-color5">
+				<div class="swiper-slide">
+					<img src="images/profession/11-1.jpg" />
+					<div class="text my-bg-color5">Office corner</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/profession/11-2.jpg" />
+					<div class="text my-bg-color5">Leisure Area</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/profession/11-3.jpg" />
+					<div class="text my-bg-color5">Gym</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/profession/11-4.jpg" />
+					<div class="text my-bg-color5">Coffee bar</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/profession/11-5.jpg" />
+					<div class="text my-bg-color5">Restaurant</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<!--Main Footer-->
     <div id="footerBox"></div>
@@ -174,8 +588,9 @@
 	
 </div>
 <!--End pagewrapper-->
-
+</div>
 <script src="js/jquery.js"></script>
+<script src="my-js/common.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -183,16 +598,17 @@
 <script src="js/appear.js"></script>
 <script src="js/owl.js"></script>
 <script src="js/wow.js"></script>
+
 <script src="js/slick.js"></script>
 <script src="js/jquery-ui.js"></script>
 <!-- Master Slider -->
 <script src="js/masterslider/jquery.easing.min.js"></script>
 <script src="js/masterslider/masterslider.min.js"></script>
 <!--End Master Slider -->
+<script src="js/swiper.js"></script>
 
 <script src="js/script.js"></script>
-<script src="my-js/common.js"></script>
-
+<script src="my-js/profession.js"></script>
 
 </body>
 </html>

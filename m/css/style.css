@@ -307,6 +307,16 @@ img{
 .main-footer .text-box .text1{
 	margin-bottom: 10px;
 }
+/*英文版footer*/
+.main-footer.en .ewm{
+	font-size: 0.75rem;
+}
+.main-footer.en .logo-box .logo-lable{
+	width: 30%;
+}
+.main-footer.en .logo-box a{
+	width: 35%;
+}
 
 /*内容*/
 .page-wrapper{
@@ -759,10 +769,13 @@ section{
 	width:35%;
 	color: #fff;
 }
-.slide-zy .point1 .line{
+.en .slide-zy .point .line{
+	width: 30%;
+}
+#root .slide-zy .point1 .line{
 	width: 35%;
 }
-.slide-zy .point2 .line{
+#root .slide-zy .point2 .line{
 	width: 8%;
 }
 .slide-zy .line .small-point{
