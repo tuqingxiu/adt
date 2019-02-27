@@ -1666,7 +1666,7 @@
                 case 'video' :
 
                     self.setContent( slide,
-                        '<video controls>' +
+                        '<video controls webkit-playsinline playsinline>' +
                           '<source src="' + slide.src + '" type="' + slide.opts.videoFormat + '">' +
                             'Your browser doesn\'t support HTML5 video' +
                         '</video>'

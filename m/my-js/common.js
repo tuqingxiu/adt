@@ -79,9 +79,26 @@
             }
         })
     }
+
+    //监听播放器
+    // function initMyVideo(){
+    //     $('.my-play-box').click(function(){
+    //         if($(this).hasClass('active')){//播放中
+    //             //暂停播放
+    //             $(this).find('video')[0].pause();
+    //             $(this).find('.play').show();
+    //             $(this).removeClass('active');
+    //         }else{
+    //             $(this).find('video')[0].play();
+    //             $(this).find('.play').hide();
+    //             $(this).addClass('active');
+    //         }
+    //     })
+    // }
     
     $(window).on('load', function() {
-        windowSize()
+        windowSize();
         loadHeader();
+        // initMyVideo();
 	});	
 })(window.jQuery);

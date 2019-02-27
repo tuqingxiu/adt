@@ -54,6 +54,8 @@ body {
 	background:#ffffff;
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
+	top:0 !important;
+	overflow: visible !important;
 }
 #root{
 	position: relative;
