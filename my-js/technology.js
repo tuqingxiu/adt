@@ -70,10 +70,10 @@ $(function() {
 			setHeaderShow(swiper.activeIndex);
 			
             // //加载动画样式
-            var num = swiper.activeIndex + 1;
-            if(num != 5){
-                $('.big-img-box').hide();
-            }
+            // var num = swiper.activeIndex + 1;
+            // if(num != 5){
+            //     $('.big-img-box').hide();
+            // }
 		}
 	});
 	//回到顶部

@@ -54,9 +54,8 @@
 	color: #fff;
 }
 #map .content-box{
-	width: 35%;
-	left: 10%;
-
+	width: 40%;
+	left: 5%;
 	display: flex;
     flex-direction: column;
     height: 80%;
@@ -65,16 +64,19 @@
 	align-items: center;
 }
 #map .content-box h5{
-	font-size: 16px;
-	width: 130%;
-    margin-left: -15%;
+	font-size: 14px;
+	width: 140%;
+}
+#map .current-info h5{
+	margin-left: -20%;
 }
 #map .content1{
 	position: relative;
-    width: 100%;
+    width: 120%;
     display: flex;
     align-items: flex-start;
-    text-align: center;
+	text-align: center;
+	margin-left: 8%;
 }
 #map .columnn{
 	display: flex;
@@ -133,14 +135,14 @@
     margin: 0 5px;
 }
 .slide3 .content-column{
-	width: 70%;
+	width: 90%;
 }
 .fluid-section-one .sec-title{
 	margin-bottom: 0;
     display: flex;
     flex-direction: column;
 	justify-content: center;
-	width: 30px;
+	/* width: 30px; */
 	margin-right: 10px;
 }
 .slide3 .content-box{
@@ -182,12 +184,22 @@
 	display: block;
     height: 2px;
     background: rgba(0,70,91,1);
-    width: 43%;
+    width: 38%;
 }
 .slide5 .title-text .text{
 	background: #fff;
 	display: inline-block;
-	width: 14%;
+	width: 24%;
+}
+.fluid-section-one .content-column .inner-column{
+	max-width: inherit;
+	padding-left: 5%;
+}
+.key-block .inner-box{
+	padding: 10px 30px 10px 50px;
+}
+.fluid-section-one .content-column .inner-column .slick-list{
+	/* padding-left: 20px; */
 }
 </style>
 </head>
@@ -211,8 +223,8 @@
 				<img class="slide-bg" src="images/main-slider/image-7.jpg">
 				<div class="content-box">
 					<div class="content text-center">
-						<h2><div class="animated" data-my-animate="fadeInLeft">成为绿色、舒适、智能</div>
-							<div class="animated ani-time2 my-color2" data-my-animate="fadeInLeft">生活方式的引领者</div>
+						<h2><div class="animated ani-time2 my-color2" data-my-animate="fadeInLeft">To be Pioneer of</div>
+							<div class="animated" data-my-animate="fadeInLeft">green, comfortable, and smart lifestyle</div>
 						</h2>
 					</div>
 				</div>
@@ -223,17 +235,17 @@
 				<div class="content-box">
 					<div class="content content1 animated" data-my-animate="fadeInLeft">
 						<h3 class="animated ani-time2" data-my-animate="fadeInLeft">
-							<div class="cont1">使命</div>
-							<div class="cont2">为用户、供应商、员工、股东和社会创造</div>
-							<div class="cont2">共赢的生态系统，成为受人尊敬的企业</div>
+							<div class="cont1">Mission</div>
+							<div class="cont2">Create an eco-system for customers, suppliers, employees,</div>
+							<div class="cont2"> shareholders and society and become a respected cooperation. </div>
 						</h3>
 					</div>
 					<div class="content content2 animated" data-my-animate="fadeInRight">
 						<h3 class="animated ani-time2" data-my-animate="fadeInRight">
-							<div class="cont1">价值观</div>
-							<div class="cont2"><span>同创共享</span><span class="split"></span><span>正确行事</span><span class="split"></span>
-								<span>追求成功</span><span class="split"></span><span>一次到位 加快步伐</span></div>
-							<div class="cont2"><span>"我们"大于"我"</span><span class="split"></span><span>任人唯贤</span></div>
+							<div class="cont1">Value</div>
+							<div class="cont2"><span>Co-create and share</span><span class="split"></span><span>Do it the right way</span><span class="split"></span>
+								<span>Play to win</span><span class="split"></span><span>Get it right the first time</span></div>
+							<div class="cont2"><span> Pick up the pace</span><span class="split"></span><span> "We" before "I"</span><span class="split"></span><span>Empower the best people</span></div>
 						</h3>
 					</div>
 				</div>
@@ -245,7 +257,7 @@
 					<div class="content-column clearfix">
 							<div class="inner-column">
 								<div class="sec-title">
-									<h2 class="animated" data-my-animate="fadeInDown100"><span class="text-white">发展历程</span></h2>
+									<h2 class="animated" data-my-animate="fadeInDown100"><span class="text-white">History</span></h2>
 								</div>
 								<div class="single-vertical-carousel animated ani-time2" data-my-animate="fadeInDown100">
 									<div class="slide">
@@ -253,8 +265,8 @@
 											<div class="inner-box box1">
 												<div class="icon-box"></div>
 												<div class="content">
-													<h3 style="color:rgba(191,215,50,1)">2003年</h3>
-													<div class="text">江森自控、延锋江森、博奥集团正式签定三方合资协议，成立合资公司重庆延锋江森。</div>
+													<h3 style="color:rgba(191,215,50,1)">In 2003</h3>
+													<div class="text">Johnson Controls, Yanfeng Johnson, Boao Group signed joint venture contact and established Chongqing Yanfeng Adient Automotive Components Company.</div>
 												</div>
 											</div>
 										</div>
@@ -262,8 +274,8 @@
 											<div class="inner-box">
 												<div class="icon-box"></div>
 												<div class="content">
-													<h3 style="color:rgba(191,215,50,1)">2004年</h3>
-													<div class="text">搬迁至渝北工厂，第一个项目福特CD132正式投产。</div>
+													<h3 style="color:rgba(191,215,50,1)">In 2004</h3>
+													<div class="text">we moved to Yubei plant and the first Ford program CD132 was launched.</div>
 												</div>
 											</div>
 										</div>
@@ -271,8 +283,8 @@
 											<div class="inner-box">
 												<div class="icon-box"></div>
 												<div class="content">
-													<h3 style="color:rgba(191,215,50,1)">2006年</h3>
-													<div class="text">铃木工区正式投产，重庆延锋江森荣获“重庆市高新技术企业称号”。</div>
+													<h3 style="color:rgba(191,215,50,1)">In 2006</h3>
+													<div class="text">Suzuki plant was launched and we were awarded "Chongqing High-tech enterprises".</div>
 												</div>
 											</div>
 										</div>
@@ -280,8 +292,8 @@
 											<div class="inner-box">
 												<div class="icon-box"></div>
 												<div class="content">
-													<h3 style="color:rgba(191,215,50,1)">2007年</h3>
-													<div class="text">举办第一届家属日活动，启动公益项目蓝天计划。</div>
+													<h3 style="color:rgba(191,215,50,1)">In 2007</h3>
+													<div class="text">we held the 1st Family Day and started Blue Sky Initiative for charity.</div>
 												</div>
 											</div>
 										</div>
@@ -289,8 +301,8 @@
 											<div class="inner-box">
 												<div class="icon-box"></div>
 												<div class="content">
-													<h3 style="color:rgba(191,215,50,1)">2010年</h3>
-													<div class="text">公司年销售额首次突破10亿元，技术中心获得第一项技术专利。</div>
+													<h3 style="color:rgba(191,215,50,1)">In 2010</h3>
+													<div class="text">Annual sales volume excess one billion, and Technical center won the first technical patent.</div>
 												</div>
 											</div>
 										</div>
@@ -301,8 +313,8 @@
 											<div class="inner-box">
 												<div class="icon-box"></div>
 												<div class="content">
-													<h3 style="color:rgba(191,215,50,1)">2011年</h3>
-													<div class="text">公司完成第一次组织变革，建立以客户为中心的平台业务单元。</div>
+													<h3 style="color:rgba(191,215,50,1)">In 2011</h3>
+													<div class="text">we fulfilled the first organizational change and set up customer-oriented business unit.</div>
 												</div>
 											</div>
 										</div>
@@ -310,8 +322,8 @@
 											<div class="inner-box">
 												<div class="icon-box"></div>
 												<div class="content">
-													<h3 style="color:rgba(191,215,50,1)">2012年</h3>
-													<div class="text">福特福克斯项目顺利投产，公司发展迎来里程碑事件。</div>
+													<h3 style="color:rgba(191,215,50,1)">In 2012</h3>
+													<div class="text">Ford Focus program was successfully launched as a milestone of the company.</div>
 												</div>
 											</div>
 										</div>
@@ -319,8 +331,8 @@
 											<div class="inner-box">
 												<div class="icon-box"></div>
 												<div class="content">
-													<h3 style="color:rgba(191,215,50,1)">2013年</h3>
-													<div class="text">成立深圳分公司、成都子公司，快速布局全国。</div>
+													<h3 style="color:rgba(191,215,50,1)">In 2013</h3>
+													<div class="text">we set up footprints around the country and established Shenzhen branch and Chengdu subsidiary.</div>
 												</div>
 											</div>
 										</div>
@@ -328,8 +340,8 @@
 											<div class="inner-box">
 												<div class="icon-box"></div>
 												<div class="content">
-													<h3 style="color:rgba(191,215,50,1)">2014年</h3>
-													<div class="text">为满足业务发展需要，成立大庆、南昌、杭州子公司，重庆总部新办公大楼及黄茅坪工厂正式启用。</div>
+													<h3 style="color:rgba(191,215,50,1)">In 2014</h3>
+													<div class="text">we set up Daqing, Nanchang, and Hangzhou subsidiary, and Chongqing HMP office building and plants were put into use.</div>
 												</div>
 											</div>
 										</div>
@@ -337,8 +349,8 @@
 											<div class="inner-box">
 												<div class="icon-box"></div>
 												<div class="content">
-													<h3 style="color:rgba(191,215,50,1)">2015年</h3>
-													<div class="text">成立锋奥子公司，柳州工厂正式投产，公司正式挂牌成为JCI全球认证的全功能技术研发中心。</div>
+													<h3 style="color:rgba(191,215,50,1)">In 2015</h3>
+													<div class="text">Feng’ao subsidiary was set up and Liuzhou factory was launched. We was inaugurated as a full-functional technical R&D center globally certified by JCI.</div>
 												</div>
 											</div>
 										</div>
@@ -348,8 +360,8 @@
 											<div class="inner-box">
 												<div class="icon-box"></div>
 												<div class="content">
-													<h3 style="color:rgba(191,215,50,1)">2016年</h3>
-													<div class="text">年销售额突破40亿大关，财务表现取得重大突破，成立哈尔滨子公司，重庆延锋江森正式更名为重庆延锋安道拓汽车部件系统有限公司。</div>
+													<h3 style="color:rgba(191,215,50,1)">In 2016</h3>
+													<div class="text">annual sales were over four billion, financial performance made breakthrough and set up Ha’erbin subsidiary. Chongqing Yanfeng Johnson Controls renamed as Chongqing Yanfeng Adient .</div>
 												</div>
 											</div>
 										</div>
@@ -357,8 +369,8 @@
 											<div class="inner-box">
 												<div class="icon-box"></div>
 												<div class="content">
-													<h3 style="color:rgba(191,215,50,1)">2017年</h3>
-													<div class="text">年产量首次突破100万套，实现可持续健康成长，举行《文化的力量》新书发布会，启动全国分子公司新书路演。</div>
+													<h3 style="color:rgba(191,215,50,1)">In 2017</h3>
+													<div class="text">annual production excesses 1 million sets and realized sustainable development. We held an official release of The Power of Culture and roadshows in branches and subsidiaries around the country.</div>
 												</div>
 											</div>
 										</div>
@@ -366,8 +378,8 @@
 											<div class="inner-box">
 												<div class="icon-box"></div>
 												<div class="content">
-													<h3 style="color:rgba(191,215,50,1)">2018年</h3>
-													<div class="text">公司成立15周年，发布企业人物形象“艾小渝”，启动线上文创店“艾小渝的未来工厂”。</div>
+													<h3 style="color:rgba(191,215,50,1)">In 2018</h3>
+													<div class="text">we celebrated our fifteenth anniversary and issued corporate image “Ai Xiaoyu” and started online shop for Ai Xiaoyu.</div>
 												</div>
 											</div>
 										</div>
@@ -375,7 +387,7 @@
 											<div class="inner-box">
 												<div class="icon-box"></div>
 												<div class="content">
-													<h3 style="color:rgba(191,215,50,1)">2019年</h3>
+													<h3 style="color:rgba(191,215,50,1)">In 2019</h3>
 													<div class="text">……</div>
 												</div>
 											</div>
@@ -399,57 +411,57 @@
 			<div id="map" class="swiper-slide slide4">
 				<div class="china-map">
 					<img class="img-map" src="images/background/map_black_bg.png">
-					<div class="region-list active postition-1 online-node" data-type="成都延锋安道拓汽车部件系统有限公司" data-img="images/about/cd.png">
+					<div class="region-list active postition-1 online-node" data-type="Chengdu Yanfeng Adient Automotive Parts Co. ltd" data-img="images/about/cd.png">
 						<div class="area-box">
 							<span class="dot"><img src="images/icons/marker1.png"></span>
 						</div>
-						<div class="show-regin"><span>成都</span></div>
+						<div class="show-regin"><span>Chengdu</span></div>
 					</div>
-					<div class="region-list color1 active postition-2 online-node" data-type="重庆延锋安道拓汽车部件系统有限公司" data-img="images/about/cq-yf.png">
+					<div class="region-list color1 active postition-2 online-node" data-type="Chongqing Yanfeng Adient Automotive Parts Co. ltd" data-img="images/about/cq-yf.png">
 						<div class="area-box"><span class="dot"><img src="images/icons/marker2.png"></span>
 						</div>
-						<div class="show-regin allRegin"><span>重庆</span></div>
+						<div class="show-regin allRegin"><span>Chongqing</span></div>
 					</div>
-					<div class="region-list color1 postition-2-1 online-node" data-type="重庆延锋安道拓汽车部件系统有限公司江津分公司" data-img="images/about/cq-jj.png">
+					<div class="region-list color1 postition-2-1 online-node" data-type="Chongqing Yanfeng Adient Automotive Parts Co. ltd, Jiangjin Branch" data-img="images/about/cq-jj.png">
 						<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span>
 						</div>
 						<div class="show-regin"></div>
 					</div>
-					<div class="region-list color1 postition-2-2 online-node" data-type="重庆延锋安道拓锋奥汽车部件系统有限公司" data-img="images/about/cq-fa.png">
+					<div class="region-list color1 postition-2-2 online-node" data-type="Chongqing Yanfeng Adient Feng’ao Automotive Parts Co. ltd" data-img="images/about/cq-fa.png">
 						<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span>
 						</div>
 						<div class="show-regin"></div>
 					</div>
-					<div class="region-list active postition-3 online-node" data-type="南昌延锋安道拓汽车部件系统有限公司" data-img="images/about/nc.png">
+					<div class="region-list active postition-3 online-node" data-type="Nanchang Yanfeng Adient Automotive Parts Co. ltd" data-img="images/about/nc.png">
 						<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span>
 						</div>
-						<div class="show-regin"><span>南昌</span></div>
+						<div class="show-regin"><span>Nanchang</span></div>
 					</div>
-					<div class="region-list waite postition-4 waite-node" data-type="重庆延锋安道拓汽车部件系统有限公司东莞分公司" data-img="images/about/dg.png">
+					<div class="region-list waite postition-4 waite-node" data-type="Chongqing Yanfeng Adient Automotive Parts Co. ltd, Dongguan Branch" data-img="images/about/dg.png">
 						<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span>
 							</div>
-						<div class="show-regin"><span>东莞</span></div>
+						<div class="show-regin"><span>Dongguan</span></div>
 					</div>
-					<div class="region-list waite postition-5 waite-node" data-type="台州延锋安道拓汽车部件系统有限公司" data-img="images/about/tz.png">
+					<div class="region-list waite postition-5 waite-node" data-type="Taizhou Yanfeng Adient Automotive Parts Co. ltd" data-img="images/about/tz.png">
 						<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span>
 							</div>
-						<div class="show-regin"><span>台州</span></div>
+						<div class="show-regin"><span>Taizhou</span></div>
 					</div>
-						<div class="region-list active postition-6 online-node" data-type="杭州延锋安道拓汽车部件系统有限公司" data-img="images/about/hz.png">
+						<div class="region-list active postition-6 online-node" data-type="Hanzhou Yanfeng Adient Automotive Parts Co. ltd" data-img="images/about/hz.png">
 						<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span></div>
-						<div class="show-regin"><span>杭州</span></div>
+						<div class="show-regin"><span>Hangzhou</span></div>
 					</div>
-					<div class="region-list active postition-7 online-node" data-type="哈尔滨延锋安道拓汽车部件系统有限公司" data-img="images/about/heb.png">
+					<div class="region-list active postition-7 online-node" data-type="Ha’erbin Yanfeng Adient Automotive Parts Co. ltd" data-img="images/about/heb.png">
 						<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span></div>
-						<div class="show-regin"><span>哈尔滨</span></div>
+						<div class="show-regin"><span>Ha’erbin</span></div>
 					</div>
-					<div class="region-list  active  postition-8 online-node" data-type="大庆延锋安道拓汽车部件系统有限公司" data-img="images/about/dq.png">
+					<div class="region-list  active  postition-8 online-node" data-type="Daqing Yanfeng Adient Automotive Parts Co. ltd" data-img="images/about/dq.png">
 						<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span></div>
-						<div class="show-regin"><span>大庆</span></div>
+						<div class="show-regin"><span>Daqing</span></div>
 					</div>
-					<div class="region-list  active  postition-9 online-node" data-type="湘潭延锋安道拓汽车部件系统有限公司" data-img="images/about/xt.png">
+					<div class="region-list  active  postition-9 online-node" data-type="Xiangtan Yanfeng Adient Automotive Parts Co. ltd" data-img="images/about/xt.png">
 						<div class="area-box"><span class="dot"><img src="images/icons/marker1.png"></span></div>
-						<div class="show-regin"><span>湘潭</span></div>
+						<div class="show-regin"><span>Xiangtan</span></div>
 					</div>
 				</div>
 					<div class="content-box business-box">
@@ -459,7 +471,7 @@
 										<div class="inner" data-wow-delay="0ms" data-wow-duration="1500ms">
 											<div class="img-box animated" data-my-animate="fadeInDown100">
 												<img class="counter-img" src="images/icons/round_01.png">
-												<h5 class="counter-title">1个JCI认证技术中心</h5>
+												<h5 class="counter-title">1 JCI certificated technical center</h5>
 											</div>
 										</div>
 									</div>
@@ -469,7 +481,7 @@
 										<div class="inner" data-wow-delay="600ms" data-wow-duration="1500ms">
 											<div class="img-box">
 													<img class="counter-img" src="images/icons/round_02.png">
-													<h5 class="counter-title">11家制造工厂</h5>
+													<h5 class="counter-title">11 manufacturing plants</h5>
 											</div>
 										</div>
 									</div>
@@ -479,14 +491,14 @@
 										<div class="inner" data-wow-delay="900ms" data-wow-duration="1500ms">
 											<div class="img-box">
 													<img class="counter-img" src="images/icons/round_03.png">
-													<h5 class="counter-title">4300+名员工</h5>
+													<h5 class="counter-title">4300+ employees</h5>
 											</div>
 										</div>
 									</div>
 							</div>
 							<div class="current-info animated ani-time2">
 								<img class="current-img" src="images/about/cq-yf.png">
-								<h5 class="current-text">重庆延锋安道拓汽车部件系统有限公司</h5>
+								<h5 class="current-text">Chongqing Yanfeng Adient Automotive Parts Co. ltd</h5>
 							</div>
 							
 					</div>
@@ -496,7 +508,7 @@
 			<div class="swiper-slide slide5">
 				<div class="title-text my-color5 animated" data-my-animate="fadeInDown100">
 					<span class='line'></span>
-					<span class="text">合作伙伴</span>
+					<span class="text">Business partner</span>
 					<span class='line'></span>
 				</div>
 				<div class="logo-box">
