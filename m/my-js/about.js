@@ -13,13 +13,17 @@ $(function() {
 })
 //发展历程
 function initSwiper1(){
+	var index = 5;
+	if($("#root").width()<375){
+		index=4;
+	}
     //初始化swiper
     var slideSwiper = new Swiper('#swiper1', {
 		direction: 'vertical',
         // loop: true,
 		speed: 800,
 		autoplay :1000,
-		slidesPerView: 5,
+		slidesPerView: index,
 		// slidesPerView: "auto"
     });
 }

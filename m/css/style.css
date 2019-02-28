@@ -302,10 +302,13 @@ img{
 	color: #fff;
 }
 .main-footer .text-box{
-	padding: 20px 30px;
+	padding: 20px 5%;
 }
 .main-footer .text-box .text1{
 	margin-bottom: 10px;
+}
+.main-footer .text-box .text2{
+	margin-bottom: 5px;
 }
 /*英文版footer*/
 .main-footer.en .ewm{
@@ -805,7 +808,7 @@ section{
 }
 .slide-zy .point-text{
 	min-width: 60px;
-	padding: 0 5px;
+	padding: 0 2px;
 }
 .slide-zy .point1,
 .slide-zy .point2{
