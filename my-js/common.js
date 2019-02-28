@@ -55,6 +55,9 @@
     function toggleLanguage(){
         $('.language[type]').click(function(){
             var type = $(this).attr('type');
+            if($(this).hasClass('active')){
+                return;
+            }
             if(type == 'ch'){//中文
                 var href = location.href.replace('-en.html','.html');
                 location.href = href;
