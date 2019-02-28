@@ -839,7 +839,7 @@ section{
     height: 40px;
     border-radius: 30px;
     background: #fff;
-    right: 20px;
+    /* right: 20px; */
     bottom: 40px;
     z-index: 1000;
     padding: 5px;
