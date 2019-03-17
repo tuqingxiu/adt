@@ -42,6 +42,12 @@
     function toggleTerminal(){
         var window_width = $(window).width();//获取浏览器窗口宽度
         var isMobile = location.pathname.indexOf('/m/')>=0; //来源为移动端链接
+        var isDomain = location.pathname.indexOf('.html')<0; //来源为域名访问
+
+        if(isDomain){
+            location.href = 'index.html';
+            return;
+        }
 
         if(window_width > 1024){//pc终端
             if(isMobile){
@@ -83,26 +89,18 @@
         })
     }
 
-    //监听播放器
-    // function initMyVideo(){
-    //     $('.my-play-box').click(function(){
-    //         if($(this).hasClass('active')){//播放中
-    //             //暂停播放
-    //             $(this).find('video')[0].pause();
-    //             $(this).find('.play').show();
-    //             $(this).removeClass('active');
-    //         }else{
-    //             $(this).find('video')[0].play();
-    //             $(this).find('.play').hide();
-    //             $(this).addClass('active');
-    //         }
-    //     })
-    // }
+    //是否域名访问
+    function isDomain(){
+        var domain = location.pathname.indexOf('.html')<0;
+        if(domain){
+            location.href = 'index.html';
+        }
+    }
     
     $(window).on('load', function() {
+        isDomain();
         windowSize();
         loadHeader();
-        // initMyVideo();
 	});	
 })(window.jQuery);
 

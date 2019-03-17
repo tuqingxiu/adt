@@ -22,12 +22,24 @@
             $("#footerBox").load("common/footer.html");
         }
     }
+    //是否域名访问
+    function isDomain(){
+        var domain = location.pathname.indexOf('.html')<0;
+        if(domain){
+            location.href = 'index.html';
+        }
+    }
 
     //根据屏幕尺寸切换pc端和移动端
     function toggleTerminal(){
         var window_width = $(window).width();//获取浏览器窗口宽度
         var isMobile = location.pathname.indexOf('/m/')>=0; //来源为移动端链接
+        var isDomain = location.pathname.indexOf('.html')<0; //来源为域名访问
 
+        if(isDomain){
+            location.href = 'index.html';
+            return;
+        }
         if(window_width > 1024){//pc终端
             if(isMobile){
                 var href = location.href.replace('/m/','/');
