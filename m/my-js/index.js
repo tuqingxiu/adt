@@ -17,7 +17,7 @@ function initSwiper1(){
     var slideSwiper = new Swiper('#swiper1', {
 		loop: true,
 		speed: 800,
-		autoplay:3000
+		// autoplay:3000
 	});
 }
 function initSwiper2(){

@@ -4,7 +4,7 @@ $(function() {
     var slideSwiper = new Swiper('#first-slide-swiper', {
 		loop: true,
 		speed: 800,
-		autoplay : 3000
+		// autoplay : 3000
 		// pagination: '#slide-swiper',
 		// paginationClickable: true
 	});
