@@ -1098,6 +1098,12 @@ img{
 .sticky-header.en .auto-container{
 	max-width: 1400px;
 }
+/* .sticky-header .main-menu .navigation > li{
+	margin-left: 30px;
+}
+.sticky-header .auto-container{
+	max-width: 1400px;
+} */
 
 .main-header .header-upper .upper-right{
 	padding-top:32px;
@@ -1146,6 +1152,13 @@ img{
 /*--语言切换按钮--*/
 .main-menu .language-box{
 	padding: 19px 0;
+}
+/*邮箱*/
+.email{
+	margin: 0 4px;
+}
+.email img{
+	width: 32px;
 }
 
 /*Sticky Header*/
