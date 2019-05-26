@@ -1092,18 +1092,18 @@ img{
 }
 
 /*英文版header*/
-.sticky-header.en .main-menu .navigation > li{
+/* .sticky-header.en .main-menu .navigation > li{
 	margin-left: 30px;
 }
 .sticky-header.en .auto-container{
 	max-width: 1400px;
-}
-/* .sticky-header .main-menu .navigation > li{
+} */
+.sticky-header .main-menu .navigation > li{
 	margin-left: 30px;
 }
 .sticky-header .auto-container{
 	max-width: 1400px;
-} */
+}
 
 .main-header .header-upper .upper-right{
 	padding-top:32px;
