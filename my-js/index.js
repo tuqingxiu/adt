@@ -97,7 +97,9 @@ $(function() {
     // animateSlide3();
     
     //第6屏效果
-    animateSlide6();
+	animateSlide6();
+	//第9屏效果
+	animateSlide9();
 })
 //第3屏效果
 function animateSlide3() {
@@ -139,6 +141,14 @@ function animateSlide5() {
 //第6屏效果
 function animateSlide6(){
     $('.slide6 .item-box').hover(function(){
+        $(this).find('.cont-box').fadeIn().removeClass('fadeOutDown').addClass('fadeInUp');
+    },function(){
+        $(this).find('.cont-box').removeClass('fadeInUp').addClass('fadeOutDown').fadeOut();
+    })
+}
+//第9屏效果
+function animateSlide9(){
+    $('.slide9 .img-box').hover(function(){
         $(this).find('.cont-box').fadeIn().removeClass('fadeOutDown').addClass('fadeInUp');
     },function(){
         $(this).find('.cont-box').removeClass('fadeInUp').addClass('fadeOutDown').fadeOut();
